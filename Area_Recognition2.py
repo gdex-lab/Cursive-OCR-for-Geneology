@@ -47,3 +47,27 @@ for file in glob.glob("*.jpg"):
     # print(img)
     # text = pytesseract.image_to_string(img, lang = 'eng')
     # print(text.encode('utf-8'))
+
+
+
+
+    # Bold experiment
+    # show_images([img_bw, zero_bold(img_bw)])
+    # plt.imshow(img)
+    # plt.show()
+    # time.sleep(10)
+
+
+    # image block size 21 worked, so did 41
+    # block_size = 41
+    # Apply adaptive threshold
+    # thresh = cv2.adaptiveThreshold(gray,255,1,1,11,2)
+    # thresh = cv2.threshold(img_gray, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+    # thresh = cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,block_size,0)
+
+    # smooth the image to avoid noises
+    # thresh = cv2.medianBlur(img_bw,1)
+
+    # apply some dilation and erosion to join the gaps - change iteration to detect more or less area's
+    # img_bw = cv2.dilate(thresh,None,iterations = 5)
+    # img_bw = cv2.erode(thresh,None,iterations = 5)
