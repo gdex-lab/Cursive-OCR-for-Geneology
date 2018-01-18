@@ -7,7 +7,7 @@ import numpy as np
 import time
 from PIL import Image
 import matplotlib.pyplot as plt
-
+import math
 # print(pytesseract.pytesseract.tesseract_cmd)
 # pytesseract.pytesseract.tesseract_cmd = 'C:\\Users\\grant\\AppData\\Local\\Tesseract-OCR'
 # print(pytesseract.pytesseract.tesseract_cmd)
@@ -78,7 +78,12 @@ def show_images(images, cols = 1, titles = None):
     plt.show()
 
 def custom_thresh_otsu(img):
-    blur = cv2.GaussianBlur(img,(1,1),0)
+    # block_size = int(.00001*(img.size))
+    # while block_size % 2 != 1:
+    #     block_size += 1
+    # print("block size: {}".format(block_size))
+    # blur = cv2.GaussianBlur(img,(5),0)
+    blur = cv2.medianBlur(img,5)
 
     # find normalized_histogram, and its cumulative distribution function
     hist = cv2.calcHist([blur],[0],None,[256],[0,256])
@@ -101,28 +106,60 @@ def custom_thresh_otsu(img):
         if fn < fn_min:
             fn_min = fn
             thresh = i
-    print(thresh)
+    print("Imagethresh: ", thresh)
     return thresh
 
+def get_region_quantile(outer_index, inner_index, full_image):
+    '''TODO: finish creating this method for more dynamic functionality, but don't get caught in the weeds'''
+    quantile_regions = 16 # must have desireable integer square root
+
+    # this ^ devides the image into 16 squares
+    image_height_quantile = len(full_image)/math.sqrt(quantile_regions)
+    image_width_quantile = len(full_image[0])/math.sqrt(quantile_regions)
+
+
+    height_quantile = round(outer_index / image_height_decile)
+    width_quantile round(outer_index / image_height_decile)
+
+    # number the quantiles left to right, top to bottom
+    quantile = -1
+    if height_quantile == 0:
+        quantile = 1 + width_quantile
+    if height_quantile == 1:
+        quantile = 5 + width_quantile
+    if height_quantile == 2:
+        quantile = 9 + width_quantile
+    if height_quantile == 3:
+        quantile = 13 + width_quantile
+    return quantile
+
 def custom_gray_to_bw(img_gray, thresh_val, black_val=0, white_val=255, bold_value=0):
-    # print(img_gray)
+    '''
+    goal here is to locate local threshold in the image, and convert to bw based on that locality.
+    Ideal is probably 10 percent of image blocks
+    '''
+    # first, break image into 10 squares
+
+    # identify threshold for each of 10 regions (squares)
+
+    # convert to black and white depending on region threshold
+
     thresh_val += bold_value
     for ind1, val1 in enumerate(img_gray):
-        # [white_val if (x > (thresh_val)) else black_val for x in img_gray[ind1]]
         for ind2, val2 in enumerate(img_gray[ind1]):
-            # a[:] = map(lambda x: -x, a)
             if val2 > thresh_val + bold_value:
                 img_gray[ind1][ind2] = white_val
             else:
                 img_gray[ind1][ind2] = black_val
-    # print(img_gray)
     return img_gray
 
 def add_contours(img_source_bw, img_color):
     # Find the contours
     image,contours,hierarchy = cv2.findContours(img_source_bw,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    img_cont_unfiltered = cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB)
     for cnt in contours:
         x,y,w,h = cv2.boundingRect(cnt)
+        cv2.rectangle(img_cont_unfiltered,(x,y),(x+w,y+h),(0,255,0),5)
         if (22 <= w <= 500) and (22 <= h <= 200):
             # """iterate through contours and check for variety in the images"""
             crop_img = img_source_bw[y:y+h, x:x+w]
@@ -146,14 +183,30 @@ def add_contours(img_source_bw, img_color):
                     contained_variety += 1
             if contained_variety > 0:
                 cv2.rectangle(img_color,(x,y),(x+w,y+h),(0,255,0),5)
-    return img_color
+    return img_color, img_cont_unfiltered
 
 for file in glob.glob("*.jpg"):
     img = cv2.imread(file)
     height, width, channels = img.shape
 
+    unrefined_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
     # Convert img to grayscale to prep for black and white
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    otsus_bi_thresh = custom_thresh_otsu(img_gray)
+
+    # be more mathematical about this... if we can, we should convert to bw based on area of image.
+    bold_value = .1*otsus_bi_thresh
+
+    img_low_thresh = custom_gray_to_bw(img_gray, otsus_bi_thresh, 0, 255, bold_value)
+
+    img_low_thresh,low_thresh_contours,low_thresh_hierarchy = cv2.findContours(img_low_thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+
+    img_low, img_cont_unfiltered = add_contours(img_low_thresh, unrefined_img)
+
+    show_images([img_low_thresh, img_cont_unfiltered, img_low])
+
 
     # Convert to black and white based on automatice OTSU threshold
     # without black and white, area detection is very poor
@@ -161,27 +214,27 @@ for file in glob.glob("*.jpg"):
     # (thresh, img_bw) = cv2.threshold(img_gray, 128, 255, ((cv2.THRESH_BINARY | cv2.THRESH_OTSU) -25))
 
     # Otsu's thresholding after Gaussian filtering
-    blur = cv2.GaussianBlur(img_gray,(1,1),0)
+    # blur = cv2.GaussianBlur(img_gray,(1,1),0)
+    # thresh, img_bw = cv2.threshold(img_gray,0,255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 
-    thresh, img_bw = cv2.threshold(blur,0,255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 
 
-    otsus_bi_thresh = custom_thresh_otsu(img_gray)
-    img_low_thresh = custom_gray_to_bw(img_gray, otsus_bi_thresh, 0, 255, .35*otsus_bi_thresh)
+    # bold_value = 0
+    # if 90 <= otsus_bi_thresh <= 130:
+    # elif otsus_bi_thresh + .15*otsus_bi_thresh < 255:
+    #     bold_value = .15*otsus_bi_thresh
+
 
     # Find the contours
     # image,contours,hierarchy = cv2.findContours(img_bw,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    img_low_thresh,low_thresh_contours,low_thresh_hierarchy = cv2.findContours(img_low_thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
-    unrefined_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     # For each contour, find the bounding rectangle and draw it
 
-    img = add_contours(img_bw, img)
-    img_low = add_contours(img_low_thresh, unrefined_img)
-    show_images([img_bw, img, img_low_thresh, unrefined_img])
+    # img = add_contours(img_bw, img)
+    # show_images([img_bw, img, img_low_thresh, unrefined_img])
 
-
-
+# ignore every contour fully contained within another contour
+# everything interesting is generally captured. Try combining overlapping contours when similar height
 # TODO begin sorting through each box and eliminating non applicable contours
 # try decreasing threshold for bw vs bolding black (adding one to each array)
 # rotating rectangles will help ( for rotated records ) - OpenCV has builtin
