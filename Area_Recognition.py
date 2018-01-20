@@ -72,26 +72,52 @@ def add_contours(img_source_bw, img_color):
     return img_color, img_cont_unfiltered
 
 for file in glob.glob("*.jpg"):
+    print("reading img: ", file)
     img = cv2.imread(file)
     height, width, channels = img.shape
 
     # reduce oversize images
     while height * width > 7000000:
+        print("reducing oversize image.")
         img = cv2.resize(img, (0,0), fx=0.9, fy=0.9)
         # print("reducing image size...")
         height, width, channels = img.shape
 
+    print("creating duplicate images for unrefined output.")
     unrefined_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    unrefined_img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    unrefined_img3 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
+    print("creating grayscale image.")
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    print(height, width, (height * width))
 
-    img_low_thresh = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
+    print("calculating block size for gaussian window:")
+    window_block_neighbors = int(.75*math.sqrt(height * width))
 
+    while window_block_neighbors %2 != 1:
+        window_block_neighbors += 1
+    print(window_block_neighbors)
+
+    print("Adding adaptive threshold.")
+    img_low_thresh = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,20)
+    img_low_thresh2 = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,10)
+    img_low_thresh3 = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,2)
+
+    print("Finding contours.")
     img_low_thresh,low_thresh_contours,low_thresh_hierarchy = cv2.findContours(img_low_thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    img_low_thresh2,low_thresh_contours2,low_thresh_hierarchy2 = cv2.findContours(img_low_thresh2,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    img_low_thresh3,low_thresh_contours3,low_thresh_hierarchy3 = cv2.findContours(img_low_thresh3,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
+    print("Filtering and adding contours.")
     img_low, img_cont_unfiltered = add_contours(img_low_thresh, unrefined_img)
+    img_low2, img_cont_unfiltered2 = add_contours(img_low_thresh2, unrefined_img2)
+    img_low3, img_cont_unfiltered3 = add_contours(img_low_thresh3, unrefined_img3)
 
-    show_images([img_low_thresh, img_cont_unfiltered, img_low])
+    print("Displaying images.")
+    # show_images([img_low_thresh, img_low_thresh2, img_low_thresh3, img_cont_unfiltered, img_low])
+    show_images([img_low_thresh, img_low_thresh2, img_low_thresh3, img_low, img_low2, img_low3])
+    # show_images([img_low_thresh, img_low_thresh2, img_low, img_low2])
 
 
 
