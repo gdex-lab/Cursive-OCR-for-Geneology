@@ -39,93 +39,110 @@ def show_images(images, cols = 2, titles = None):
     mng.window.state('zoomed')
     plt.show()
 
-def add_contours(img_source_bw, img_color):
+def add_contours(img_source_bw, img_color, square_pixels):
     # Find the contours
     image,contours,hierarchy = cv2.findContours(img_source_bw,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     img_cont_unfiltered = cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB)
+
+    # word should not make up less than or more than a percentage of image
+    # min_contour = square_pixels/5000000
+    # max_contour = square_pixels/5000
+    # print("   filtering contours smaller than: ", min_contour)
+    # print("   filtering contours larger than: ", max_contour)
+
     for cnt in contours:
         x,y,w,h = cv2.boundingRect(cnt)
         cv2.rectangle(img_cont_unfiltered,(x,y),(x+w,y+h),(0,255,0),5)
-        if (22 <= w <= 500) and (22 <= h <= 200):
-            # """iterate through contours and check for variety in the images"""
-            crop_img = img_source_bw[y:y+h, x:x+w]
-            # horizontal = columns, vertical = rows
-            (horizontal, vertical) = crop_img.shape
-            h_lower = int(.2 * horizontal)
-            h_upper = int(.8 * horizontal)
-            v_lower = int(.2 * vertical)
-            v_upper = int(.8 * vertical)
+        # First, check for shape of word. Ignoring single letters for now.
+        if w > h:
+            if (22 <= w <= 500) and (22 <= h <= 200):
+                # this ensures that height is less than max_contour, and width, while width is greater than min_contour
+                # if (h > min_contour and w < max_contour):
+                # """iterate through contours and check for variety in the images"""
+                crop_img = img_source_bw[y:y+h, x:x+w]
+                # horizontal = columns, vertical = rows
+                (horizontal, vertical) = crop_img.shape
+                h_lower = int(.2 * horizontal)
+                h_upper = int(.8 * horizontal)
+                v_lower = int(.2 * vertical)
+                v_upper = int(.8 * vertical)
 
-            # sum total changes accross the bw array. If none of middle sixty percentof  arrays contain more than one color change, discard entire boundary
-            contained_variety = 0
-            for horiz in crop_img[h_lower:h_upper]:
-                row_value_changes = 0
-                value_in_row = horiz[0]
-                for vert_value in horiz[v_lower:v_upper]:
-                    if vert_value != value_in_row:
-                        row_value_changes += 1
-                        value_in_row = vert_value
-                if row_value_changes > 2: # a change and back (we want more than one line)
-                    contained_variety += 1
-            if contained_variety > 0:
-                cv2.rectangle(img_color,(x,y),(x+w,y+h),(0,255,0),5)
+                # sum total changes accross the bw array. If none of middle sixty percentof  arrays contain more than one color change, discard entire boundary
+                contained_variety = 0
+                for horiz in crop_img[h_lower:h_upper]:
+                    row_value_changes = 0
+                    value_in_row = horiz[0]
+                    for vert_value in horiz[v_lower:v_upper]:
+                        if vert_value != value_in_row:
+                            row_value_changes += 1
+                            value_in_row = vert_value
+                    if row_value_changes > 2: # a change and back (we want more than one line)
+                        contained_variety += 1
+                if contained_variety > 0:
+                    cv2.rectangle(img_color,(x,y),(x+w,y+h),(0,255,0),5)
+                    cv2.imshow('crop', crop_img)
+                    cv2.waitKey(0)
+                    cv2.destroyAllWindows()
     return img_color, img_cont_unfiltered
 
 for file in glob.glob("*.jpg"):
     print("reading img: ", file)
     img = cv2.imread(file)
     height, width, channels = img.shape
+    square_pixels = height * width
 
     # reduce oversize images
-    while height * width > 7000000:
+    while square_pixels > 7000000:
         print("reducing oversize image.")
         img = cv2.resize(img, (0,0), fx=0.9, fy=0.9)
         # print("reducing image size...")
         height, width, channels = img.shape
+        square_pixels = height * width
 
     print("creating duplicate images for unrefined output.")
-    unrefined_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    unrefined_img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    # unrefined_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    # unrefined_img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     unrefined_img3 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     print("creating grayscale image.")
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    print(height, width, (height * width))
+    print(height, width, (square_pixels))
 
     print("calculating block size for gaussian window:")
-    window_block_neighbors = int(.75*math.sqrt(height * width))
+    window_block_neighbors = int(.75*math.sqrt(square_pixels))
 
     while window_block_neighbors %2 != 1:
         window_block_neighbors += 1
     print(window_block_neighbors)
 
     print("Adding adaptive threshold.")
-    img_low_thresh = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,20)
-    img_low_thresh2 = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,10)
+    # img_low_thresh = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,20)
+    # img_low_thresh2 = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,10)
     img_low_thresh3 = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,2)
 
     print("Finding contours.")
-    img_low_thresh,low_thresh_contours,low_thresh_hierarchy = cv2.findContours(img_low_thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    img_low_thresh2,low_thresh_contours2,low_thresh_hierarchy2 = cv2.findContours(img_low_thresh2,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    # img_low_thresh,low_thresh_contours,low_thresh_hierarchy = cv2.findContours(img_low_thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    # img_low_thresh2,low_thresh_contours2,low_thresh_hierarchy2 = cv2.findContours(img_low_thresh2,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     img_low_thresh3,low_thresh_contours3,low_thresh_hierarchy3 = cv2.findContours(img_low_thresh3,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
     print("Filtering and adding contours.")
-    img_low, img_cont_unfiltered = add_contours(img_low_thresh, unrefined_img)
-    img_low2, img_cont_unfiltered2 = add_contours(img_low_thresh2, unrefined_img2)
-    img_low3, img_cont_unfiltered3 = add_contours(img_low_thresh3, unrefined_img3)
+    # img_low, img_cont_unfiltered = add_contours(img_low_thresh, unrefined_img)
+    # img_low2, img_cont_unfiltered2 = add_contours(img_low_thresh2, unrefined_img2)
+    img_low3, img_cont_unfiltered3 = add_contours(img_low_thresh3, unrefined_img3, square_pixels)
 
     print("Displaying images.")
     # show_images([img_low_thresh, img_low_thresh2, img_low_thresh3, img_cont_unfiltered, img_low])
-    show_images([img_low_thresh, img_low_thresh2, img_low_thresh3, img_low, img_low2, img_low3])
+    # show_images([img_low_thresh, img_low_thresh2, img_low_thresh3, img_low, img_low2, img_low3])
     # show_images([img_low_thresh, img_low_thresh2, img_low, img_low2])
+    show_images([img, img_low_thresh3, img_cont_unfiltered3, img_low3])
 
 
-
+# TODO split words to characters
+# TODO homogenize chracter  sizes
 
 # use machine learning to decide which filters are applicable for contours?
 # ignore every contour fully contained within another contour
 # everything interesting is generally captured. Try combining overlapping contours when similar height
-# TODO begin sorting through each box and eliminating non applicable contours
 # try decreasing threshold for bw vs bolding black (adding one to each array)
 # rotating rectangles will help ( for rotated records ) - OpenCV has builtin
 # ALMOST EVERY SPOT WE WANT TO FIND HAS A HORIZONTAL LINE (sometimes dotted) GOING THROUGH IT with x amount of writing pixels above it, and sometimes some below
