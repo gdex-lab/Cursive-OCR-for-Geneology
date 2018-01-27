@@ -12,6 +12,8 @@
 # also, many templates would be necessary for each letter. A comparison could be made for highest thresh in that section of image
  # TODO COMBINE TECHNIQUES FOR HIGHEST ACCURACY?
 
+# TODO could use the convolving template to identify characters, and then crop those to be passed through convolutional network in original form!
+# could use ten templates of each character to segment and devide
 
 # a few hard fast rules to help:
     # any space with two separate line in the same vertical, is a letter, not a ligature.
@@ -64,6 +66,15 @@ def show_images(images, cols = 1, titles = None):
     mng.window.state('zoomed')
     plt.show()
 
+def deskew(img):
+    m = cv2.moments(img)
+    if abs(m['mu02']) < 1e-2:
+        return img.copy()
+    skew = m['mu11']/m['mu02']
+    M = np.float32([[1, skew, -0.5*SZ*skew], [0, 1, 0]])
+    img = cv2.warpAffine(img,M,(SZ, SZ),flags=affine_flags)
+    return img
+
 def find_vert_parallels(img):
     print(img)
     height, width, channels = img.shape
@@ -74,6 +85,7 @@ def find_vert_parallels(img):
         while row < height:
             print(col[row])
             row+=1
+
 def get_location_list_position(locations_list, point):
     position = len(locations_list)
     for indx, val in enumerate(locations_list):
