@@ -8,8 +8,47 @@ import time
 from PIL import Image
 import matplotlib.pyplot as plt
 import math
+import imutils
 
 os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\original_bigs")
+
+def longest_line_angle(img_bw):
+    """
+    Expects image to have white background with black writing
+    Function rotates image to various angles,
+    iterates every vertical line of pixels in the images,
+    line lengths of dark pixels are recorded and the angle returning the longest vertical line is returned
+
+    Warning: slow performance on large images
+    """
+
+    angles = [0, -5,-10, -15, -20, -25, -30, -35, -40, 10, 15, 20]
+    vert_line_lengths = []
+    for indx, angle in enumerate(angles):
+        vert_line_lengths.append([angle, 0])
+        img_warped = imutils.rotate_bound(img_bw, angle)
+        h, w = img_warped.shape[:2]
+        for x in range(w):
+            line_length = 0
+            for y in range(h):
+                try:
+                    if img_warped[y][x] < 10 and (img_warped[y-1][x] <10 or img_warped[y-1][x-1] <10 or img_warped[y][x-1] <10):
+                        line_length += 1
+                    else:
+                        if line_length > vert_line_lengths[indx][1]:
+                            vert_line_lengths[indx][1] = line_length
+                        line_length = 0
+                except:
+                    None
+
+    best_angle_weight = 0
+    best_angle = 0
+    for indx, val in enumerate(vert_line_lengths):
+        if vert_line_lengths[indx][1] > best_angle_weight+1:
+            best_angle = vert_line_lengths[indx][0]
+            best_angle_weight = vert_line_lengths[indx][1]
+    print("Rotating image to: {}".format(best_angle))
+    return best_angle
 
 def show_images(images, cols = 2, titles = None):
     """Display a list of images in a single figure with matplotlib.
@@ -40,15 +79,8 @@ def show_images(images, cols = 2, titles = None):
     plt.show()
 
 def add_contours(img_source_bw, img_color, square_pixels):
-    # Find the contours
     image,contours,hierarchy = cv2.findContours(img_source_bw,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     img_cont_unfiltered = cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB)
-
-    # word should not make up less than or more than a percentage of image
-    # min_contour = square_pixels/5000000
-    # max_contour = square_pixels/5000
-    # print("   filtering contours smaller than: ", min_contour)
-    # print("   filtering contours larger than: ", max_contour)
 
     for cnt in contours:
         x,y,w,h = cv2.boundingRect(cnt)
@@ -80,7 +112,9 @@ def add_contours(img_source_bw, img_color, square_pixels):
                         contained_variety += 1
                 if contained_variety > 0:
                     cv2.rectangle(img_color,(x,y),(x+w,y+h),(0,255,0),5)
-                    # file_name = "C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\"+str(v_upper-v_lower+h/w)+"{}.jpg".format(contained_variety*(w/100))
+                    file_name = "C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\"+str(v_upper-v_lower+h/w)+"{}.jpg".format(contained_variety*(w/100))
+                    # TODO use this longest_line_angle in final solution
+                    # crop_img = imutils.rotate_bound(crop_img, longest_line_angle(crop_img))
                     # cv2.imwrite(file_name, crop_img)
                     # print("writing image {}".format(file_name))
                     # cv2.imshow('crop', crop_img)

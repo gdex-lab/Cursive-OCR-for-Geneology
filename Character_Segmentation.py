@@ -1,11 +1,6 @@
-# TODO (optional?) slim all crops down to the single pixel level. <- this may help for uniform join identification
-# TODO identify joints.
-# TODO make divisions based on separation between joint clusters.
-
 # Could use text area detection for average letter size
 # TODO experiment with accuracy from searching entire image for each letter
 # TODO for additional accuracy, ask user to select one of each common letter?
-
 
 
 # templates work, but must be the same size as the letters in the image
@@ -66,25 +61,6 @@ def show_images(images, cols = 1, titles = None):
     mng.window.state('zoomed')
     plt.show()
 
-def deskew(img):
-    m = cv2.moments(img)
-    if abs(m['mu02']) < 1e-2:
-        return img.copy()
-    skew = m['mu11']/m['mu02']
-    M = np.float32([[1, skew, -0.5*SZ*skew], [0, 1, 0]])
-    img = cv2.warpAffine(img,M,(SZ, SZ),flags=affine_flags)
-    return img
-
-def find_vert_parallels(img):
-    print(img)
-    height, width, channels = img.shape
-    print("Height: {}".format(height))
-    print("Width: {}".format(width))
-    for col in img:
-        row = 0
-        while row < height:
-            print(col[row])
-            row+=1
 
 def get_location_list_position(locations_list, point):
     position = len(locations_list)
@@ -108,14 +84,13 @@ for file in glob.glob("*.jpg"):
     print("reading img: ", file)
     img = cv2.imread(file)
     height, width, channels = img.shape
-    # find_vert_parallels(img)
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     img_count = 0
     sizes = [.25, .35, .45, .55, .65 ,.75]
     template_imgs = []
     a_votes = [0]
     a_locations = []
-    for template_img in glob.glob("..\\individual_letters\\a\\*.jpg"):
+    for template_img in glob.glob("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\hhlettersrotated\\*.jpg"):
         img_count += 1
         print(img_count)
         template = cv2.imread(template_img,0)
