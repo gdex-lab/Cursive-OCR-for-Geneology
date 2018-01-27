@@ -24,8 +24,8 @@ import cv2
 import os
 import glob
 import numpy as np
-
-os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\cleaner_selections")
+import imutils
+os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\clean_selections")
 
 def cv_imshow(img):
     cv2.imshow('output', img)
@@ -67,7 +67,7 @@ def get_location_list_position(locations_list, point):
     for indx, val in enumerate(locations_list):
         position = indx
         # If new coordinates are more than 5 pixels diffent in any position, than add position
-        print(point, val)
+        # print(point, val)
         if abs(point[0] - val[0]) > 4 or abs(point[1] - val[1]) > 4:
             position += 1
         else:
@@ -80,108 +80,62 @@ for file in glob.glob("*.jpg"):
         convolve over the image comparing templates (one of each size) with letters
         Establish votes for by each letter
 
+        original img remains 3 channels the entire time.
+
+
     '''
     print("reading img: ", file)
     img = cv2.imread(file)
-    height, width, channels = img.shape
-    gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    # print(img.shape)
+    img_height, img_width = img.shape[:2]
+    img_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    # print(img.shape)
     img_count = 0
-    sizes = [.25, .35, .45, .55, .65 ,.75]
+    sizes = [.35, .45, .55]
+    rotations = [0,355,350, 5, 10]
     template_imgs = []
     a_votes = [0]
     a_locations = []
     for template_img in glob.glob("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\hhlettersrotated\\*.jpg"):
         img_count += 1
-        print(img_count)
+        # print(img_count)
         template = cv2.imread(template_img,0)
-        template_height, template_width = template.shape
+        # template = cv2.adaptiveThreshold(template,255,cv2.cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,21,2)
+        # ret,template = cv2.threshold(template,127,255,cv2.THRESH_BINARY)
+        # template = cv2.cvtColor(template,cv2.COLOR_BGR2GRAY)
+        # img_low_thresh3 = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,2)
+        template_height, template_width = template.shape[:2]
+        # print("Template shape: ", template.shape)
+        # print("Img gray shape: ", img_gray.shape)
+        for angle in rotations:
+            template_rotated = imutils.rotate(template, angle=angle)
+            for resize in sizes:
+                # print("new width: ",int((resize*img_height)/(template_height/template_width)))
+                # print("New height: ", int(resize*img_height))
+                template_rotated = cv2.resize(template_rotated, (int((resize*img_height)/(template_height/template_width)), int(resize*img_height)), interpolation = cv2.INTER_CUBIC)
+                resized_template_w, resized_template_h = template_rotated.shape[:2]
+                res = cv2.matchTemplate(img_gray,template_rotated,cv2.TM_CCOEFF_NORMED)
+                # print(img.shape)
+                threshold = 0.75
+                loc = np.where( res >= threshold)
+                for pt in zip(*loc[::-1]):
+                    list_location_postition = get_location_list_position(a_locations, pt)
+                    # print(pt)
+                    # print(l ist_location_postition)
+                    if len(a_votes) <= list_location_postition:
+                        a_votes.append(1)
+                    else:
+                        a_votes[list_location_postition] +=1
+                    if len(a_locations) <= list_location_postition:
+                        a_locations.append(pt)
+                    cv2.rectangle(img, pt, (pt[0] + resized_template_w, pt[1] + resized_template_h), (0,0,255-10*img_count), 2)
+                # print(img.shape)
+            # if img_count %10 == 1:
+            # template_imgs.append(template)
+                # cv2.imshow('img', template_rotated)
+                # cv2.waitKey(0)
+                # cv2.destroyAllWindows()
 
-        for resize in sizes:
-            # Keep in mind that the resized images are greyscaled, which will require additional felexibility in threshold
-            template = cv2.resize(template, (int((resize*height)/(template_height/template_width)), int(resize*height)))
-
-            w, h = template.shape[::-1]
-            res = cv2.matchTemplate(gray,template,cv2.TM_CCOEFF_NORMED)
-            threshold = 0.75
-            loc = np.where( res >= threshold)
-            for pt in zip(*loc[::-1]):
-                list_location_postition = get_location_list_position(a_locations, pt)
-                print(pt)
-                print(list_location_postition)
-                if len(a_votes) <= list_location_postition:
-                    a_votes.append(1)
-                else:
-                    a_votes[list_location_postition] +=1
-                if len(a_locations) <= list_location_postition:
-                    a_locations.append(pt)
-                cv2.rectangle(img, pt, (pt[0] + w, pt[1] + h), (0,0,255-10*img_count), 2)
-    # img = cv2.resize(img, fx=2, fy=2)
     cv2.putText(img, str(a_votes), (10, 10), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 255, 0), 2, cv2.LINE_AA)
     template_imgs.append(img)
-    show_images(template_imgs)
-    # break
-    # edges = cv2.Canny(gray,50,150,apertureSize = 3)
-    # minLineLength = 5
-    # maxLineGap = 5
-    # lines = cv2.HoughLinesP(edges,1,np.pi/90,100,minLineLength,maxLineGap)
-    # print(lines[0])
-    # for x1,y1,x2,y2 in lines[0]:
-    #     cv2.line(img,(x1,y1),(x2,y2),(0,255,0),2)
-    #
-    # # cv2.imwrite('houghlines5.jpg',img)
-    # cv_imshow(img)
-    # difference between input image and Opening of the image
-    # kernel = np.ones((3,3),np.uint8)
-    # # blackhat = cv2.morphologyEx(img, cv2.MORPH_BLACKHAT, kernel)
-    # #tophat
-    # highlights = cv2.morphologyEx(img, cv2.MORPH_TOPHAT, kernel)
-    # gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    # ret, thresh = cv2.threshold(gray,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
-
-
-    # print("thresh")
-    # cv_imshow(thresh)
-    #
-    # kernel = np.ones((6,1),np.uint8)
-    # erosion = cv2.erode(thresh,kernel,iterations = 1)
-    # print("erosion")
-    # cv_imshow(erosion)
-
-    # noise removal
-    # kernel = np.ones((3,3),np.uint8)
-    # opening = cv2.morphologyEx(thresh,cv2.MORPH_OPEN,kernel, iterations = 2)
-    # print("opening")
-    # cv_imshow(opening)
-    # # sure background area
-    # sure_bg = cv2.dilate(opening,kernel,iterations=3)
-    # print("sure_bg")
-    # cv_imshow(sure_bg)
-    #
-    # # Finding sure foreground area
-    # dist_transform = cv2.distanceTransform(opening,cv2.DIST_L2,5)
-    # ret, sure_fg = cv2.threshold(dist_transform,0.7*dist_transform.max(),255,0)
-    # print("sure_fg")
-    # cv_imshow(sure_fg)
-    #
-    # # Finding unknown region
-    # sure_fg = np.uint8(sure_fg)
-    # unknown = cv2.subtract(sure_bg,sure_fg)
-    # print("unknown")
-    # cv_imshow(unknown)
-    #
-    # # Marker labelling
-    # ret, markers = cv2.connectedComponents(sure_fg)
-    #
-    # # Add one to all labels so that sure background is not 0, but 1
-    # markers = markers+1
-    #
-    # # Now, mark the region of unknown with zero
-    # markers[unknown==255] = 0
-    #
-    # markers = cv2.watershed(img,markers)
-    # img[markers == -1] = [255,0,0]
-    # print("img")
-    # cv_imshow(img)
-    #
-    # print("markers")
-    # cv_imshow(markers)
+    show_images(template_imgs, 3)
