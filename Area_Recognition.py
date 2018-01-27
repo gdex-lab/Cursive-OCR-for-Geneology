@@ -9,7 +9,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import math
 
-os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc")
+os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\original_bigs")
 
 def show_images(images, cols = 2, titles = None):
     """Display a list of images in a single figure with matplotlib.
@@ -80,9 +80,12 @@ def add_contours(img_source_bw, img_color, square_pixels):
                         contained_variety += 1
                 if contained_variety > 0:
                     cv2.rectangle(img_color,(x,y),(x+w,y+h),(0,255,0),5)
-                    cv2.imshow('crop', crop_img)
-                    cv2.waitKey(0)
-                    cv2.destroyAllWindows()
+                    # file_name = "C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\"+str(v_upper-v_lower+h/w)+"{}.jpg".format(contained_variety*(w/100))
+                    # cv2.imwrite(file_name, crop_img)
+                    # print("writing image {}".format(file_name))
+                    # cv2.imshow('crop', crop_img)
+                    # cv2.waitKey(0)
+                    # cv2.destroyAllWindows()
     return img_color, img_cont_unfiltered
 
 for file in glob.glob("*.jpg"):
