@@ -1,3 +1,12 @@
+"""RATHER THAN...
+segmenting out so you can convolve, just jump to the convolutional model now!
+You can add the rotated and resized individual letters to your data set for variation ( do this step after building the dataset ).
+May need some high-level segmentation, like record type for increased accuracy, but just get as accurate as you can at a generic level first.
+Save the rawest of the raw crops (with ligatures reaching edge) for model training.
+"""
+
+
+
 # Could use text area detection for average letter size
 # TODO experiment with accuracy from searching entire image for each letter
 # TODO for additional accuracy, ask user to select one of each common letter?
@@ -25,8 +34,8 @@ import os
 import glob
 import numpy as np
 import imutils
-os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\clean_selections")
-
+# os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\clean_selections")
+os.chdir("C:\\Users\\grant\\IS\\IS552\\test")
 def cv_imshow(img):
     cv2.imshow('output', img)
     cv2.waitKey(0)
@@ -96,7 +105,7 @@ for file in glob.glob("*.jpg"):
     template_imgs = []
     a_votes = [0]
     a_locations = []
-    for template_img in glob.glob("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\hhlettersrotated\\*.jpg"):
+    for template_img in glob.glob("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\hhlettersrotated\\nadaNADA*.jpg"):
         img_count += 1
         # print(img_count)
         template = cv2.imread(template_img,0)
