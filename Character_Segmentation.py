@@ -35,7 +35,7 @@ import glob
 import numpy as np
 import imutils
 # os.chdir("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\clean_selections")
-os.chdir("C:\\Users\\grant\\IS\\IS552\\test")
+os.chdir("C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord\\RotationsApplied")
 def cv_imshow(img):
     cv2.imshow('output', img)
     cv2.waitKey(0)
@@ -76,7 +76,6 @@ def get_location_list_position(locations_list, point):
     for indx, val in enumerate(locations_list):
         position = indx
         # If new coordinates are more than 5 pixels diffent in any position, than add position
-        # print(point, val)
         if abs(point[0] - val[0]) > 4 or abs(point[1] - val[1]) > 4:
             position += 1
         else:
@@ -95,19 +94,20 @@ for file in glob.glob("*.jpg"):
     '''
     print("reading img: ", file)
     img = cv2.imread(file)
-    # print(img.shape)
+
     img_height, img_width = img.shape[:2]
-    img_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    # print(img.shape)
+    # img_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
     img_count = 0
-    sizes = [.35, .45, .55]
-    rotations = [0,355,350, 5, 10]
+    sizes = [.98, 1, 1.02]
+    rotations = [0,358, 2]
     template_imgs = []
     a_votes = [0]
     a_locations = []
-    for template_img in glob.glob("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\hhlettersrotated\\nadaNADA*.jpg"):
+    # for template_img in glob.glob("C:\\Users\\grant\\IS\\Past\\IS693R\\image_project\\images\\misc\\rotated_crops\\hhlettersrotated\\nadaNADA*.jpg"):
+    for template_img in glob.glob("C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord\\templates\\*.jpg"):
         img_count += 1
-        # print(img_count)
+        print(img_count)
         template = cv2.imread(template_img,0)
         # template = cv2.adaptiveThreshold(template,255,cv2.cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,21,2)
         # ret,template = cv2.threshold(template,127,255,cv2.THRESH_BINARY)
@@ -121,11 +121,11 @@ for file in glob.glob("*.jpg"):
             for resize in sizes:
                 # print("new width: ",int((resize*img_height)/(template_height/template_width)))
                 # print("New height: ", int(resize*img_height))
-                template_rotated = cv2.resize(template_rotated, (int((resize*img_height)/(template_height/template_width)), int(resize*img_height)), interpolation = cv2.INTER_CUBIC)
+                template_rotated = cv2.resize(template_rotated, (int(resize*template_width), int(resize*template_height)), interpolation = cv2.INTER_CUBIC)
                 resized_template_w, resized_template_h = template_rotated.shape[:2]
-                res = cv2.matchTemplate(img_gray,template_rotated,cv2.TM_CCOEFF_NORMED)
+                res = cv2.matchTemplate(img,template_rotated,cv2.TM_CCOEFF_NORMED)
                 # print(img.shape)
-                threshold = 0.75
+                threshold = 0.8
                 loc = np.where( res >= threshold)
                 for pt in zip(*loc[::-1]):
                     list_location_postition = get_location_list_position(a_locations, pt)
@@ -147,4 +147,4 @@ for file in glob.glob("*.jpg"):
 
     cv2.putText(img, str(a_votes), (10, 10), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 255, 0), 2, cv2.LINE_AA)
     template_imgs.append(img)
-    show_images(template_imgs, 3)
+    show_images(template_imgs, 1)

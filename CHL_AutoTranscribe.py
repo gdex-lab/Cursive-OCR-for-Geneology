@@ -132,8 +132,8 @@ for file in glob.glob("*.jpg"):
     print("reading img: ", file)
     img = cv2.imread(file)
 
-    print("creating duplicate images for unrefined output.")
-    unrefined_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    print("creating duplicate images for immutable output.")
+    original_img = img.copy()
     height, width, channels = img.shape
     square_pixels = height * width
 
@@ -159,6 +159,7 @@ for file in glob.glob("*.jpg"):
 
     print("calculating block size for gaussian window:")
     # The smaller this block size, the more area-sensitive the window will be
+    #.75 isn't capturing all we need (but that was before -20 thresh)
     window_block_neighbors = int(.75*math.sqrt(square_pixels))
 
     while window_block_neighbors %2 != 1:
@@ -166,16 +167,21 @@ for file in glob.glob("*.jpg"):
 
 
     print("Adding adaptive threshold.")
-    img_low_thresh = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,2)
+    # The last param is a manual input which subtracts from the threshold
+    img_low_thresh = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,window_block_neighbors,-10)
 
     print("Finding contours.")
     img_low_thresh,low_thresh_contours,low_thresh_hierarchy = cv2.findContours(img_low_thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
     print("Filtering and adding contours.")
-    img_low, img_cont_unfiltered, angle = add_contours(img_low_thresh, unrefined_img, square_pixels)
+    img_low, img_cont_unfiltered, angle = add_contours(img_low_thresh, img, square_pixels)
 
-    print("Rotating image to match writing angle")
-    img_cont_unfiltered = imutils.rotate_bound(img_cont_unfiltered, angle)
+    # print("Rotating image to match writing angle")
+    # For creation of data set
+    # rotated_img = imutils.rotate_bound(original_img, angle)
+    # file_name = "C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord\\RotationsApplied\\{}".format(file)
+    # print("Writing rotated image to file: {}".format(file_name))
+    # cv2.imwrite(file_name, rotated_img)
 
     print("Displaying images.")
     show_images([img, img_low_thresh, img_cont_unfiltered, img_low])
