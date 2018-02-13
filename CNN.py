@@ -14,7 +14,7 @@ from tensorflow.python.framework import random_seed
 
 tf.logging.set_verbosity(tf.logging.INFO)
 
-CLASS_N = 3
+CLASS_N = 9
 SZ_W = 40
 SZ_H = 60
 
@@ -169,7 +169,8 @@ def read_data_sets(train_dir,
     os.chdir("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset")
     windows = []
     labels = []
-    label_names = ["a", "other", "h"]
+    label_names = ["a", "e", "i",  "o", "u", "h", "n", "t", "other"]
+    total_imgs = 0
     for file in glob.glob("*.jpg"):
         # if label_names in str(file):
         img = cv2.imread(file)
@@ -203,11 +204,24 @@ def read_data_sets(train_dir,
         int_label =  0
         if "a" in str_label:
             int_label =  0
-        elif "h" in str_label:
+        elif "e" in str_label:
             int_label =  1
-        elif "other" in str_label:
+        elif "i" in str_label:
             int_label =  2
+        elif "o" in str_label:
+            int_label =  3
+        elif "u" in str_label:
+            int_label =  4
+        elif "h" in str_label:
+            int_label =  5
+        elif "n" in str_label:
+            int_label =  6
+        elif "t" in str_label:
+            int_label =  7
+        elif "noise" in str_label:
+            int_label =  8
         labels.append(int_label)
+        total_imgs += 1
 
 
     windows = np.array(windows)
@@ -223,7 +237,7 @@ def read_data_sets(train_dir,
     # print(windows, labels)
 
     # total sie = 181 with 7 classes currently
-    total_imgs = 311
+    # total_imgs = 547
     val_size = int(.2 * total_imgs)
 
     validation_images = windows[:val_size]
@@ -244,7 +258,7 @@ def read_data_sets(train_dir,
     validation = DataSet(validation_images, validation_labels, **options)
     test = DataSet(test_images, test_labels, **options)
 
-    return base.Datasets(train=train, validation=validation, test=test)
+    return base.Datasets(train=train, validation=validation, test=test), total_imgs
 
 
 def images_to_tensors(train_dir="C:\\Users\\grant\\Repos\\Cursive-OCR-for_Geneology"):
@@ -361,7 +375,7 @@ class DataSet(object):
 
 def main(unused_argv):
   # Load training and eval data
-  dataset = images_to_tensors()
+  dataset, total_imgs = images_to_tensors()
   print("print dataset: ", dataset)
   train_data = dataset.train.images  # Returns np.array
   train_labels = np.asarray(dataset.train.labels, dtype=np.int32)
@@ -376,7 +390,7 @@ def main(unused_argv):
 
   # Create the Estimator
   cursive_classifier = tf.estimator.Estimator(
-      model_fn=cnn_model_fn, model_dir="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\adjust1")
+      model_fn=cnn_model_fn, model_dir="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\adjust_{}_rev1".format(total_imgs))
 
   # Set up logging for predictions
   # Log the values in the "Softmax" tensor with label "probabilities"
