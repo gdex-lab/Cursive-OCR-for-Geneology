@@ -11,15 +11,11 @@ import tensorflow as tf
 from tensorflow.contrib.learn.python.learn.datasets import base
 from tensorflow.python.framework import dtypes
 from tensorflow.python.framework import random_seed
-
+import sys
+sys.path.append('/usr/local/lib/python2.7/site-packages')
 tf.logging.set_verbosity(tf.logging.INFO)
 
-if os.name == 'nt':
-    env = 0
-else:
-    env = 1
-
-CLASS_N = 9
+CLASS_N = 3
 SZ_W = 40
 SZ_H = 60
 
@@ -171,15 +167,10 @@ def read_data_sets(train_dir,
 
     print("loading windows...")
     # This is where the auto_transcribe functions will input sliced windows
-
-    if env == 0:
-        os.chdir("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset")
-    else:
-        os.chdir("/home/ubuntu/Cursive-OCR-for-Geneology/dataset")
+    os.chdir("/home/ubuntu/Cursive-OCR-for-Geneology/dataset")
     windows = []
     labels = []
-    label_names = ["a", "e", "i",  "o", "u", "h", "n", "t", "other"]
-    total_imgs = 0
+    label_names = ["a", "other", "h"]
     for file in glob.glob("*.jpg"):
         # if label_names in str(file):
         img = cv2.imread(file)
@@ -213,24 +204,11 @@ def read_data_sets(train_dir,
         int_label =  0
         if "a" in str_label:
             int_label =  0
-        elif "e" in str_label:
-            int_label =  1
-        elif "i" in str_label:
-            int_label =  2
-        elif "o" in str_label:
-            int_label =  3
-        elif "u" in str_label:
-            int_label =  4
         elif "h" in str_label:
-            int_label =  5
-        elif "n" in str_label:
-            int_label =  6
-        elif "t" in str_label:
-            int_label =  7
-        elif "noise" in str_label:
-            int_label =  8
+            int_label =  1
+        elif "other" in str_label:
+            int_label =  2
         labels.append(int_label)
-        total_imgs += 1
 
 
     windows = np.array(windows)
@@ -246,7 +224,7 @@ def read_data_sets(train_dir,
     # print(windows, labels)
 
     # total sie = 181 with 7 classes currently
-    # total_imgs = 547
+    total_imgs = 311
     val_size = int(.2 * total_imgs)
 
     validation_images = windows[:val_size]
@@ -267,12 +245,10 @@ def read_data_sets(train_dir,
     validation = DataSet(validation_images, validation_labels, **options)
     test = DataSet(test_images, test_labels, **options)
 
-    return base.Datasets(train=train, validation=validation, test=test), total_imgs
+    return base.Datasets(train=train, validation=validation, test=test)
 
 
-def images_to_tensors(train_dir="C:\\Users\\grant\\Repos\\Cursive-OCR-for_Geneology"):
-  if env == 1:
-    train_dir="/home/ubuntu/Cursive-OCR-for-Geneology/"
+def images_to_tensors(train_dir="/home/ubuntu/Cursive-OCR-for_Geneology"):
   return read_data_sets(train_dir)
 
 class DataSet(object):
@@ -386,7 +362,7 @@ class DataSet(object):
 
 def main(unused_argv):
   # Load training and eval data
-  dataset, total_imgs = images_to_tensors()
+  dataset = images_to_tensors()
   print("print dataset: ", dataset)
   train_data = dataset.train.images  # Returns np.array
   train_labels = np.asarray(dataset.train.labels, dtype=np.int32)
@@ -400,13 +376,8 @@ def main(unused_argv):
   # eval_labels = ""
 
   # Create the Estimator
-  if env == 1:
-    model_dir="/home/ubuntu/Cursive-OCR-for-Geneology/adjust_{}_rev1".format(total_imgs)
-  else:
-    model_dir="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\adjust_{}_rev1".format(total_imgs)
-
   cursive_classifier = tf.estimator.Estimator(
-      model_fn=cnn_model_fn, model_dir=model_dir)
+      model_fn=cnn_model_fn, model_dir="/home/ubuntu/Cursive-OCR-for-Geneology/adjust2")
 
   # Set up logging for predictions
   # Log the values in the "Softmax" tensor with label "probabilities"
