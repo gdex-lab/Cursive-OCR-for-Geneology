@@ -1,0 +1,1 @@
+Currently, accuracy levels are dipping (quick pass only reached 26% accuracy with 9 classes). 
