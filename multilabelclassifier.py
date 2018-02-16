@@ -148,6 +148,8 @@ SIZE = (60, 40)
 # dataset, y, label_dict, ids =  prepare_data(data, img_dict, size=SIZE)
 dataset, y =  prepare_data(path)
 
+print(dataset[0].shape)
+
 # ------------------------------------
 
 import keras
