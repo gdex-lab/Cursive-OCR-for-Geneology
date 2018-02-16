@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
-os.chdir("C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord\\RotationsApplied")
+os.chdir("C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord")
 
 def show_images(images, cols = 2, titles = None):
     assert((titles is None)or (len(images) == len(titles)))
@@ -33,7 +33,7 @@ def show_images(images, cols = 2, titles = None):
 
 def variety_check(img, w):
     """
-    Scan the middle 20 percent of the image for variety of tone
+    Scan the middle strip of the image for variety of tone
     Converts to black and white.
     Then verifies minimum of 2 changes to color tone
     Intended for small crops of images
@@ -43,15 +43,24 @@ def variety_check(img, w):
         block_size -= 1
 
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    # (thresh, img_bw) = cv2.threshold(img_gray,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+
     # using 10 here to eliminate rows with faint lines
     img_bw = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,block_size,10)
+    cv2.imshow('img' ,img_bw)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
     (horizontal, vertical) = img_bw.shape
-    h_lower = int(.4 * horizontal)
+    h_lower = int(.45 * horizontal)
     h_upper = int(.6 * horizontal)
-    v_lower = int(.4 * vertical)
-    v_upper = int(.6 * vertical)
+    v_lower = int(0 * vertical)
+    v_upper = int(1 * vertical)
 
+    print(h_lower, h_upper, v_lower, v_upper)
+    check_area = img_bw[h_lower:h_upper,v_lower:v_upper]
+
+    cv2.imshow('img' ,check_area)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
     # sum total changes accross the bw array. If none of middle x percentof  arrays contain more than one color change, discard entire boundary
     contained_variety = 0
     for horiz in img_bw[h_lower:h_upper]:
@@ -82,16 +91,8 @@ def tone_check(crop_rgb_img, h, w, base_tone=100):
             for rgb_val in pixel:
                 crop_val += rgb_val
     if crop_val > (h*w*3*base_tone):
-        # print("VALID TONE")
-        # cv2.imshow('var', img_bw)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
         return True
     else:
-        # print("INVALID TONE")
-        # cv2.imshow('var', crop_rgb_img)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
         return False
 
 def window_slicer(img, w, h, increment_percentage, file_name):
@@ -106,21 +107,27 @@ def window_slicer(img, w, h, increment_percentage, file_name):
     w_increment = increment_percentage * w
     h_increment = increment_percentage * h
     img_count = 0
-    for y_index, col_val in enumerate(img):
-        if y_index % (h_increment) == 0:
-            # if len(crops) > 40:
-                # show_images(crops, 5)
-                # crops = []
-            for x_index, row_val in enumerate(col_val):
-                if x_index % (w_increment) == 0:
-                    crop = img[y_index:y_index+h, x_index:x_index+w]
-                    # print("Created crop")
-                    if tone_check(crop, h, w) and variety_check(crop, w):
-                        out = "C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord\\RotationsApplied\\windows\\"+file_name+str(img_count)+".jpg"
-                        img_count += 1
-                        cv2.imwrite(out, crop)
+
+    width_slider = 0
+    height_slider = 0
+    max_height, max_width = img.shape[:2]
+
+    while height_slider < max_height:
+        # crop = img[width_slider:width_slider+h, height_slider:height_slider+w]
+        while width_slider < max_width:
+            crop = img[height_slider:height_slider+h, width_slider:width_slider+w]
+            # print(height_slider, h, width_slider, w)
+            cv2.imshow('img', crop)
+            cv2.waitKey(0)
+            cv2.destroyAllWindows()
+            if tone_check(crop, h, w) and variety_check(crop, w):
+                print("TRUE")
+            width_slider += int(w_increment)
+        width_slider = 0
+        height_slider += int(h_increment)
+
 
 for file in glob.glob("*.jpg"):
     print("reading img: ", file)
     img = cv2.imread(file)
-    window_slicer(img, 40, 60, .25, str(file))
+    window_slicer(img, 180, 60, .35, str(file))

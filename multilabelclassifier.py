@@ -25,7 +25,7 @@ label_dict = {"label2idx": {},
             "idx2label": []}
 
 classes = []
-non_letters = ["space", "noise", "partial", "$", "&", "open_paren", "close_paren"]
+non_letters = [" ", "noise", "partial", "$", "&", "open_paren", "close_paren"]
 for cL in list(string.ascii_lowercase):
     classes.append(cL)
 for cU in list(string.ascii_uppercase):
@@ -45,11 +45,11 @@ def prepare_data(imgs_dir):
     clean_titles = []
     for file in glob.glob("*.jpg"):
         imgs.append(scipy.misc.imread(file).astype(np.float32))
-        clean_titles.append(re.sub(r"\([\d+]*\)", "", str(file.replace(".jpg", "").replace(" ", "")).rstrip()))
+        clean_titles.append(re.sub(r"\([\d+]*\)", "", str(file.replace(".jpg", ""))))
 
     # Add all file labels to dict, with indexes
     for title in clean_titles:
-        for l in title.split('|'):
+        for l in list(title):
             if l in label_dict["idx2word"]:
                 pass
             else:
@@ -125,7 +125,7 @@ n_test = 30
 n = len(dataset) -(1+n_test)
 
 print("Beginning fit...")
-model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=4, epochs=300,
+model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=4, epochs=3,
           verbose=1, validation_split=0.1)
 
 X_test = dataset[n:n + n_test]
