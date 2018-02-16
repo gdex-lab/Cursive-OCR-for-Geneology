@@ -21,76 +21,6 @@ if env == 1:
 else:
     path="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset"
 
-# path = 'posters/'
-# data = pd.read_csv("MovieGenre.csv", encoding="ISO-8859-1")
-# data.head()
-
-
-# image_glob = glob.glob(path + "/" + "*.jpg")
-# img_dict = {}
-
-
-# def get_id(filename):
-#     index_s = filename.rfind("/") + 1
-#     index_f = filename.rfind(".jpg")
-#     return filename[index_s:index_f]
-
-# for file in glob.glob("*.jpg"):
-#     img_dict[file] = scipy.misc.imread(file)
-#
-
-# show_img("e (10).jpg")
-
-# def preprocess(img, size=(150, 101)):
-# def preprocess(img):
-#     # img = scipy.misc.imresize(img, size)
-#     img = img.astype(np.float32)
-#     # img = (img / 127.5) - 1.
-#     return img
-
-# def prepare_data(data, img_dict, size=(150, 101)):
-# def prepare_data(data, img_dict, size=(60, 40)):
-#     print("Generation dataset...")
-#     dataset = []
-#     y = []
-#     ids = []
-    # label_dict = {"word2idx": {}, "idx2word": []}
-#     idx = 0
-#
-#     # here, I think, classes are specified
-#     # genre_per_movie = data["Genre"].apply(lambda x: str(x).split("|"))
-#     letters_per_window = data["letters"].apply(lambda x: str(x).split("|"))
-#
-#     for l in [g for d in letters_per_window for g in d]:
-#         if l in label_dict["idx2word"]:
-#             pass
-#         else:
-#             label_dict["idx2word"].append(l)
-#             label_dict["word2idx"][l] = idx
-#             idx += 1
-#     n_classes = len(label_dict["idx2word"])
-#     print("identified {} classes".format(n_classes))
-#     n_samples = len(img_dict)
-#     print("got {} samples".format(n_samples))
-#     for k in img_dict:
-#         try:
-#             g = data[data["imdbId"] == int(k)]["Genre"].values[0].split("|")
-#             img = preprocess(img_dict[k], size)
-#             if img.shape != (60, 40, 3):
-#                 # if img.shape != (150, 101, 3):
-#                 continue
-#             # l = sum of classes and labels)
-#             l = np.sum([np.eye(n_classes, dtype="uint8")[label_dict["word2idx"][s]]
-#                                                         for s in g], axis=0)
-#             y.append(l)
-#             dataset.append(img)
-#             ids.append(k)
-#         except:
-#             pass
-#     print("DONE")
-#     return dataset, y, label_dict, ids
-
-# my way
 label_dict = {"label2idx": {},
             "idx2label": []}
 
@@ -147,6 +77,7 @@ dataset, y =  prepare_data(path)
 
 
 print("shuffling dataset")
+# to unorder samples
 random.Random(4).shuffle(y)
 random.Random(4).shuffle(dataset)
 
@@ -194,11 +125,8 @@ n_test = 30
 n = len(dataset) -(1+n_test)
 
 print("Beginning fit...")
-model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=16, epochs=2, #reduced epchos for testing
+model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=4, epochs=300,
           verbose=1, validation_split=0.1)
-
-
-
 
 X_test = dataset[n:n + n_test]
 y_test = y[n:n + n_test]
@@ -210,49 +138,57 @@ print("model.fit DONE. Moving on to pred...")
 pred = model.predict(np.array(X_test))
 print("predictions finished")
 
+for i in range (0, len(X_test)):
+    print("---------------------------------------\nActual: {}".format(label_dict["idx2word"][np.where(y[n+i]==1)[0][0]]))
+    print("Prediction: {}".format(pred[i]))
+    print("Details...")
+    for i2 in range (0, len(label_dict["idx2word"])):
+        print("\"{}\" probability:{}".format(label_dict["idx2word"][i2], pred[i][i2]))
+        print("--------------------------------------")
+#
+# def show_images(images, cols = 1, titles = None):
+#     """Display a list of images in a single figure with matplotlib.
+#
+#     Parameters
+#     ---------
+#     images: List of np.arrays compatible with plt.imshow.
+#
+#     cols (Default = 1): Number of columns in figure (number of rows is
+#                         set to np.ceil(n_images/float(cols))).
+#
+#     titles: List of titles corresponding to each image. Must have
+#             the same length as titles.
+#     """
+#     assert((titles is None)or (len(images) == len(titles)))
+#     n_images = len(images)
+#     if titles is None: titles = ['Image (%d)' % i for i in range(1,n_images + 1)]
+#     fig = plt.figure()
+#     for n, (image, title) in enumerate(zip(images, titles)):
+#         a = fig.add_subplot(cols, np.ceil(n_images/float(cols)), n + 1)
+#         if image.ndim == 2:
+#             plt.gray()
+#         plt.imshow(image)
+#         a.set_title(title)
+#     fig.set_size_inches(np.array(fig.get_size_inches()) * n_images)
+#     mng = plt.get_current_fig_manager()
+#     # mng.window.state('zoomed')
+#     plt.show()
 
-def show_images(images, cols = 1, titles = None):
-    """Display a list of images in a single figure with matplotlib.
-
-    Parameters
-    ---------
-    images: List of np.arrays compatible with plt.imshow.
-
-    cols (Default = 1): Number of columns in figure (number of rows is
-                        set to np.ceil(n_images/float(cols))).
-
-    titles: List of titles corresponding to each image. Must have
-            the same length as titles.
-    """
-    assert((titles is None)or (len(images) == len(titles)))
-    n_images = len(images)
-    if titles is None: titles = ['Image (%d)' % i for i in range(1,n_images + 1)]
-    fig = plt.figure()
-    for n, (image, title) in enumerate(zip(images, titles)):
-        a = fig.add_subplot(cols, np.ceil(n_images/float(cols)), n + 1)
-        if image.ndim == 2:
-            plt.gray()
-        plt.imshow(image)
-        a.set_title(title)
-    fig.set_size_inches(np.array(fig.get_size_inches()) * n_images)
-    mng = plt.get_current_fig_manager()
-    # mng.window.state('zoomed')
-    plt.show()
 
 
-
-def show_example(idx):
-    N_true = int(np.sum(y_test[idx]))
-    print("Actual: {}".format(label_dict["idx2word"][np.where(y[n+idx]==1)[0][0]]))
-    print("Prediction: {}".format("|".join(["{} ({:.3})".format(label_dict["idx2word"][s],pred[idx][s])
-                                for s in pred[idx].argsort()[-N_true:][::-1]])))
-    show_images([X_test[idx]])
+# def show_example(idx):
+#     N_true = int(np.sum(y_test[idx]))
+#     print("Actual: {}".format(label_dict["idx2word"][np.where(y[n+idx]==1)[0][0]]))
+#     print("Prediction: {}".format("|".join(["{} ({:.3})".format(label_dict["idx2word"][s],pred[idx][s])
+#                                 for s in pred[idx].argsort()[-N_true:][::-1]])))
+#     show_images([X_test[idx]])
 # plt.imshow(dataset[0])
-show_example(0)
-show_example(1)
-show_example(2)
-show_example(3)
-show_example(4)
-show_example(5)
-show_example(6)
-show_example(7)
+
+# show_example(0)
+# show_example(1)
+# show_example(2)
+# show_example(3)
+# show_example(4)
+# show_example(5)
+# show_example(6)
+# show_example(7)
