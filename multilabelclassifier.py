@@ -11,6 +11,9 @@ import os
 import re
 import random
 
+SIZE = (60, 70)
+
+
 if os.name == 'nt':
     env = 0
 else:
@@ -24,16 +27,17 @@ else:
 label_dict = {"label2idx": {},
             "idx2label": []}
 
-classes = []
-non_letters = [" ", "noise", "partial", "$", "&", "open_paren", "close_paren"]
-for cL in list(string.ascii_lowercase):
-    classes.append(cL)
-for cU in list(string.ascii_uppercase):
-    classes.append(cU)
-for number in range(0, 10):
-    classes.append(number)
-for other in non_letters:
-    classes.append(other)
+# classes = []
+# # _ = space ! = noise, ^ = partial, - = edge
+# non_letters = ["_", "!", "^", "$", "&", "(", ")", "-"]
+# for cL in list(string.ascii_lowercase):
+#     classes.append(cL)
+# for cU in list(string.ascii_uppercase):
+#     classes.append(cU)
+# for number in range(0, 10):
+#     classes.append(number)
+# for other in non_letters:
+#     classes.append(other)
 
 label_dict = {"word2idx": {}, "idx2word": []}
 def prepare_data(imgs_dir):
@@ -44,12 +48,18 @@ def prepare_data(imgs_dir):
     imgs = []
     clean_titles = []
     for file in glob.glob("*.jpg"):
-        imgs.append(scipy.misc.imread(file).astype(np.float32))
-        clean_titles.append(re.sub(r"\([\d+]*\)", "", str(file.replace(".jpg", ""))))
+        img = scipy.misc.imread(file).astype(np.float32)
+
+        if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1]:
+            imgs.append(img)
+            clean_titles.append(re.sub(r"\([\d+]*\)", "", str(file.replace(".jpg", "").replace(" ", ""))))
+        else:
+            print("img size mismatch: {}".format(img.shape))
+
 
     # Add all file labels to dict, with indexes
     for title in clean_titles:
-        for l in list(title):
+        for l in list(title): #.split('|'):
             if l in label_dict["idx2word"]:
                 pass
             else:
@@ -61,7 +71,7 @@ def prepare_data(imgs_dir):
 
     # add multi-hot labels to overall labels?
     for title in clean_titles:
-        letters = title.split("|")
+        letters = list(title)
         n_classes = len(label_dict["idx2word"])
         l = np.sum([np.eye(n_classes, dtype="uint8")[label_dict["word2idx"][s]]
                                                             for s in letters], axis=0)
@@ -70,7 +80,6 @@ def prepare_data(imgs_dir):
 
     return imgs, y
 
-SIZE = (60, 40)
 # dataset = imgs, label_dict = word2indx:, indx2word:, ids = img titles, y = list of sumed classes and label indexes
 # dataset, y, label_dict, ids =  prepare_data(data, img_dict, size=SIZE)
 dataset, y =  prepare_data(path)
@@ -98,22 +107,32 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 
 model = Sequential()
-model.add(Conv2D(32, kernel_size=(3, 3), activation='relu',
+print("1.1")
+model.add(Conv2D(32, kernel_size=(5, 5), activation='relu',
                  input_shape=(SIZE[0], SIZE[1], 3)))
-
-model.add(Conv2D(32, (3, 3), activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
+print("1.2")
+model.add(Conv2D(32, (5, 5), activation='relu'))
+print("1.3")
+model.add(MaxPooling2D(pool_size=(4, 4)))
+print("1.4")
 model.add(Dropout(0.25))
-
-model.add(Conv2D(64, kernel_size=(3, 3), activation='relu'))
-model.add(Conv2D(64, (3, 3), activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
+print("1.5")
+model.add(Conv2D(64, kernel_size=(5, 5), activation='relu'))
+print("1.6")
+model.add(Conv2D(64, (5, 5), activation='relu'))
+print("1.7")
+model.add(MaxPooling2D(pool_size=(4, 4)))
+print("1.8")
 model.add(Dropout(0.25))
-
+print("1.9")
 model.add(Flatten())
+print("1.10")
 model.add(Dense(128, activation='relu'))
+print("1.11")
 model.add(Dropout(0.5))
-model.add(Dense(9, activation='sigmoid')) # was 29 instead of 9
+print("1.12")
+model.add(Dense(54, activation='sigmoid'))
+
 
 model.compile(loss='binary_crossentropy',
               optimizer=keras.optimizers.Adam(),
@@ -121,13 +140,13 @@ model.compile(loss='binary_crossentropy',
 
 # current 547 train and vaildate on 500, test examples for predictions on 47
 # total imgs?
-n_test = 30
+n_test = 5
 n = len(dataset) -(1+n_test)
 
 print("Beginning fit...")
-model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=4, epochs=3,
-          verbose=1, validation_split=0.1)
-
+model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=2, epochs=3,
+          verbose=1, validation_split=0.45)
+print("spliting dataset")
 X_test = dataset[n:n + n_test]
 y_test = y[n:n + n_test]
 
@@ -139,56 +158,17 @@ pred = model.predict(np.array(X_test))
 print("predictions finished")
 
 for i in range (0, len(X_test)):
-    print("---------------------------------------\nActual: {}".format(label_dict["idx2word"][np.where(y[n+i]==1)[0][0]]))
-    print("Prediction: {}".format(pred[i]))
-    print("Details...")
+    actuals = ""
+    # for label in y[n+i]:
+    for index in np.where(y[n+i]==1)[0]:
+        # print(index)
+        actuals += " {}".format(label_dict["idx2word"][index])
+    print("---------------------------------------\nActual: {}".format(actuals))
+
+    # label_dict["idx2word"][s],y[n+i][s]) for s in y[n+i])
+    # print("Prediction: {}".format(pred[i]))
+    print("Predicted letters: ")
     for i2 in range (0, len(label_dict["idx2word"])):
-        print("\"{}\" probability:{}".format(label_dict["idx2word"][i2], pred[i][i2]))
-        print("--------------------------------------")
-#
-# def show_images(images, cols = 1, titles = None):
-#     """Display a list of images in a single figure with matplotlib.
-#
-#     Parameters
-#     ---------
-#     images: List of np.arrays compatible with plt.imshow.
-#
-#     cols (Default = 1): Number of columns in figure (number of rows is
-#                         set to np.ceil(n_images/float(cols))).
-#
-#     titles: List of titles corresponding to each image. Must have
-#             the same length as titles.
-#     """
-#     assert((titles is None)or (len(images) == len(titles)))
-#     n_images = len(images)
-#     if titles is None: titles = ['Image (%d)' % i for i in range(1,n_images + 1)]
-#     fig = plt.figure()
-#     for n, (image, title) in enumerate(zip(images, titles)):
-#         a = fig.add_subplot(cols, np.ceil(n_images/float(cols)), n + 1)
-#         if image.ndim == 2:
-#             plt.gray()
-#         plt.imshow(image)
-#         a.set_title(title)
-#     fig.set_size_inches(np.array(fig.get_size_inches()) * n_images)
-#     mng = plt.get_current_fig_manager()
-#     # mng.window.state('zoomed')
-#     plt.show()
-
-
-
-# def show_example(idx):
-#     N_true = int(np.sum(y_test[idx]))
-#     print("Actual: {}".format(label_dict["idx2word"][np.where(y[n+idx]==1)[0][0]]))
-#     print("Prediction: {}".format("|".join(["{} ({:.3})".format(label_dict["idx2word"][s],pred[idx][s])
-#                                 for s in pred[idx].argsort()[-N_true:][::-1]])))
-#     show_images([X_test[idx]])
-# plt.imshow(dataset[0])
-
-# show_example(0)
-# show_example(1)
-# show_example(2)
-# show_example(3)
-# show_example(4)
-# show_example(5)
-# show_example(6)
-# show_example(7)
+        if pred[i][i2] > 0.3:
+            print("\"{}\":{}".format(label_dict["idx2word"][i2], pred[i][i2]))
+    print("--------------------------------------")

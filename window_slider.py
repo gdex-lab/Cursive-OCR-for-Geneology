@@ -15,21 +15,6 @@ import time
 
 os.chdir("C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord")
 
-def show_images(images, cols = 2, titles = None):
-    assert((titles is None)or (len(images) == len(titles)))
-    n_images = len(images)
-    if titles is None: titles = ['Image (%d)' % i for i in range(1,n_images + 1)]
-    fig = plt.figure()
-    for n, (image, title) in enumerate(zip(images, titles)):
-        a = fig.add_subplot(cols, np.ceil(n_images/float(cols)), n + 1)
-        if image.ndim == 2:
-            plt.gray()
-        plt.imshow(image)
-        a.set_title(title)
-    fig.set_size_inches(np.array(fig.get_size_inches()) * n_images)
-    mng = plt.get_current_fig_manager()
-    mng.window.state('zoomed')
-    plt.show()
 
 def variety_check(img, w):
     """
@@ -46,21 +31,21 @@ def variety_check(img, w):
 
     # using 10 here to eliminate rows with faint lines
     img_bw = cv2.adaptiveThreshold(img_gray,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,block_size,10)
-    cv2.imshow('img' ,img_bw)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # cv2.imshow('img' ,img_bw)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
     (horizontal, vertical) = img_bw.shape
     h_lower = int(.45 * horizontal)
     h_upper = int(.6 * horizontal)
     v_lower = int(0 * vertical)
     v_upper = int(1 * vertical)
 
-    print(h_lower, h_upper, v_lower, v_upper)
-    check_area = img_bw[h_lower:h_upper,v_lower:v_upper]
-
-    cv2.imshow('img' ,check_area)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # print(h_lower, h_upper, v_lower, v_upper)
+    # check_area = img_bw[h_lower:h_upper,v_lower:v_upper]
+    #
+    # cv2.imshow('img' ,check_area)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
     # sum total changes accross the bw array. If none of middle x percentof  arrays contain more than one color change, discard entire boundary
     contained_variety = 0
     for horiz in img_bw[h_lower:h_upper]:
@@ -117,11 +102,13 @@ def window_slicer(img, w, h, increment_percentage, file_name):
         while width_slider < max_width:
             crop = img[height_slider:height_slider+h, width_slider:width_slider+w]
             # print(height_slider, h, width_slider, w)
-            cv2.imshow('img', crop)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
             if tone_check(crop, h, w) and variety_check(crop, w):
-                print("TRUE")
+                # cv2.imshow('img', crop)
+                # cv2.waitKey(0)
+                # cv2.destroyAllWindows()
+                out = "C:\\Users\\grant\\IS\\IS552\\JSPapersBookofTheLawoftheLord\\windows_wider\\{}_{}_from_{}".format(height_slider, width_slider, file_name)
+                # print("Writing file out {}".format(out))
+                # cv2.imwrite(out, crop)
             width_slider += int(w_increment)
         width_slider = 0
         height_slider += int(h_increment)
@@ -130,4 +117,4 @@ def window_slicer(img, w, h, increment_percentage, file_name):
 for file in glob.glob("*.jpg"):
     print("reading img: ", file)
     img = cv2.imread(file)
-    window_slicer(img, 180, 60, .35, str(file))
+    window_slicer(img, 70, 60, .3, str(file))
