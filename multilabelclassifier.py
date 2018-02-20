@@ -27,17 +27,6 @@ else:
 label_dict = {"label2idx": {},
             "idx2label": []}
 
-# classes = []
-# # _ = space ! = noise, ^ = partial, - = edge
-# non_letters = ["_", "!", "^", "$", "&", "(", ")", "-"]
-# for cL in list(string.ascii_lowercase):
-#     classes.append(cL)
-# for cU in list(string.ascii_uppercase):
-#     classes.append(cU)
-# for number in range(0, 10):
-#     classes.append(number)
-# for other in non_letters:
-#     classes.append(other)
 
 label_dict = {"word2idx": {}, "idx2word": []}
 def prepare_data(imgs_dir):
@@ -47,12 +36,16 @@ def prepare_data(imgs_dir):
 
     imgs = []
     clean_titles = []
-    for file in glob.glob("*.jpg"):
+    for file in glob.glob("*/*.jpg", recursive=True):
         img = scipy.misc.imread(file).astype(np.float32)
-
+        # print(file)
+        # time.sleep(2)
         if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1] and img.shape[2] == 3:
             imgs.append(img)
-            clean_titles.append(re.sub(r"\([\d+]*\)", "", str(file.replace(".jpg", "").replace(" ", ""))))
+            clean_title = file.split('\\')[1]
+            clean_title = re.sub(r"\([\d+]*\)", "", str(clean_title.replace(".jpg", "").replace(" ", "")))
+            # print(clean_title)
+            clean_titles.append(clean_title)
         else:
             print("img size mismatch: {}".format(img.shape))
 
@@ -69,26 +62,74 @@ def prepare_data(imgs_dir):
 
     print(label_dict)
 
+    n_classes = len(label_dict["idx2word"])
     # add multi-hot labels to overall labels?
     for title in clean_titles:
         letters = list(title)
-        n_classes = len(label_dict["idx2word"])
         l = np.sum([np.eye(n_classes, dtype="uint8")[label_dict["word2idx"][s]]
                                                             for s in letters], axis=0)
         # print("letters: {}\nlabel: {}".format(letters, l))
         y.append(l)
 
-    return imgs, y
+    return imgs, y, n_classes
 
 # dataset = imgs, label_dict = word2indx:, indx2word:, ids = img titles, y = list of sumed classes and label indexes
 # dataset, y, label_dict, ids =  prepare_data(data, img_dict, size=SIZE)
-dataset, y =  prepare_data(path)
+dataset, y, n_classes =  prepare_data(path)
 
 
 print("shuffling dataset")
+print("Number of classes: {}".format(n_classes))
 # to unorder samples
-random.Random(4).shuffle(y)
-random.Random(4).shuffle(dataset)
+random_seed = 4
+random.Random(random_seed).shuffle(y)
+random.Random(random_seed).shuffle(dataset)
+
+
+# def show_images(ids, cols = 2, titles = None):
+#     fig = plt.figure()
+#     n_images = len(ids)
+#     n = 0
+#     for id in ids:
+#         plt.imshow(dataset[id])
+#         a = fig.add_subplot(cols, np.ceil(n_images/float(cols)), n + 1)
+#         # print(y[id])
+#         # print(label_dict["idx2word"])
+#         # print(np.where(y[id]>0))
+#         actuals =""
+#         for index in np.where(y[id]==1)[0]:
+#             # print(index)
+#             actuals += " {}".format(label_dict["idx2word"][index])
+#         a.set_title(actuals)
+#         n+=1
+#         # for n, (image, title) in enumerate(zip(ids, titles)):
+#         #     if image.ndim == 2:
+#         #         plt.gray()
+#         #     plt.imshow(image)
+#     fig.set_size_inches(np.array(fig.get_size_inches()) * n_images)
+#     mng = plt.get_current_fig_manager()
+#     mng.window.state('zoomed')
+#     plt.show()
+
+
+def return_labels(id):
+    labels = ""
+    for index in np.where(y[id]>0)[0]:
+        # print(index)
+        labels += " {}".format(label_dict["idx2word"][index])
+    # print("Returning labels: ", labels)
+    return labels
+
+def show_img(id):
+    plt.suptitle(return_labels(id))
+    plt.imshow(dataset[id])
+    plt.ylabel(return_labels(id))
+    plt.show()
+
+# show_img(0)
+# show_img(1)
+# show_img(2)
+# show_img(3)
 
 # rand = np.random.RandomState(5)
 
@@ -106,37 +147,27 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 
-model = Sequential()
-print("1.1")
-model.add(Conv2D(32, kernel_size=(5, 5), activation='relu',
-                 input_shape=(SIZE[0], SIZE[1], 3)))
-print("1.2")
-model.add(Conv2D(32, (5, 5), activation='relu'))
-print("1.3")
-model.add(MaxPooling2D(pool_size=(4, 4)))
-print("1.4")
-model.add(Dropout(0.25))
-print("1.5")
-model.add(Conv2D(64, kernel_size=(5, 5), activation='relu'))
-print("1.6")
-model.add(Conv2D(64, (5, 5), activation='relu'))
-print("1.7")
-model.add(MaxPooling2D(pool_size=(4, 4)))
-print("1.8")
-model.add(Dropout(0.25))
-print("1.9")
-model.add(Flatten())
-print("1.10")
-model.add(Dense(128, activation='relu'))
-print("1.11")
-model.add(Dropout(0.5))
-print("1.12")
-model.add(Dense(58, activation='sigmoid'))
+kernel_size = 5
+pool_size = 2
 
+
+model = Sequential()
+model.add(Conv2D(int(n_classes/2), kernel_size=(kernel_size, kernel_size), activation='relu',input_shape=(SIZE[0], SIZE[1], 3)))
+model.add(Conv2D(int(n_classes/2), (kernel_size, kernel_size), activation='relu'))
+model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+model.add(Dropout(0.25))
+model.add(Conv2D(n_classes, kernel_size=(kernel_size, kernel_size), activation='relu'))
+model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
+model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+model.add(Dropout(0.25))
+model.add(Flatten())
+model.add(Dense(n_classes*3, activation='relu'))
+model.add(Dropout(0.3))
+model.add(Dense(n_classes, activation='sigmoid'))
 
 model.compile(loss='binary_crossentropy',
               optimizer=keras.optimizers.Adam(),
-              metrics=['accuracy'])
+              metrics=['accuracy', 'mae'])
 
 # current 547 train and vaildate on 500, test examples for predictions on 47
 # total imgs?
@@ -144,14 +175,11 @@ n_test = 5
 n = len(dataset) -(1+n_test)
 
 print("Beginning fit...")
-model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=2, epochs=3,
+model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=10, epochs=3,
           verbose=1, validation_split=0.45)
-print("spliting dataset")
+
 X_test = dataset[n:n + n_test]
 y_test = y[n:n + n_test]
-
-print(len(X_test))
-print("Ytest: ",len(y_test))
 
 print("model.fit DONE. Moving on to pred...")
 pred = model.predict(np.array(X_test))
