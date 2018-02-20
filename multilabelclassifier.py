@@ -50,7 +50,7 @@ def prepare_data(imgs_dir):
     for file in glob.glob("*.jpg"):
         img = scipy.misc.imread(file).astype(np.float32)
 
-        if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1]:
+        if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1] and img.shape[2] == 3:
             imgs.append(img)
             clean_titles.append(re.sub(r"\([\d+]*\)", "", str(file.replace(".jpg", "").replace(" ", ""))))
         else:
@@ -131,7 +131,7 @@ model.add(Dense(128, activation='relu'))
 print("1.11")
 model.add(Dropout(0.5))
 print("1.12")
-model.add(Dense(54, activation='sigmoid'))
+model.add(Dense(58, activation='sigmoid'))
 
 
 model.compile(loss='binary_crossentropy',
