@@ -33,19 +33,27 @@ def prepare_data(imgs_dir):
     os.chdir(imgs_dir)
     y = []
     idx = 0
-
+    skips = [".jpg", " ", "@", "+", "]", "[", ")", "(", "_",
+    "$", "z", "j", "b", "k", "v", "w", # less than 50
+    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
+    "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z",
+            ".", ",", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     imgs = []
     clean_titles = []
+    label_cardinality = {}
     for file in glob.glob("*/*.jpg", recursive=True):
         img = scipy.misc.imread(file).astype(np.float32)
-        # print(file)
-        # time.sleep(2)
+
         if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1] and img.shape[2] == 3:
-            imgs.append(img)
-            clean_title = file.split('\\')[1]
-            clean_title = re.sub(r"\([\d+]*\)", "", str(clean_title.replace(".jpg", "").replace(" ", "")))
-            # print(clean_title)
-            clean_titles.append(clean_title)
+            clean_title = str(file.split('\\')[1])
+            clean_title = re.sub(r"\([\d+]*\)", "", clean_title)
+            for lb in skips:
+                clean_title = clean_title.replace(lb, "")
+
+            if len(clean_title) > 0:
+                imgs.append(img)
+                # print(clean_title)
+                clean_titles.append(clean_title)
         else:
             print("img size mismatch: {}".format(img.shape))
 
@@ -53,6 +61,10 @@ def prepare_data(imgs_dir):
     # Add all file labels to dict, with indexes
     for title in clean_titles:
         for l in list(title): #.split('|'):
+            if l in label_cardinality:
+                label_cardinality[l] += 1
+            else:
+                label_cardinality[l] = 1
             if l in label_dict["idx2word"]:
                 pass
             else:
@@ -60,7 +72,6 @@ def prepare_data(imgs_dir):
                 label_dict["word2idx"][l] = idx
                 idx += 1
 
-    print(label_dict)
 
     n_classes = len(label_dict["idx2word"])
     # add multi-hot labels to overall labels?
@@ -70,6 +81,10 @@ def prepare_data(imgs_dir):
                                                             for s in letters], axis=0)
         # print("letters: {}\nlabel: {}".format(letters, l))
         y.append(l)
+
+    # print(label_cardinality)
+    for l in sorted(label_cardinality):
+        print(l, ": ", label_cardinality[l])
 
     return imgs, y, n_classes
 
@@ -131,15 +146,6 @@ def show_img(id):
 # show_img(2)
 # show_img(3)
 
-# rand = np.random.RandomState(5)
-
-# shuffle = rand.permutation(500) # len of windows turns out larger than 84?? 252??
-# print
-# print(rand, '\n\n\n',len(windows),'\n\n\n', shuffle)
-# dataset, y = dataset[shuffle], y[shuffle]
-
-# print(dataset[0].shape)
-
 # ------------------------------------
 
 import keras
@@ -147,36 +153,67 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 
-kernel_size = 5
-pool_size = 2
-
+kernel_size = 2 #3
+pool_size = 2 #2
 
 model = Sequential()
-model.add(Conv2D(int(n_classes/2), kernel_size=(kernel_size, kernel_size), activation='relu',input_shape=(SIZE[0], SIZE[1], 3)))
+model.add(Conv2D(n_classes*2, kernel_size=(kernel_size, kernel_size),
+                 activation='relu',
+                 input_shape=(SIZE[0], SIZE[1], 3)))
+
+
+# ------------------------------
+# model.add(Conv2D(n_classes*2, (kernel_size, kernel_size), activation='relu'))
+# # model.add(MaxPooling2D(pool_size=(2, 2)))
+# # model.add(Dropout(0.25))
+#
+# model.add(Flatten()) # sets to single dimension
+# model.add(Dense(n_classes*4, activation='relu')) # fully connected layer
+# # model.add(Dropout(0.5)) # random removal to prevent overfit
+# model.add(Dense(n_classes, activation='sigmoid')) # modified from softmax
+
+# ---------------
+# check out neural attention models (it is moving accross the word (aka attention)) LSTM
+# could still include some thresholding (use multiple routes and compare results--one model doesn't need to do it all!)
+# visualize between layers
+model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
 model.add(Conv2D(int(n_classes/2), (kernel_size, kernel_size), activation='relu'))
 model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-model.add(Dropout(0.25))
+# model.add(Dropout(0.25))
 model.add(Conv2D(n_classes, kernel_size=(kernel_size, kernel_size), activation='relu'))
+model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
 model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
 model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-model.add(Dropout(0.25))
+# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
+# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
+# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
+# model.add(MaxPooling2D(pool_size=(pool_size, pool_size))) # could add average pooling, best to have between each convolutional layer.
+# capsule networks overcome the shortcomings of pooling
+# model.add(Dropout(0.25))
 model.add(Flatten())
-model.add(Dense(n_classes*3, activation='relu'))
-model.add(Dropout(0.3))
+# model.add(Dense(n_classes*3, activation='relu')) # *3 because dimensions were 3, now flattened
+# model.add(Dropout(0.3))
 model.add(Dense(n_classes, activation='sigmoid'))
 
+
+# -----------------------------------
 model.compile(loss='binary_crossentropy',
-              optimizer=keras.optimizers.Adam(),
+              optimizer=keras.optimizers.Adam(), #keras.optimizers.Adadelta()(),
               metrics=['accuracy', 'mae'])
 
 # current 547 train and vaildate on 500, test examples for predictions on 47
 # total imgs?
-n_test = 5
+n_test = 8
 n = len(dataset) -(1+n_test)
 
 print("Beginning fit...")
-model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=10, epochs=3,
-          verbose=1, validation_split=0.45)
+model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=64, epochs=3,
+          verbose=1, validation_split=0.25)
+
+
+
+
+
 
 X_test = dataset[n:n + n_test]
 y_test = y[n:n + n_test]
