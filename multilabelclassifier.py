@@ -153,7 +153,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 
-kernel_size = 2 #3
+kernel_size = 3 #3
 pool_size = 2 #2
 
 model = Sequential()
@@ -176,27 +176,54 @@ model.add(Conv2D(n_classes*2, kernel_size=(kernel_size, kernel_size),
 # check out neural attention models (it is moving accross the word (aka attention)) LSTM
 # could still include some thresholding (use multiple routes and compare results--one model doesn't need to do it all!)
 # visualize between layers
-model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-model.add(Conv2D(int(n_classes/2), (kernel_size, kernel_size), activation='relu'))
-model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-# model.add(Dropout(0.25))
-model.add(Conv2D(n_classes, kernel_size=(kernel_size, kernel_size), activation='relu'))
-model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
-model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+
+
+
+model.add(Conv2D(32, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(64, kernel_size=(3, 3), activation='relu'))
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+model.add(Flatten())
+model.add(Dense(128, activation='relu'))
+model.add(Dropout(0.5))
+# model.add(Dense(29, activation='sigmoid'))
+
+
+
+
+
+
+
+
+# model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+# model.add(Conv2D(int(n_classes/2), (kernel_size, kernel_size), activation='relu'))
+# model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+# # model.add(Dropout(0.25))
+# model.add(Conv2D(n_classes, kernel_size=(kernel_size, kernel_size), activation='relu'))
+# model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
+# model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
+# model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
+# model.add(Flatten())
+
 # model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
 # model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
 # model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
 # model.add(MaxPooling2D(pool_size=(pool_size, pool_size))) # could add average pooling, best to have between each convolutional layer.
 # capsule networks overcome the shortcomings of pooling
 # model.add(Dropout(0.25))
-model.add(Flatten())
 # model.add(Dense(n_classes*3, activation='relu')) # *3 because dimensions were 3, now flattened
 # model.add(Dropout(0.3))
-model.add(Dense(n_classes, activation='sigmoid'))
 
 
 # -----------------------------------
+model.add(Dense(n_classes, activation='sigmoid'))
 model.compile(loss='binary_crossentropy',
               optimizer=keras.optimizers.Adam(), #keras.optimizers.Adadelta()(),
               metrics=['accuracy', 'mae'])
@@ -208,7 +235,7 @@ n = len(dataset) -(1+n_test)
 
 print("Beginning fit...")
 model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=64, epochs=3,
-          verbose=1, validation_split=0.25)
+          verbose=1, validation_split=0.1)
 
 
 

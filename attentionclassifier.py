@@ -148,72 +148,23 @@ def show_img(id):
 
 # ------------------------------------
 
-import keras
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Flatten
-from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
-
-kernel_size = 3 #3
-pool_size = 2 #2
-
-model = Sequential()
-model.add(Conv2D(n_classes*2, kernel_size=(kernel_size, kernel_size),
-                 activation='relu',
-                 input_shape=(SIZE[0], SIZE[1], 3)))
-
-
-# ------------------------------
-# model.add(Conv2D(n_classes*2, (kernel_size, kernel_size), activation='relu'))
-# # model.add(MaxPooling2D(pool_size=(2, 2)))
-# # model.add(Dropout(0.25))
-#
-# model.add(Flatten()) # sets to single dimension
-# model.add(Dense(n_classes*4, activation='relu')) # fully connected layer
-# # model.add(Dropout(0.5)) # random removal to prevent overfit
-# model.add(Dense(n_classes, activation='sigmoid')) # modified from softmax
-
-# ---------------
-# check out neural attention models (it is moving accross the word (aka attention)) LSTM
-# could still include some thresholding (use multiple routes and compare results--one model doesn't need to do it all!)
-# visualize between layers
-model.add(Conv2D(int(n_classes/2), (kernel_size, kernel_size), activation='relu'))
-# model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-# model.add(Dropout(0.25))
-model.add(Conv2D(n_classes, kernel_size=(kernel_size, kernel_size), activation='relu'))
-model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
-# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
-# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
-# model.add(Conv2D(n_classes, (kernel_size, kernel_size), activation='relu'))
-model.add(MaxPooling2D(pool_size=(pool_size, pool_size))) # could add average pooling, best to have between each convolutional layer.
-# capsule networks overcome the shortcomings of pooling
-# model.add(Dropout(0.25))
-model.add(Flatten())
-model.add(Dense(n_classes*3, activation='relu')) # *3 because dimensions were 3, now flattened
-# model.add(Dropout(0.3))
-model.add(Dense(n_classes, activation='sigmoid'))
-
-
-# -----------------------------------
-model.compile(loss='binary_crossentropy',
-              optimizer=keras.optimizers.Adam(), #keras.optimizers.Adadelta()(),
-              metrics=['accuracy', 'mae'])
-
-# current 547 train and vaildate on 500, test examples for predictions on 47
-# total imgs?
-n_test = 8
-n = len(dataset) -(1+n_test)
-
-print("Beginning fit...")
-model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=64, epochs=3,
-          verbose=1, validation_split=0.25)
 
 
 
 
 
 
-X_test = dataset[n:n + n_test]
-y_test = y[n:n + n_test]
+
+
+
+
+
+
+
+
+
+
+
 
 print("model.fit DONE. Moving on to pred...")
 pred = model.predict(np.array(X_test))
