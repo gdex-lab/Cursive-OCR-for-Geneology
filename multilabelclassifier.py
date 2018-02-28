@@ -181,12 +181,19 @@ model.add(Conv2D(n_classes*2, kernel_size=(kernel_size, kernel_size),
 
 model.add(Conv2D(32, (3, 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
 model.add(Dropout(0.25))
 
 model.add(Conv2D(64, kernel_size=(3, 3), activation='relu'))
 model.add(Conv2D(64, (3, 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
+
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
 
 model.add(Flatten())
 model.add(Dense(128, activation='relu'))
@@ -261,6 +268,6 @@ for i in range (0, len(X_test)):
     # print("Prediction: {}".format(pred[i]))
     print("Predicted letters: ")
     for i2 in range (0, len(label_dict["idx2word"])):
-        if pred[i][i2] > 0.3:
+        if pred[i][i2] > 0.4:
             print("\"{}\":{}".format(label_dict["idx2word"][i2], pred[i][i2]))
     print("--------------------------------------")
