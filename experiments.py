@@ -80,25 +80,35 @@ model.add(Conv2D(32,
                  input_shape=SIZE))
 #tanh offering more specific vals, rather than 1 0
 model.add(Conv2D(64, (3, 3), activation='tanh')) # relu
-print(x_train.shape)
-model.add(keras.layers.ConvLSTM2D(32, (3,3), strides=(1, 1),
-                        padding='valid',
-                         dilation_rate=(1, 1), activation='tanh',
-                         # data_format='channels_last',
-                        # recurrent_activation='hard_sigmoid', use_bias=True,
-                        # kernel_initializer='glorot_uniform',
-                        # recurrent_initializer='orthogonal',
-                        #  bias_initializer='zeros', unit_forget_bias=True,
-                        #  kernel_regularizer=None, recurrent_regularizer=None,
-                        #  bias_regularizer=None, activity_regularizer=None,
-                        #  kernel_constraint=None, recurrent_constraint=None,
-                        #   bias_constraint=None,
-                        # return_sequences=True,
-                        #    go_backwards=False, stateful=False, dropout=0.0,
-                        #    recurrent_dropout=0.0))
-                        ))
+# print(x_train.shape)
+# model.add(keras.layers.ConvLSTM2D(32, (3,3), strides=(1, 1),
+#                         padding='valid',
+#                          dilation_rate=(1, 1), activation='tanh',
+#                          # data_format='channels_last',
+#                         # recurrent_activation='hard_sigmoid', use_bias=True,
+#                         # kernel_initializer='glorot_uniform',
+#                         # recurrent_initializer='orthogonal',
+#                         #  bias_initializer='zeros', unit_forget_bias=True,
+#                         #  kernel_regularizer=None, recurrent_regularizer=None,
+#                         #  bias_regularizer=None, activity_regularizer=None,
+#                         #  kernel_constraint=None, recurrent_constraint=None,
+#                         #   bias_constraint=None,
+#                         # return_sequences=True,
+#                         #    go_backwards=False, stateful=False, dropout=0.0,
+#                         #    recurrent_dropout=0.0))
+#                         ))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
+
+#bonus
+model.add(Conv2D(64, (3, 3), activation='tanh')) # relu
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
+
+#double bonus
+model.add(Conv2D(32, (3, 3), activation='tanh')) # relu
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
 model.add(Flatten())
 model.add(Dense(128, activation='tanh'))
 model.add(Dropout(0.5))
@@ -112,7 +122,7 @@ model.compile(loss='binary_crossentropy',
               metrics=['categorical_accuracy', 'accuracy', 'mae'])
 
 model.fit(x_train, y_train,
-          batch_size=128,
+          batch_size=64, #128
           epochs=3,
           verbose=1,
           # validation_data=(x_test, y_test)
@@ -140,6 +150,6 @@ for i in range (0, len(x_test)):
     # print("Prediction: {}".format(pred[i]))
     print("Predicted letters: ")
     for i2 in range (0, len(label_dict["idx2word"])):
-        if pred[i][i2] > 0.0:
+        if pred[i][i2] > 0.2:
             print("\"{}\":{}".format(label_dict["idx2word"][i2], pred[i][i2]))
     print("--------------------------------------")
