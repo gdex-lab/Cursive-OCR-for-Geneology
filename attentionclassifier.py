@@ -131,7 +131,10 @@ kernel_size = 3 #3
 pool_size = 2 #2
 
 model = Sequential()
-keras.layers.ConvLSTM2D(n_classes*2, kernel_size, strides=(1, 1), padding='valid',
+model.add(Conv2D(n_classes*2, kernel_size=(kernel_size, kernel_size),
+                 activation='relu',
+                 input_shape=(SIZE[0], SIZE[1], 3)))
+model.add(keras.layers.ConvLSTM2D(n_classes*2, kernel_size, strides=(1, 1), padding='valid',
                         data_format=None, dilation_rate=(1, 1), activation='tanh',
                         recurrent_activation='hard_sigmoid', use_bias=True,
                         kernel_initializer='glorot_uniform',
@@ -142,7 +145,7 @@ keras.layers.ConvLSTM2D(n_classes*2, kernel_size, strides=(1, 1), padding='valid
                          kernel_constraint=None, recurrent_constraint=None,
                           bias_constraint=None, return_sequences=False,
                            go_backwards=False, stateful=False, dropout=0.0,
-                           recurrent_dropout=0.0)
+                           recurrent_dropout=0.0))
 model.add(Conv2D(n_classes*2, kernel_size=(kernel_size, kernel_size),
                  activation='relu',
                  input_shape=(SIZE[0], SIZE[1], 3)))
