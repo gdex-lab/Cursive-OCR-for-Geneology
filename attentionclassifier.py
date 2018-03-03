@@ -101,32 +101,6 @@ random.Random(random_seed).shuffle(y)
 random.Random(random_seed).shuffle(dataset)
 
 
-# def show_images(ids, cols = 2, titles = None):
-#     fig = plt.figure()
-#     n_images = len(ids)
-#     n = 0
-#     for id in ids:
-#         plt.imshow(dataset[id])
-#         a = fig.add_subplot(cols, np.ceil(n_images/float(cols)), n + 1)
-#         # print(y[id])
-#         # print(label_dict["idx2word"])
-#         # print(np.where(y[id]>0))
-#         actuals =""
-#         for index in np.where(y[id]==1)[0]:
-#             # print(index)
-#             actuals += " {}".format(label_dict["idx2word"][index])
-#         a.set_title(actuals)
-#         n+=1
-#         # for n, (image, title) in enumerate(zip(ids, titles)):
-#         #     if image.ndim == 2:
-#         #         plt.gray()
-#         #     plt.imshow(image)
-#     fig.set_size_inches(np.array(fig.get_size_inches()) * n_images)
-#     mng = plt.get_current_fig_manager()
-#     mng.window.state('zoomed')
-#     plt.show()
-
-
 def return_labels(id):
     labels = ""
     for index in np.where(y[id]>0)[0]:
@@ -148,23 +122,76 @@ def show_img(id):
 
 # ------------------------------------
 
+import keras
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Flatten
+from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
+
+kernel_size = 3 #3
+pool_size = 2 #2
+
+model = Sequential()
+keras.layers.ConvLSTM2D(n_classes*2, kernel_size, strides=(1, 1), padding='valid',
+                        data_format=None, dilation_rate=(1, 1), activation='tanh',
+                        recurrent_activation='hard_sigmoid', use_bias=True,
+                        kernel_initializer='glorot_uniform',
+                        recurrent_initializer='orthogonal',
+                         bias_initializer='zeros', unit_forget_bias=True,
+                         kernel_regularizer=None, recurrent_regularizer=None,
+                         bias_regularizer=None, activity_regularizer=None,
+                         kernel_constraint=None, recurrent_constraint=None,
+                          bias_constraint=None, return_sequences=False,
+                           go_backwards=False, stateful=False, dropout=0.0,
+                           recurrent_dropout=0.0)
+model.add(Conv2D(n_classes*2, kernel_size=(kernel_size, kernel_size),
+                 activation='relu',
+                 input_shape=(SIZE[0], SIZE[1], 3)))
+                 # ---------------
+# check out neural attention models (it is moving accross the word (aka attention)) LSTM
+# could still include some thresholding (use multiple routes and compare results--one model doesn't need to do it all!)
+# visualize between layers
+
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Dropout(0.25))
+#
+# model.add(Conv2D(64, kernel_size=(3, 3), activation='relu'))
+# model.add(Conv2D(64, (3, 3), activation='relu'))
+# model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Dropout(0.25))
+
+# model.add(Conv2D(64, (3, 3), activation='relu'))
+# model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Flatten())
+model.add(Dense(128, activation='relu'))
+model.add(Dropout(0.5))
+# model.add(Dense(29, activation='sigmoid'))
+
+
+# -----------------------------------
+model.add(Dense(n_classes, activation='sigmoid'))
+model.compile(loss='binary_crossentropy',
+              optimizer=keras.optimizers.Adam(), #keras.optimizers.Adadelta()(),
+              metrics=['accuracy', 'mae'])
+
+# current 547 train and vaildate on 500, test examples for predictions on 47
+# total imgs?
+n_test = 8
+n = len(dataset) -(1+n_test)
+
+print("Beginning fit...")
+model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=64, epochs=3,
+          verbose=1, validation_split=0.2)
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+X_test = dataset[n:n + n_test]
+y_test = y[n:n + n_test]
 
 print("model.fit DONE. Moving on to pred...")
 pred = model.predict(np.array(X_test))
@@ -182,6 +209,6 @@ for i in range (0, len(X_test)):
     # print("Prediction: {}".format(pred[i]))
     print("Predicted letters: ")
     for i2 in range (0, len(label_dict["idx2word"])):
-        if pred[i][i2] > 0.3:
+        if pred[i][i2] > 0.0:
             print("\"{}\":{}".format(label_dict["idx2word"][i2], pred[i][i2]))
     print("--------------------------------------")
