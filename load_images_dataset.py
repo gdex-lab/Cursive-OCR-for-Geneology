@@ -15,16 +15,14 @@ import re
 import random
 
 
-def prepare_data(imgs_dir, SIZE=(60,70,3)):
+def prepare_data(imgs_dir,
+                SIZE=(60,70,3),
+                skips=[".jpg", " "]):
     label_dict = {"word2idx": {}, "idx2word": []}
     os.chdir(imgs_dir)
     labels = []
     idx = 0
-    skips = [".jpg", " ", "@", "+", "]", "[", ")", "(", "_",
-    "$", "z", "j", "b", "k", "v", "w", # less than 50
-    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
-    "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z",
-            ".", ",", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
     imgs = []
     clean_titles = []
     label_cardinality = {}
