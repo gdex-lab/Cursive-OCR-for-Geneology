@@ -24,9 +24,6 @@ if env == 1:
 else:
     path="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset"
 
-label_dict = {"label2idx": {},
-            "idx2label": []}
-
 
 label_dict = {"word2idx": {}, "idx2word": []}
 def prepare_data(imgs_dir):
