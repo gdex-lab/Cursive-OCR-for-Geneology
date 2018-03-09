@@ -34,16 +34,7 @@ from keras.layers import Conv2D, MaxPooling2D
 from keras import backend as K
 import load_images_dataset
 
-if os.name == 'nt':
-    env = 0
-else:
-    env = 1
-
-if env == 1:
-    path="/home/ubuntu/Cursive-OCR-for-Geneology/dataset"
-else:
-    path="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset"
-
+path = os.getcwd() + "/dataset"
 
 skips = [".jpg", " ",
 "@", "+", "]", "[", ")", "(", "_",
