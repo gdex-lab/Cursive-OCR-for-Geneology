@@ -41,7 +41,7 @@ print(input_shape)
 #                                         x_train, y_train, input_shape, n_classes)
 
 model = custom_models.seven_layer_cnn('relu', 'softmax', 'categorical_crossentropy', \
-                                        x_train, y_train, input_shape, n_classes, 2)
+                                        x_train, y_train, input_shape, n_classes, 10)
 
 score = model.evaluate(x_test, y_test, verbose=1)
 
@@ -70,7 +70,7 @@ for i in range (0, len(x_test)):
     for ind, val in enumerate(preds):
         # print(ind)
         # print(val)
-        formatted_preds.append("{} probability of label: {}".format(val, ind))
+        formatted_preds.append("{} probability of label: {}".format(val, ind+1))
     formatted_preds.sort()
     for x in formatted_preds:
         print(x)
