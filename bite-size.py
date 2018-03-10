@@ -62,7 +62,13 @@ for i in range (0, len(x_test)):
 
     # label_dict["idx2word"][s],y[n+i][s]) for s in y[n+i])
     # print("Prediction: {}".format(pred[i]))
-    print("Predicted: {}".format(pred[i]))
+
+    preds = pred[i]
+    formatted_preds = []
+    for ind, val in enumerate(preds):
+        formatted_preds.append("\n"+ str(val) + " probability of label: " + str(ind))
+    formatted_preds.sort()
+    print("Predicted: {}".format(formatted_preds))
     # for i2 in range (0, len(label_dict["idx2word"])):
         # if pred[i][i2] > 0.2:
         # print("\"{}\":{}".format(label_dict["idx2word"][i2], pred[i][i2]))
