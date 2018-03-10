@@ -4,30 +4,26 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 
 
-def nine_layer_cnn(activation_1, activation_2, loss, x_train, y_train, \
+def seven_layer_cnn(activation_1, activation_2, loss, x_train, y_train, \
                     input_shape, n_classes, epochs=3):
 
     model = Sequential()
-    model.add(Conv2D(12,
+    model.add(Conv2D(int(n_classes/2),
                      kernel_size=(3, 3),
                      activation=activation_1,
                      input_shape=input_shape))
     #tanh offering more specific vals, rather than 1 0
-    model.add(Conv2D(24, (3, 3), activation=activation_1)) # relu
+    model.add(Conv2D(n_classes, (3, 3), activation=activation_1)) # relu
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Dropout(0.25))
 
     #bonus
-    model.add(Conv2D(24, (3, 3), activation=activation_1)) # relu
+    model.add(Conv2D(n_classes, (3, 3), activation=activation_1)) # relu
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Dropout(0.25))
 
-    #double bonus
-    model.add(Conv2D(36, (3, 3), activation=activation_1)) # relu
-    model.add(MaxPooling2D(pool_size=(2, 2)))
-
     model.add(Flatten())
-    model.add(Dense(24, activation=activation_1))
+    model.add(Dense(n_classes*2, activation=activation_1))
     model.add(Dropout(0.5))
     model.add(Dense(n_classes, activation=activation_2))
 

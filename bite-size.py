@@ -20,6 +20,7 @@ import custom_models
 path = os.getcwd() + "/dataset"
 n_classes = 8
 
+
 dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
             load_images_dataset.read_my_csv("n_letters.txt", '/')
 
@@ -35,11 +36,12 @@ x_train = np.array(dataset[: n])
 y_test = np.array(y[n:n + n_test])
 y_train = np.array(y[: n])
 
+print(input_shape)
 # model = custom_models.nine_layer_cnn('tanh', 'sigmoid', 'binary_crossentropy', \
 #                                         x_train, y_train, input_shape, n_classes)
 
-model = custom_models.nine_layer_cnn('relu', 'softmax', 'categorical_crossentropy', \
-                                        x_train, y_train, input_shape, n_classes, 20)
+model = custom_models.seven_layer_cnn('relu', 'softmax', 'categorical_crossentropy', \
+                                        x_train, y_train, input_shape, n_classes, 2)
 
 score = model.evaluate(x_test, y_test, verbose=1)
 
@@ -66,9 +68,13 @@ for i in range (0, len(x_test)):
     preds = pred[i]
     formatted_preds = []
     for ind, val in enumerate(preds):
-        formatted_preds.append("\n"+ str(val) + " probability of label: " + str(ind))
+        # print(ind)
+        # print(val)
+        formatted_preds.append("{} probability of label: {}".format(val, ind))
     formatted_preds.sort()
-    print("Predicted: {}".format(formatted_preds))
+    for x in formatted_preds:
+        print(x)
+    # print("Predicted: {}".format(formatted_preds.sort()))
     # for i2 in range (0, len(label_dict["idx2word"])):
         # if pred[i][i2] > 0.2:
         # print("\"{}\":{}".format(label_dict["idx2word"][i2], pred[i][i2]))
