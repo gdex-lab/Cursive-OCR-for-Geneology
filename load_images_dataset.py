@@ -27,31 +27,35 @@ def prepare_data(imgs_dir,
     clean_titles = []
     label_cardinality = {}
     for file in glob.glob("*/*.jpg", recursive=True):
-        # img = cv2.imread(file,0)
-        # print(img.shape)
-        # edges = cv2.Canny(img,100,200)
-        # print(edges.shape)
+
         img = scipy.misc.imread(file).astype(np.float32)
-        # print(img.shape)
+
         if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1] and img.shape[2] == SIZE[2]:
+
             clean_title = str(file.split('\\')[1])
             clean_title = re.sub(r"\([\d+]*\)", "", clean_title)
+
             for lb in skips:
+
                 clean_title = clean_title.replace(lb, "")
 
             if len(clean_title) > 0:
+
                 imgs.append(img)
-                # print(clean_title)
                 clean_titles.append(clean_title)
         else:
-            print("img size mismatch: {}".format(img.shape))
+            print("{} size mismatch: {}".format(file, img.shape))
 
 
     # Add all file labels to dict, with indexes
     for title in clean_titles:
+
         for l in list(title): #.split('|'):
+
             if l in label_cardinality:
+
                 label_cardinality[l] += 1
+
             else:
                 label_cardinality[l] = 1
             if l in label_dict["idx2word"]:
@@ -76,3 +80,24 @@ def prepare_data(imgs_dir,
         print(l, ": ", label_cardinality[l])
 
     return imgs, labels, n_classes, label_dict, SIZE
+
+
+def read_my_csv(file_name, delimiter='/'):
+    """
+    This function is used to pull specific label atrributes from a file,
+    in addition to processing the input images.
+    """
+    print("reading data from csv: {} with delimiter '{}'".format(file_name, delimiter))
+    path = os.getcwd() + "\\{}".format(file_name)
+    df = pd.read_csv(path, delimiter=delimiter)
+    labels = []
+    eyes = np.eye(8, dtype="uint8")
+
+    for label in df.Y:
+        labels.append(eyes[label-1])
+
+    imgs, name_labels, n_classes, name_label_dict, SIZE = prepare_data(os.getcwd()+"\\dataset")
+
+    return imgs, labels, name_labels, n_classes, name_label_dict, SIZE
+
+    # return imgs, labels, n_classes, label_dict, SIZE
