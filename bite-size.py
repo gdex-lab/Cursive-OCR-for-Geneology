@@ -18,30 +18,37 @@ import load_images_dataset
 import custom_models
 
 path = os.getcwd() + "/dataset"
-n_classes = 8
 
+def divide_data(dataset, n_test):
+    # to unorder samples
+    random_seed = 4
+    random.Random(random_seed).shuffle(y)
+    random.Random(random_seed).shuffle(dataset)
+    n = len(dataset) -(1+n_test)
+    x_test = np.array(dataset[n:n + n_test])
+    x_train = np.array(dataset[: n])
+    y_test = np.array(y[n:n + n_test])
+    y_train = np.array(y[: n])
+
+    return n_test, n, x_test, x_train, y_test, y_train
+
+
+n_classes = 2
+base_layers = 8
+epochs = 100
+
+
+# dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
+#             load_images_dataset.read_my_csv("n_letters.txt", 8, '/')
+# model = custom_models.seven_layer_cnn('relu', 'softmax', 'categorical_crossentropy', \
+#                                         x_train, y_train, input_shape, 8, 3)
 
 dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
-            load_images_dataset.read_my_csv("n_letters.txt", '/')
+load_images_dataset.read_my_csv("has_tall_letters.txt", n_classes, '/')
 
-# to unorder samples
-random_seed = 4
-random.Random(random_seed).shuffle(y)
-random.Random(random_seed).shuffle(dataset)
-
-n_test = 8
-n = len(dataset) -(1+n_test)
-x_test = np.array(dataset[n:n + n_test])
-x_train = np.array(dataset[: n])
-y_test = np.array(y[n:n + n_test])
-y_train = np.array(y[: n])
-
-print(input_shape)
-# model = custom_models.nine_layer_cnn('tanh', 'sigmoid', 'binary_crossentropy', \
-#                                         x_train, y_train, input_shape, n_classes)
-
-model = custom_models.seven_layer_cnn('relu', 'softmax', 'categorical_crossentropy', \
-                                        x_train, y_train, input_shape, n_classes, 10)
+n_test, n, x_test, x_train, y_test, y_train = divide_data(dataset, n_classes)
+model = custom_models.five_layer_cnn('relu', 'softmax', 'mean_squared_error', \
+                                        x_train, y_train, input_shape, base_layers, n_classes, epochs)
 
 score = model.evaluate(x_test, y_test, verbose=1)
 

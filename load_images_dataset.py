@@ -82,7 +82,7 @@ def prepare_data(imgs_dir,
     return imgs, labels, n_classes, label_dict, SIZE
 
 
-def read_my_csv(file_name, delimiter='/'):
+def read_my_csv(file_name, n_classes, delimiter='/'):
     """
     This function is used to pull specific label atrributes from a file,
     in addition to processing the input images.
@@ -91,7 +91,7 @@ def read_my_csv(file_name, delimiter='/'):
     path = os.getcwd() + "\\{}".format(file_name)
     df = pd.read_csv(path, delimiter=delimiter)
     labels = []
-    eyes = np.eye(8, dtype="uint8")
+    eyes = np.eye(n_classes, dtype="uint8")
 
     for label in df.Y:
         labels.append(eyes[label-1])
