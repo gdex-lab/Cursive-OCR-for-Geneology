@@ -4,17 +4,19 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 
 def five_layer_cnn(activation_1, activation_2, loss, x_train, y_train, \
-                    input_shape, base_layers, n_classes, epochs=3):
+                    input_shape, base_layers, n_classes, epochs=3, learning_rate=64, \
+                    conv_size=3, pool_size=2):
 
     model = Sequential()
     model.add(Conv2D(base_layers,
-                     kernel_size=(3, 3),
+                     kernel_size=(conv_size, conv_size),
                      activation=activation_1,
                      input_shape=input_shape))
 
+
     #tanh offering more specific vals, rather than 1 0
-    model.add(Conv2D(base_layers*2, (3, 3), activation=activation_1)) # relu
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Conv2D(base_layers*2, (conv_size, conv_size), activation=activation_1)) # relu
+    model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
     model.add(Dropout(0.25))
 
     # #bonus
@@ -23,6 +25,7 @@ def five_layer_cnn(activation_1, activation_2, loss, x_train, y_train, \
     # model.add(Dropout(0.25))
 
     model.add(Flatten())
+    # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
     model.add(Dense(base_layers*2, activation=activation_1))
     model.add(Dropout(0.5))
     model.add(Dense(n_classes, activation=activation_2))
@@ -75,7 +78,7 @@ def seven_layer_cnn(activation_1, activation_2, loss, x_train, y_train, \
                   metrics=['categorical_accuracy', 'accuracy', 'mae'])
 
     model.fit(x_train, y_train,
-              batch_size=64, #128
+              batch_size=learning_rate, #128
               epochs=epochs,
               verbose=1,
               # validation_data=(x_test, y_test)
