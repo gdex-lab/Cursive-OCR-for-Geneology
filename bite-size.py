@@ -34,11 +34,11 @@ def divide_data(dataset, n_test):
 
 
 n_classes = 2
-base_layers = 8
-epochs = 3
-learning_rate = 10
+base_layers = 3
+epochs = 25
+learning_rate = 64
 conv_size = 4
-pool_size = 5
+pool_size = 2
 
 
 # dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
@@ -50,10 +50,8 @@ dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
 load_images_dataset.read_my_csv("has_tall_letters.txt", n_classes, '/')
 
 n_test, n, x_test, x_train, y_test, y_train = divide_data(dataset, n_classes)
-model = custom_models.five_layer_cnn('relu', 'softmax', 'mean_squared_error', \
-                                        x_train, y_train, input_shape, \
-                                        base_layers, n_classes, epochs, learning_rate, \
-                                        conv_size, pool_size)
+model = custom_models.basic_cnn('relu', 'mean_squared_error', \
+                                        x_train, y_train, input_shape, n_classes, epochs=epochs)
 
 score = model.evaluate(x_test, y_test, verbose=1)
 
@@ -64,7 +62,6 @@ print(score)
 pred = model.predict(x_test)
 
 print("predictions finished")
-
 
 for i in range (0, len(x_test)):
     actuals = ""
@@ -91,6 +88,3 @@ for i in range (0, len(x_test)):
         # if pred[i][i2] > 0.2:
         # print("\"{}\":{}".format(label_dict["idx2word"][i2], pred[i][i2]))
     print("--------------------------------------")
-
-from vizualizer import vizualize_layer
-vizualize_layer(model, 0)
