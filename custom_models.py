@@ -3,21 +3,24 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 
+
 def basic_cnn(activation_1, loss, x_train, y_train, \
                     input_shape, n_classes, base_layers=3,
                     epochs=3, learning_rate=64, \
                     conv_size=3, pool_size=2):
-
+    print("input shape: {}".format(input_shape))
     model = Sequential()
+    # model.add(Flatten())
     model.add(Conv2D(base_layers,
                      kernel_size=(conv_size, conv_size),
                      activation=activation_1,
-                     input_shape=input_shape))
+                     data_format='channels_last',
+                     input_shape=(60, 70, 3)))
 
-
+    model.add(Flatten())
+    # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
     #tanh offering more specific vals, rather than 1 0
     # model.add(Conv2D(4, (conv_size, conv_size), activation=activation_1)) # relu
-    # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
     # model.add(Dropout(0.25))
 
     # #bonus
@@ -25,7 +28,6 @@ def basic_cnn(activation_1, loss, x_train, y_train, \
     # model.add(MaxPooling2D(pool_size=(2, 2)))
     # model.add(Dropout(0.25))
 
-    model.add(Flatten())
     # # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
     # model.add(Dense(8, activation=activation_1))
     # model.add(Dropout(0.5))

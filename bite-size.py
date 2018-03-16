@@ -21,7 +21,7 @@ path = os.getcwd() + "/dataset"
 
 def divide_data(dataset, n_test):
     # to unorder samples
-    random_seed = 4
+    random_seed = 3
     random.Random(random_seed).shuffle(y)
     random.Random(random_seed).shuffle(dataset)
     n = len(dataset) -(1+n_test)
@@ -35,7 +35,7 @@ def divide_data(dataset, n_test):
 
 n_classes = 2
 base_layers = 3
-epochs = 25
+epochs = 5
 learning_rate = 64
 conv_size = 4
 pool_size = 2
@@ -50,6 +50,9 @@ dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
 load_images_dataset.read_my_csv("has_tall_letters.txt", n_classes, '/')
 
 n_test, n, x_test, x_train, y_test, y_train = divide_data(dataset, n_classes)
+# print(x_train[:5])
+print(y_train[:10])
+print(y_test[:5])
 model = custom_models.basic_cnn('relu', 'mean_squared_error', \
                                         x_train, y_train, input_shape, n_classes, epochs=epochs)
 

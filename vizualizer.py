@@ -14,18 +14,18 @@ img1 = cv2.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize
 
 
 model = Sequential()
-model.add(Conv2D(3,
-                 kernel_size=(3, 3),
-                 activation='sigmoid',
-                 input_shape=img1.shape))
-# model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Conv2D(3,
+#                  kernel_size=(3, 3),
+#                  activation='sigmoid',
+                 # input_shape=img1.shape))
+model.add(MaxPooling2D(pool_size=(2, 2), input_shape=img1.shape))
 # model.add(Flatten())
 
-model.add(Flatten())
+# model.add(Flatten())
 # # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
 # model.add(Dense(8, activation=activation_1))
 # model.add(Dropout(0.5))
-model.add(Dense(2, activation='sigmoid'))
+# model.add(Dense(2, activation='sigmoid'))
 
 # # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
 # model.add(Dense(8, activation=activation_1))
