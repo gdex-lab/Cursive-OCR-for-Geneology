@@ -5,47 +5,26 @@ import matplotlib.pyplot as plt
 import cv2
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
-from keras.layers import Conv2D, MaxPooling2D, AveragePooling2D, GlobalMaxPooling2D
+from keras.layers import Conv2D, Conv1D, MaxPooling2D,MaxPooling1D, AveragePooling2D, GlobalMaxPooling2D
 import keras
 import numpy as np
 # vizualize_layer(model, scipy.misc.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize_examplery_images\\_lan.jpg').astype(np.float32))
 img1 = cv2.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize_examplery_images\\_lan.jpg')
+img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 # print(img.shape)
 
 
 model = Sequential()
-model.add(Conv2D(3,
-                 kernel_size=(3, 3),
+# model.add(MaxPooling1D(pool_size=(2), input_shape=img1.shape))
+model.add(Conv1D(32,
+                 kernel_size=(1),
                  activation='sigmoid',
-                 data_format='channels_last',
                  input_shape=img1.shape))
-# model.add(GlobalMaxPooling2D(input_shape=img1.shape))
-model.add(AveragePooling2D(pool_size=(2, 2), input_shape=img1.shape))
-# model.add(MaxPooling2D(pool_size=(2, 2), input_shape=img1.shape))
-# model.add(Flatten())
-
-# model.add(Flatten())
-# # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-# model.add(Dense(8, activation=activation_1))
-# model.add(Dropout(0.5))
-# model.add(Dense(2, activation='sigmoid'))
-
-# # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-# model.add(Dense(8, activation=activation_1))
-# model.add(Dropout(0.5))
-# model.add(Dense(3, activation='tanh'))
-
-# model.add(Flatten())
-# # model.add(MaxPooling2D(pool_size=(pool_size, pool_size)))
-# model.add(Dense(8, activation=activation_1))
-# model.add(Dropout(0.5))
-# model.add(Dense(2, activation='sigmoid'))
- # 'categorical_crossentropy' <- supposedly for multi-class, not multi label: https://stats.stackexchange.com/questions/260505/machine-learning-should-i-use-a-categorical-cross-entropy-or-binary-cross-entro
-model.compile(loss='mean_squared_error',
-#'binary_crossentropy' : supposedely ideal for multi label, current .5 test accuracy, but no letters predicted
-# 'mean_squared_error' : all same, 1s
-              optimizer=keras.optimizers.Adam(), #.Adam(), Adadelta()
-              metrics=['categorical_accuracy', 'accuracy', 'mae'])
+# model.add(Conv1D(3,
+#                  kernel_size=(2),
+#                  activation='sigmoid',
+#                  input_shape=img1.shape))
+model.add(MaxPooling1D(12, 1))
 
 img_batch = np.expand_dims(img1, axis=0)
 conv_img = model.predict(img_batch)

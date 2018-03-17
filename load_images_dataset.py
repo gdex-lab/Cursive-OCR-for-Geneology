@@ -82,7 +82,7 @@ def prepare_data(imgs_dir,
     return imgs, labels, n_classes, label_dict, SIZE
 
 
-def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/'):
+def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3):
     """
     This function is used to pull specific label atrributes from a file,
     in addition to processing the input images.
@@ -95,6 +95,7 @@ def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/'):
     imgs = []
     labels = []
     names = []
+    flatten = True if channels == 2 else False
 
     n_classes = df.apply(pd.Series.nunique)['Y']
 
@@ -102,8 +103,8 @@ def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/'):
     # print(expected_shape, delimiter)
     for index, row in df.iterrows():
         try:
-            img = scipy.misc.imread(row.X).astype(np.float32)
-        
+            img = scipy.misc.imread(row.X, flatten=flatten).astype(np.float32)
+
             assert img.shape == input_shape
             imgs.append(img)
             labels.append(eyes[(row.Y)-1])
