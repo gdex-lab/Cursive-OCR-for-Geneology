@@ -82,22 +82,37 @@ def prepare_data(imgs_dir,
     return imgs, labels, n_classes, label_dict, SIZE
 
 
-def read_my_csv(file_name, n_classes, delimiter='/'):
+def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/'):
     """
     This function is used to pull specific label atrributes from a file,
     in addition to processing the input images.
     """
     print("reading data from csv: {} with delimiter '{}'".format(file_name, delimiter))
+
     path = os.getcwd() + "\\{}".format(file_name)
     df = pd.read_csv(path, delimiter=delimiter)
+
+    imgs = []
     labels = []
+    names = []
+
+    n_classes = df.apply(pd.Series.nunique)['Y']
+
     eyes = np.eye(n_classes, dtype="uint8")
+    # print(expected_shape, delimiter)
+    for index, row in df.iterrows():
+        try:
+            img = scipy.misc.imread(row.X).astype(np.float32)
+        
+            assert img.shape == input_shape
+            imgs.append(img)
+            labels.append(eyes[(row.Y)-1])
+            names.append(row.X)
+        except Exception as e:
+            print("Failed img error: {} : {}".format(row.X, e))
 
-    for label in df.Y:
-        labels.append(eyes[label-1])
+    print("Total dataset: {}".format(len(imgs)))
+    print("Total labels: {}".format(len(labels)))
+    assert len(imgs) == len(labels)
 
-    imgs, name_labels, n_classes, name_label_dict, SIZE = prepare_data(os.getcwd()+"\\dataset")
-
-    return imgs, labels, name_labels, n_classes, name_label_dict, SIZE
-
-    # return imgs, labels, n_classes, label_dict, SIZE
+    return imgs, labels, names, n_classes, input_shape

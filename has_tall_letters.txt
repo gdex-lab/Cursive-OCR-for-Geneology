@@ -1,69 +1,69 @@
 X/Y
-.\dataset\104\$.jpg/0
-.\dataset\104\$100..jpg/0
-.\dataset\104\$12.00 (2).jpg/0
-.\dataset\104\$12.00.jpg/0
-.\dataset\104\$14. (2).jpg/0
-.\dataset\104\$14..jpg/0
-.\dataset\104\$2.jpg/0
-.\dataset\104\$21. (2).jpg/0
-.\dataset\104\$21..jpg/0
-.\dataset\104\$300..jpg/0
-.\dataset\104\$4.jpg/0
-.\dataset\104\$45..jpg/0
-.\dataset\104\$50. rec(2).jpg/0
-.\dataset\104\$50..jpg/0
-.\dataset\104\$_100.jpg/0
+.\dataset\104\$.jpg/1
+.\dataset\104\$100..jpg/1
+.\dataset\104\$12.00 (2).jpg/1
+.\dataset\104\$12.00.jpg/1
+.\dataset\104\$14. (2).jpg/1
+.\dataset\104\$14..jpg/1
+.\dataset\104\$2.jpg/1
+.\dataset\104\$21. (2).jpg/1
+.\dataset\104\$21..jpg/1
+.\dataset\104\$300..jpg/1
+.\dataset\104\$4.jpg/1
+.\dataset\104\$45..jpg/1
+.\dataset\104\$50. rec(2).jpg/1
+.\dataset\104\$50..jpg/1
+.\dataset\104\$_100.jpg/1
 .\dataset\104\,_as_.jpg/0
-.\dataset\104\.00_o.jpg/0
-.\dataset\104\.A_No.jpg/0
+.\dataset\104\.00_o.jpg/1
+.\dataset\104\.A_No.jpg/1
 .\dataset\104\._o.jpg/0
-.\dataset\104\._Sm.jpg/0
-.\dataset\104\0. (2).jpg/0
-.\dataset\104\0..jpg/0
-.\dataset\104\0.jpg/0
-.\dataset\104\0._.jpg/0
-.\dataset\104\00..jpg/0
-.\dataset\104\00.jpg/0
-.\dataset\104\09.jpg/0
-.\dataset\104\0_.jpg/0
-.\dataset\104\0_on.jpg/0
-.\dataset\104\1.59.jpg/0
-.\dataset\104\100.jpg/0
-.\dataset\104\100._.jpg/0
+.\dataset\104\._Sm.jpg/1
+.\dataset\104\0. (2).jpg/1
+.\dataset\104\0..jpg/1
+.\dataset\104\0.jpg/1
+.\dataset\104\0._.jpg/1
+.\dataset\104\00..jpg/1
+.\dataset\104\00.jpg/1
+.\dataset\104\09.jpg/1
+.\dataset\104\0_.jpg/1
+.\dataset\104\0_on.jpg/1
+.\dataset\104\1.59.jpg/1
+.\dataset\104\100.jpg/1
+.\dataset\104\100._.jpg/1
 .\dataset\104\10H.jpg/1
-.\dataset\104\12 (2).jpg/0
-.\dataset\104\12 (3).jpg/0
-.\dataset\104\12 (4).jpg/0
-.\dataset\104\12.jpg/0
-.\dataset\104\14.jpg/0
-.\dataset\104\14_ (2).jpg/0
-.\dataset\104\14_.jpg/0
+.\dataset\104\12 (2).jpg/1
+.\dataset\104\12 (3).jpg/1
+.\dataset\104\12 (4).jpg/1
+.\dataset\104\12.jpg/1
+.\dataset\104\14.jpg/1
+.\dataset\104\14_ (2).jpg/1
+.\dataset\104\14_.jpg/1
 .\dataset\104\1_La.jpg/1
-.\dataset\104\1_M.jpg/0
-.\dataset\104\2 (2).jpg/0
-.\dataset\104\2 (3).jpg/0
-.\dataset\104\2.00.jpg/0
-.\dataset\104\2.00_.jpg/0
-.\dataset\104\2.jpg/0
-.\dataset\104\21.5 (2).jpg/0
-.\dataset\104\21.5.jpg/0
+.\dataset\104\1_M.jpg/1
+.\dataset\104\2 (2).jpg/1
+.\dataset\104\2 (3).jpg/1
+.\dataset\104\2.00.jpg/1
+.\dataset\104\2.00_.jpg/1
+.\dataset\104\2.jpg/1
+.\dataset\104\21.5 (2).jpg/1
+.\dataset\104\21.5.jpg/1
 .\dataset\104\2H.jpg/1
 .\dataset\104\2nd.jpg/1
 .\dataset\104\2nd_.jpg/1
-.\dataset\104\3.jpg/0
-.\dataset\104\30.jpg/0
-.\dataset\104\31 (2).jpg/0
-.\dataset\104\31 (3).jpg/0
-.\dataset\104\31.jpg/0
-.\dataset\104\42.jpg/0
-.\dataset\104\4_o.jpg/0
-.\dataset\104\50_.jpg/0
-.\dataset\104\59_.jpg/0
+.\dataset\104\3.jpg/1
+.\dataset\104\30.jpg/1
+.\dataset\104\31 (2).jpg/1
+.\dataset\104\31 (3).jpg/1
+.\dataset\104\31.jpg/1
+.\dataset\104\42.jpg/1
+.\dataset\104\4_o.jpg/1
+.\dataset\104\50_.jpg/1
+.\dataset\104\59_.jpg/1
 .\dataset\104\9th.jpg/1
-.\dataset\104\9_in.jpg/0
+.\dataset\104\9_in.jpg/1
 .\dataset\104\a (2).jpg/0
-.\dataset\104\A.jpg/0
+.\dataset\104\A.jpg/1
 .\dataset\104\addl.jpg/1
 .\dataset\104\ael_.jpg/1
 .\dataset\104\Almo.jpg/1
@@ -91,8 +91,8 @@ X/Y
 .\dataset\104\aths.jpg/1
 .\dataset\104\Augu.jpg/1
 .\dataset\104\ause.jpg/0
-.\dataset\104\a_N..jpg/0
-.\dataset\104\A_No_3.jpg/0
+.\dataset\104\a_N..jpg/1
+.\dataset\104\A_No_3.jpg/1
 .\dataset\104\B._No.jpg/1
 .\dataset\104\Bath.jpg/1
 .\dataset\104\Bea (2).jpg/1
@@ -107,8 +107,8 @@ X/Y
 .\dataset\104\ceipt.jpg/1
 .\dataset\104\ceiv.jpg/0
 .\dataset\104\ch_2.jpg/1
-.\dataset\104\Com (2).jpg/0
-.\dataset\104\Com.jpg/0
+.\dataset\104\Com (2).jpg/1
+.\dataset\104\Com.jpg/1
 .\dataset\104\d.jpg/1
 .\dataset\104\d._.jpg/1
 .\dataset\104\Dan (2).jpg/1
@@ -137,8 +137,8 @@ X/Y
 .\dataset\104\el_M (2).jpg/1
 .\dataset\104\el_M.jpg/1
 .\dataset\104\emp.jpg/1
-.\dataset\104\er_$ (2).jpg/0
-.\dataset\104\er_$.jpg/0
+.\dataset\104\er_$ (2).jpg/1
+.\dataset\104\er_$.jpg/1
 .\dataset\104\er_.jpg/0
 .\dataset\104\er_f.jpg/1
 .\dataset\104\es_ (2).jpg/0
@@ -146,11 +146,11 @@ X/Y
 .\dataset\104\es_.jpg/0
 .\dataset\104\et.jpg/1
 .\dataset\104\eter_.jpg/1
-.\dataset\104\e_$6..jpg/0
+.\dataset\104\e_$6..jpg/1
 .\dataset\104\e_.jpg/0
-.\dataset\104\e_A.jpg/0
-.\dataset\104\e_Co.jpg/0
-.\dataset\104\e_M.jpg/0
+.\dataset\104\e_A.jpg/1
+.\dataset\104\e_Co.jpg/1
+.\dataset\104\e_M.jpg/1
 .\dataset\104\e_of_.jpg/1
 .\dataset\104\for_$_.jpg/1
 .\dataset\104\Full (2).jpg/1
@@ -193,9 +193,9 @@ X/Y
 .\dataset\104\in_.jpg/0
 .\dataset\104\in_l.jpg/1
 .\dataset\104\in_po.jpg/1
-.\dataset\104\in_W.jpg/0
+.\dataset\104\in_W.jpg/1
 .\dataset\104\ipt_o.jpg/1
-.\dataset\104\Israe.jpg/0
+.\dataset\104\Israe.jpg/1
 .\dataset\104\is_ti.jpg/1
 .\dataset\104\is_tit.jpg/1
 .\dataset\104\it (2).jpg/1
@@ -230,14 +230,14 @@ X/Y
 .\dataset\104\l_2nd.jpg/1
 .\dataset\104\l_2nd_.jpg/1
 .\dataset\104\L_F.jpg/1
-.\dataset\104\Ma.jpg/0
-.\dataset\104\Mar.jpg/0
+.\dataset\104\Ma.jpg/1
+.\dataset\104\Mar.jpg/1
 .\dataset\104\March.jpg/1
-.\dataset\104\Mare.jpg/0
+.\dataset\104\Mare.jpg/1
 .\dataset\104\mer (2).jpg/0
 .\dataset\104\mer.jpg/0
 .\dataset\104\mes.jpg/0
-.\dataset\104\Mi (2).jpg/0
+.\dataset\104\Mi (2).jpg/1
 .\dataset\104\mi (3).jpg/0
 .\dataset\104\mi.jpg/0
 .\dataset\104\Mill.jpg/1
@@ -254,13 +254,13 @@ X/Y
 .\dataset\104\mp.jpg/1
 .\dataset\104\mple (2).jpg/1
 .\dataset\104\mple.jpg/1
-.\dataset\104\Mr.jpg/0
-.\dataset\104\Mr_.jpg/0
+.\dataset\104\Mr.jpg/1
+.\dataset\104\Mr_.jpg/1
 .\dataset\104\m_Y.jpg/1
 .\dataset\104\N.H..jpg/1
 .\dataset\104\n._.jpg/0
 .\dataset\104\N._Joh.jpg/1
-.\dataset\104\N._S.jpg/0
+.\dataset\104\N._S.jpg/1
 .\dataset\104\nd,_.jpg/1
 .\dataset\104\nd..jpg/1
 .\dataset\104\nd.jpg/1
@@ -274,10 +274,10 @@ X/Y
 .\dataset\104\niel.jpg/1
 .\dataset\104\Noble.jpg/1
 .\dataset\104\Note.jpg/1
-.\dataset\104\No_309.jpg/0
-.\dataset\104\ns_N.jpg/0
-.\dataset\104\n_$ (2).jpg/0
-.\dataset\104\n_$.jpg/0
+.\dataset\104\No_309.jpg/1
+.\dataset\104\ns_N.jpg/1
+.\dataset\104\n_$ (2).jpg/1
+.\dataset\104\n_$.jpg/1
 .\dataset\104\n_la.jpg/1
 .\dataset\104\n_ti (2).jpg/1
 .\dataset\104\n_ti.jpg/1
@@ -324,33 +324,33 @@ X/Y
 .\dataset\104\pt_.jpg/1
 .\dataset\104\pt_o.jpg/1
 .\dataset\104\rch_.jpg/1
-.\dataset\104\Re (2).jpg/0
-.\dataset\104\Re.jpg/0
+.\dataset\104\Re (2).jpg/1
+.\dataset\104\Re.jpg/1
 .\dataset\104\real.jpg/1
-.\dataset\104\Rec (2).jpg/0
-.\dataset\104\Rec (3).jpg/0
-.\dataset\104\Rec (4).jpg/0
-.\dataset\104\Rec.jpg/0
+.\dataset\104\Rec (2).jpg/1
+.\dataset\104\Rec (3).jpg/1
+.\dataset\104\Rec (4).jpg/1
+.\dataset\104\Rec.jpg/1
 .\dataset\104\rece (2).jpg/0
-.\dataset\104\Rece.jpg/0
+.\dataset\104\Rece.jpg/1
 .\dataset\104\recei (2).jpg/0
-.\dataset\104\Recei (3).jpg/0
-.\dataset\104\Recei (4).jpg/0
-.\dataset\104\Recei.jpg/0
+.\dataset\104\Recei (3).jpg/1
+.\dataset\104\Recei (4).jpg/1
+.\dataset\104\Recei.jpg/1
 .\dataset\104\righa (2).jpg/1
 .\dataset\104\righa.jpg/1
 .\dataset\104\ril_.jpg/1
 .\dataset\104\rk,_ (2).jpg/1
 .\dataset\104\rk,_.jpg/1
-.\dataset\104\r_$_.jpg/0
+.\dataset\104\r_$_.jpg/1
 .\dataset\104\r_re.jpg/0
 .\dataset\104\r_rec.jpg/0
 .\dataset\104\seph_.jpg/1
 .\dataset\104\sheb.jpg/1
 .\dataset\104\Smit.jpg/1
-.\dataset\104\so_1s.jpg/0
+.\dataset\104\so_1s.jpg/1
 .\dataset\104\st_9.jpg/1
-.\dataset\104\s_No.jpg/0
+.\dataset\104\s_No.jpg/1
 .\dataset\104\s_pr_.jpg/1
 .\dataset\104\s_tith (2).jpg/1
 .\dataset\104\s_tith.jpg/1
@@ -390,7 +390,7 @@ X/Y
 .\dataset\104\ust.jpg/1
 .\dataset\104\ved.jpg/1
 .\dataset\104\veive.jpg/0
-.\dataset\104\Wor.jpg/0
+.\dataset\104\Wor.jpg/1
 .\dataset\104\Work.jpg/1
 .\dataset\104\Youn (2).jpg/1
 .\dataset\104\Youn.jpg/1
@@ -400,35 +400,35 @@ X/Y
 .\dataset\104\[ (4).jpg/0
 .\dataset\104\[ (5).jpg/0
 .\dataset\104\[.jpg/0
-.\dataset\104\_$.jpg/0
-.\dataset\104\_$100.jpg/0
-.\dataset\104\_$12..jpg/0
-.\dataset\104\_$12.jpg/0
-.\dataset\104\_$2.jpg/0
-.\dataset\104\_$_10.jpg/0
-.\dataset\104\_1 (2).jpg/0
-.\dataset\104\_1.jpg/0
-.\dataset\104\_10.jpg/0
-.\dataset\104\_12.jpg/0
-.\dataset\104\_15.jpg/0
-.\dataset\104\_150.jpg/0
+.\dataset\104\_$.jpg/1
+.\dataset\104\_$100.jpg/1
+.\dataset\104\_$12..jpg/1
+.\dataset\104\_$12.jpg/1
+.\dataset\104\_$2.jpg/1
+.\dataset\104\_$_10.jpg/1
+.\dataset\104\_1 (2).jpg/1
+.\dataset\104\_1.jpg/1
+.\dataset\104\_10.jpg/1
+.\dataset\104\_12.jpg/1
+.\dataset\104\_15.jpg/1
+.\dataset\104\_150.jpg/1
 .\dataset\104\_1_L.jpg/1
 .\dataset\104\_1_sha.jpg/1
-.\dataset\104\_309.jpg/0
-.\dataset\104\_A.jpg/0
+.\dataset\104\_309.jpg/1
+.\dataset\104\_A.jpg/1
 .\dataset\104\_Alm.jpg/1
 .\dataset\104\_Also_.jpg/1
 .\dataset\104\_as_.jpg/0
 .\dataset\104\_as_p.jpg/1
-.\dataset\104\_Au.jpg/0
+.\dataset\104\_Au.jpg/1
 .\dataset\104\_Aug.jpg/1
 .\dataset\104\_Ba.jpg/1
 .\dataset\104\_Be (2).jpg/1
 .\dataset\104\_Be.jpg/1
 .\dataset\104\_Br.jpg/1
-.\dataset\104\_Co.jpg/0
-.\dataset\104\_Com (2).jpg/0
-.\dataset\104\_Com.jpg/0
+.\dataset\104\_Co.jpg/1
+.\dataset\104\_Com (2).jpg/1
+.\dataset\104\_Com.jpg/1
 .\dataset\104\_Da (2).jpg/1
 .\dataset\104\_Da.jpg/1
 .\dataset\104\_for $.jpg/1
@@ -443,7 +443,7 @@ X/Y
 .\dataset\104\_his.jpg/1
 .\dataset\104\_his_ (2).jpg/1
 .\dataset\104\_his_.jpg/1
-.\dataset\104\_Isr.jpg/0
+.\dataset\104\_Isr.jpg/1
 .\dataset\104\_Ja (2).jpg/1
 .\dataset\104\_Ja.jpg/1
 .\dataset\104\_jose.jpg/1
@@ -453,13 +453,13 @@ X/Y
 .\dataset\104\_le (2).jpg/1
 .\dataset\104\_Le.jpg/1
 .\dataset\104\_lela.jpg/1
-.\dataset\104\_M.jpg/0
-.\dataset\104\_Ma.jpg/0
-.\dataset\104\_Mo (2).jpg/0
-.\dataset\104\_Mo.jpg/0
+.\dataset\104\_M.jpg/1
+.\dataset\104\_Ma.jpg/1
+.\dataset\104\_Mo (2).jpg/1
+.\dataset\104\_Mo.jpg/1
 .\dataset\104\_N.H.jpg/1
-.\dataset\104\_N._c.jpg/0
-.\dataset\104\_Na.jpg/0
+.\dataset\104\_N._c.jpg/1
+.\dataset\104\_Na.jpg/1
 .\dataset\104\_Nob.jpg/1
 .\dataset\104\_of.jpg/1
 .\dataset\104\_of_ (2).jpg/1
@@ -474,7 +474,7 @@ X/Y
 .\dataset\104\_Pet.jpg/1
 .\dataset\104\_pr_ (2).jpg/1
 .\dataset\104\_pr_.jpg/1
-.\dataset\104\_Re.jpg/0
+.\dataset\104\_Re.jpg/1
 .\dataset\104\_rece.jpg/0
 .\dataset\104\_shar.jpg/1
 .\dataset\104\_tith (2).jpg/1
@@ -484,71 +484,71 @@ X/Y
 .\dataset\104\_Y.jpg/1
 .\dataset\104\_You (2).jpg/1
 .\dataset\104\_You.jpg/1
-.\dataset\104-enlargedrotated\$.jpg/0
-.\dataset\104-enlargedrotated\$100..jpg/0
-.\dataset\104-enlargedrotated\$12.00 (2).jpg/0
-.\dataset\104-enlargedrotated\$12.00.jpg/0
-.\dataset\104-enlargedrotated\$14. (2).jpg/0
-.\dataset\104-enlargedrotated\$14..jpg/0
-.\dataset\104-enlargedrotated\$2.jpg/0
-.\dataset\104-enlargedrotated\$21. (2).jpg/0
-.\dataset\104-enlargedrotated\$21..jpg/0
-.\dataset\104-enlargedrotated\$300..jpg/0
-.\dataset\104-enlargedrotated\$4.jpg/0
-.\dataset\104-enlargedrotated\$45..jpg/0
-.\dataset\104-enlargedrotated\$50. rec(2).jpg/0
-.\dataset\104-enlargedrotated\$50..jpg/0
-.\dataset\104-enlargedrotated\$_100.jpg/0
+.\dataset\104-enlargedrotated\$.jpg/1
+.\dataset\104-enlargedrotated\$100..jpg/1
+.\dataset\104-enlargedrotated\$12.00 (2).jpg/1
+.\dataset\104-enlargedrotated\$12.00.jpg/1
+.\dataset\104-enlargedrotated\$14. (2).jpg/1
+.\dataset\104-enlargedrotated\$14..jpg/1
+.\dataset\104-enlargedrotated\$2.jpg/1
+.\dataset\104-enlargedrotated\$21. (2).jpg/1
+.\dataset\104-enlargedrotated\$21..jpg/1
+.\dataset\104-enlargedrotated\$300..jpg/1
+.\dataset\104-enlargedrotated\$4.jpg/1
+.\dataset\104-enlargedrotated\$45..jpg/1
+.\dataset\104-enlargedrotated\$50. rec(2).jpg/1
+.\dataset\104-enlargedrotated\$50..jpg/1
+.\dataset\104-enlargedrotated\$_100.jpg/1
 .\dataset\104-enlargedrotated\,_as_.jpg/0
-.\dataset\104-enlargedrotated\.00_o.jpg/0
-.\dataset\104-enlargedrotated\.A_No.jpg/0
+.\dataset\104-enlargedrotated\.00_o.jpg/1
+.\dataset\104-enlargedrotated\.A_No.jpg/1
 .\dataset\104-enlargedrotated\._o.jpg/0
-.\dataset\104-enlargedrotated\._Sm.jpg/0
-.\dataset\104-enlargedrotated\0. (2).jpg/0
-.\dataset\104-enlargedrotated\0..jpg/0
-.\dataset\104-enlargedrotated\0.jpg/0
-.\dataset\104-enlargedrotated\0._.jpg/0
-.\dataset\104-enlargedrotated\00..jpg/0
-.\dataset\104-enlargedrotated\00.jpg/0
-.\dataset\104-enlargedrotated\09.jpg/0
-.\dataset\104-enlargedrotated\0_.jpg/0
-.\dataset\104-enlargedrotated\0_on.jpg/0
-.\dataset\104-enlargedrotated\1.59.jpg/0
-.\dataset\104-enlargedrotated\100.jpg/0
-.\dataset\104-enlargedrotated\100._.jpg/0
+.\dataset\104-enlargedrotated\._Sm.jpg/1
+.\dataset\104-enlargedrotated\0. (2).jpg/1
+.\dataset\104-enlargedrotated\0..jpg/1
+.\dataset\104-enlargedrotated\0.jpg/1
+.\dataset\104-enlargedrotated\0._.jpg/1
+.\dataset\104-enlargedrotated\00..jpg/1
+.\dataset\104-enlargedrotated\00.jpg/1
+.\dataset\104-enlargedrotated\09.jpg/1
+.\dataset\104-enlargedrotated\0_.jpg/1
+.\dataset\104-enlargedrotated\0_on.jpg/1
+.\dataset\104-enlargedrotated\1.59.jpg/1
+.\dataset\104-enlargedrotated\100.jpg/1
+.\dataset\104-enlargedrotated\100._.jpg/1
 .\dataset\104-enlargedrotated\10H.jpg/1
-.\dataset\104-enlargedrotated\12 (2).jpg/0
-.\dataset\104-enlargedrotated\12 (3).jpg/0
-.\dataset\104-enlargedrotated\12 (4).jpg/0
-.\dataset\104-enlargedrotated\12.jpg/0
-.\dataset\104-enlargedrotated\14.jpg/0
-.\dataset\104-enlargedrotated\14_ (2).jpg/0
-.\dataset\104-enlargedrotated\14_.jpg/0
+.\dataset\104-enlargedrotated\12 (2).jpg/1
+.\dataset\104-enlargedrotated\12 (3).jpg/1
+.\dataset\104-enlargedrotated\12 (4).jpg/1
+.\dataset\104-enlargedrotated\12.jpg/1
+.\dataset\104-enlargedrotated\14.jpg/1
+.\dataset\104-enlargedrotated\14_ (2).jpg/1
+.\dataset\104-enlargedrotated\14_.jpg/1
 .\dataset\104-enlargedrotated\1_La.jpg/1
-.\dataset\104-enlargedrotated\1_M.jpg/0
-.\dataset\104-enlargedrotated\2 (2).jpg/0
-.\dataset\104-enlargedrotated\2 (3).jpg/0
-.\dataset\104-enlargedrotated\2.00.jpg/0
-.\dataset\104-enlargedrotated\2.00_.jpg/0
-.\dataset\104-enlargedrotated\2.jpg/0
-.\dataset\104-enlargedrotated\21.5 (2).jpg/0
-.\dataset\104-enlargedrotated\21.5.jpg/0
+.\dataset\104-enlargedrotated\1_M.jpg/1
+.\dataset\104-enlargedrotated\2 (2).jpg/1
+.\dataset\104-enlargedrotated\2 (3).jpg/1
+.\dataset\104-enlargedrotated\2.00.jpg/1
+.\dataset\104-enlargedrotated\2.00_.jpg/1
+.\dataset\104-enlargedrotated\2.jpg/1
+.\dataset\104-enlargedrotated\21.5 (2).jpg/1
+.\dataset\104-enlargedrotated\21.5.jpg/1
 .\dataset\104-enlargedrotated\2H.jpg/1
 .\dataset\104-enlargedrotated\2nd.jpg/1
 .\dataset\104-enlargedrotated\2nd_.jpg/1
-.\dataset\104-enlargedrotated\3.jpg/0
-.\dataset\104-enlargedrotated\30.jpg/0
-.\dataset\104-enlargedrotated\31 (2).jpg/0
-.\dataset\104-enlargedrotated\31 (3).jpg/0
-.\dataset\104-enlargedrotated\31.jpg/0
-.\dataset\104-enlargedrotated\42.jpg/0
-.\dataset\104-enlargedrotated\4_o.jpg/0
-.\dataset\104-enlargedrotated\50_.jpg/0
-.\dataset\104-enlargedrotated\59_.jpg/0
+.\dataset\104-enlargedrotated\3.jpg/1
+.\dataset\104-enlargedrotated\30.jpg/1
+.\dataset\104-enlargedrotated\31 (2).jpg/1
+.\dataset\104-enlargedrotated\31 (3).jpg/1
+.\dataset\104-enlargedrotated\31.jpg/1
+.\dataset\104-enlargedrotated\42.jpg/1
+.\dataset\104-enlargedrotated\4_o.jpg/1
+.\dataset\104-enlargedrotated\50_.jpg/1
+.\dataset\104-enlargedrotated\59_.jpg/1
 .\dataset\104-enlargedrotated\9th.jpg/1
-.\dataset\104-enlargedrotated\9_in.jpg/0
+.\dataset\104-enlargedrotated\9_in.jpg/1
 .\dataset\104-enlargedrotated\a (2).jpg/0
-.\dataset\104-enlargedrotated\A.jpg/0
+.\dataset\104-enlargedrotated\A.jpg/1
 .\dataset\104-enlargedrotated\addl.jpg/1
 .\dataset\104-enlargedrotated\ael_.jpg/1
 .\dataset\104-enlargedrotated\Almo.jpg/1
@@ -576,8 +576,8 @@ X/Y
 .\dataset\104-enlargedrotated\aths.jpg/1
 .\dataset\104-enlargedrotated\Augu.jpg/1
 .\dataset\104-enlargedrotated\ause.jpg/0
-.\dataset\104-enlargedrotated\a_N..jpg/0
-.\dataset\104-enlargedrotated\A_No_3.jpg/0
+.\dataset\104-enlargedrotated\a_N..jpg/1
+.\dataset\104-enlargedrotated\A_No_3.jpg/1
 .\dataset\104-enlargedrotated\B._No.jpg/1
 .\dataset\104-enlargedrotated\Bath.jpg/1
 .\dataset\104-enlargedrotated\Bea (2).jpg/1
@@ -592,8 +592,8 @@ X/Y
 .\dataset\104-enlargedrotated\ceipt.jpg/1
 .\dataset\104-enlargedrotated\ceiv.jpg/0
 .\dataset\104-enlargedrotated\ch_2.jpg/1
-.\dataset\104-enlargedrotated\Com (2).jpg/0
-.\dataset\104-enlargedrotated\Com.jpg/0
+.\dataset\104-enlargedrotated\Com (2).jpg/1
+.\dataset\104-enlargedrotated\Com.jpg/1
 .\dataset\104-enlargedrotated\d.jpg/1
 .\dataset\104-enlargedrotated\d._.jpg/1
 .\dataset\104-enlargedrotated\Dan (2).jpg/1
@@ -622,8 +622,8 @@ X/Y
 .\dataset\104-enlargedrotated\el_M (2).jpg/1
 .\dataset\104-enlargedrotated\el_M.jpg/1
 .\dataset\104-enlargedrotated\emp.jpg/1
-.\dataset\104-enlargedrotated\er_$ (2).jpg/0
-.\dataset\104-enlargedrotated\er_$.jpg/0
+.\dataset\104-enlargedrotated\er_$ (2).jpg/1
+.\dataset\104-enlargedrotated\er_$.jpg/1
 .\dataset\104-enlargedrotated\er_.jpg/0
 .\dataset\104-enlargedrotated\er_f.jpg/1
 .\dataset\104-enlargedrotated\es_ (2).jpg/0
@@ -631,11 +631,11 @@ X/Y
 .\dataset\104-enlargedrotated\es_.jpg/0
 .\dataset\104-enlargedrotated\et.jpg/1
 .\dataset\104-enlargedrotated\eter_.jpg/1
-.\dataset\104-enlargedrotated\e_$6..jpg/0
+.\dataset\104-enlargedrotated\e_$6..jpg/1
 .\dataset\104-enlargedrotated\e_.jpg/0
-.\dataset\104-enlargedrotated\e_A.jpg/0
-.\dataset\104-enlargedrotated\e_Co.jpg/0
-.\dataset\104-enlargedrotated\e_M.jpg/0
+.\dataset\104-enlargedrotated\e_A.jpg/1
+.\dataset\104-enlargedrotated\e_Co.jpg/1
+.\dataset\104-enlargedrotated\e_M.jpg/1
 .\dataset\104-enlargedrotated\e_of_.jpg/1
 .\dataset\104-enlargedrotated\for_$_.jpg/1
 .\dataset\104-enlargedrotated\Full (2).jpg/1
@@ -678,9 +678,9 @@ X/Y
 .\dataset\104-enlargedrotated\in_.jpg/0
 .\dataset\104-enlargedrotated\in_l.jpg/1
 .\dataset\104-enlargedrotated\in_po.jpg/1
-.\dataset\104-enlargedrotated\in_W.jpg/0
+.\dataset\104-enlargedrotated\in_W.jpg/1
 .\dataset\104-enlargedrotated\ipt_o.jpg/1
-.\dataset\104-enlargedrotated\Israe.jpg/0
+.\dataset\104-enlargedrotated\Israe.jpg/1
 .\dataset\104-enlargedrotated\is_ti.jpg/1
 .\dataset\104-enlargedrotated\is_tit.jpg/1
 .\dataset\104-enlargedrotated\it (2).jpg/1
@@ -715,14 +715,14 @@ X/Y
 .\dataset\104-enlargedrotated\l_2nd.jpg/1
 .\dataset\104-enlargedrotated\l_2nd_.jpg/1
 .\dataset\104-enlargedrotated\L_F.jpg/1
-.\dataset\104-enlargedrotated\Ma.jpg/0
-.\dataset\104-enlargedrotated\Mar.jpg/0
+.\dataset\104-enlargedrotated\Ma.jpg/1
+.\dataset\104-enlargedrotated\Mar.jpg/1
 .\dataset\104-enlargedrotated\March.jpg/1
-.\dataset\104-enlargedrotated\Mare.jpg/0
+.\dataset\104-enlargedrotated\Mare.jpg/1
 .\dataset\104-enlargedrotated\mer (2).jpg/0
 .\dataset\104-enlargedrotated\mer.jpg/0
 .\dataset\104-enlargedrotated\mes.jpg/0
-.\dataset\104-enlargedrotated\Mi (2).jpg/0
+.\dataset\104-enlargedrotated\Mi (2).jpg/1
 .\dataset\104-enlargedrotated\mi (3).jpg/0
 .\dataset\104-enlargedrotated\mi.jpg/0
 .\dataset\104-enlargedrotated\Mill.jpg/1
@@ -739,13 +739,13 @@ X/Y
 .\dataset\104-enlargedrotated\mp.jpg/1
 .\dataset\104-enlargedrotated\mple (2).jpg/1
 .\dataset\104-enlargedrotated\mple.jpg/1
-.\dataset\104-enlargedrotated\Mr.jpg/0
-.\dataset\104-enlargedrotated\Mr_.jpg/0
+.\dataset\104-enlargedrotated\Mr.jpg/1
+.\dataset\104-enlargedrotated\Mr_.jpg/1
 .\dataset\104-enlargedrotated\m_Y.jpg/1
 .\dataset\104-enlargedrotated\N.H..jpg/1
 .\dataset\104-enlargedrotated\n._.jpg/0
 .\dataset\104-enlargedrotated\N._Joh.jpg/1
-.\dataset\104-enlargedrotated\N._S.jpg/0
+.\dataset\104-enlargedrotated\N._S.jpg/1
 .\dataset\104-enlargedrotated\nd,_.jpg/1
 .\dataset\104-enlargedrotated\nd..jpg/1
 .\dataset\104-enlargedrotated\nd.jpg/1
@@ -759,10 +759,10 @@ X/Y
 .\dataset\104-enlargedrotated\niel.jpg/1
 .\dataset\104-enlargedrotated\Noble.jpg/1
 .\dataset\104-enlargedrotated\Note.jpg/1
-.\dataset\104-enlargedrotated\No_309.jpg/0
-.\dataset\104-enlargedrotated\ns_N.jpg/0
-.\dataset\104-enlargedrotated\n_$ (2).jpg/0
-.\dataset\104-enlargedrotated\n_$.jpg/0
+.\dataset\104-enlargedrotated\No_309.jpg/1
+.\dataset\104-enlargedrotated\ns_N.jpg/1
+.\dataset\104-enlargedrotated\n_$ (2).jpg/1
+.\dataset\104-enlargedrotated\n_$.jpg/1
 .\dataset\104-enlargedrotated\n_la.jpg/1
 .\dataset\104-enlargedrotated\n_ti (2).jpg/1
 .\dataset\104-enlargedrotated\n_ti.jpg/1
@@ -809,33 +809,33 @@ X/Y
 .\dataset\104-enlargedrotated\pt_.jpg/1
 .\dataset\104-enlargedrotated\pt_o.jpg/1
 .\dataset\104-enlargedrotated\rch_.jpg/1
-.\dataset\104-enlargedrotated\Re (2).jpg/0
-.\dataset\104-enlargedrotated\Re.jpg/0
+.\dataset\104-enlargedrotated\Re (2).jpg/1
+.\dataset\104-enlargedrotated\Re.jpg/1
 .\dataset\104-enlargedrotated\real.jpg/1
-.\dataset\104-enlargedrotated\Rec (2).jpg/0
-.\dataset\104-enlargedrotated\Rec (3).jpg/0
-.\dataset\104-enlargedrotated\Rec (4).jpg/0
-.\dataset\104-enlargedrotated\Rec.jpg/0
+.\dataset\104-enlargedrotated\Rec (2).jpg/1
+.\dataset\104-enlargedrotated\Rec (3).jpg/1
+.\dataset\104-enlargedrotated\Rec (4).jpg/1
+.\dataset\104-enlargedrotated\Rec.jpg/1
 .\dataset\104-enlargedrotated\rece (2).jpg/0
-.\dataset\104-enlargedrotated\Rece.jpg/0
+.\dataset\104-enlargedrotated\Rece.jpg/1
 .\dataset\104-enlargedrotated\recei (2).jpg/0
-.\dataset\104-enlargedrotated\Recei (3).jpg/0
-.\dataset\104-enlargedrotated\Recei (4).jpg/0
-.\dataset\104-enlargedrotated\Recei.jpg/0
+.\dataset\104-enlargedrotated\Recei (3).jpg/1
+.\dataset\104-enlargedrotated\Recei (4).jpg/1
+.\dataset\104-enlargedrotated\Recei.jpg/1
 .\dataset\104-enlargedrotated\righa (2).jpg/1
 .\dataset\104-enlargedrotated\righa.jpg/1
 .\dataset\104-enlargedrotated\ril_.jpg/1
 .\dataset\104-enlargedrotated\rk,_ (2).jpg/1
 .\dataset\104-enlargedrotated\rk,_.jpg/1
-.\dataset\104-enlargedrotated\r_$_.jpg/0
+.\dataset\104-enlargedrotated\r_$_.jpg/1
 .\dataset\104-enlargedrotated\r_re.jpg/0
 .\dataset\104-enlargedrotated\r_rec.jpg/0
 .\dataset\104-enlargedrotated\seph_.jpg/1
 .\dataset\104-enlargedrotated\sheb.jpg/1
 .\dataset\104-enlargedrotated\Smit.jpg/1
-.\dataset\104-enlargedrotated\so_1s.jpg/0
+.\dataset\104-enlargedrotated\so_1s.jpg/1
 .\dataset\104-enlargedrotated\st_9.jpg/1
-.\dataset\104-enlargedrotated\s_No.jpg/0
+.\dataset\104-enlargedrotated\s_No.jpg/1
 .\dataset\104-enlargedrotated\s_pr_.jpg/1
 .\dataset\104-enlargedrotated\s_tith (2).jpg/1
 .\dataset\104-enlargedrotated\s_tith.jpg/1
@@ -875,7 +875,7 @@ X/Y
 .\dataset\104-enlargedrotated\ust.jpg/1
 .\dataset\104-enlargedrotated\ved.jpg/1
 .\dataset\104-enlargedrotated\veive.jpg/0
-.\dataset\104-enlargedrotated\Wor.jpg/0
+.\dataset\104-enlargedrotated\Wor.jpg/1
 .\dataset\104-enlargedrotated\Work.jpg/1
 .\dataset\104-enlargedrotated\Youn (2).jpg/1
 .\dataset\104-enlargedrotated\Youn.jpg/1
@@ -885,35 +885,35 @@ X/Y
 .\dataset\104-enlargedrotated\[ (4).jpg/0
 .\dataset\104-enlargedrotated\[ (5).jpg/0
 .\dataset\104-enlargedrotated\[.jpg/0
-.\dataset\104-enlargedrotated\_$.jpg/0
-.\dataset\104-enlargedrotated\_$100.jpg/0
-.\dataset\104-enlargedrotated\_$12..jpg/0
-.\dataset\104-enlargedrotated\_$12.jpg/0
-.\dataset\104-enlargedrotated\_$2.jpg/0
-.\dataset\104-enlargedrotated\_$_10.jpg/0
-.\dataset\104-enlargedrotated\_1 (2).jpg/0
-.\dataset\104-enlargedrotated\_1.jpg/0
-.\dataset\104-enlargedrotated\_10.jpg/0
-.\dataset\104-enlargedrotated\_12.jpg/0
-.\dataset\104-enlargedrotated\_15.jpg/0
-.\dataset\104-enlargedrotated\_150.jpg/0
+.\dataset\104-enlargedrotated\_$.jpg/1
+.\dataset\104-enlargedrotated\_$100.jpg/1
+.\dataset\104-enlargedrotated\_$12..jpg/1
+.\dataset\104-enlargedrotated\_$12.jpg/1
+.\dataset\104-enlargedrotated\_$2.jpg/1
+.\dataset\104-enlargedrotated\_$_10.jpg/1
+.\dataset\104-enlargedrotated\_1 (2).jpg/1
+.\dataset\104-enlargedrotated\_1.jpg/1
+.\dataset\104-enlargedrotated\_10.jpg/1
+.\dataset\104-enlargedrotated\_12.jpg/1
+.\dataset\104-enlargedrotated\_15.jpg/1
+.\dataset\104-enlargedrotated\_150.jpg/1
 .\dataset\104-enlargedrotated\_1_L.jpg/1
 .\dataset\104-enlargedrotated\_1_sha.jpg/1
-.\dataset\104-enlargedrotated\_309.jpg/0
-.\dataset\104-enlargedrotated\_A.jpg/0
+.\dataset\104-enlargedrotated\_309.jpg/1
+.\dataset\104-enlargedrotated\_A.jpg/1
 .\dataset\104-enlargedrotated\_Alm.jpg/1
 .\dataset\104-enlargedrotated\_Also_.jpg/1
 .\dataset\104-enlargedrotated\_as_.jpg/0
 .\dataset\104-enlargedrotated\_as_p.jpg/1
-.\dataset\104-enlargedrotated\_Au.jpg/0
+.\dataset\104-enlargedrotated\_Au.jpg/1
 .\dataset\104-enlargedrotated\_Aug.jpg/1
 .\dataset\104-enlargedrotated\_Ba.jpg/1
 .\dataset\104-enlargedrotated\_Be (2).jpg/1
 .\dataset\104-enlargedrotated\_Be.jpg/1
 .\dataset\104-enlargedrotated\_Br.jpg/1
-.\dataset\104-enlargedrotated\_Co.jpg/0
-.\dataset\104-enlargedrotated\_Com (2).jpg/0
-.\dataset\104-enlargedrotated\_Com.jpg/0
+.\dataset\104-enlargedrotated\_Co.jpg/1
+.\dataset\104-enlargedrotated\_Com (2).jpg/1
+.\dataset\104-enlargedrotated\_Com.jpg/1
 .\dataset\104-enlargedrotated\_Da (2).jpg/1
 .\dataset\104-enlargedrotated\_Da.jpg/1
 .\dataset\104-enlargedrotated\_for $.jpg/1
@@ -928,7 +928,7 @@ X/Y
 .\dataset\104-enlargedrotated\_his.jpg/1
 .\dataset\104-enlargedrotated\_his_ (2).jpg/1
 .\dataset\104-enlargedrotated\_his_.jpg/1
-.\dataset\104-enlargedrotated\_Isr.jpg/0
+.\dataset\104-enlargedrotated\_Isr.jpg/1
 .\dataset\104-enlargedrotated\_Ja (2).jpg/1
 .\dataset\104-enlargedrotated\_Ja.jpg/1
 .\dataset\104-enlargedrotated\_jose.jpg/1
@@ -938,13 +938,13 @@ X/Y
 .\dataset\104-enlargedrotated\_le (2).jpg/1
 .\dataset\104-enlargedrotated\_Le.jpg/1
 .\dataset\104-enlargedrotated\_lela.jpg/1
-.\dataset\104-enlargedrotated\_M.jpg/0
-.\dataset\104-enlargedrotated\_Ma.jpg/0
-.\dataset\104-enlargedrotated\_Mo (2).jpg/0
-.\dataset\104-enlargedrotated\_Mo.jpg/0
+.\dataset\104-enlargedrotated\_M.jpg/1
+.\dataset\104-enlargedrotated\_Ma.jpg/1
+.\dataset\104-enlargedrotated\_Mo (2).jpg/1
+.\dataset\104-enlargedrotated\_Mo.jpg/1
 .\dataset\104-enlargedrotated\_N.H.jpg/1
-.\dataset\104-enlargedrotated\_N._c.jpg/0
-.\dataset\104-enlargedrotated\_Na.jpg/0
+.\dataset\104-enlargedrotated\_N._c.jpg/1
+.\dataset\104-enlargedrotated\_Na.jpg/1
 .\dataset\104-enlargedrotated\_Nob.jpg/1
 .\dataset\104-enlargedrotated\_of.jpg/1
 .\dataset\104-enlargedrotated\_of_ (2).jpg/1
@@ -959,7 +959,7 @@ X/Y
 .\dataset\104-enlargedrotated\_Pet.jpg/1
 .\dataset\104-enlargedrotated\_pr_ (2).jpg/1
 .\dataset\104-enlargedrotated\_pr_.jpg/1
-.\dataset\104-enlargedrotated\_Re.jpg/0
+.\dataset\104-enlargedrotated\_Re.jpg/1
 .\dataset\104-enlargedrotated\_rece.jpg/0
 .\dataset\104-enlargedrotated\_shar.jpg/1
 .\dataset\104-enlargedrotated\_tith (2).jpg/1
@@ -970,7 +970,7 @@ X/Y
 .\dataset\104-enlargedrotated\_You (2).jpg/1
 .\dataset\104-enlargedrotated\_You.jpg/1
 .\dataset\178\,_an.jpg/0
-.\dataset\178\._I_.jpg/0
+.\dataset\178\._I_.jpg/1
 .\dataset\178\ade.jpg/1
 .\dataset\178\affec.jpg/1
 .\dataset\178\aged.jpg/1
@@ -1019,10 +1019,10 @@ X/Y
 .\dataset\178\d_.jpg/1
 .\dataset\178\d_b (2).jpg/1
 .\dataset\178\d_b.jpg/1
-.\dataset\178\E (2).jpg/0
+.\dataset\178\E (2).jpg/1
 .\dataset\178\e,.jpg/0
 .\dataset\178\e,_a.jpg/0
-.\dataset\178\E.jpg/0
+.\dataset\178\E.jpg/1
 .\dataset\178\eal (2).jpg/1
 .\dataset\178\eal.jpg/1
 .\dataset\178\eart.jpg/1
@@ -1040,7 +1040,7 @@ X/Y
 .\dataset\178\eing.jpg/1
 .\dataset\178\elpl.jpg/1
 .\dataset\178\elple.jpg/1
-.\dataset\178\Em.jpg/0
+.\dataset\178\Em.jpg/1
 .\dataset\178\en.jpg/0
 .\dataset\178\ench.jpg/1
 .\dataset\178\ene.jpg/0
@@ -1098,8 +1098,8 @@ X/Y
 .\dataset\178\ison.jpg/0
 .\dataset\178\ith..jpg/1
 .\dataset\178\ith.jpg/1
-.\dataset\178\I_.jpg/0
-.\dataset\178\I_a.jpg/0
+.\dataset\178\I_.jpg/1
+.\dataset\178\I_a.jpg/1
 .\dataset\178\I_ap.jpg/1
 .\dataset\178\I_b (2).jpg/1
 .\dataset\178\I_b.jpg/1
@@ -1126,7 +1126,7 @@ X/Y
 .\dataset\178\my_.jpg/1
 .\dataset\178\n. (2).jpg/0
 .\dataset\178\n..jpg/0
-.\dataset\178\n._I.jpg/0
+.\dataset\178\n._I.jpg/1
 .\dataset\178\nchi.jpg/1
 .\dataset\178\nd (2).jpg/1
 .\dataset\178\nd.jpg/1
@@ -1165,10 +1165,10 @@ X/Y
 .\dataset\178\r.jpg/0
 .\dataset\178\rag.jpg/1
 .\dataset\178\rati.jpg/1
-.\dataset\178\Re.jpg/0
+.\dataset\178\Re.jpg/1
 .\dataset\178\ren.jpg/0
 .\dataset\178\ren_.jpg/0
-.\dataset\178\Res.jpg/0
+.\dataset\178\Res.jpg/1
 .\dataset\178\ris.jpg/0
 .\dataset\178\risin.jpg/0
 .\dataset\178\riso.jpg/0
@@ -1178,8 +1178,8 @@ X/Y
 .\dataset\178\s.jpg/0
 .\dataset\178\see.jpg/0
 .\dataset\178\sin.jpg/0
-.\dataset\178\Sm (2).jpg/0
-.\dataset\178\Sm.jpg/0
+.\dataset\178\Sm (2).jpg/1
+.\dataset\178\Sm.jpg/1
 .\dataset\178\son.jpg/0
 .\dataset\178\sor.jpg/0
 .\dataset\178\sorr.jpg/0
@@ -1252,7 +1252,7 @@ X/Y
 .\dataset\178\_ch.jpg/1
 .\dataset\178\_de.jpg/1
 .\dataset\178\_dr.jpg/1
-.\dataset\178\_E.jpg/0
+.\dataset\178\_E.jpg/1
 .\dataset\178\_ge.jpg/1
 .\dataset\178\_he (2).jpg/1
 .\dataset\178\_he.jpg/1
@@ -1267,7 +1267,7 @@ X/Y
 .\dataset\178\_or.jpg/0
 .\dataset\178\_pr.jpg/1
 .\dataset\178\_ri.jpg/0
-.\dataset\178\_S.jpg/0
+.\dataset\178\_S.jpg/1
 .\dataset\178\_see.jpg/0
 .\dataset\178\_sp.jpg/1
 .\dataset\178\_spa.jpg/1
@@ -1284,7 +1284,7 @@ X/Y
 .\dataset\178\_yo (2).jpg/1
 .\dataset\178\_yo.jpg/1
 .\dataset\178-enlargedrotated\,_an.jpg/0
-.\dataset\178-enlargedrotated\._I_.jpg/0
+.\dataset\178-enlargedrotated\._I_.jpg/1
 .\dataset\178-enlargedrotated\ade.jpg/1
 .\dataset\178-enlargedrotated\affec.jpg/1
 .\dataset\178-enlargedrotated\aged.jpg/1
@@ -1333,10 +1333,10 @@ X/Y
 .\dataset\178-enlargedrotated\d_.jpg/1
 .\dataset\178-enlargedrotated\d_b (2).jpg/1
 .\dataset\178-enlargedrotated\d_b.jpg/1
-.\dataset\178-enlargedrotated\E (2).jpg/0
+.\dataset\178-enlargedrotated\E (2).jpg/1
 .\dataset\178-enlargedrotated\e,.jpg/0
 .\dataset\178-enlargedrotated\e,_a.jpg/0
-.\dataset\178-enlargedrotated\E.jpg/0
+.\dataset\178-enlargedrotated\E.jpg/1
 .\dataset\178-enlargedrotated\eal (2).jpg/1
 .\dataset\178-enlargedrotated\eal.jpg/1
 .\dataset\178-enlargedrotated\eart.jpg/1
@@ -1354,7 +1354,7 @@ X/Y
 .\dataset\178-enlargedrotated\eing.jpg/1
 .\dataset\178-enlargedrotated\elpl.jpg/1
 .\dataset\178-enlargedrotated\elple.jpg/1
-.\dataset\178-enlargedrotated\Em.jpg/0
+.\dataset\178-enlargedrotated\Em.jpg/1
 .\dataset\178-enlargedrotated\en.jpg/0
 .\dataset\178-enlargedrotated\ench.jpg/1
 .\dataset\178-enlargedrotated\ene.jpg/0
@@ -1412,8 +1412,8 @@ X/Y
 .\dataset\178-enlargedrotated\ison.jpg/0
 .\dataset\178-enlargedrotated\ith..jpg/1
 .\dataset\178-enlargedrotated\ith.jpg/1
-.\dataset\178-enlargedrotated\I_.jpg/0
-.\dataset\178-enlargedrotated\I_a.jpg/0
+.\dataset\178-enlargedrotated\I_.jpg/1
+.\dataset\178-enlargedrotated\I_a.jpg/1
 .\dataset\178-enlargedrotated\I_ap.jpg/1
 .\dataset\178-enlargedrotated\I_b (2).jpg/1
 .\dataset\178-enlargedrotated\I_b.jpg/1
@@ -1440,7 +1440,7 @@ X/Y
 .\dataset\178-enlargedrotated\my_.jpg/1
 .\dataset\178-enlargedrotated\n. (2).jpg/0
 .\dataset\178-enlargedrotated\n..jpg/0
-.\dataset\178-enlargedrotated\n._I.jpg/0
+.\dataset\178-enlargedrotated\n._I.jpg/1
 .\dataset\178-enlargedrotated\nchi.jpg/1
 .\dataset\178-enlargedrotated\nd (2).jpg/1
 .\dataset\178-enlargedrotated\nd.jpg/1
@@ -1479,10 +1479,10 @@ X/Y
 .\dataset\178-enlargedrotated\r.jpg/0
 .\dataset\178-enlargedrotated\rag.jpg/1
 .\dataset\178-enlargedrotated\rati.jpg/1
-.\dataset\178-enlargedrotated\Re.jpg/0
+.\dataset\178-enlargedrotated\Re.jpg/1
 .\dataset\178-enlargedrotated\ren.jpg/0
 .\dataset\178-enlargedrotated\ren_.jpg/0
-.\dataset\178-enlargedrotated\Res.jpg/0
+.\dataset\178-enlargedrotated\Res.jpg/1
 .\dataset\178-enlargedrotated\ris.jpg/0
 .\dataset\178-enlargedrotated\risin.jpg/0
 .\dataset\178-enlargedrotated\riso.jpg/0
@@ -1492,8 +1492,8 @@ X/Y
 .\dataset\178-enlargedrotated\s.jpg/0
 .\dataset\178-enlargedrotated\see.jpg/0
 .\dataset\178-enlargedrotated\sin.jpg/0
-.\dataset\178-enlargedrotated\Sm (2).jpg/0
-.\dataset\178-enlargedrotated\Sm.jpg/0
+.\dataset\178-enlargedrotated\Sm (2).jpg/1
+.\dataset\178-enlargedrotated\Sm.jpg/1
 .\dataset\178-enlargedrotated\son.jpg/0
 .\dataset\178-enlargedrotated\sor.jpg/0
 .\dataset\178-enlargedrotated\sorr.jpg/0
@@ -1566,7 +1566,7 @@ X/Y
 .\dataset\178-enlargedrotated\_ch.jpg/1
 .\dataset\178-enlargedrotated\_de.jpg/1
 .\dataset\178-enlargedrotated\_dr.jpg/1
-.\dataset\178-enlargedrotated\_E.jpg/0
+.\dataset\178-enlargedrotated\_E.jpg/1
 .\dataset\178-enlargedrotated\_ge.jpg/1
 .\dataset\178-enlargedrotated\_he (2).jpg/1
 .\dataset\178-enlargedrotated\_he.jpg/1
@@ -1581,7 +1581,7 @@ X/Y
 .\dataset\178-enlargedrotated\_or.jpg/0
 .\dataset\178-enlargedrotated\_pr.jpg/1
 .\dataset\178-enlargedrotated\_ri.jpg/0
-.\dataset\178-enlargedrotated\_S.jpg/0
+.\dataset\178-enlargedrotated\_S.jpg/1
 .\dataset\178-enlargedrotated\_see.jpg/0
 .\dataset\178-enlargedrotated\_sp.jpg/1
 .\dataset\178-enlargedrotated\_spa.jpg/1
@@ -1599,14 +1599,14 @@ X/Y
 .\dataset\178-enlargedrotated\_yo.jpg/1
 .\dataset\205\._.jpg/0
 .\dataset\205\._Al.jpg/1
-.\dataset\205\._Ar.jpg/0
+.\dataset\205\._Ar.jpg/1
 .\dataset\205\._p.jpg/1
-.\dataset\205\._S.jpg/0
+.\dataset\205\._S.jpg/1
 .\dataset\205\._Th.jpg/1
 .\dataset\205\15th (2).jpg/1
 .\dataset\205\15th.jpg/1
-.\dataset\205\2.jpg/0
-.\dataset\205\23.jpg/0
+.\dataset\205\2.jpg/1
+.\dataset\205\23.jpg/1
 .\dataset\205\23rd (2).jpg/1
 .\dataset\205\23rd.jpg/1
 .\dataset\205\all.jpg/1
@@ -1615,7 +1615,7 @@ X/Y
 .\dataset\205\and.jpg/1
 .\dataset\205\ange.jpg/1
 .\dataset\205\aper.jpg/1
-.\dataset\205\Arr.jpg/0
+.\dataset\205\Arr.jpg/1
 .\dataset\205\as.jpg/0
 .\dataset\205\as_g.jpg/1
 .\dataset\205\At_.jpg/1
@@ -1640,13 +1640,13 @@ X/Y
 .\dataset\205\d_t.jpg/1
 .\dataset\205\e (2).jpg/0
 .\dataset\205\e.jpg/0
-.\dataset\205\e._A.jpg/0
+.\dataset\205\e._A.jpg/1
 .\dataset\205\efs.jpg/1
 .\dataset\205\eing.jpg/1
 .\dataset\205\eir_.jpg/0
-.\dataset\205\Em (2).jpg/0
+.\dataset\205\Em (2).jpg/1
 .\dataset\205\em.jpg/0
-.\dataset\205\Emm.jpg/0
+.\dataset\205\Emm.jpg/1
 .\dataset\205\ent (2).jpg/1
 .\dataset\205\ent.jpg/1
 .\dataset\205\entl.jpg/1
@@ -1695,8 +1695,8 @@ X/Y
 .\dataset\205\ing_.jpg/1
 .\dataset\205\ing_m.jpg/1
 .\dataset\205\ing_p.jpg/1
-.\dataset\205\In_.jpg/0
-.\dataset\205\In_o.jpg/0
+.\dataset\205\In_.jpg/1
+.\dataset\205\In_o.jpg/1
 .\dataset\205\is (2).jpg/0
 .\dataset\205\is.jpg/0
 .\dataset\205\ith (2).jpg/1
@@ -1748,14 +1748,14 @@ X/Y
 .\dataset\205\ptem.jpg/1
 .\dataset\205\rang.jpg/1
 .\dataset\205\re.jpg/0
-.\dataset\205\Rem.jpg/0
+.\dataset\205\Rem.jpg/1
 .\dataset\205\rfect.jpg/1
 .\dataset\205\riday (2).jpg/1
 .\dataset\205\riday.jpg/1
 .\dataset\205\rks..jpg/1
 .\dataset\205\rm.jpg/0
 .\dataset\205\rran.jpg/0
-.\dataset\205\r_1842.jpg/0
+.\dataset\205\r_1842.jpg/1
 .\dataset\205\r_th.jpg/1
 .\dataset\205\r_w.jpg/0
 .\dataset\205\s._.jpg/0
@@ -1764,8 +1764,8 @@ X/Y
 .\dataset\205\Septe.jpg/1
 .\dataset\205\sin.jpg/0
 .\dataset\205\sine.jpg/0
-.\dataset\205\So.jpg/0
-.\dataset\205\Som.jpg/0
+.\dataset\205\So.jpg/1
+.\dataset\205\Som.jpg/1
 .\dataset\205\stove (2).jpg/1
 .\dataset\205\stove.jpg/1
 .\dataset\205\tember.jpg/1
@@ -1816,21 +1816,21 @@ X/Y
 .\dataset\205\_mo.jpg/0
 .\dataset\205\_pap.jpg/1
 .\dataset\205\_pre.jpg/1
-.\dataset\205\_Re.jpg/0
+.\dataset\205\_Re.jpg/1
 .\dataset\205\_th.jpg/1
 .\dataset\205\_w (2).jpg/0
 .\dataset\205\_w.jpg/0
 .\dataset\205\_wit.jpg/1
 .\dataset\205-enlargedrotated\._.jpg/0
 .\dataset\205-enlargedrotated\._Al.jpg/1
-.\dataset\205-enlargedrotated\._Ar.jpg/0
+.\dataset\205-enlargedrotated\._Ar.jpg/1
 .\dataset\205-enlargedrotated\._p.jpg/1
-.\dataset\205-enlargedrotated\._S.jpg/0
+.\dataset\205-enlargedrotated\._S.jpg/1
 .\dataset\205-enlargedrotated\._Th.jpg/1
 .\dataset\205-enlargedrotated\15th (2).jpg/1
 .\dataset\205-enlargedrotated\15th.jpg/1
-.\dataset\205-enlargedrotated\2.jpg/0
-.\dataset\205-enlargedrotated\23.jpg/0
+.\dataset\205-enlargedrotated\2.jpg/1
+.\dataset\205-enlargedrotated\23.jpg/1
 .\dataset\205-enlargedrotated\23rd (2).jpg/1
 .\dataset\205-enlargedrotated\23rd.jpg/1
 .\dataset\205-enlargedrotated\all.jpg/1
@@ -1839,7 +1839,7 @@ X/Y
 .\dataset\205-enlargedrotated\and.jpg/1
 .\dataset\205-enlargedrotated\ange.jpg/1
 .\dataset\205-enlargedrotated\aper.jpg/1
-.\dataset\205-enlargedrotated\Arr.jpg/0
+.\dataset\205-enlargedrotated\Arr.jpg/1
 .\dataset\205-enlargedrotated\as.jpg/0
 .\dataset\205-enlargedrotated\as_g.jpg/1
 .\dataset\205-enlargedrotated\At_.jpg/1
@@ -1864,13 +1864,13 @@ X/Y
 .\dataset\205-enlargedrotated\d_t.jpg/1
 .\dataset\205-enlargedrotated\e (2).jpg/0
 .\dataset\205-enlargedrotated\e.jpg/0
-.\dataset\205-enlargedrotated\e._A.jpg/0
+.\dataset\205-enlargedrotated\e._A.jpg/1
 .\dataset\205-enlargedrotated\efs.jpg/1
 .\dataset\205-enlargedrotated\eing.jpg/1
 .\dataset\205-enlargedrotated\eir_.jpg/0
-.\dataset\205-enlargedrotated\Em (2).jpg/0
+.\dataset\205-enlargedrotated\Em (2).jpg/1
 .\dataset\205-enlargedrotated\em.jpg/0
-.\dataset\205-enlargedrotated\Emm.jpg/0
+.\dataset\205-enlargedrotated\Emm.jpg/1
 .\dataset\205-enlargedrotated\ent (2).jpg/1
 .\dataset\205-enlargedrotated\ent.jpg/1
 .\dataset\205-enlargedrotated\entl.jpg/1
@@ -1919,8 +1919,8 @@ X/Y
 .\dataset\205-enlargedrotated\ing_.jpg/1
 .\dataset\205-enlargedrotated\ing_m.jpg/1
 .\dataset\205-enlargedrotated\ing_p.jpg/1
-.\dataset\205-enlargedrotated\In_.jpg/0
-.\dataset\205-enlargedrotated\In_o.jpg/0
+.\dataset\205-enlargedrotated\In_.jpg/1
+.\dataset\205-enlargedrotated\In_o.jpg/1
 .\dataset\205-enlargedrotated\is (2).jpg/0
 .\dataset\205-enlargedrotated\is.jpg/0
 .\dataset\205-enlargedrotated\ith (2).jpg/1
@@ -1972,14 +1972,14 @@ X/Y
 .\dataset\205-enlargedrotated\ptem.jpg/1
 .\dataset\205-enlargedrotated\rang.jpg/1
 .\dataset\205-enlargedrotated\re.jpg/0
-.\dataset\205-enlargedrotated\Rem.jpg/0
+.\dataset\205-enlargedrotated\Rem.jpg/1
 .\dataset\205-enlargedrotated\rfect.jpg/1
 .\dataset\205-enlargedrotated\riday (2).jpg/1
 .\dataset\205-enlargedrotated\riday.jpg/1
 .\dataset\205-enlargedrotated\rks..jpg/1
 .\dataset\205-enlargedrotated\rm.jpg/0
 .\dataset\205-enlargedrotated\rran.jpg/0
-.\dataset\205-enlargedrotated\r_1842.jpg/0
+.\dataset\205-enlargedrotated\r_1842.jpg/1
 .\dataset\205-enlargedrotated\r_th.jpg/1
 .\dataset\205-enlargedrotated\r_w.jpg/0
 .\dataset\205-enlargedrotated\s._.jpg/0
@@ -1988,8 +1988,8 @@ X/Y
 .\dataset\205-enlargedrotated\Septe.jpg/1
 .\dataset\205-enlargedrotated\sin.jpg/0
 .\dataset\205-enlargedrotated\sine.jpg/0
-.\dataset\205-enlargedrotated\So.jpg/0
-.\dataset\205-enlargedrotated\Som.jpg/0
+.\dataset\205-enlargedrotated\So.jpg/1
+.\dataset\205-enlargedrotated\Som.jpg/1
 .\dataset\205-enlargedrotated\stove (2).jpg/1
 .\dataset\205-enlargedrotated\stove.jpg/1
 .\dataset\205-enlargedrotated\tember.jpg/1
@@ -2040,41 +2040,41 @@ X/Y
 .\dataset\205-enlargedrotated\_mo.jpg/0
 .\dataset\205-enlargedrotated\_pap.jpg/1
 .\dataset\205-enlargedrotated\_pre.jpg/1
-.\dataset\205-enlargedrotated\_Re.jpg/0
+.\dataset\205-enlargedrotated\_Re.jpg/1
 .\dataset\205-enlargedrotated\_th.jpg/1
 .\dataset\205-enlargedrotated\_w (2).jpg/0
 .\dataset\205-enlargedrotated\_w.jpg/0
 .\dataset\205-enlargedrotated\_wit.jpg/1
-.\dataset\369\$1..jpg/0
-.\dataset\369\$11.jpg/0
-.\dataset\369\$4_.jpg/0
-.\dataset\369\.69.jpg/0
-.\dataset\369\0.jpg/0
+.\dataset\369\$1..jpg/1
+.\dataset\369\$11.jpg/1
+.\dataset\369\$4_.jpg/1
+.\dataset\369\.69.jpg/1
+.\dataset\369\0.jpg/1
 .\dataset\369\0_cts.jpg/1
-.\dataset\369\1.6.jpg/0
-.\dataset\369\1.jpg/0
-.\dataset\369\11_or.jpg/0
-.\dataset\369\16.jpg/0
-.\dataset\369\1_Co.jpg/0
-.\dataset\369\2.jpg/0
+.\dataset\369\1.6.jpg/1
+.\dataset\369\1.jpg/1
+.\dataset\369\11_or.jpg/1
+.\dataset\369\16.jpg/1
+.\dataset\369\1_Co.jpg/1
+.\dataset\369\2.jpg/1
 .\dataset\369\24th.jpg/1
 .\dataset\369\2_cts.jpg/1
-.\dataset\369\35.jpg/0
-.\dataset\369\36_i.jpg/0
-.\dataset\369\4.jpg/0
-.\dataset\369\43 (2).jpg/0
-.\dataset\369\43.jpg/0
+.\dataset\369\35.jpg/1
+.\dataset\369\36_i.jpg/1
+.\dataset\369\4.jpg/1
+.\dataset\369\43 (2).jpg/1
+.\dataset\369\43.jpg/1
 .\dataset\369\4th_R.jpg/1
-.\dataset\369\4_a.jpg/0
-.\dataset\369\5 (2).jpg/0
-.\dataset\369\5 (3).jpg/0
-.\dataset\369\5.jpg/0
-.\dataset\369\50.jpg/0
+.\dataset\369\4_a.jpg/1
+.\dataset\369\5 (2).jpg/1
+.\dataset\369\5 (3).jpg/1
+.\dataset\369\5.jpg/1
+.\dataset\369\50.jpg/1
 .\dataset\369\50_ct.jpg/1
-.\dataset\369\62 (2).jpg/0
-.\dataset\369\62.jpg/0
-.\dataset\369\62_c.jpg/0
-.\dataset\369\6_in.jpg/0
+.\dataset\369\62 (2).jpg/1
+.\dataset\369\62.jpg/1
+.\dataset\369\62_c.jpg/1
+.\dataset\369\6_in.jpg/1
 .\dataset\369\a.jpg/0
 .\dataset\369\abet.jpg/1
 .\dataset\369\add.jpg/1
@@ -2103,8 +2103,8 @@ X/Y
 .\dataset\369\blan.jpg/1
 .\dataset\369\ceiv.jpg/0
 .\dataset\369\ck_.jpg/1
-.\dataset\369\Co.jpg/0
-.\dataset\369\Cow.jpg/0
+.\dataset\369\Co.jpg/1
+.\dataset\369\Cow.jpg/1
 .\dataset\369\ctober.jpg/1
 .\dataset\369\cts.jpg/1
 .\dataset\369\cts_in.jpg/1
@@ -2123,13 +2123,13 @@ X/Y
 .\dataset\369\eph.jpg/1
 .\dataset\369\erso.jpg/0
 .\dataset\369\er_.jpg/0
-.\dataset\369\er_2.jpg/0
+.\dataset\369\er_2.jpg/1
 .\dataset\369\er_ha.jpg/1
 .\dataset\369\er_pe.jpg/1
 .\dataset\369\es_a.jpg/0
 .\dataset\369\eth.jpg/1
-.\dataset\369\e_$11.jpg/0
-.\dataset\369\e_$4.jpg/0
+.\dataset\369\e_$11.jpg/1
+.\dataset\369\e_$4.jpg/1
 .\dataset\369\E_of (2).jpg/1
 .\dataset\369\e_of.jpg/1
 .\dataset\369\fo.jpg/1
@@ -2173,9 +2173,9 @@ X/Y
 .\dataset\369\ma.jpg/0
 .\dataset\369\man.jpg/0
 .\dataset\369\mba.jpg/1
-.\dataset\369\N.jpg/0
-.\dataset\369\Na (2).jpg/0
-.\dataset\369\Na.jpg/0
+.\dataset\369\N.jpg/1
+.\dataset\369\Na (2).jpg/1
+.\dataset\369\Na.jpg/1
 .\dataset\369\nder.jpg/1
 .\dataset\369\nd_.jpg/1
 .\dataset\369\nd_R.jpg/1
@@ -2201,20 +2201,20 @@ X/Y
 .\dataset\369\ot_3.jpg/1
 .\dataset\369\oung.jpg/1
 .\dataset\369\ow.jpg/0
-.\dataset\369\o_1_.jpg/0
+.\dataset\369\o_1_.jpg/1
 .\dataset\369\o_1_t.jpg/1
 .\dataset\369\o_ye.jpg/1
 .\dataset\369\part.jpg/1
 .\dataset\369\per+h.jpg/1
 .\dataset\369\ph_.jpg/1
 .\dataset\369\piec.jpg/1
-.\dataset\369\Re.jpg/0
-.\dataset\369\Rec.jpg/0
-.\dataset\369\Recei.jpg/0
+.\dataset\369\Re.jpg/1
+.\dataset\369\Rec.jpg/1
+.\dataset\369\Recei.jpg/1
 .\dataset\369\Rod.jpg/1
 .\dataset\369\r_ol.jpg/1
 .\dataset\369\son.jpg/0
-.\dataset\369\so_1.jpg/0
+.\dataset\369\so_1.jpg/1
 .\dataset\369\Stee (2).jpg/1
 .\dataset\369\Stee.jpg/1
 .\dataset\369\Steer (2).jpg/1
@@ -2231,26 +2231,26 @@ X/Y
 .\dataset\369\ts_in.jpg/1
 .\dataset\369\t_36.jpg/1
 .\dataset\369\t_of.jpg/1
-.\dataset\369\ue_$.jpg/0
+.\dataset\369\ue_$.jpg/1
 .\dataset\369\Val (2).jpg/1
 .\dataset\369\val.jpg/1
 .\dataset\369\Valu (2).jpg/1
 .\dataset\369\valu.jpg/1
 .\dataset\369\ved.jpg/1
-.\dataset\369\w_$.jpg/0
+.\dataset\369\w_$.jpg/1
 .\dataset\369\w_.jpg/0
-.\dataset\369\w_V.jpg/0
+.\dataset\369\w_V.jpg/1
 .\dataset\369\y.jpg/1
 .\dataset\369\yea.jpg/1
 .\dataset\369\You.jpg/1
 .\dataset\369\Youn.jpg/1
 .\dataset\369\zabe.jpg/1
-.\dataset\369\_$1.jpg/0
+.\dataset\369\_$1.jpg/1
 .\dataset\369\_24th.jpg/1
 .\dataset\369\_als.jpg/1
 .\dataset\369\_Bl.jpg/1
 .\dataset\369\_Eli.jpg/1
-.\dataset\369\_E_o.jpg/0
+.\dataset\369\_E_o.jpg/1
 .\dataset\369\_H.jpg/1
 .\dataset\369\_han.jpg/1
 .\dataset\369\_Hay.jpg/1
@@ -2258,40 +2258,40 @@ X/Y
 .\dataset\369\_on_.jpg/0
 .\dataset\369\_par.jpg/1
 .\dataset\369\_per.jpg/1
-.\dataset\369\_Ro.jpg/0
+.\dataset\369\_Ro.jpg/1
 .\dataset\369\_tith.jpg/1
 .\dataset\369\_to_.jpg/1
 .\dataset\369\_va.jpg/0
-.\dataset\369-enlargedrotated\$1..jpg/0
-.\dataset\369-enlargedrotated\$11.jpg/0
-.\dataset\369-enlargedrotated\$4_.jpg/0
-.\dataset\369-enlargedrotated\.69.jpg/0
-.\dataset\369-enlargedrotated\0.jpg/0
+.\dataset\369-enlargedrotated\$1..jpg/1
+.\dataset\369-enlargedrotated\$11.jpg/1
+.\dataset\369-enlargedrotated\$4_.jpg/1
+.\dataset\369-enlargedrotated\.69.jpg/1
+.\dataset\369-enlargedrotated\0.jpg/1
 .\dataset\369-enlargedrotated\0_cts.jpg/1
-.\dataset\369-enlargedrotated\1.6.jpg/0
-.\dataset\369-enlargedrotated\1.jpg/0
-.\dataset\369-enlargedrotated\11_or.jpg/0
-.\dataset\369-enlargedrotated\16.jpg/0
-.\dataset\369-enlargedrotated\1_Co.jpg/0
-.\dataset\369-enlargedrotated\2.jpg/0
+.\dataset\369-enlargedrotated\1.6.jpg/1
+.\dataset\369-enlargedrotated\1.jpg/1
+.\dataset\369-enlargedrotated\11_or.jpg/1
+.\dataset\369-enlargedrotated\16.jpg/1
+.\dataset\369-enlargedrotated\1_Co.jpg/1
+.\dataset\369-enlargedrotated\2.jpg/1
 .\dataset\369-enlargedrotated\24th.jpg/1
 .\dataset\369-enlargedrotated\2_cts.jpg/1
-.\dataset\369-enlargedrotated\35.jpg/0
-.\dataset\369-enlargedrotated\36_i.jpg/0
-.\dataset\369-enlargedrotated\4.jpg/0
-.\dataset\369-enlargedrotated\43 (2).jpg/0
-.\dataset\369-enlargedrotated\43.jpg/0
+.\dataset\369-enlargedrotated\35.jpg/1
+.\dataset\369-enlargedrotated\36_i.jpg/1
+.\dataset\369-enlargedrotated\4.jpg/1
+.\dataset\369-enlargedrotated\43 (2).jpg/1
+.\dataset\369-enlargedrotated\43.jpg/1
 .\dataset\369-enlargedrotated\4th_R.jpg/1
-.\dataset\369-enlargedrotated\4_a.jpg/0
-.\dataset\369-enlargedrotated\5 (2).jpg/0
-.\dataset\369-enlargedrotated\5 (3).jpg/0
-.\dataset\369-enlargedrotated\5.jpg/0
-.\dataset\369-enlargedrotated\50.jpg/0
+.\dataset\369-enlargedrotated\4_a.jpg/1
+.\dataset\369-enlargedrotated\5 (2).jpg/1
+.\dataset\369-enlargedrotated\5 (3).jpg/1
+.\dataset\369-enlargedrotated\5.jpg/1
+.\dataset\369-enlargedrotated\50.jpg/1
 .\dataset\369-enlargedrotated\50_ct.jpg/1
-.\dataset\369-enlargedrotated\62 (2).jpg/0
-.\dataset\369-enlargedrotated\62.jpg/0
-.\dataset\369-enlargedrotated\62_c.jpg/0
-.\dataset\369-enlargedrotated\6_in.jpg/0
+.\dataset\369-enlargedrotated\62 (2).jpg/1
+.\dataset\369-enlargedrotated\62.jpg/1
+.\dataset\369-enlargedrotated\62_c.jpg/1
+.\dataset\369-enlargedrotated\6_in.jpg/1
 .\dataset\369-enlargedrotated\a.jpg/0
 .\dataset\369-enlargedrotated\abet.jpg/1
 .\dataset\369-enlargedrotated\add.jpg/1
@@ -2320,8 +2320,8 @@ X/Y
 .\dataset\369-enlargedrotated\blan.jpg/1
 .\dataset\369-enlargedrotated\ceiv.jpg/0
 .\dataset\369-enlargedrotated\ck_.jpg/1
-.\dataset\369-enlargedrotated\Co.jpg/0
-.\dataset\369-enlargedrotated\Cow.jpg/0
+.\dataset\369-enlargedrotated\Co.jpg/1
+.\dataset\369-enlargedrotated\Cow.jpg/1
 .\dataset\369-enlargedrotated\ctober.jpg/1
 .\dataset\369-enlargedrotated\cts.jpg/1
 .\dataset\369-enlargedrotated\cts_in.jpg/1
@@ -2340,13 +2340,13 @@ X/Y
 .\dataset\369-enlargedrotated\eph.jpg/1
 .\dataset\369-enlargedrotated\erso.jpg/0
 .\dataset\369-enlargedrotated\er_.jpg/0
-.\dataset\369-enlargedrotated\er_2.jpg/0
+.\dataset\369-enlargedrotated\er_2.jpg/1
 .\dataset\369-enlargedrotated\er_ha.jpg/1
 .\dataset\369-enlargedrotated\er_pe.jpg/1
 .\dataset\369-enlargedrotated\es_a.jpg/0
 .\dataset\369-enlargedrotated\eth.jpg/1
-.\dataset\369-enlargedrotated\e_$11.jpg/0
-.\dataset\369-enlargedrotated\e_$4.jpg/0
+.\dataset\369-enlargedrotated\e_$11.jpg/1
+.\dataset\369-enlargedrotated\e_$4.jpg/1
 .\dataset\369-enlargedrotated\E_of (2).jpg/1
 .\dataset\369-enlargedrotated\e_of.jpg/1
 .\dataset\369-enlargedrotated\fo.jpg/1
@@ -2390,9 +2390,9 @@ X/Y
 .\dataset\369-enlargedrotated\ma.jpg/0
 .\dataset\369-enlargedrotated\man.jpg/0
 .\dataset\369-enlargedrotated\mba.jpg/1
-.\dataset\369-enlargedrotated\N.jpg/0
-.\dataset\369-enlargedrotated\Na (2).jpg/0
-.\dataset\369-enlargedrotated\Na.jpg/0
+.\dataset\369-enlargedrotated\N.jpg/1
+.\dataset\369-enlargedrotated\Na (2).jpg/1
+.\dataset\369-enlargedrotated\Na.jpg/1
 .\dataset\369-enlargedrotated\nder.jpg/1
 .\dataset\369-enlargedrotated\nd_.jpg/1
 .\dataset\369-enlargedrotated\nd_R.jpg/1
@@ -2418,20 +2418,20 @@ X/Y
 .\dataset\369-enlargedrotated\ot_3.jpg/1
 .\dataset\369-enlargedrotated\oung.jpg/1
 .\dataset\369-enlargedrotated\ow.jpg/0
-.\dataset\369-enlargedrotated\o_1_.jpg/0
+.\dataset\369-enlargedrotated\o_1_.jpg/1
 .\dataset\369-enlargedrotated\o_1_t.jpg/1
 .\dataset\369-enlargedrotated\o_ye.jpg/1
 .\dataset\369-enlargedrotated\part.jpg/1
 .\dataset\369-enlargedrotated\per+h.jpg/1
 .\dataset\369-enlargedrotated\ph_.jpg/1
 .\dataset\369-enlargedrotated\piec.jpg/1
-.\dataset\369-enlargedrotated\Re.jpg/0
-.\dataset\369-enlargedrotated\Rec.jpg/0
-.\dataset\369-enlargedrotated\Recei.jpg/0
+.\dataset\369-enlargedrotated\Re.jpg/1
+.\dataset\369-enlargedrotated\Rec.jpg/1
+.\dataset\369-enlargedrotated\Recei.jpg/1
 .\dataset\369-enlargedrotated\Rod.jpg/1
 .\dataset\369-enlargedrotated\r_ol.jpg/1
 .\dataset\369-enlargedrotated\son.jpg/0
-.\dataset\369-enlargedrotated\so_1.jpg/0
+.\dataset\369-enlargedrotated\so_1.jpg/1
 .\dataset\369-enlargedrotated\Stee (2).jpg/1
 .\dataset\369-enlargedrotated\Stee.jpg/1
 .\dataset\369-enlargedrotated\Steer (2).jpg/1
@@ -2448,26 +2448,26 @@ X/Y
 .\dataset\369-enlargedrotated\ts_in.jpg/1
 .\dataset\369-enlargedrotated\t_36.jpg/1
 .\dataset\369-enlargedrotated\t_of.jpg/1
-.\dataset\369-enlargedrotated\ue_$.jpg/0
+.\dataset\369-enlargedrotated\ue_$.jpg/1
 .\dataset\369-enlargedrotated\Val (2).jpg/1
 .\dataset\369-enlargedrotated\val.jpg/1
 .\dataset\369-enlargedrotated\Valu (2).jpg/1
 .\dataset\369-enlargedrotated\valu.jpg/1
 .\dataset\369-enlargedrotated\ved.jpg/1
-.\dataset\369-enlargedrotated\w_$.jpg/0
+.\dataset\369-enlargedrotated\w_$.jpg/1
 .\dataset\369-enlargedrotated\w_.jpg/0
-.\dataset\369-enlargedrotated\w_V.jpg/0
+.\dataset\369-enlargedrotated\w_V.jpg/1
 .\dataset\369-enlargedrotated\y.jpg/1
 .\dataset\369-enlargedrotated\yea.jpg/1
 .\dataset\369-enlargedrotated\You.jpg/1
 .\dataset\369-enlargedrotated\Youn.jpg/1
 .\dataset\369-enlargedrotated\zabe.jpg/1
-.\dataset\369-enlargedrotated\_$1.jpg/0
+.\dataset\369-enlargedrotated\_$1.jpg/1
 .\dataset\369-enlargedrotated\_24th.jpg/1
 .\dataset\369-enlargedrotated\_als.jpg/1
 .\dataset\369-enlargedrotated\_Bl.jpg/1
 .\dataset\369-enlargedrotated\_Eli.jpg/1
-.\dataset\369-enlargedrotated\_E_o.jpg/0
+.\dataset\369-enlargedrotated\_E_o.jpg/1
 .\dataset\369-enlargedrotated\_H.jpg/1
 .\dataset\369-enlargedrotated\_han.jpg/1
 .\dataset\369-enlargedrotated\_Hay.jpg/1
@@ -2475,17 +2475,17 @@ X/Y
 .\dataset\369-enlargedrotated\_on_.jpg/0
 .\dataset\369-enlargedrotated\_par.jpg/1
 .\dataset\369-enlargedrotated\_per.jpg/1
-.\dataset\369-enlargedrotated\_Ro.jpg/0
+.\dataset\369-enlargedrotated\_Ro.jpg/1
 .\dataset\369-enlargedrotated\_tith.jpg/1
 .\dataset\369-enlargedrotated\_to_.jpg/1
 .\dataset\369-enlargedrotated\_va.jpg/0
 .\dataset\477\.P..jpg/1
 .\dataset\477\29th.jpg/1
 .\dataset\477\2_Al.jpg/1
-.\dataset\477\42_A.jpg/0
+.\dataset\477\42_A.jpg/1
 .\dataset\477\4th.jpg/1
 .\dataset\477\8th.jpg/1
-.\dataset\477\A..jpg/0
+.\dataset\477\A..jpg/1
 .\dataset\477\A.P..jpg/1
 .\dataset\477\abor.jpg/1
 .\dataset\477\ain (2).jpg/0
@@ -2498,7 +2498,7 @@ X/Y
 .\dataset\477\ated.jpg/1
 .\dataset\477\ay_4.jpg/1
 .\dataset\477\bor_.jpg/1
-.\dataset\477\Ca.jpg/0
+.\dataset\477\Ca.jpg/1
 .\dataset\477\Cap (2).jpg/1
 .\dataset\477\Cap.jpg/1
 .\dataset\477\Capt (2).jpg/1
@@ -2508,8 +2508,8 @@ X/Y
 .\dataset\477\ceiv.jpg/0
 .\dataset\477\Cert.jpg/1
 .\dataset\477\ckw.jpg/1
-.\dataset\477\Co.jpg/0
-.\dataset\477\Com.jpg/0
+.\dataset\477\Co.jpg/1
+.\dataset\477\Com.jpg/1
 .\dataset\477\d (2).jpg/1
 .\dataset\477\d.jpg/1
 .\dataset\477\da.jpg/1
@@ -2524,7 +2524,7 @@ X/Y
 .\dataset\477\e_Ju.jpg/1
 .\dataset\477\e_of.jpg/1
 .\dataset\477\e_Q.jpg/1
-.\dataset\477\e_S.jpg/0
+.\dataset\477\e_S.jpg/1
 .\dataset\477\e_St.jpg/1
 .\dataset\477\fica.jpg/1
 .\dataset\477\for_.jpg/1
@@ -2554,10 +2554,10 @@ X/Y
 .\dataset\477\mitte.jpg/1
 .\dataset\477\mm (2).jpg/0
 .\dataset\477\mm.jpg/0
-.\dataset\477\Mo.jpg/0
-.\dataset\477\Moo.jpg/0
+.\dataset\477\Mo.jpg/1
+.\dataset\477\Moo.jpg/1
 .\dataset\477\mp.jpg/1
-.\dataset\477\ne_2.jpg/0
+.\dataset\477\ne_2.jpg/1
 .\dataset\477\ng)_.jpg/1
 .\dataset\477\ock.jpg/1
 .\dataset\477\od.jpg/1
@@ -2580,14 +2580,14 @@ X/Y
 .\dataset\477\pt_o.jpg/1
 .\dataset\477\Qu.jpg/1
 .\dataset\477\Qua.jpg/1
-.\dataset\477\Rec (2).jpg/0
+.\dataset\477\Rec (2).jpg/1
 .\dataset\477\rec.jpg/0
-.\dataset\477\Rece.jpg/0
-.\dataset\477\Roc.jpg/0
+.\dataset\477\Rece.jpg/1
+.\dataset\477\Roc.jpg/1
 .\dataset\477\rtif.jpg/1
 .\dataset\477\ry_i.jpg/1
-.\dataset\477\r_Ce.jpg/0
-.\dataset\477\so_$.jpg/0
+.\dataset\477\r_Ce.jpg/1
+.\dataset\477\so_$.jpg/1
 .\dataset\477\Stov (2).jpg/1
 .\dataset\477\Stov.jpg/1
 .\dataset\477\s_of_.jpg/1
@@ -2616,13 +2616,13 @@ X/Y
 .\dataset\477\ve_.jpg/0
 .\dataset\477\woo.jpg/0
 .\dataset\477\_.jpg/0
-.\dataset\477\_184.jpg/0
+.\dataset\477\_184.jpg/1
 .\dataset\477\_28t.jpg/1
 .\dataset\477\_4th.jpg/1
-.\dataset\477\_A (2).jpg/0
-.\dataset\477\_A.jpg/0
+.\dataset\477\_A (2).jpg/1
+.\dataset\477\_A.jpg/1
 .\dataset\477\_cer.jpg/0
-.\dataset\477\_Co.jpg/0
+.\dataset\477\_Co.jpg/1
 .\dataset\477\_for.jpg/1
 .\dataset\477\_fu.jpg/1
 .\dataset\477\_his_.jpg/1
@@ -2644,10 +2644,10 @@ X/Y
 .\dataset\477-enlargedrotated\.P..jpg/1
 .\dataset\477-enlargedrotated\29th.jpg/1
 .\dataset\477-enlargedrotated\2_Al.jpg/1
-.\dataset\477-enlargedrotated\42_A.jpg/0
+.\dataset\477-enlargedrotated\42_A.jpg/1
 .\dataset\477-enlargedrotated\4th.jpg/1
 .\dataset\477-enlargedrotated\8th.jpg/1
-.\dataset\477-enlargedrotated\A..jpg/0
+.\dataset\477-enlargedrotated\A..jpg/1
 .\dataset\477-enlargedrotated\A.P..jpg/1
 .\dataset\477-enlargedrotated\abor.jpg/1
 .\dataset\477-enlargedrotated\ain (2).jpg/0
@@ -2660,7 +2660,7 @@ X/Y
 .\dataset\477-enlargedrotated\ated.jpg/1
 .\dataset\477-enlargedrotated\ay_4.jpg/1
 .\dataset\477-enlargedrotated\bor_.jpg/1
-.\dataset\477-enlargedrotated\Ca.jpg/0
+.\dataset\477-enlargedrotated\Ca.jpg/1
 .\dataset\477-enlargedrotated\Cap (2).jpg/1
 .\dataset\477-enlargedrotated\Cap.jpg/1
 .\dataset\477-enlargedrotated\Capt (2).jpg/1
@@ -2670,8 +2670,8 @@ X/Y
 .\dataset\477-enlargedrotated\ceiv.jpg/0
 .\dataset\477-enlargedrotated\Cert.jpg/1
 .\dataset\477-enlargedrotated\ckw.jpg/1
-.\dataset\477-enlargedrotated\Co.jpg/0
-.\dataset\477-enlargedrotated\Com.jpg/0
+.\dataset\477-enlargedrotated\Co.jpg/1
+.\dataset\477-enlargedrotated\Com.jpg/1
 .\dataset\477-enlargedrotated\d (2).jpg/1
 .\dataset\477-enlargedrotated\d.jpg/1
 .\dataset\477-enlargedrotated\da.jpg/1
@@ -2686,7 +2686,7 @@ X/Y
 .\dataset\477-enlargedrotated\e_Ju.jpg/1
 .\dataset\477-enlargedrotated\e_of.jpg/1
 .\dataset\477-enlargedrotated\e_Q.jpg/1
-.\dataset\477-enlargedrotated\e_S.jpg/0
+.\dataset\477-enlargedrotated\e_S.jpg/1
 .\dataset\477-enlargedrotated\e_St.jpg/1
 .\dataset\477-enlargedrotated\fica.jpg/1
 .\dataset\477-enlargedrotated\for_.jpg/1
@@ -2716,10 +2716,10 @@ X/Y
 .\dataset\477-enlargedrotated\mitte.jpg/1
 .\dataset\477-enlargedrotated\mm (2).jpg/0
 .\dataset\477-enlargedrotated\mm.jpg/0
-.\dataset\477-enlargedrotated\Mo.jpg/0
-.\dataset\477-enlargedrotated\Moo.jpg/0
+.\dataset\477-enlargedrotated\Mo.jpg/1
+.\dataset\477-enlargedrotated\Moo.jpg/1
 .\dataset\477-enlargedrotated\mp.jpg/1
-.\dataset\477-enlargedrotated\ne_2.jpg/0
+.\dataset\477-enlargedrotated\ne_2.jpg/1
 .\dataset\477-enlargedrotated\ng)_.jpg/1
 .\dataset\477-enlargedrotated\ock.jpg/1
 .\dataset\477-enlargedrotated\od.jpg/1
@@ -2742,14 +2742,14 @@ X/Y
 .\dataset\477-enlargedrotated\pt_o.jpg/1
 .\dataset\477-enlargedrotated\Qu.jpg/1
 .\dataset\477-enlargedrotated\Qua.jpg/1
-.\dataset\477-enlargedrotated\Rec (2).jpg/0
+.\dataset\477-enlargedrotated\Rec (2).jpg/1
 .\dataset\477-enlargedrotated\rec.jpg/0
-.\dataset\477-enlargedrotated\Rece.jpg/0
-.\dataset\477-enlargedrotated\Roc.jpg/0
+.\dataset\477-enlargedrotated\Rece.jpg/1
+.\dataset\477-enlargedrotated\Roc.jpg/1
 .\dataset\477-enlargedrotated\rtif.jpg/1
 .\dataset\477-enlargedrotated\ry_i.jpg/1
-.\dataset\477-enlargedrotated\r_Ce.jpg/0
-.\dataset\477-enlargedrotated\so_$.jpg/0
+.\dataset\477-enlargedrotated\r_Ce.jpg/1
+.\dataset\477-enlargedrotated\so_$.jpg/1
 .\dataset\477-enlargedrotated\Stov (2).jpg/1
 .\dataset\477-enlargedrotated\Stov.jpg/1
 .\dataset\477-enlargedrotated\s_of_.jpg/1
@@ -2778,13 +2778,13 @@ X/Y
 .\dataset\477-enlargedrotated\ve_.jpg/0
 .\dataset\477-enlargedrotated\woo.jpg/0
 .\dataset\477-enlargedrotated\_.jpg/0
-.\dataset\477-enlargedrotated\_184.jpg/0
+.\dataset\477-enlargedrotated\_184.jpg/1
 .\dataset\477-enlargedrotated\_28t.jpg/1
 .\dataset\477-enlargedrotated\_4th.jpg/1
-.\dataset\477-enlargedrotated\_A (2).jpg/0
-.\dataset\477-enlargedrotated\_A.jpg/0
+.\dataset\477-enlargedrotated\_A (2).jpg/1
+.\dataset\477-enlargedrotated\_A.jpg/1
 .\dataset\477-enlargedrotated\_cer.jpg/0
-.\dataset\477-enlargedrotated\_Co.jpg/0
+.\dataset\477-enlargedrotated\_Co.jpg/1
 .\dataset\477-enlargedrotated\_for.jpg/1
 .\dataset\477-enlargedrotated\_fu.jpg/1
 .\dataset\477-enlargedrotated\_his_.jpg/1

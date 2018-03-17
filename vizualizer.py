@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import cv2
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
-from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Conv2D, MaxPooling2D, AveragePooling2D, GlobalMaxPooling2D
 import keras
 import numpy as np
 # vizualize_layer(model, scipy.misc.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize_examplery_images\\_lan.jpg').astype(np.float32))
@@ -14,11 +14,14 @@ img1 = cv2.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize
 
 
 model = Sequential()
-# model.add(Conv2D(3,
-#                  kernel_size=(3, 3),
-#                  activation='sigmoid',
-                 # input_shape=img1.shape))
-model.add(MaxPooling2D(pool_size=(2, 2), input_shape=img1.shape))
+model.add(Conv2D(3,
+                 kernel_size=(3, 3),
+                 activation='sigmoid',
+                 data_format='channels_last',
+                 input_shape=img1.shape))
+# model.add(GlobalMaxPooling2D(input_shape=img1.shape))
+model.add(AveragePooling2D(pool_size=(2, 2), input_shape=img1.shape))
+# model.add(MaxPooling2D(pool_size=(2, 2), input_shape=img1.shape))
 # model.add(Flatten())
 
 # model.add(Flatten())

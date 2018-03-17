@@ -19,24 +19,12 @@ import custom_models
 
 path = os.getcwd() + "/dataset"
 
-def divide_data(dataset, n_test):
-    # to unorder samples
-    random_seed = 3
-    random.Random(random_seed).shuffle(y)
-    random.Random(random_seed).shuffle(dataset)
-    n = len(dataset) -(1+n_test)
-    x_test = np.array(dataset[n:n + n_test])
-    x_train = np.array(dataset[: n])
-    y_test = np.array(y[n:n + n_test])
-    y_train = np.array(y[: n])
-
-    return n_test, n, x_test, x_train, y_test, y_train
 
 
-n_classes = 2
+# n_classes = 2
 base_layers = 3
-epochs = 5
-learning_rate = 64
+epochs = 9
+batch_size = 12
 conv_size = 4
 pool_size = 2
 
@@ -46,15 +34,30 @@ pool_size = 2
 # model = custom_models.seven_layer_cnn('relu', 'softmax', 'categorical_crossentropy', \
 #                                         x_train, y_train, input_shape, 8, 3)
 
-dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
-load_images_dataset.read_my_csv("has_tall_letters.txt", n_classes, '/')
+imgs, labels, name_labels, n_classes, input_shape = load_images_dataset.read_my_csv("has_tall_letters.txt")
 
-n_test, n, x_test, x_train, y_test, y_train = divide_data(dataset, n_classes)
+def divide_data(imgs, labels, name_labels, n_test=10):
+    # to unorder samples
+    random_seed = 35
+    random.Random(random_seed).shuffle(labels)
+    random.Random(random_seed).shuffle(name_labels)
+    random.Random(random_seed).shuffle(imgs)
+    n = len(imgs) - (1+n_test)
+    x_test = np.array(imgs[n:n + n_test])
+    x_train = np.array(imgs[: n])
+    y_test = np.array(labels[n:n + n_test])
+    y_train = np.array(labels[: n])
+
+    return n_test, n, x_test, x_train, y_test, y_train
+
+n_test, n, x_test, x_train, y_test, y_train = divide_data(imgs, labels, name_labels)
 # print(x_train[:5])
-print(y_train[:10])
-print(y_test[:5])
+for x in range(1, 10):
+    print(labels[x], name_labels[x])
+
 model = custom_models.basic_cnn('relu', 'mean_squared_error', \
-                                        x_train, y_train, input_shape, n_classes, epochs=epochs)
+                                x_train, y_train, input_shape, n_classes, \
+                                epochs=epochs, batch_size=batch_size)
 
 score = model.evaluate(x_test, y_test, verbose=1)
 
@@ -69,7 +72,7 @@ print("predictions finished")
 for i in range (0, len(x_test)):
     actuals = ""
     # for label in y[n+i]:
-    for index in np.where(y[n+i]==1)[0]:
+    for index in np.where(labels[n+i]==1)[0]:
         # actuals += " {}".format(label_dict["idx2word"][index])
         actuals += str(index+1)
     print("---------------------------------------\nActual: {}".format(actuals))
