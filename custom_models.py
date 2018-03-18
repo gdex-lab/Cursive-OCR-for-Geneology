@@ -11,53 +11,32 @@ def basic_cnn(activation_1, loss, x_train, y_train, \
     print("input shape: {}".format(input_shape))
 
 
-
-    model = Sequential()
-    model.add(Conv1D(3,
-    kernel_size=(1),
-    activation='sigmoid',
-    input_shape=input_shape))
-    # model.add(Conv1D(36,
-    # kernel_size=(2),
-    # activation='sigmoid',
-    # input_shape=input_shape))
-
-    model.add(Flatten())
-    model.add(Dense(15, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(15, activation='relu'))
-
-    # For a binary classifier you can either use a sigmoid activation with the
-    # "binary_crossentropy" loss (and one output layer), or put two output units at the last layer,
-    #  keep using softmax and change the loss to categorical_crossentropy.
-    # 'categorical_crossentropy' <- supposedly for multi-class, not multi label: https://stats.stackexchange.com/questions/260505/machine-learning-should-i-use-a-categorical-cross-entropy-or-binary-cross-entro
-    # 'binary_crossentropy' : supposedely ideal for multi label, current .5 test accuracy, but no letters predicted
-    # 'mean_squared_error' : all same, 1s
-    # model.add(Dense(24, activation='tanh'))
-    # model.add(Dense(12, activation='tanh'))
-    # model.add(Dropout(0.25))
-    model.add(Dense(2, activation='softmax'))
+    model_aug = Sequential()
+    model_aug.add(Conv2D(32, (3, 3), activation='relu', padding='same', name='conv_1',
+                     input_shape=(60, 70, 3)))
+    model_aug.add(MaxPooling2D((2, 2), name='maxpool_1'))
+    model_aug.add(Conv2D(64, (3, 3), activation='relu', padding='same', name='conv_2'))
+    model_aug.add(MaxPooling2D((2, 2), name='maxpool_2'))
+    model_aug.add(Conv2D(128, (3, 3), activation='relu', padding='same', name='conv_3'))
+    model_aug.add(MaxPooling2D((2, 2), name='maxpool_3'))
+    model_aug.add(Conv2D(128, (3, 3), activation='relu', padding='same', name='conv_4'))
+    model_aug.add(MaxPooling2D((2, 2), name='maxpool_4'))
+    model_aug.add(Flatten())
+    model_aug.add(Dropout(0.5))
+    model_aug.add(Dense(512, activation='relu', name='dense_1'))
+    model_aug.add(Dense(256, activation='relu', name='dense_2'))
+    model_aug.add(Dense(1, activation='sigmoid', name='output'))
+    model_aug.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+    # model.compile(loss='categorical_crossentropy', optimizer='Adam',  metrics=['categorical_accuracy'])
 
 
-
-    model.compile(loss='categorical_crossentropy', optimizer='Adam',  metrics=['categorical_accuracy'])
-
-
-
-
-    #
-    # model.compile(loss='categorical_crossentropy',
-    #                 optimizer=keras.optimizers.Adam(), #.Adam(), Adadelta()
-    #                 metrics=['accuracy', 'mae']
-    #                 )
-
-    model.fit(x_train, y_train,
+    model_aug.fit(x_train, y_train,
               batch_size=batch_size,
               epochs=epochs,
               verbose=1,
               validation_split=0.3
               )
-    return model
+    return model_aug
 
 
 def seven_layer_cnn(activation_1, activation_2, loss, x_train, y_train, \

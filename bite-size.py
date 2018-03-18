@@ -13,6 +13,7 @@ Use attributes like:
 import numpy as np
 import random
 import os
+from keras.preprocessing.image import ImageDataGenerator
 
 import load_images_dataset
 import custom_models
@@ -23,60 +24,50 @@ path = os.getcwd() + "/dataset"
 
 # n_classes = 2
 base_layers = 3
-epochs = 45
-batch_size = 12
+epochs = 20
+batch_size = 1
 conv_size = 4
 pool_size = 2
 
 
-# dataset, y, name_labels, n_name_classes, name_label_dict, input_shape = \
-#             load_images_dataset.read_my_csv("n_letters.txt", 8, '/')
-# model = custom_models.seven_layer_cnn('relu', 'softmax', 'categorical_crossentropy', \
-#                                         x_train, y_train, input_shape, 8, 3)
-
 imgs, labels, name_labels, n_classes, input_shape = \
         load_images_dataset.read_my_csv("has_tall_letters_undersampled.txt", \
-        input_shape=(60, 70), channels=2)
-
-def divide_data(imgs, labels, name_labels, n_test=10, specific_validation=False, pct_valdation=0.4):
-    # to unorder samples
-    random_seed = 35
-    random.Random(random_seed).shuffle(labels)
-    random.Random(random_seed).shuffle(name_labels)
-    random.Random(random_seed).shuffle(imgs)
-    n = len(imgs) - (1+n_test)
-
-    x_train = np.array(imgs[: n])
-    y_train = np.array(labels[: n])
-
-    x_test = np.array(imgs[n:n + n_test])
-    y_test = np.array(labels[n:n + n_test])
-    #
-    # def oversample(x_train, y_train):
-    #     from imblearn.over_sampling import SMOTE, ADASYN
-    #     X_resampled, y_resampled = SMOTE().fit_sample(x_train, y_train)
-    #     print("Resampling...")
-    #     print(sorted(Counter(y_resampled).items()))
-    #     #
-    #     # clf_smote = LinearSVC().fit(X_resampled, y_resampled)
-    #     # X_resampled, y_resampled = ADASYN().fit_sample(X, y)
-    #     # print(sorted(Counter(y_resampled).items()))
-    #     # clf_adasyn = LinearSVC().fit(X_resampled, y_resampled)
-    #     return X_resampled, y_resampled
-    #
-    # if specific_validation:
-    #     slice = int(n*pct_valdation)
-    #     x_validation = x_train[:slice]
-    #     y_validation = y_train[:slice]
-    #     x_train, y_train = oversample(x_train[slice:], y_train[slice:])
-    #     return n_test, n, x_test, x_train, y_test, y_train, x_validation, y_validation
-    # else:
-    return n_test, n, x_test, x_train, y_test, y_train
+        input_shape=(60, 70, 3), channels=3, one_hot=False)
 
 
+    def augment_data():
+        train_datagen = ImageDataGenerator(
+                rescale=1./255,
+                rotation_range=20,
+                width_shift_range=0.2,
+                height_shift_range=0.2,
+                shear_range=0.2,
+                zoom_range=0.2,
+                horizontal_flip=True,)
 
-n_test, n, x_test, x_train, y_test, y_train = divide_data(imgs, labels, name_labels)
+        # Note that the validation data should not be augmented!
+        test_datagen = ImageDataGenerator(rescale=1./255)
+
+        train_generator = train_datagen.flow_from_directory(
+                train_dir='C:\Users\grant\Repos\Cursive-OCR-for-Geneology\all_dataset_combined',
+                target_size=(60, 70),
+                batch_size=32,
+                class_mode='binary')
+
+        validation_generator = test_datagen.flow_from_directory(
+                validation_dir='C:\Users\grant\Repos\Cursive-OCR-for-Geneology\all_dataset_combined',
+                target_size=(60, 70),
+                batch_size=32,
+                class_mode='binary')
+
+        # early_stop = EarlyStopping(monitor='val_loss', patience=6, verbose=1)
+        history_aug = model_aug.fit_generator(train_generator, steps_per_epoch=100, epochs=60,
+                                              validation_data=validation_generator, validation_steps=50, verbose=0)
+
+n_test, n, x_test, x_train, y_test, y_train = load_images_dataset.divide_data(imgs, labels, name_labels)
+
 # print(x_train[:5])
+
 for x in range(1, 10):
     print(labels[x], name_labels[x])
 

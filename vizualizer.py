@@ -16,14 +16,14 @@ img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 
 model = Sequential()
 # model.add(MaxPooling1D(pool_size=(2), input_shape=img1.shape))
-model.add(Conv1D(32,
+model.add(Conv1D(7,
                  kernel_size=(1),
                  activation='sigmoid',
                  input_shape=img1.shape))
-# model.add(Conv1D(3,
-#                  kernel_size=(2),
-#                  activation='sigmoid',
-#                  input_shape=img1.shape))
+model.add(Conv1D(32,
+                 kernel_size=(2),
+                 activation='sigmoid',
+                 input_shape=img1.shape))
 model.add(MaxPooling1D(12, 1))
 
 img_batch = np.expand_dims(img1, axis=0)

@@ -82,7 +82,7 @@ def prepare_data(imgs_dir,
     return imgs, labels, n_classes, label_dict, SIZE
 
 
-def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3):
+def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3, one_hot=True):
     """
     This function is used to pull specific label atrributes from a file,
     in addition to processing the input images.
@@ -99,7 +99,7 @@ def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3):
 
     n_classes = df.apply(pd.Series.nunique)['Y']
 
-    eyes = np.eye(n_classes, dtype="uint8")
+    # eyes = np.eye(n_classes, dtype="uint8")
     # print(expected_shape, delimiter)
     for index, row in df.iterrows():
         try:
@@ -107,7 +107,10 @@ def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3):
 
             assert img.shape == input_shape
             imgs.append(img)
-            labels.append(eyes[(row.Y)-1])
+            if one_hot:
+                labels.append(eyes[(row.Y)-1])
+            else:
+                labels.append(row.Y)
             names.append(row.X)
         except Exception as e:
             print("Failed img error: {} : {}".format(row.X, e))
@@ -117,3 +120,20 @@ def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3):
     assert len(imgs) == len(labels)
 
     return imgs, labels, names, n_classes, input_shape
+
+
+def divide_data(imgs, labels, name_labels, n_test=10):
+    # to unorder samples
+    random_seed = 35
+    random.Random(random_seed).shuffle(labels)
+    random.Random(random_seed).shuffle(name_labels)
+    random.Random(random_seed).shuffle(imgs)
+    n = len(imgs) - (1+n_test)
+
+    x_train = np.array(imgs[: n])
+    y_train = np.array(labels[: n])
+
+    x_test = np.array(imgs[n:n + n_test])
+    y_test = np.array(labels[n:n + n_test])
+
+    return n_test, n, x_test, x_train, y_test, y_train
