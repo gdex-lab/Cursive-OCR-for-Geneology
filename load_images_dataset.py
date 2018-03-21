@@ -117,6 +117,8 @@ def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3, o
 
     print("Total dataset: {}".format(len(imgs)))
     print("Total labels: {}".format(len(labels)))
+
+
     assert len(imgs) == len(labels)
 
     return imgs, labels, names, n_classes, input_shape
