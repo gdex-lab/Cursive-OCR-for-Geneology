@@ -103,20 +103,22 @@ def read_my_csv(file_name, input_shape=(60, 70, 3), delimiter='/', channels=3, o
     # print(expected_shape, delimiter)
     for index, row in df.iterrows():
         try:
-            img = scipy.misc.imread(row.X, flatten=flatten).astype(np.float32)
+            name = row.X
+            img = scipy.misc.imread(name, flatten=flatten).astype(np.float32)
 
             assert img.shape == input_shape
             imgs.append(img)
+            names.append(name)
             if one_hot:
                 labels.append(eyes[(row.Y)-1])
             else:
                 labels.append(row.Y)
-            names.append(row.X)
         except Exception as e:
-            print("Failed img error: {} : {}".format(row.X, e))
+            print("Failed img error: {} : {}".format(name, e))
 
     print("Total dataset: {}".format(len(imgs)))
     print("Total labels: {}".format(len(labels)))
+    print("Total names: {}".format(len(names)))
 
 
     assert len(imgs) == len(labels)
@@ -134,8 +136,11 @@ def divide_data(imgs, labels, name_labels, n_test=10):
 
     x_train = np.array(imgs[: n])
     y_train = np.array(labels[: n])
+    train_name_labels = np.array(name_labels[: n])
 
     x_test = np.array(imgs[n:n + n_test])
     y_test = np.array(labels[n:n + n_test])
+    test_name_labels = np.array(name_labels[n:n + n_test])
 
-    return n_test, n, x_test, x_train, y_test, y_train
+
+    return n_test, n, x_test, x_train, y_test, y_train, train_name_labels, test_name_labels

@@ -22,7 +22,7 @@ else:
 if env == 1:
     path="/home/ubuntu/Cursive-OCR-for-Geneology/dataset"
 else:
-    path="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset"
+    path="C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset\\augmented"
 
 label_dict = {"label2idx": {},
             "idx2label": []}
@@ -241,8 +241,8 @@ n_test = 8
 n = len(dataset) -(1+n_test)
 
 print("Beginning fit...")
-model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=64, epochs=3,
-          verbose=1, validation_split=0.1)
+model.fit(np.array(dataset[: n]), np.array(y[: n]), batch_size=64, epochs=13,
+          verbose=1, validation_split=0.3)
 
 
 

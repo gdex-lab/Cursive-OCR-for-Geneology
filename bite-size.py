@@ -35,35 +35,6 @@ imgs, labels, name_labels, n_classes, input_shape = \
         input_shape=(60, 70, 3), channels=3, one_hot=False)
 
 
-    def augment_data():
-        train_datagen = ImageDataGenerator(
-                rescale=1./255,
-                rotation_range=20,
-                width_shift_range=0.2,
-                height_shift_range=0.2,
-                shear_range=0.2,
-                zoom_range=0.2,
-                horizontal_flip=True,)
-
-        # Note that the validation data should not be augmented!
-        test_datagen = ImageDataGenerator(rescale=1./255)
-
-        train_generator = train_datagen.flow_from_directory(
-                train_dir='C:\Users\grant\Repos\Cursive-OCR-for-Geneology\all_dataset_combined',
-                target_size=(60, 70),
-                batch_size=32,
-                class_mode='binary')
-
-        validation_generator = test_datagen.flow_from_directory(
-                validation_dir='C:\Users\grant\Repos\Cursive-OCR-for-Geneology\all_dataset_combined',
-                target_size=(60, 70),
-                batch_size=32,
-                class_mode='binary')
-
-        # early_stop = EarlyStopping(monitor='val_loss', patience=6, verbose=1)
-        history_aug = model_aug.fit_generator(train_generator, steps_per_epoch=100, epochs=60,
-                                              validation_data=validation_generator, validation_steps=50, verbose=0)
-
 n_test, n, x_test, x_train, y_test, y_train = load_images_dataset.divide_data(imgs, labels, name_labels)
 
 # print(x_train[:5])
