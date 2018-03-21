@@ -35,17 +35,17 @@ def prepare_data(imgs_dir):
     idx = 0
     skips = [".jpg", " ", "@", "+", "]", "[", ")", "(", "_",
     "$", "z", "j", "b", "k", "v", "w", # less than 50
-    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
-    "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z",
+    # "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
+    # "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z",
             ".", ",", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     imgs = []
     clean_titles = []
     label_cardinality = {}
-    for file in glob.glob("*/*.jpg", recursive=True):
+    for file in glob.glob("*.jpg", recursive=True):
         img = scipy.misc.imread(file).astype(np.float32)
 
         if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1] and img.shape[2] == 3:
-            clean_title = str(file.split('\\')[1])
+            clean_title = file #str(file.split('\\')[1])
             clean_title = re.sub(r"\([\d+]*\)", "", clean_title)
             for lb in skips:
                 clean_title = clean_title.replace(lb, "")
