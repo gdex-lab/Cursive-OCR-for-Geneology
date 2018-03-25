@@ -10,21 +10,24 @@ import keras
 import numpy as np
 # vizualize_layer(model, scipy.misc.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize_examplery_images\\_lan.jpg').astype(np.float32))
 img1 = cv2.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize_examplery_images\\_lan.jpg')
-img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+# kernel = np.ones((5,9),np.uint8)
+# img1 = cv2.erode(img1,kernel,iterations = 1) # erosion is actually dilation in this case
+# img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+
 # print(img.shape)
 
 
 model = Sequential()
 # model.add(MaxPooling1D(pool_size=(2), input_shape=img1.shape))
-model.add(Conv1D(7,
-                 kernel_size=(1),
+model.add(Conv2D(4,
+                 kernel_size=(3,3),
                  activation='sigmoid',
                  input_shape=img1.shape))
-model.add(Conv1D(32,
-                 kernel_size=(2),
-                 activation='sigmoid',
-                 input_shape=img1.shape))
-model.add(MaxPooling1D(12, 1))
+# model.add(Conv2D(32,
+#                  kernel_size=(2),
+#                  activation='sigmoid',
+#                  input_shape=img1.shape))
+model.add(MaxPooling2D(15, 17))
 
 img_batch = np.expand_dims(img1, axis=0)
 conv_img = model.predict(img_batch)
