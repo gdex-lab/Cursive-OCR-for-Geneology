@@ -21,15 +21,15 @@ import custom_models
 path = os.getcwd() + "/dataset"
 
 # n_classes = 2
-base_layers = 3
-epochs = 10
-batch_size = 10
-conv_size = 3
-pool_size = 2
+# base_layers = 3
+epochs = 12
+batch_size = 128
+# conv_size = 3
+# pool_size = 2
 
 train_imgs, train_labels, val_imgs, val_labels, name_labels, n_classes, input_shape = \
-        load_images_dataset.read_my_csv("val_sameheight.txt", "val_sameheight.txt", \
-        input_shape=(60, 70, 3), channels=3, one_hot=False)
+        load_images_dataset.read_my_csv("train_sameheight.txt", "val_sameheight.txt", \
+        input_shape=(60, 70, 3), channels=3, one_hot=True)
 
 x_train, x_val, x_test, y_train, y_val, y_test, n_test, n = \
 load_images_dataset.divide_data_with_val(train_imgs, train_labels, val_imgs, val_labels)

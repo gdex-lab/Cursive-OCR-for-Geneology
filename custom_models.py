@@ -10,39 +10,28 @@ def basic_cnn(activation_1, loss, x_train, y_train, x_val, y_val,\
                     conv_size=3, pool_size=2):
     print("input shape: {}".format(input_shape))
 
-    model_aug = Sequential()
-    model_aug.add(Conv2D(16,
-                     kernel_size=(1),
-                     activation='sigmoid',
+    model = Sequential()
+    model.add(Conv2D(32, kernel_size=(3, 3),
+                     activation='relu',
                      input_shape=input_shape))
-    model_aug.add(MaxPooling2D(4,4))
-    model_aug.add(Conv2D(32,
-                     kernel_size=(2),
-                     activation='sigmoid',
-                     input_shape=input_shape))
-    model_aug.add(MaxPooling2D(3, 3))
-
-    model_aug.add(Conv2D(64, (3, 3), activation='relu', padding='same', name='conv_1',
-                     input_shape=(60, 70, 3)))
-    model_aug.add(MaxPooling2D((4,4), name='maxpool_1'))
-    # model_aug.add(Conv2D(32, (3, 3), activation='relu', padding='same', name='conv_2'))
-    # model_aug.add(MaxPooling2D((2, 2), name='maxpool_2'))
-    model_aug.add(Flatten())
-    # model_aug.add(Dense(256, activation='relu', name='dense_1'))
-    model_aug.add(Dense(128, activation='relu', name='dense_2'))
-    model_aug.add(Dropout(0.25))
-    model_aug.add(Dense(1, activation='sigmoid', name='output'))
-    model_aug.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+    model.add(Conv2D(64, (3, 3), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.25))
+    model.add(Flatten())
+    model.add(Dense(128, activation='relu'))
+    model.add(Dropout(0.5))
+    model.add(Dense(n_classes, activation='softmax'))
+    model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     # model.compile(loss='categorical_crossentropy', optimizer='Adam',  metrics=['categorical_accuracy'])
 
 
-    model_aug.fit(x_train, y_train,
+    model.fit(x_train, y_train,
               batch_size=batch_size,
               epochs=epochs,
               verbose=1,
               validation_data=(x_val, y_val)
               )
-    return model_aug
+    return model
 
 
 def seven_layer_cnn(activation_1, activation_2, loss, x_train, y_train, \

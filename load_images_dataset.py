@@ -108,7 +108,7 @@ def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimit
     assert n_classes == val_n_classes, "Number of classes in training and validation data mismatch"
     eyes = np.eye(n_classes, dtype="uint8")
 
-    kernel = np.ones((5,9),np.uint8) # was 5, 5, first is vert, then horizontal
+    # kernel = np.ones((5,9),np.uint8) # was 5, 5, first is vert, then horizontal
     # print(expected_shape, delimiter)
     print("Iterating training rows")
     print("-Reading images")
@@ -117,7 +117,7 @@ def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimit
     for index, row in train_df.iterrows():
         try:
             name = row.X
-            img = scipy.misc.imread(name, flatten=flatten).astype(np.float32)
+            img = scipy.misc.imread(name, flatten=flatten).astype(np.uint8)
             # img = cv2.imread(name)
             # img = cv2.erode(img,kernel,iterations = 1)
             # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -140,7 +140,7 @@ def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimit
     for index, row in val_df.iterrows():
         try:
             name = row.X
-            img = scipy.misc.imread(name, flatten=flatten).astype(np.float32)
+            img = scipy.misc.imread(name, flatten=flatten).astype(np.uint8)
             # img = cv2.imread(name)
             # img = cv2.erode(img,kernel,iterations = 1)
             # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -189,6 +189,10 @@ def divide_data_with_val(train_imgs, train_labels, val_imgs, val_labels, n_test=
     x_test = np.array(val_imgs[n:n + n_test])
     y_test = np.array(val_labels[n:n + n_test])
     # test_name_labels = np.array(val_name_labels[n:n + n_test])
+
+    # first_img =  np.squeeze(x_train[1])
+    # plt.imshow(first_img)
+    # plt.show()
 
     # train_name_labels, test_name_labels, val_name_labels
     return x_train, x_val, x_test, y_train, y_val, y_test, n_test, n
