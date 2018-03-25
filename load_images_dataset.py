@@ -169,7 +169,7 @@ def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimit
 
 def divide_data_with_val(train_imgs, train_labels, val_imgs, val_labels, n_test=10):
     # to unorder samples
-    random_seed = 35
+    random_seed = 4
     random.Random(random_seed).shuffle(train_imgs)
     random.Random(random_seed).shuffle(train_labels)
     # random.Random(random_seed).shuffle(train_name_labels)
@@ -196,7 +196,7 @@ def divide_data_with_val(train_imgs, train_labels, val_imgs, val_labels, n_test=
 
 def divide_data(imgs, labels, name_labels, n_test=10):
     # to unorder samples
-    random_seed = 35
+    random_seed = 4
     random.Random(random_seed).shuffle(labels)
     random.Random(random_seed).shuffle(name_labels)
     random.Random(random_seed).shuffle(imgs)
