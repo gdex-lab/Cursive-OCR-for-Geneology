@@ -18,21 +18,59 @@ from keras.preprocessing.image import ImageDataGenerator
 import load_images_dataset
 import custom_models
 
-path = os.getcwd() + "/dataset"
+from keras.datasets import mnist
+
+
+path = os.getcwd() + "/dataset/single"
 
 # n_classes = 2
 # base_layers = 3
-epochs = 12
-batch_size = 128
+epochs = 20
+batch_size = 24
 # conv_size = 3
 # pool_size = 2
 
-train_imgs, train_labels, val_imgs, val_labels, name_labels, n_classes, input_shape = \
-        load_images_dataset.read_my_csv("train_sameheight.txt", "val_sameheight.txt", \
-        input_shape=(60, 70, 3), channels=3, one_hot=True)
+imgs, labels, n_classes, label_dict, SIZE = load_images_dataset.prepare_data(path,
+                                                            SIZE=(60,25),
+                                                            skips=[".jpg", " "])
 
-x_train, x_val, x_test, y_train, y_val, y_test, n_test, n = \
-load_images_dataset.divide_data_with_val(train_imgs, train_labels, val_imgs, val_labels)
+ # train_name_labels, test_name_labels
+n_test, n, x_test, x_train, y_test, y_train = \
+                                load_images_dataset.divide_data(imgs, labels, label_dict, n_test=10)
+
+# train_imgs, train_labels, val_imgs, val_labels, name_labels, n_classes, input_shape = \
+#         load_images_dataset.read_my_csv("train_sameheight.txt", "val_sameheight.txt", \
+#         input_shape=(60, 70), channels=2, one_hot=True)
+
+
+
+# x_train, x_val, x_test, y_train, y_val, y_test, n_test, n = \
+# load_images_dataset.divide_data_with_val(train_imgs, train_labels, val_imgs, val_labels)
+"""Make my a vs e dataset so big that it is like mnist (70K total, about 8K per class)"""
+
+# -----------MNIST DATA TEST------------
+# (x_train, y_train), (x_test, y_test) = mnist.load_data()
+#
+# eyes=np.eye(10, dtype="uint8")
+#
+# new_y_train = []
+# new_y_test = []
+#
+# for i, v in enumerate(y_train):
+#     new_y_train.append(eyes[v])
+# for i, v in enumerate(y_test):
+#     new_y_test.append(eyes[v])
+#
+# new_y_test = np.array(new_y_test)
+# new_y_train = np.array(new_y_train)
+
+
+
+model = custom_models.basic_cnn('relu', 'mean_squared_error', \
+                        x_train, y_train, (60, 25), 2, \
+                        epochs=epochs, batch_size=batch_size)
+
+
 # n_test, n, x_test, x_train, y_test, y_train, train_name_labels, test_name_labels  = \
 # n_test, n, x_test, x_train, y_test, y_train = load_images_dataset.divide_data(imgs, labels, name_labels)
 
@@ -41,9 +79,9 @@ load_images_dataset.divide_data_with_val(train_imgs, train_labels, val_imgs, val
 # for x in range(1, 10):
 #     print(labels[x], name_labels[x])
 
-model = custom_models.basic_cnn('relu', 'mean_squared_error', \
-                                x_train, y_train, x_val, y_val, input_shape, n_classes, \
-                                epochs=epochs, batch_size=batch_size)
+# model = custom_models.basic_cnn('relu', 'mean_squared_error', \
+#                                 x_train, y_train, x_val, y_val, input_shape, n_classes, \
+#                                 epochs=epochs, batch_size=batch_size)
 
 score = model.evaluate(x_test, y_test, verbose=1)
 

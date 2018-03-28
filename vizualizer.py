@@ -9,26 +9,26 @@ from keras.layers import Conv2D, Conv1D, MaxPooling2D,MaxPooling1D, AveragePooli
 import keras
 import numpy as np
 # vizualize_layer(model, scipy.misc.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize_examplery_images\\_lan.jpg').astype(np.float32))
-img1 = cv2.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\vizualize_examplery_images\\_lan.jpg')
+img1 = cv2.imread('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset\\single\\a\\a (28).jpg')
+# print(img1)
+# cv2.imshow('test', img1)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 # kernel = np.ones((5,9),np.uint8)
 # img1 = cv2.erode(img1,kernel,iterations = 1) # erosion is actually dilation in this case
-# img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 
 # print(img.shape)
 
 
 model = Sequential()
 # model.add(MaxPooling1D(pool_size=(2), input_shape=img1.shape))
-model.add(Conv2D(4,
-                 kernel_size=(3,3),
-                 activation='sigmoid',
+model.add(Conv1D(8, kernel_size=(3),
+                 activation='relu',
                  input_shape=img1.shape))
-# model.add(Conv2D(32,
-#                  kernel_size=(2),
-#                  activation='sigmoid',
-#                  input_shape=img1.shape))
-model.add(MaxPooling2D(15, 17))
-
+model.add(MaxPooling1D(pool_size=(2)))
+model.add(Conv1D(16, (3), activation='relu'))
+model.add(MaxPooling1D(pool_size=(2)))
 img_batch = np.expand_dims(img1, axis=0)
 conv_img = model.predict(img_batch)
 print("here 2")

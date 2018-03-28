@@ -28,9 +28,12 @@ def prepare_data(imgs_dir,
     label_cardinality = {}
     for file in glob.glob("*/*.jpg", recursive=True):
 
-        img = scipy.misc.imread(file).astype(np.float32)
+        # img = scipy.misc.imread(file).astype(np.unit8)
+        img = cv2.imread(file)
+        # img = cv2.erode(img,kernel,iterations = 2)
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-        if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1] and img.shape[2] == SIZE[2]:
+        if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1]: # and img.shape[2] == SIZE[2]:
 
             clean_title = str(file.split('\\')[1])
             clean_title = re.sub(r"\([\d+]*\)", "", clean_title)
@@ -44,8 +47,8 @@ def prepare_data(imgs_dir,
                 imgs.append(img)
                 clean_titles.append(clean_title)
         else:
-            print("{} size mismatch: {}".format(file, img.shape))
-
+            # print("{} size mismatch: {}".format(file, img.shape))
+            test = 1
 
     # Add all file labels to dict, with indexes
     for title in clean_titles:
@@ -79,6 +82,8 @@ def prepare_data(imgs_dir,
     for l in sorted(label_cardinality):
         print(l, ": ", label_cardinality[l])
 
+
+
     return imgs, labels, n_classes, label_dict, SIZE
 
 
@@ -108,7 +113,7 @@ def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimit
     assert n_classes == val_n_classes, "Number of classes in training and validation data mismatch"
     eyes = np.eye(n_classes, dtype="uint8")
 
-    # kernel = np.ones((5,9),np.uint8) # was 5, 5, first is vert, then horizontal
+    kernel = np.ones((3,3),np.uint8) # was 5, 5, first is vert, then horizontal
     # print(expected_shape, delimiter)
     print("Iterating training rows")
     print("-Reading images")
@@ -117,10 +122,10 @@ def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimit
     for index, row in train_df.iterrows():
         try:
             name = row.X
-            img = scipy.misc.imread(name, flatten=flatten).astype(np.uint8)
-            # img = cv2.imread(name)
-            # img = cv2.erode(img,kernel,iterations = 1)
-            # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            # img = scipy.misc.imread(name, flatten=flatten).astype(np.uint8)
+            img = cv2.imread(name)
+            img = cv2.erode(img,kernel,iterations = 2)
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
             assert img.shape == input_shape, "Image shape {} does not match input shape {}".format(img.shape, input_shape)
             train_imgs.append(img)
@@ -140,10 +145,10 @@ def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimit
     for index, row in val_df.iterrows():
         try:
             name = row.X
-            img = scipy.misc.imread(name, flatten=flatten).astype(np.uint8)
-            # img = cv2.imread(name)
-            # img = cv2.erode(img,kernel,iterations = 1)
-            # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            # img = scipy.misc.imread(name, flatten=flatten).astype(np.uint8)
+            img = cv2.imread(name)
+            img = cv2.erode(img,kernel,iterations = 2)
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
             assert img.shape == input_shape, "Image shape {} does not match input shape {}".format(img.shape, input_shape)
             val_imgs.append(img)
@@ -190,9 +195,6 @@ def divide_data_with_val(train_imgs, train_labels, val_imgs, val_labels, n_test=
     y_test = np.array(val_labels[n:n + n_test])
     # test_name_labels = np.array(val_name_labels[n:n + n_test])
 
-    # first_img =  np.squeeze(x_train[1])
-    # plt.imshow(first_img)
-    # plt.show()
 
     # train_name_labels, test_name_labels, val_name_labels
     return x_train, x_val, x_test, y_train, y_val, y_test, n_test, n
@@ -202,17 +204,20 @@ def divide_data(imgs, labels, name_labels, n_test=10):
     # to unorder samples
     random_seed = 4
     random.Random(random_seed).shuffle(labels)
-    random.Random(random_seed).shuffle(name_labels)
+    # random.Random(random_seed).shuffle(name_labels)
     random.Random(random_seed).shuffle(imgs)
     n = len(imgs) - (1+n_test)
 
     x_train = np.array(imgs[: n])
     y_train = np.array(labels[: n])
-    train_name_labels = np.array(name_labels[: n])
+    # train_name_labels = np.array(name_labels[: n])
 
     x_test = np.array(imgs[n:n + n_test])
     y_test = np.array(labels[n:n + n_test])
-    test_name_labels = np.array(name_labels[n:n + n_test])
+    # test_name_labels = np.array(name_labels[n:n + n_test])
 
-
-    return n_test, n, x_test, x_train, y_test, y_train, train_name_labels, test_name_labels
+    # first_img =  np.squeeze(x_train[5])
+    # print("Graph label: ", y_train[5])
+    # plt.imshow(first_img)
+    # plt.show()
+    return n_test, n, x_test, x_train, y_test, y_train #, train_name_labels, test_name_labels
