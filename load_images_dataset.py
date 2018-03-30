@@ -100,9 +100,11 @@ class PreparedData:
 
 
     def process(self):
-        self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\validate', self.channels, tvt='train')
+        self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\train', self.channels, tvt='train')
         self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\validate', self.channels, tvt='val')
         self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\test', self.channels, tvt='test')
+
+
 
 def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimiter='/', channels=3, one_hot=True):
     """

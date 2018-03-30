@@ -4,7 +4,7 @@ import load_images_dataset
 p_data = load_images_dataset.PreparedData()
 p_data.process()
 
-epochs = 12
+epochs = 20
 batch_size = 64
 
 model = custom_models.cursive_cnn(p_data.dataset['x_train'], p_data.dataset['y_train'],
