@@ -15,71 +15,94 @@ import re
 import random
 
 
-def prepare_data(imgs_dir, size=(60,25,3), skips=[".jpg", " "]):
+class PreparedData:
+    n_classes = 0
+    size=(60,25,3)
+    skips=[".jpg", " "]
 
     label_dict = {"word2idx": {}, "idx2word": []}
-    channels = size[-1]
+    channels = size[-1] if size[-1] < 4 else 0
     idx = 0
-    imgs = []
-    labels = []
-    clean_titles = []
-    label_cardinality = {}
 
-    os.chdir(imgs_dir)
-    for file in glob.glob("*/*.jpg", recursive=True):
-        if channels == 2:
-            img = cv2.imread(file)
-            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        elif channels == 3:
-            img = scipy.misc.imread(file) #.astype(np.unit8)
-        else:
-            print("Unexpected channels: {}".format(channels))
-            break
+    dataset = {'x_train': [], 'x_val': [], 'x_test': [],
+                'y_train': [], 'y_val': [], 'y_test': []}
 
 
-        if img.shape[0] == size[0] and img.shape[1] == size[1] and (
-                            True if channels == 2 else img.shape[2] == size[2]):
-            clean_title = str(file.split('\\')[1])
-            clean_title = re.sub(r"\([\d+]*\)", "", clean_title)
+    def set_size(self, size=(60,25,3)):
+        self.size = size
 
-            for lb in skips:
-                clean_title = clean_title.replace(lb, "")
+    def read(self, path, channels, tvt='train'):
+        print("Processing '{}' dataset".format(tvt))
 
-            if len(clean_title) > 0:
-                imgs.append(img)
-                clean_titles.append(clean_title)
-        else:
-            print("{} size mismatch: {}".format(file, img.shape))
+        label_cardinality = {}
+        clean_titles = []
+        os.chdir(path)
 
-    # Add all file labels to dict, with indexes
-    for title in clean_titles:
-        for l in list(title):
-            if l in label_cardinality:
-                label_cardinality[l] += 1
+        for file in glob.glob("*.jpg".format(path), recursive=True):
+            if channels == 0:
+                img = cv2.imread(file)
+                img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            elif channels == 3:
+                img = scipy.misc.imread(file) #.astype(np.unit8)
             else:
-                label_cardinality[l] = 1
-            if l in label_dict["idx2word"]:
-                pass
+                print("Unexpected channels: {}".format(channels))
+                break
+
+            if img.shape[0] == self.size[0] and img.shape[1] == self.size[1] and (
+                                True if channels == 0 else img.shape[2] == self.size[2]):
+                try:
+                    # if subfolder, this will split
+                    clean_title = str(file.split('\\')[1])
+                except:
+                    clean_title = str(file)
+                clean_title = re.sub(r"\([\d+]*\)", "", clean_title)
+
+                for lb in self.skips:
+                    clean_title = clean_title.replace(lb, "")
+
+                if len(clean_title) > 0:
+                    self.dataset['x_{}'.format(tvt)].append(img)
+                    clean_titles.append(clean_title)
             else:
-                label_dict["idx2word"].append(l)
-                label_dict["word2idx"][l] = idx
-                idx += 1
+                print("{} size mismatch: {}".format(file, img.shape))
 
-    n_classes = len(label_dict["idx2word"])
+            # # Add all file labels to dict, with indexes
+        for title in clean_titles:
+            for l in list(title):
+                if l in label_cardinality:
+                    label_cardinality[l] += 1
+                else:
+                    label_cardinality[l] = 1
+                if l in self.label_dict["idx2word"]:
+                    pass
+                else:
+                    self.label_dict["idx2word"].append(l)
+                    self.label_dict["word2idx"][l] = self.idx
+                    self.idx += 1
 
-    for title in clean_titles:
-        letters = list(title)
-        l = np.sum([np.eye(n_classes, dtype="uint8")[label_dict["word2idx"][s]]
+            # this must be the same for train, val, and test
+            self.n_classes = len(self.label_dict["idx2word"])
+
+        for title in clean_titles:
+            letters = list(title)
+            l = np.sum([np.eye(self.n_classes, dtype="uint8")[self.label_dict["word2idx"][s]]
                                                             for s in letters], axis=0)
-        # print("letters: {}\nlabel: {}".format(letters, l))
-        labels.append(l)
+            self.dataset['y_{}'.format(tvt)].append(l)
+        for l in sorted(label_cardinality):
+            print(l, ": ", label_cardinality[l])
 
-    # print(label_cardinality)
-    for l in sorted(label_cardinality):
-        print(l, ": ", label_cardinality[l])
+        print("Shuffling")
+        random_seed = 4
+        random.Random(random_seed).shuffle(self.dataset['x_{}'.format(tvt)])
+        random.Random(random_seed).shuffle(self.dataset['y_{}'.format(tvt)])
+        self.dataset['x_{}'.format(tvt)] = np.array(self.dataset['x_{}'.format(tvt)])
+        self.dataset['y_{}'.format(tvt)] = np.array(self.dataset['y_{}'.format(tvt)])
 
-    return imgs, labels, n_classes, label_dict, size
 
+    def process(self):
+        self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\validate', self.channels, tvt='train')
+        self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\validate', self.channels, tvt='val')
+        self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\test', self.channels, tvt='test')
 
 def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimiter='/', channels=3, one_hot=True):
     """

@@ -48,40 +48,19 @@ datagen = ImageDataGenerator(
     # preprocessing_function=None,
     data_format=K.image_data_format())
 
-
-
-# (
-# rotation_range=0,
-# width_shift_range=0.,
-# height_shift_range=0.,
-# shear_range=0.,
-# zoom_range=0.,
-# horizontal_flip=False,
-# fill_mode='nearest')
-# import pprint
-# pprint.pprint(X_train[0].reshape(60, 70, 3))
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
-# fit parameters from data
-# datagen.fit(X_train)
-# configure batch size and retrieve one batch of images
-# os.makedirs('.\\dataset\\augmented')
-# print(y.shape)
-# print(x.shape)
-
-
 # print(label_dict.shape)
 print('fitting augmentation model')
 datagen.fit(x)
 aug_cnt = 0
 
 # number of times to augment the dataset
-aug_factor = len(x) * 20
+batch_size = 1
+aug_factor = len(x)/batch_size * 20
 
 
 print('creating flow')
 path = 'C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset\\01a_singles_augmented'
-for x_batch, y_batch in datagen.flow(x, y, batch_size=1):
+for x_batch, y_batch in datagen.flow(x, y, batch_size=batch_size):
     try:
         label = '{}\\{} ({}).jpg'.format(
                     path,

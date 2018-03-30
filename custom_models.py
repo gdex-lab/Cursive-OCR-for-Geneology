@@ -4,24 +4,27 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv1D, Conv2D, MaxPooling2D, MaxPooling1D, AveragePooling2D
 from keras.optimizers import SGD
 
-def basic_cnn(activation_1, loss, x_train, y_train, # x_val, y_val,
-                    input_shape, n_classes, base_layers=3,
-                    epochs=3, batch_size=64,
-                    conv_size=3, pool_size=2):
+def cursive_cnn(x_train, y_train, x_val, y_val, # x_val, y_val,
+                    input_shape, n_classes,
+                    epochs=12, batch_size=64):
+
     print("input shape: {}".format(input_shape))
+    print("Number of classes: {}".format(n_classes))
 
     model = Sequential()
-    model.add(Conv1D(8, kernel_size=(5),
-                     activation='relu',
-                     input_shape=input_shape))
-    model.add(Conv1D(16, (2), activation='relu'))
-    model.add(MaxPooling1D(pool_size=(2)))
+    model.add(Conv2D(32, kernel_size=(5, 5),
+                 activation='relu',
+                 input_shape=input_shape))
+    model.add(Conv2D(64, (3, 3), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Dropout(0.25))
     model.add(Flatten())
-    model.add(Dense(32, activation='relu'))
+    model.add(Dense(128, activation='relu'))
     model.add(Dropout(0.5))
-    model.add(Dense(5, activation='softmax'))
-    model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+    model.add(Dense(n_classes, activation='softmax'))
+    model.compile(loss=keras.losses.categorical_crossentropy,
+              optimizer=keras.optimizers.Adadelta(),
+              metrics=['accuracy'])
     # model.compile(loss='binary_crossentropy', optimizer='Adam',  metrics=['categorical_accuracy'])
 
 
@@ -29,8 +32,8 @@ def basic_cnn(activation_1, loss, x_train, y_train, # x_val, y_val,
               batch_size=batch_size,
               epochs=epochs,
               verbose=1,
-              validation_split=0.5,
-              # validation_data=(x_val, y_val)
+              # validation_split=0.4,
+              validation_data=(x_val, y_val)
               )
     return model
 
