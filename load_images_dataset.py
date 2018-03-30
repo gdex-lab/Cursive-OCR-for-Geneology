@@ -15,50 +15,47 @@ import re
 import random
 
 
-def prepare_data(imgs_dir,
-                SIZE=(60,70,3),
-                skips=[".jpg", " "]):
-    label_dict = {"word2idx": {}, "idx2word": []}
-    os.chdir(imgs_dir)
-    labels = []
-    idx = 0
+def prepare_data(imgs_dir, size=(60,25,3), skips=[".jpg", " "]):
 
+    label_dict = {"word2idx": {}, "idx2word": []}
+    channels = size[-1]
+    idx = 0
     imgs = []
+    labels = []
     clean_titles = []
     label_cardinality = {}
+
+    os.chdir(imgs_dir)
     for file in glob.glob("*/*.jpg", recursive=True):
+        if channels == 2:
+            img = cv2.imread(file)
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        elif channels == 3:
+            img = scipy.misc.imread(file) #.astype(np.unit8)
+        else:
+            print("Unexpected channels: {}".format(channels))
+            break
 
-        # img = scipy.misc.imread(file).astype(np.unit8)
-        img = cv2.imread(file)
-        # img = cv2.erode(img,kernel,iterations = 2)
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-        if img.shape[0] == SIZE[0] and img.shape[1] == SIZE[1]: # and img.shape[2] == SIZE[2]:
-
+        if img.shape[0] == size[0] and img.shape[1] == size[1] and (
+                            True if channels == 2 else img.shape[2] == size[2]):
             clean_title = str(file.split('\\')[1])
             clean_title = re.sub(r"\([\d+]*\)", "", clean_title)
 
             for lb in skips:
-
                 clean_title = clean_title.replace(lb, "")
 
             if len(clean_title) > 0:
-
                 imgs.append(img)
                 clean_titles.append(clean_title)
         else:
-            # print("{} size mismatch: {}".format(file, img.shape))
-            test = 1
+            print("{} size mismatch: {}".format(file, img.shape))
 
     # Add all file labels to dict, with indexes
     for title in clean_titles:
-
-        for l in list(title): #.split('|'):
-
+        for l in list(title):
             if l in label_cardinality:
-
                 label_cardinality[l] += 1
-
             else:
                 label_cardinality[l] = 1
             if l in label_dict["idx2word"]:
@@ -68,9 +65,8 @@ def prepare_data(imgs_dir,
                 label_dict["word2idx"][l] = idx
                 idx += 1
 
-
     n_classes = len(label_dict["idx2word"])
-    # add multi-hot labels to overall labels?
+
     for title in clean_titles:
         letters = list(title)
         l = np.sum([np.eye(n_classes, dtype="uint8")[label_dict["word2idx"][s]]
@@ -82,9 +78,7 @@ def prepare_data(imgs_dir,
     for l in sorted(label_cardinality):
         print(l, ": ", label_cardinality[l])
 
-
-
-    return imgs, labels, n_classes, label_dict, SIZE
+    return imgs, labels, n_classes, label_dict, size
 
 
 def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimiter='/', channels=3, one_hot=True):

@@ -18,7 +18,7 @@ def basic_cnn(activation_1, loss, x_train, y_train, # x_val, y_val,
     model.add(MaxPooling1D(pool_size=(2)))
     model.add(Dropout(0.25))
     model.add(Flatten())
-    model.add(Dense(32, activation='tanh'))
+    model.add(Dense(32, activation='relu'))
     model.add(Dropout(0.5))
     model.add(Dense(5, activation='softmax'))
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])

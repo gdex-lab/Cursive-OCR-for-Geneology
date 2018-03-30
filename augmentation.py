@@ -6,80 +6,47 @@ import random
 import numpy as np
 import load_images_dataset
 import custom_models
-
-imgs, labels, name_labels, n_classes, input_shape = \
-load_images_dataset.read_my_csv("has_tall_letters_undersampled.txt", \
-input_shape=(60, 70, 3), channels=3, one_hot=False)
-
-
-
-n_test, n, X_test, X_train, y_test, y_train, train_name_labels, test_name_labels \
-                    = load_images_dataset.divide_data(imgs, labels, name_labels)
-
-# (featurewise_center=False,
-#     samplewise_center=False,
-#     featurewise_std_normalization=False,
-#     samplewise_std_normalization=False,
-#     zca_whitening=False,
-#     zca_epsilon=1e-6,
-#     rotation_range=0.,
-#     width_shift_range=0.,
-#     height_shift_range=0.,
-#     shear_range=0.,
-#     zoom_range=0.,
-#     channel_shift_range=0.,
-#     fill_mode='nearest',
-#     cval=0.,
-#     horizontal_flip=False,
-#     vertical_flip=False,
-#     rescale=None,
-#     preprocessing_function=None,
-#     data_format=K.image_data_format())
-
-
 from keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
+from keras.utils import to_categorical
 from matplotlib import pyplot
-import os
-from keras import backend as K
-K.set_image_dim_ordering('th')
-# load data
-# (X_train, y_train), (X_test, y_test) = mnist.load_data()
+import cv2
+from numpy import array
 
 
-# reshape to be [samples][pixels][width][height]
-X_train = X_train.reshape(X_train.shape[0], 3, 60, 70)
-X_test = X_test.reshape(X_test.shape[0], 3, 60, 70)
-# convert from int to float
-X_train = X_train.astype('uint8')
-X_test = X_test.astype('uint8')
+x, y, n_classes, label_dict, size = load_images_dataset.prepare_data(
+        'C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset\\ready_singles')
 
-# import matplotlib.pyplot as plt
-# for z in range(0,10):
-#     plt.imshow(np.uint8(imgs[z]))
-#     plt.show()
+print(label_dict)
+K.set_image_dim_ordering('tf')
+x = array(x)
+x.reshape(60, 25, 3, x.shape[0])
+x = x.astype('float32')
+
+# for z in range(0,2):
+#     pyplt.imshow(np.uint8(x[z]))
+#     pyplt.show()
 
 # define data preparation
 datagen = ImageDataGenerator(
-    featurewise_center=False,
-    samplewise_center=False,
-    featurewise_std_normalization=False,
-    samplewise_std_normalization=False,
-    zca_whitening=False,
-    zca_epsilon=1e-9,
-    rotation_range=0.1,
-    width_shift_range=0.01,
-    height_shift_range=0.01,
-    shear_range=0.,
-    zoom_range=0.01,
-    channel_shift_range=0.,
-    fill_mode='nearest',
-    cval=0.,
+    # featurewise_center=False,
+    # samplewise_center=False,
+    # featurewise_std_normalization=False,
+    # samplewise_std_normalization=False,
+    # zca_whitening=True,
+    # zca_epsilon=1e-6,
+    rotation_range=12,
+    width_shift_range=4,
+    height_shift_range=10,
+    # shear_range=0.,
+    zoom_range=0.2,
+    channel_shift_range=.8,
+    # fill_mode='nearest',
+    # cval=0.,
     horizontal_flip=False,
     vertical_flip=False,
-    rescale=None,
-    preprocessing_function=None,
+    rescale=0,
+    # preprocessing_function=None,
     data_format=K.image_data_format())
-
 
 
 
@@ -92,7 +59,6 @@ datagen = ImageDataGenerator(
 # horizontal_flip=False,
 # fill_mode='nearest')
 # import pprint
-import cv2
 # pprint.pprint(X_train[0].reshape(60, 70, 3))
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
@@ -100,21 +66,44 @@ import cv2
 # datagen.fit(X_train)
 # configure batch size and retrieve one batch of images
 # os.makedirs('.\\dataset\\augmented')
-print(y_train.shape)
-print(X_train.shape)
-print(train_name_labels.shape)
-path = 'C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset\\augmented'
-for X_batch, y_batch in datagen.flow(X_train, train_name_labels, batch_size=1):
+# print(y.shape)
+# print(x.shape)
+
+
+# print(label_dict.shape)
+print('fitting augmentation model')
+datagen.fit(x)
+aug_cnt = 0
+
+# number of times to augment the dataset
+aug_factor = len(x) * 20
+
+
+print('creating flow')
+path = 'C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\dataset\\01a_singles_augmented'
+for x_batch, y_batch in datagen.flow(x, y, batch_size=1):
     try:
-        # print('writing {}\\{}{}.jpg'.format(path,os.path.split(y_batch[0])[1].strip('.jpg'), '({})'.format(random.getrandbits(8))))
-        cv2.imwrite('{}\\{}{}.jpg'.format(path,os.path.split(y_batch[0])[1].strip('.jpg'), '({})'.format(random.getrandbits(8))),
-                        X_batch.reshape(60, 70, 3))
+        label = '{}\\{} ({}).jpg'.format(
+                    path,
+                    label_dict['idx2word'][int(np.where(y_batch[0]==1)[0][0])],
+                    aug_cnt
+                    )
+        # print(label)
+        """
+        pyplot has a hard time showing major changes, but you will still get an idea for the variety of the pixels.
+            Output the images to actually see appearance.
+        """
+        # pyplot.imshow(x_batch[0])
+        # pyplot.show()
+        aug_cnt += 1
+
+        cv2.imwrite(label, x_batch[0])
+        # print('writing {}\\{}{}.jpg'.format(path,os.path.split(y_batch[0])[1].strip('.jpg'), '({})'.format(aug_cnt)))
+        # cv2.imwrite('{}\\{}{}.jpg'.format(path,os.path.split(y_batch[0])[1].strip('.jpg'), '({})'.format(random.getrandbits(8))),
+                        # X_batch.reshape(60, 70, 3))
         # print('wrote')
     except Exception as e:
         print(e)
-        # pyplot.subplot(330 + 1 + i)
-        # pyplot.imshow(X_batch[i].reshape(60, 70, 3))
-        # print(y_batch[i])
-    # show the plot
-    # pyplot.show()
-    # break
+    if aug_cnt > aug_factor:
+        # flow will loop indefinitely
+        break
