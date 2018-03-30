@@ -20,9 +20,9 @@ def basic_cnn(activation_1, loss, x_train, y_train, # x_val, y_val,
     model.add(Flatten())
     model.add(Dense(32, activation='tanh'))
     model.add(Dropout(0.5))
-    model.add(Dense(2, activation='softmax'))
-    model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-    # model.compile(loss='categorical_crossentropy', optimizer='Adam',  metrics=['categorical_accuracy'])
+    model.add(Dense(5, activation='softmax'))
+    model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+    # model.compile(loss='binary_crossentropy', optimizer='Adam',  metrics=['categorical_accuracy'])
 
 
     model.fit(x_train, y_train,

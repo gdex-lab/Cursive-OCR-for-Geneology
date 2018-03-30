@@ -1,5 +1,0 @@
-Currently, accuracy levels are dipping (quick pass only reached 26% accuracy with 9 classes). 
-Switching to multiple-hot encoding
-
-
-dataset contruction only reached bll_100-106
