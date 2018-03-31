@@ -12,6 +12,7 @@ def cursive_cnn(x_train, y_train, x_val, y_val, # x_val, y_val,
     print("Number of classes: {}".format(n_classes))
 
     model = Sequential()
+
     model.add(Conv2D(32, kernel_size=(5, 5),
                  activation='relu',
                  input_shape=input_shape))
@@ -22,11 +23,10 @@ def cursive_cnn(x_train, y_train, x_val, y_val, # x_val, y_val,
     model.add(Dense(128, activation='relu'))
     model.add(Dropout(0.5))
     model.add(Dense(n_classes, activation='softmax'))
-    model.compile(loss=keras.losses.categorical_crossentropy,
-              optimizer=keras.optimizers.Adadelta(),
-              metrics=['accuracy'])
-    # model.compile(loss='binary_crossentropy', optimizer='Adam',  metrics=['categorical_accuracy'])
 
+    model.compile(loss=keras.losses.categorical_crossentropy,
+                  optimizer=keras.optimizers.Adadelta(),
+                  metrics=['accuracy'])
 
     model.fit(x_train, y_train,
               batch_size=batch_size,

@@ -1,8 +1,5 @@
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
-
-import numpy as np
 import pandas as pd
 import glob
 import scipy.misc
@@ -18,18 +15,18 @@ import random
 class PreparedData:
     n_classes = 0
     size=(60,25,3)
+    channels = 3
     skips=[".jpg", " "]
 
     label_dict = {"word2idx": {}, "idx2word": []}
-    channels = size[-1] if size[-1] < 4 else 0
     idx = 0
 
     dataset = {'x_train': [], 'x_val': [], 'x_test': [],
                 'y_train': [], 'y_val': [], 'y_test': []}
 
-
-    def set_size(self, size=(60,25,3)):
+    def set_size(self, size):
         self.size = size
+        self.channels = size[-1] if size[-1] < 4 else 0
 
     def read(self, path, channels, tvt='train'):
         print("Processing '{}' dataset".format(tvt))
@@ -48,8 +45,7 @@ class PreparedData:
                 print("Unexpected channels: {}".format(channels))
                 break
 
-            if img.shape[0] == self.size[0] and img.shape[1] == self.size[1] and (
-                                True if channels == 0 else img.shape[2] == self.size[2]):
+            if img.shape[0] == self.size[0] and img.shape[1] == self.size[1]:
                 try:
                     # if subfolder, this will split
                     clean_title = str(file.split('\\')[1])
@@ -96,7 +92,10 @@ class PreparedData:
         random.Random(random_seed).shuffle(self.dataset['x_{}'.format(tvt)])
         random.Random(random_seed).shuffle(self.dataset['y_{}'.format(tvt)])
         self.dataset['x_{}'.format(tvt)] = np.array(self.dataset['x_{}'.format(tvt)])
+        # self.dataset['x_{}'.format(tvt)].reshape(self.dataset['x_{}'.format(tvt)].shape[0], 60, 25)
         self.dataset['y_{}'.format(tvt)] = np.array(self.dataset['y_{}'.format(tvt)])
+
+
 
 
     def process(self):
