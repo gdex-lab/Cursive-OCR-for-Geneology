@@ -88,13 +88,12 @@ class PreparedData:
             print(l, ": ", label_cardinality[l])
 
         print("Shuffling")
-        random_seed = 4
+        random_seed = 113
         random.Random(random_seed).shuffle(self.dataset['x_{}'.format(tvt)])
         random.Random(random_seed).shuffle(self.dataset['y_{}'.format(tvt)])
         self.dataset['x_{}'.format(tvt)] = np.array(self.dataset['x_{}'.format(tvt)])
         # self.dataset['x_{}'.format(tvt)].reshape(self.dataset['x_{}'.format(tvt)].shape[0], 60, 25)
         self.dataset['y_{}'.format(tvt)] = np.array(self.dataset['y_{}'.format(tvt)])
-
 
 
 

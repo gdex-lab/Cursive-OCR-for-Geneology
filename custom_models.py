@@ -2,7 +2,7 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv1D, Conv2D, MaxPooling2D, MaxPooling1D, AveragePooling2D
-from keras.optimizers import SGD
+# from keras.optimizers import SGD
 
 def cursive_cnn(x_train, y_train, x_val, y_val, # x_val, y_val,
                     input_shape, n_classes,
@@ -21,10 +21,10 @@ def cursive_cnn(x_train, y_train, x_val, y_val, # x_val, y_val,
     model.add(Dropout(0.25))
     model.add(Flatten())
     model.add(Dense(128, activation='relu'))
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.25))
     model.add(Dense(n_classes, activation='softmax'))
 
-    model.compile(loss=keras.losses.categorical_crossentropy,
+    model.compile(loss='categorical_crossentropy',
                   optimizer=keras.optimizers.Adadelta(),
                   metrics=['accuracy'])
 
