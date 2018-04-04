@@ -5,10 +5,10 @@ from keras.models import model_from_yaml
 
 
 p_data = load_images_dataset.PreparedData()
-# p_data.set_size((60, 25))
+p_data.set_size((60, 25))
 p_data.process()
 
-epochs = 55
+epochs = 35
 batch_size = 64
 # print(p_data.dataset['y_val'][:7])
 test_loss = 13
@@ -22,15 +22,15 @@ current_epoch = 0
 # pred = loaded_model.predict(p_data.dataset['x_test'])
 # print("predictions finished")
 # print(pred)
-# print(p_data.dataset['y_test'])
+print(p_data.dataset['y_test'])
 
 while test_loss > 1:
     print("Current epochs: {}".format(current_epoch))
     if (current_epoch > 50 and test_accuracy < 0.25 and test_loss > 10) or current_epoch == 0:
         print("(re)Initializing model")
         # if sufficient attemps, and poor accuracy, re-initialize, or if first time
-        model = custom_models.cursive_cnn(p_data.dataset['x_train'], p_data.dataset['y_train'],
-        p_data.dataset['x_val'], p_data.dataset['y_val'],
+        model = custom_models.bw_cnn(p_data.dataset['x_train'], p_data.dataset['y_train'],
+        # p_data.dataset['x_val'], p_data.dataset['y_val'],
         p_data.size, p_data.n_classes,
         epochs=epochs, batch_size=batch_size)
         current_epoch = 0
