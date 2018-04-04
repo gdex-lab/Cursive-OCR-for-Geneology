@@ -2,9 +2,9 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv1D, Conv2D, MaxPooling2D, MaxPooling1D, AveragePooling2D
-from keras.optimizers import SGD
 
-def bw_cnn(x_train, y_train, #x_val, y_val,
+
+def bw_cnn(x_train, y_train, x_val, y_val,
                     input_shape, n_classes,
                     epochs=12, batch_size=64):
     print("input shape: {}".format(input_shape))
@@ -33,8 +33,8 @@ def bw_cnn(x_train, y_train, #x_val, y_val,
               batch_size=batch_size,
               epochs=epochs,
               verbose=1,
-              validation_split=0.4,
-              # validation_data=(x_val, y_val)
+              # validation_split=0.4,
+              validation_data=(x_val, y_val)
               )
     return model
 

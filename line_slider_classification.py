@@ -30,7 +30,7 @@ while test_loss > 1:
         print("(re)Initializing model")
         # if sufficient attemps, and poor accuracy, re-initialize, or if first time
         model = custom_models.bw_cnn(p_data.dataset['x_train'], p_data.dataset['y_train'],
-        # p_data.dataset['x_val'], p_data.dataset['y_val'],
+        p_data.dataset['x_val'], p_data.dataset['y_val'],
         p_data.size, p_data.n_classes,
         epochs=epochs, batch_size=batch_size)
         current_epoch = 0
