@@ -1,0 +1,4 @@
+Need to fine-tune augmentor. 
+Produce 250 raw letters per vowel. 
+Augment to 25X (6250). 
+TRAIN.

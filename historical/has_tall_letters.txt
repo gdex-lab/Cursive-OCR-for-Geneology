@@ -1,0 +1,2805 @@
+X/Y
+.\dataset\104\$.jpg/1
+.\dataset\104\$100..jpg/1
+.\dataset\104\$12.00 (2).jpg/1
+.\dataset\104\$12.00.jpg/1
+.\dataset\104\$14. (2).jpg/1
+.\dataset\104\$14..jpg/1
+.\dataset\104\$2.jpg/1
+.\dataset\104\$21. (2).jpg/1
+.\dataset\104\$21..jpg/1
+.\dataset\104\$300..jpg/1
+.\dataset\104\$4.jpg/1
+.\dataset\104\$45..jpg/1
+.\dataset\104\$50. rec(2).jpg/1
+.\dataset\104\$50..jpg/1
+.\dataset\104\$_100.jpg/1
+.\dataset\104\,_as_.jpg/0
+.\dataset\104\.00_o.jpg/1
+.\dataset\104\.A_No.jpg/1
+.\dataset\104\._o.jpg/0
+.\dataset\104\._Sm.jpg/1
+.\dataset\104\0. (2).jpg/1
+.\dataset\104\0..jpg/1
+.\dataset\104\0.jpg/1
+.\dataset\104\0._.jpg/1
+.\dataset\104\00..jpg/1
+.\dataset\104\00.jpg/1
+.\dataset\104\09.jpg/1
+.\dataset\104\0_.jpg/1
+.\dataset\104\0_on.jpg/1
+.\dataset\104\1.59.jpg/1
+.\dataset\104\100.jpg/1
+.\dataset\104\100._.jpg/1
+.\dataset\104\10H.jpg/1
+.\dataset\104\12 (2).jpg/1
+.\dataset\104\12 (3).jpg/1
+.\dataset\104\12 (4).jpg/1
+.\dataset\104\12.jpg/1
+.\dataset\104\14.jpg/1
+.\dataset\104\14_ (2).jpg/1
+.\dataset\104\14_.jpg/1
+.\dataset\104\1_La.jpg/1
+.\dataset\104\1_M.jpg/1
+.\dataset\104\2 (2).jpg/1
+.\dataset\104\2 (3).jpg/1
+.\dataset\104\2.00.jpg/1
+.\dataset\104\2.00_.jpg/1
+.\dataset\104\2.jpg/1
+.\dataset\104\21.5 (2).jpg/1
+.\dataset\104\21.5.jpg/1
+.\dataset\104\2H.jpg/1
+.\dataset\104\2nd.jpg/1
+.\dataset\104\2nd_.jpg/1
+.\dataset\104\3.jpg/1
+.\dataset\104\30.jpg/1
+.\dataset\104\31 (2).jpg/1
+.\dataset\104\31 (3).jpg/1
+.\dataset\104\31.jpg/1
+.\dataset\104\42.jpg/1
+.\dataset\104\4_o.jpg/1
+.\dataset\104\50_.jpg/1
+.\dataset\104\59_.jpg/1
+.\dataset\104\9th.jpg/1
+.\dataset\104\9_in.jpg/1
+.\dataset\104\a (2).jpg/0
+.\dataset\104\A.jpg/1
+.\dataset\104\addl.jpg/1
+.\dataset\104\ael_.jpg/1
+.\dataset\104\Almo.jpg/1
+.\dataset\104\Als.jpg/1
+.\dataset\104\Also (2).jpg/1
+.\dataset\104\Also.jpg/1
+.\dataset\104\Also_1.jpg/1
+.\dataset\104\am_.jpg/0
+.\dataset\104\and,.jpg/1
+.\dataset\104\anie (2).jpg/0
+.\dataset\104\anie.jpg/0
+.\dataset\104\an_.jpg/0
+.\dataset\104\Apr (2).jpg/1
+.\dataset\104\Apr (3).jpg/1
+.\dataset\104\Apr.jpg/1
+.\dataset\104\Apri.jpg/1
+.\dataset\104\April (2).jpg/1
+.\dataset\104\April.jpg/1
+.\dataset\104\are_of_.jpg/1
+.\dataset\104\as.jpg/0
+.\dataset\104\as_.jpg/0
+.\dataset\104\as_fo.jpg/1
+.\dataset\104\as_pr (2).jpg/1
+.\dataset\104\as_pr.jpg/1
+.\dataset\104\aths.jpg/1
+.\dataset\104\Augu.jpg/1
+.\dataset\104\ause.jpg/0
+.\dataset\104\a_N..jpg/1
+.\dataset\104\A_No_3.jpg/1
+.\dataset\104\B._No.jpg/1
+.\dataset\104\Bath.jpg/1
+.\dataset\104\Bea (2).jpg/1
+.\dataset\104\Bea.jpg/1
+.\dataset\104\Bean (2).jpg/1
+.\dataset\104\Bean.jpg/1
+.\dataset\104\Br.jpg/1
+.\dataset\104\Brig (2).jpg/1
+.\dataset\104\Brig.jpg/1
+.\dataset\104\ceip (2).jpg/1
+.\dataset\104\ceip.jpg/1
+.\dataset\104\ceipt.jpg/1
+.\dataset\104\ceiv.jpg/0
+.\dataset\104\ch_2.jpg/1
+.\dataset\104\Com (2).jpg/1
+.\dataset\104\Com.jpg/1
+.\dataset\104\d.jpg/1
+.\dataset\104\d._.jpg/1
+.\dataset\104\Dan (2).jpg/1
+.\dataset\104\Dan.jpg/1
+.\dataset\104\ddle.jpg/1
+.\dataset\104\dle+$.jpg/1
+.\dataset\104\d_.jpg/1
+.\dataset\104\d_B (2).jpg/1
+.\dataset\104\d_B.jpg/1
+.\dataset\104\d_of (2).jpg/1
+.\dataset\104\d_of (3).jpg/1
+.\dataset\104\d_of (4).jpg/1
+.\dataset\104\d_of.jpg/1
+.\dataset\104\e.jpg/0
+.\dataset\104\eba_.jpg/1
+.\dataset\104\eceip.jpg/1
+.\dataset\104\eceiv.jpg/0
+.\dataset\104\ed_.jpg/1
+.\dataset\104\ed_o (2).jpg/1
+.\dataset\104\ed_o.jpg/1
+.\dataset\104\ed_of.jpg/1
+.\dataset\104\eipt (2).jpg/1
+.\dataset\104\eipt.jpg/1
+.\dataset\104\eive (2).jpg/0
+.\dataset\104\eive.jpg/0
+.\dataset\104\el_M (2).jpg/1
+.\dataset\104\el_M.jpg/1
+.\dataset\104\emp.jpg/1
+.\dataset\104\er_$ (2).jpg/1
+.\dataset\104\er_$.jpg/1
+.\dataset\104\er_.jpg/0
+.\dataset\104\er_f.jpg/1
+.\dataset\104\es_ (2).jpg/0
+.\dataset\104\es_ (3).jpg/0
+.\dataset\104\es_.jpg/0
+.\dataset\104\et.jpg/1
+.\dataset\104\eter_.jpg/1
+.\dataset\104\e_$6..jpg/1
+.\dataset\104\e_.jpg/0
+.\dataset\104\e_A.jpg/1
+.\dataset\104\e_Co.jpg/1
+.\dataset\104\e_M.jpg/1
+.\dataset\104\e_of_.jpg/1
+.\dataset\104\for_$_.jpg/1
+.\dataset\104\Full (2).jpg/1
+.\dataset\104\Full.jpg/1
+.\dataset\104\f_D (2).jpg/1
+.\dataset\104\f_D.jpg/1
+.\dataset\104\f_P.jpg/1
+.\dataset\104\f_Te.jpg/1
+.\dataset\104\H.A_.jpg/1
+.\dataset\104\H1..jpg/1
+.\dataset\104\H1._A.jpg/1
+.\dataset\104\ham (2).jpg/1
+.\dataset\104\ham.jpg/1
+.\dataset\104\han.jpg/1
+.\dataset\104\hare_.jpg/1
+.\dataset\104\Hau.jpg/1
+.\dataset\104\heba.jpg/1
+.\dataset\104\hing (2).jpg/1
+.\dataset\104\hing (3).jpg/1
+.\dataset\104\hing.jpg/1
+.\dataset\104\hing_.jpg/1
+.\dataset\104\his.jpg/1
+.\dataset\104\his_t (2).jpg/1
+.\dataset\104\his_t (3).jpg/1
+.\dataset\104\his_t (4).jpg/1
+.\dataset\104\his_t.jpg/1
+.\dataset\104\hnson.jpg/1
+.\dataset\104\h_2H.jpg/1
+.\dataset\104\h_N..jpg/1
+.\dataset\104\iel_.jpg/1
+.\dataset\104\igha (2).jpg/1
+.\dataset\104\igha.jpg/1
+.\dataset\104\il_2.jpg/1
+.\dataset\104\il_2n (2).jpg/1
+.\dataset\104\il_2n.jpg/1
+.\dataset\104\ing.jpg/1
+.\dataset\104\ing_.jpg/1
+.\dataset\104\in_ (2).jpg/0
+.\dataset\104\in_ (3).jpg/0
+.\dataset\104\in_.jpg/0
+.\dataset\104\in_l.jpg/1
+.\dataset\104\in_po.jpg/1
+.\dataset\104\in_W.jpg/1
+.\dataset\104\ipt_o.jpg/1
+.\dataset\104\Israe.jpg/1
+.\dataset\104\is_ti.jpg/1
+.\dataset\104\is_tit.jpg/1
+.\dataset\104\it (2).jpg/1
+.\dataset\104\it.jpg/1
+.\dataset\104\ithin.jpg/1
+.\dataset\104\ith_.jpg/1
+.\dataset\104\itte (2).jpg/1
+.\dataset\104\itte.jpg/1
+.\dataset\104\ittee.jpg/1
+.\dataset\104\ived.jpg/1
+.\dataset\104\Ja (2).jpg/1
+.\dataset\104\Ja.jpg/1
+.\dataset\104\Jam.jpg/1
+.\dataset\104\Jame.jpg/1
+.\dataset\104\John.jpg/1
+.\dataset\104\Josep.jpg/1
+.\dataset\104\k,_a (2).jpg/1
+.\dataset\104\k,_a.jpg/1
+.\dataset\104\k_@_.jpg/1
+.\dataset\104\Ladd.jpg/1
+.\dataset\104\land.jpg/1
+.\dataset\104\layto.jpg/1
+.\dataset\104\lelay.jpg/1
+.\dataset\104\le_ (2).jpg/1
+.\dataset\104\le_.jpg/1
+.\dataset\104\le_Co (2).jpg/1
+.\dataset\104\le_Co.jpg/1
+.\dataset\104\ller.jpg/1
+.\dataset\104\llme (2).jpg/1
+.\dataset\104\llme.jpg/1
+.\dataset\104\lsa_1.jpg/1
+.\dataset\104\l_2nd.jpg/1
+.\dataset\104\l_2nd_.jpg/1
+.\dataset\104\L_F.jpg/1
+.\dataset\104\Ma.jpg/1
+.\dataset\104\Mar.jpg/1
+.\dataset\104\March.jpg/1
+.\dataset\104\Mare.jpg/1
+.\dataset\104\mer (2).jpg/0
+.\dataset\104\mer.jpg/0
+.\dataset\104\mes.jpg/0
+.\dataset\104\Mi (2).jpg/1
+.\dataset\104\mi (3).jpg/0
+.\dataset\104\mi.jpg/0
+.\dataset\104\Mill.jpg/1
+.\dataset\104\Miller.jpg/1
+.\dataset\104\mit (2).jpg/1
+.\dataset\104\mit (3).jpg/1
+.\dataset\104\mit.jpg/1
+.\dataset\104\mith.jpg/1
+.\dataset\104\mm (2).jpg/0
+.\dataset\104\mm.jpg/0
+.\dataset\104\mon.jpg/0
+.\dataset\104\Mood (2).jpg/1
+.\dataset\104\Mood.jpg/1
+.\dataset\104\mp.jpg/1
+.\dataset\104\mple (2).jpg/1
+.\dataset\104\mple.jpg/1
+.\dataset\104\Mr.jpg/1
+.\dataset\104\Mr_.jpg/1
+.\dataset\104\m_Y.jpg/1
+.\dataset\104\N.H..jpg/1
+.\dataset\104\n._.jpg/0
+.\dataset\104\N._Joh.jpg/1
+.\dataset\104\N._S.jpg/1
+.\dataset\104\nd,_.jpg/1
+.\dataset\104\nd..jpg/1
+.\dataset\104\nd.jpg/1
+.\dataset\104\ng $1.jpg/1
+.\dataset\104\ng (2).jpg/1
+.\dataset\104\ng (3).jpg/1
+.\dataset\104\ng.jpg/1
+.\dataset\104\ng_$1.jpg/1
+.\dataset\104\ng_.jpg/1
+.\dataset\104\niel (2).jpg/1
+.\dataset\104\niel.jpg/1
+.\dataset\104\Noble.jpg/1
+.\dataset\104\Note.jpg/1
+.\dataset\104\No_309.jpg/1
+.\dataset\104\ns_N.jpg/1
+.\dataset\104\n_$ (2).jpg/1
+.\dataset\104\n_$.jpg/1
+.\dataset\104\n_la.jpg/1
+.\dataset\104\n_ti (2).jpg/1
+.\dataset\104\n_ti.jpg/1
+.\dataset\104\oble.jpg/1
+.\dataset\104\od_p (2).jpg/1
+.\dataset\104\od_p.jpg/1
+.\dataset\104\of_.jpg/1
+.\dataset\104\of_jo.jpg/1
+.\dataset\104\of_N..jpg/1
+.\dataset\104\of_N.jpg/1
+.\dataset\104\of_tem.jpg/1
+.\dataset\104\ohnso.jpg/1
+.\dataset\104\om.jpg/0
+.\dataset\104\on (2).jpg/0
+.\dataset\104\on (3).jpg/0
+.\dataset\104\on.jpg/0
+.\dataset\104\on_ (2).jpg/0
+.\dataset\104\on_.jpg/0
+.\dataset\104\on_h.jpg/1
+.\dataset\104\on_L.jpg/1
+.\dataset\104\on_t.jpg/1
+.\dataset\104\ood_ (2).jpg/1
+.\dataset\104\ood_.jpg/1
+.\dataset\104\ork_@.jpg/1
+.\dataset\104\or_r.jpg/0
+.\dataset\104\ote_$.jpg/1
+.\dataset\104\oung_.jpg/1
+.\dataset\104\Peter.jpg/1
+.\dataset\104\ph_.jpg/1
+.\dataset\104\ple.jpg/1
+.\dataset\104\ple_ (2).jpg/1
+.\dataset\104\ple_ (3).jpg/1
+.\dataset\104\ple_.jpg/1
+.\dataset\104\Po.jpg/1
+.\dataset\104\Por (2).jpg/1
+.\dataset\104\Por.jpg/1
+.\dataset\104\Pork (2).jpg/1
+.\dataset\104\Pork.jpg/1
+.\dataset\104\pril.jpg/1
+.\dataset\104\pril_2 (2).jpg/1
+.\dataset\104\pril_2.jpg/1
+.\dataset\104\pr_.jpg/1
+.\dataset\104\pr_r.jpg/1
+.\dataset\104\pt_.jpg/1
+.\dataset\104\pt_o.jpg/1
+.\dataset\104\rch_.jpg/1
+.\dataset\104\Re (2).jpg/1
+.\dataset\104\Re.jpg/1
+.\dataset\104\real.jpg/1
+.\dataset\104\Rec (2).jpg/1
+.\dataset\104\Rec (3).jpg/1
+.\dataset\104\Rec (4).jpg/1
+.\dataset\104\Rec.jpg/1
+.\dataset\104\rece (2).jpg/0
+.\dataset\104\Rece.jpg/1
+.\dataset\104\recei (2).jpg/0
+.\dataset\104\Recei (3).jpg/1
+.\dataset\104\Recei (4).jpg/1
+.\dataset\104\Recei.jpg/1
+.\dataset\104\righa (2).jpg/1
+.\dataset\104\righa.jpg/1
+.\dataset\104\ril_.jpg/1
+.\dataset\104\rk,_ (2).jpg/1
+.\dataset\104\rk,_.jpg/1
+.\dataset\104\r_$_.jpg/1
+.\dataset\104\r_re.jpg/0
+.\dataset\104\r_rec.jpg/0
+.\dataset\104\seph_.jpg/1
+.\dataset\104\sheb.jpg/1
+.\dataset\104\Smit.jpg/1
+.\dataset\104\so_1s.jpg/1
+.\dataset\104\st_9.jpg/1
+.\dataset\104\s_No.jpg/1
+.\dataset\104\s_pr_.jpg/1
+.\dataset\104\s_tith (2).jpg/1
+.\dataset\104\s_tith.jpg/1
+.\dataset\104\Te (2).jpg/1
+.\dataset\104\Te.jpg/1
+.\dataset\104\tee.jpg/1
+.\dataset\104\tee_.jpg/1
+.\dataset\104\Tem (2).jpg/1
+.\dataset\104\Tem.jpg/1
+.\dataset\104\Temp.jpg/1
+.\dataset\104\ter_F.jpg/1
+.\dataset\104\te_$.jpg/1
+.\dataset\104\thin.jpg/1
+.\dataset\104\thing (2).jpg/1
+.\dataset\104\thing (3).jpg/1
+.\dataset\104\thing (4).jpg/1
+.\dataset\104\thing..jpg/1
+.\dataset\104\thing.jpg/1
+.\dataset\104\thshe.jpg/1
+.\dataset\104\th_.jpg/1
+.\dataset\104\th_10.jpg/1
+.\dataset\104\th_1_.jpg/1
+.\dataset\104\tithi (2).jpg/1
+.\dataset\104\tithi.jpg/1
+.\dataset\104\tithin (2).jpg/1
+.\dataset\104\tithin (3).jpg/1
+.\dataset\104\tithin.jpg/1
+.\dataset\104\tons_.jpg/1
+.\dataset\104\ttee.jpg/1
+.\dataset\104\ttee_.jpg/1
+.\dataset\104\t_9.jpg/1
+.\dataset\104\t_of_ (2).jpg/1
+.\dataset\104\t_of_.jpg/1
+.\dataset\104\ugus.jpg/1
+.\dataset\104\ull.jpg/1
+.\dataset\104\ullm.jpg/1
+.\dataset\104\ust.jpg/1
+.\dataset\104\ved.jpg/1
+.\dataset\104\veive.jpg/0
+.\dataset\104\Wor.jpg/1
+.\dataset\104\Work.jpg/1
+.\dataset\104\Youn (2).jpg/1
+.\dataset\104\Youn.jpg/1
+.\dataset\104\yton.jpg/1
+.\dataset\104\[ (2).jpg/0
+.\dataset\104\[ (3).jpg/0
+.\dataset\104\[ (4).jpg/0
+.\dataset\104\[ (5).jpg/0
+.\dataset\104\[.jpg/0
+.\dataset\104\_$.jpg/1
+.\dataset\104\_$100.jpg/1
+.\dataset\104\_$12..jpg/1
+.\dataset\104\_$12.jpg/1
+.\dataset\104\_$2.jpg/1
+.\dataset\104\_$_10.jpg/1
+.\dataset\104\_1 (2).jpg/1
+.\dataset\104\_1.jpg/1
+.\dataset\104\_10.jpg/1
+.\dataset\104\_12.jpg/1
+.\dataset\104\_15.jpg/1
+.\dataset\104\_150.jpg/1
+.\dataset\104\_1_L.jpg/1
+.\dataset\104\_1_sha.jpg/1
+.\dataset\104\_309.jpg/1
+.\dataset\104\_A.jpg/1
+.\dataset\104\_Alm.jpg/1
+.\dataset\104\_Also_.jpg/1
+.\dataset\104\_as_.jpg/0
+.\dataset\104\_as_p.jpg/1
+.\dataset\104\_Au.jpg/1
+.\dataset\104\_Aug.jpg/1
+.\dataset\104\_Ba.jpg/1
+.\dataset\104\_Be (2).jpg/1
+.\dataset\104\_Be.jpg/1
+.\dataset\104\_Br.jpg/1
+.\dataset\104\_Co.jpg/1
+.\dataset\104\_Com (2).jpg/1
+.\dataset\104\_Com.jpg/1
+.\dataset\104\_Da (2).jpg/1
+.\dataset\104\_Da.jpg/1
+.\dataset\104\_for $.jpg/1
+.\dataset\104\_for.jpg/1
+.\dataset\104\_Fu (2).jpg/1
+.\dataset\104\_Fu.jpg/1
+.\dataset\104\_Ha (2).jpg/1
+.\dataset\104\_ha.jpg/1
+.\dataset\104\_hi.jpg/1
+.\dataset\104\_his (2).jpg/1
+.\dataset\104\_his (3).jpg/1
+.\dataset\104\_his.jpg/1
+.\dataset\104\_his_ (2).jpg/1
+.\dataset\104\_his_.jpg/1
+.\dataset\104\_Isr.jpg/1
+.\dataset\104\_Ja (2).jpg/1
+.\dataset\104\_Ja.jpg/1
+.\dataset\104\_jose.jpg/1
+.\dataset\104\_la.jpg/1
+.\dataset\104\_lan (2).jpg/1
+.\dataset\104\_lan.jpg/1
+.\dataset\104\_le (2).jpg/1
+.\dataset\104\_Le.jpg/1
+.\dataset\104\_lela.jpg/1
+.\dataset\104\_M.jpg/1
+.\dataset\104\_Ma.jpg/1
+.\dataset\104\_Mo (2).jpg/1
+.\dataset\104\_Mo.jpg/1
+.\dataset\104\_N.H.jpg/1
+.\dataset\104\_N._c.jpg/1
+.\dataset\104\_Na.jpg/1
+.\dataset\104\_Nob.jpg/1
+.\dataset\104\_of.jpg/1
+.\dataset\104\_of_ (2).jpg/1
+.\dataset\104\_of_ (3).jpg/1
+.\dataset\104\_of_ (4).jpg/1
+.\dataset\104\_of_ (5).jpg/1
+.\dataset\104\_of_ (6).jpg/1
+.\dataset\104\_of_ (7).jpg/1
+.\dataset\104\_of_.jpg/1
+.\dataset\104\_of_D.jpg/1
+.\dataset\104\_of_t.jpg/1
+.\dataset\104\_Pet.jpg/1
+.\dataset\104\_pr_ (2).jpg/1
+.\dataset\104\_pr_.jpg/1
+.\dataset\104\_Re.jpg/1
+.\dataset\104\_rece.jpg/0
+.\dataset\104\_shar.jpg/1
+.\dataset\104\_tith (2).jpg/1
+.\dataset\104\_tith (3).jpg/1
+.\dataset\104\_tith (4).jpg/1
+.\dataset\104\_tith.jpg/1
+.\dataset\104\_Y.jpg/1
+.\dataset\104\_You (2).jpg/1
+.\dataset\104\_You.jpg/1
+.\dataset\104-enlargedrotated\$.jpg/1
+.\dataset\104-enlargedrotated\$100..jpg/1
+.\dataset\104-enlargedrotated\$12.00 (2).jpg/1
+.\dataset\104-enlargedrotated\$12.00.jpg/1
+.\dataset\104-enlargedrotated\$14. (2).jpg/1
+.\dataset\104-enlargedrotated\$14..jpg/1
+.\dataset\104-enlargedrotated\$2.jpg/1
+.\dataset\104-enlargedrotated\$21. (2).jpg/1
+.\dataset\104-enlargedrotated\$21..jpg/1
+.\dataset\104-enlargedrotated\$300..jpg/1
+.\dataset\104-enlargedrotated\$4.jpg/1
+.\dataset\104-enlargedrotated\$45..jpg/1
+.\dataset\104-enlargedrotated\$50. rec(2).jpg/1
+.\dataset\104-enlargedrotated\$50..jpg/1
+.\dataset\104-enlargedrotated\$_100.jpg/1
+.\dataset\104-enlargedrotated\,_as_.jpg/0
+.\dataset\104-enlargedrotated\.00_o.jpg/1
+.\dataset\104-enlargedrotated\.A_No.jpg/1
+.\dataset\104-enlargedrotated\._o.jpg/0
+.\dataset\104-enlargedrotated\._Sm.jpg/1
+.\dataset\104-enlargedrotated\0. (2).jpg/1
+.\dataset\104-enlargedrotated\0..jpg/1
+.\dataset\104-enlargedrotated\0.jpg/1
+.\dataset\104-enlargedrotated\0._.jpg/1
+.\dataset\104-enlargedrotated\00..jpg/1
+.\dataset\104-enlargedrotated\00.jpg/1
+.\dataset\104-enlargedrotated\09.jpg/1
+.\dataset\104-enlargedrotated\0_.jpg/1
+.\dataset\104-enlargedrotated\0_on.jpg/1
+.\dataset\104-enlargedrotated\1.59.jpg/1
+.\dataset\104-enlargedrotated\100.jpg/1
+.\dataset\104-enlargedrotated\100._.jpg/1
+.\dataset\104-enlargedrotated\10H.jpg/1
+.\dataset\104-enlargedrotated\12 (2).jpg/1
+.\dataset\104-enlargedrotated\12 (3).jpg/1
+.\dataset\104-enlargedrotated\12 (4).jpg/1
+.\dataset\104-enlargedrotated\12.jpg/1
+.\dataset\104-enlargedrotated\14.jpg/1
+.\dataset\104-enlargedrotated\14_ (2).jpg/1
+.\dataset\104-enlargedrotated\14_.jpg/1
+.\dataset\104-enlargedrotated\1_La.jpg/1
+.\dataset\104-enlargedrotated\1_M.jpg/1
+.\dataset\104-enlargedrotated\2 (2).jpg/1
+.\dataset\104-enlargedrotated\2 (3).jpg/1
+.\dataset\104-enlargedrotated\2.00.jpg/1
+.\dataset\104-enlargedrotated\2.00_.jpg/1
+.\dataset\104-enlargedrotated\2.jpg/1
+.\dataset\104-enlargedrotated\21.5 (2).jpg/1
+.\dataset\104-enlargedrotated\21.5.jpg/1
+.\dataset\104-enlargedrotated\2H.jpg/1
+.\dataset\104-enlargedrotated\2nd.jpg/1
+.\dataset\104-enlargedrotated\2nd_.jpg/1
+.\dataset\104-enlargedrotated\3.jpg/1
+.\dataset\104-enlargedrotated\30.jpg/1
+.\dataset\104-enlargedrotated\31 (2).jpg/1
+.\dataset\104-enlargedrotated\31 (3).jpg/1
+.\dataset\104-enlargedrotated\31.jpg/1
+.\dataset\104-enlargedrotated\42.jpg/1
+.\dataset\104-enlargedrotated\4_o.jpg/1
+.\dataset\104-enlargedrotated\50_.jpg/1
+.\dataset\104-enlargedrotated\59_.jpg/1
+.\dataset\104-enlargedrotated\9th.jpg/1
+.\dataset\104-enlargedrotated\9_in.jpg/1
+.\dataset\104-enlargedrotated\a (2).jpg/0
+.\dataset\104-enlargedrotated\A.jpg/1
+.\dataset\104-enlargedrotated\addl.jpg/1
+.\dataset\104-enlargedrotated\ael_.jpg/1
+.\dataset\104-enlargedrotated\Almo.jpg/1
+.\dataset\104-enlargedrotated\Als.jpg/1
+.\dataset\104-enlargedrotated\Also (2).jpg/1
+.\dataset\104-enlargedrotated\Also.jpg/1
+.\dataset\104-enlargedrotated\Also_1.jpg/1
+.\dataset\104-enlargedrotated\am_.jpg/0
+.\dataset\104-enlargedrotated\and,.jpg/1
+.\dataset\104-enlargedrotated\anie (2).jpg/0
+.\dataset\104-enlargedrotated\anie.jpg/0
+.\dataset\104-enlargedrotated\an_.jpg/0
+.\dataset\104-enlargedrotated\Apr (2).jpg/1
+.\dataset\104-enlargedrotated\Apr (3).jpg/1
+.\dataset\104-enlargedrotated\Apr.jpg/1
+.\dataset\104-enlargedrotated\Apri.jpg/1
+.\dataset\104-enlargedrotated\April (2).jpg/1
+.\dataset\104-enlargedrotated\April.jpg/1
+.\dataset\104-enlargedrotated\are_of_.jpg/1
+.\dataset\104-enlargedrotated\as.jpg/0
+.\dataset\104-enlargedrotated\as_.jpg/0
+.\dataset\104-enlargedrotated\as_fo.jpg/1
+.\dataset\104-enlargedrotated\as_pr (2).jpg/1
+.\dataset\104-enlargedrotated\as_pr.jpg/1
+.\dataset\104-enlargedrotated\aths.jpg/1
+.\dataset\104-enlargedrotated\Augu.jpg/1
+.\dataset\104-enlargedrotated\ause.jpg/0
+.\dataset\104-enlargedrotated\a_N..jpg/1
+.\dataset\104-enlargedrotated\A_No_3.jpg/1
+.\dataset\104-enlargedrotated\B._No.jpg/1
+.\dataset\104-enlargedrotated\Bath.jpg/1
+.\dataset\104-enlargedrotated\Bea (2).jpg/1
+.\dataset\104-enlargedrotated\Bea.jpg/1
+.\dataset\104-enlargedrotated\Bean (2).jpg/1
+.\dataset\104-enlargedrotated\Bean.jpg/1
+.\dataset\104-enlargedrotated\Br.jpg/1
+.\dataset\104-enlargedrotated\Brig (2).jpg/1
+.\dataset\104-enlargedrotated\Brig.jpg/1
+.\dataset\104-enlargedrotated\ceip (2).jpg/1
+.\dataset\104-enlargedrotated\ceip.jpg/1
+.\dataset\104-enlargedrotated\ceipt.jpg/1
+.\dataset\104-enlargedrotated\ceiv.jpg/0
+.\dataset\104-enlargedrotated\ch_2.jpg/1
+.\dataset\104-enlargedrotated\Com (2).jpg/1
+.\dataset\104-enlargedrotated\Com.jpg/1
+.\dataset\104-enlargedrotated\d.jpg/1
+.\dataset\104-enlargedrotated\d._.jpg/1
+.\dataset\104-enlargedrotated\Dan (2).jpg/1
+.\dataset\104-enlargedrotated\Dan.jpg/1
+.\dataset\104-enlargedrotated\ddle.jpg/1
+.\dataset\104-enlargedrotated\dle+$.jpg/1
+.\dataset\104-enlargedrotated\d_.jpg/1
+.\dataset\104-enlargedrotated\d_B (2).jpg/1
+.\dataset\104-enlargedrotated\d_B.jpg/1
+.\dataset\104-enlargedrotated\d_of (2).jpg/1
+.\dataset\104-enlargedrotated\d_of (3).jpg/1
+.\dataset\104-enlargedrotated\d_of (4).jpg/1
+.\dataset\104-enlargedrotated\d_of.jpg/1
+.\dataset\104-enlargedrotated\e.jpg/0
+.\dataset\104-enlargedrotated\eba_.jpg/1
+.\dataset\104-enlargedrotated\eceip.jpg/1
+.\dataset\104-enlargedrotated\eceiv.jpg/0
+.\dataset\104-enlargedrotated\ed_.jpg/1
+.\dataset\104-enlargedrotated\ed_o (2).jpg/1
+.\dataset\104-enlargedrotated\ed_o.jpg/1
+.\dataset\104-enlargedrotated\ed_of.jpg/1
+.\dataset\104-enlargedrotated\eipt (2).jpg/1
+.\dataset\104-enlargedrotated\eipt.jpg/1
+.\dataset\104-enlargedrotated\eive (2).jpg/0
+.\dataset\104-enlargedrotated\eive.jpg/0
+.\dataset\104-enlargedrotated\el_M (2).jpg/1
+.\dataset\104-enlargedrotated\el_M.jpg/1
+.\dataset\104-enlargedrotated\emp.jpg/1
+.\dataset\104-enlargedrotated\er_$ (2).jpg/1
+.\dataset\104-enlargedrotated\er_$.jpg/1
+.\dataset\104-enlargedrotated\er_.jpg/0
+.\dataset\104-enlargedrotated\er_f.jpg/1
+.\dataset\104-enlargedrotated\es_ (2).jpg/0
+.\dataset\104-enlargedrotated\es_ (3).jpg/0
+.\dataset\104-enlargedrotated\es_.jpg/0
+.\dataset\104-enlargedrotated\et.jpg/1
+.\dataset\104-enlargedrotated\eter_.jpg/1
+.\dataset\104-enlargedrotated\e_$6..jpg/1
+.\dataset\104-enlargedrotated\e_.jpg/0
+.\dataset\104-enlargedrotated\e_A.jpg/1
+.\dataset\104-enlargedrotated\e_Co.jpg/1
+.\dataset\104-enlargedrotated\e_M.jpg/1
+.\dataset\104-enlargedrotated\e_of_.jpg/1
+.\dataset\104-enlargedrotated\for_$_.jpg/1
+.\dataset\104-enlargedrotated\Full (2).jpg/1
+.\dataset\104-enlargedrotated\Full.jpg/1
+.\dataset\104-enlargedrotated\f_D (2).jpg/1
+.\dataset\104-enlargedrotated\f_D.jpg/1
+.\dataset\104-enlargedrotated\f_P.jpg/1
+.\dataset\104-enlargedrotated\f_Te.jpg/1
+.\dataset\104-enlargedrotated\H.A_.jpg/1
+.\dataset\104-enlargedrotated\H1..jpg/1
+.\dataset\104-enlargedrotated\H1._A.jpg/1
+.\dataset\104-enlargedrotated\ham (2).jpg/1
+.\dataset\104-enlargedrotated\ham.jpg/1
+.\dataset\104-enlargedrotated\han.jpg/1
+.\dataset\104-enlargedrotated\hare_.jpg/1
+.\dataset\104-enlargedrotated\Hau.jpg/1
+.\dataset\104-enlargedrotated\heba.jpg/1
+.\dataset\104-enlargedrotated\hing (2).jpg/1
+.\dataset\104-enlargedrotated\hing (3).jpg/1
+.\dataset\104-enlargedrotated\hing.jpg/1
+.\dataset\104-enlargedrotated\hing_.jpg/1
+.\dataset\104-enlargedrotated\his.jpg/1
+.\dataset\104-enlargedrotated\his_t (2).jpg/1
+.\dataset\104-enlargedrotated\his_t (3).jpg/1
+.\dataset\104-enlargedrotated\his_t (4).jpg/1
+.\dataset\104-enlargedrotated\his_t.jpg/1
+.\dataset\104-enlargedrotated\hnson.jpg/1
+.\dataset\104-enlargedrotated\h_2H.jpg/1
+.\dataset\104-enlargedrotated\h_N..jpg/1
+.\dataset\104-enlargedrotated\iel_.jpg/1
+.\dataset\104-enlargedrotated\igha (2).jpg/1
+.\dataset\104-enlargedrotated\igha.jpg/1
+.\dataset\104-enlargedrotated\il_2.jpg/1
+.\dataset\104-enlargedrotated\il_2n (2).jpg/1
+.\dataset\104-enlargedrotated\il_2n.jpg/1
+.\dataset\104-enlargedrotated\ing.jpg/1
+.\dataset\104-enlargedrotated\ing_.jpg/1
+.\dataset\104-enlargedrotated\in_ (2).jpg/0
+.\dataset\104-enlargedrotated\in_ (3).jpg/0
+.\dataset\104-enlargedrotated\in_.jpg/0
+.\dataset\104-enlargedrotated\in_l.jpg/1
+.\dataset\104-enlargedrotated\in_po.jpg/1
+.\dataset\104-enlargedrotated\in_W.jpg/1
+.\dataset\104-enlargedrotated\ipt_o.jpg/1
+.\dataset\104-enlargedrotated\Israe.jpg/1
+.\dataset\104-enlargedrotated\is_ti.jpg/1
+.\dataset\104-enlargedrotated\is_tit.jpg/1
+.\dataset\104-enlargedrotated\it (2).jpg/1
+.\dataset\104-enlargedrotated\it.jpg/1
+.\dataset\104-enlargedrotated\ithin.jpg/1
+.\dataset\104-enlargedrotated\ith_.jpg/1
+.\dataset\104-enlargedrotated\itte (2).jpg/1
+.\dataset\104-enlargedrotated\itte.jpg/1
+.\dataset\104-enlargedrotated\ittee.jpg/1
+.\dataset\104-enlargedrotated\ived.jpg/1
+.\dataset\104-enlargedrotated\Ja (2).jpg/1
+.\dataset\104-enlargedrotated\Ja.jpg/1
+.\dataset\104-enlargedrotated\Jam.jpg/1
+.\dataset\104-enlargedrotated\Jame.jpg/1
+.\dataset\104-enlargedrotated\John.jpg/1
+.\dataset\104-enlargedrotated\Josep.jpg/1
+.\dataset\104-enlargedrotated\k,_a (2).jpg/1
+.\dataset\104-enlargedrotated\k,_a.jpg/1
+.\dataset\104-enlargedrotated\k_@_.jpg/1
+.\dataset\104-enlargedrotated\Ladd.jpg/1
+.\dataset\104-enlargedrotated\land.jpg/1
+.\dataset\104-enlargedrotated\layto.jpg/1
+.\dataset\104-enlargedrotated\lelay.jpg/1
+.\dataset\104-enlargedrotated\le_ (2).jpg/1
+.\dataset\104-enlargedrotated\le_.jpg/1
+.\dataset\104-enlargedrotated\le_Co (2).jpg/1
+.\dataset\104-enlargedrotated\le_Co.jpg/1
+.\dataset\104-enlargedrotated\ller.jpg/1
+.\dataset\104-enlargedrotated\llme (2).jpg/1
+.\dataset\104-enlargedrotated\llme.jpg/1
+.\dataset\104-enlargedrotated\lsa_1.jpg/1
+.\dataset\104-enlargedrotated\l_2nd.jpg/1
+.\dataset\104-enlargedrotated\l_2nd_.jpg/1
+.\dataset\104-enlargedrotated\L_F.jpg/1
+.\dataset\104-enlargedrotated\Ma.jpg/1
+.\dataset\104-enlargedrotated\Mar.jpg/1
+.\dataset\104-enlargedrotated\March.jpg/1
+.\dataset\104-enlargedrotated\Mare.jpg/1
+.\dataset\104-enlargedrotated\mer (2).jpg/0
+.\dataset\104-enlargedrotated\mer.jpg/0
+.\dataset\104-enlargedrotated\mes.jpg/0
+.\dataset\104-enlargedrotated\Mi (2).jpg/1
+.\dataset\104-enlargedrotated\mi (3).jpg/0
+.\dataset\104-enlargedrotated\mi.jpg/0
+.\dataset\104-enlargedrotated\Mill.jpg/1
+.\dataset\104-enlargedrotated\Miller.jpg/1
+.\dataset\104-enlargedrotated\mit (2).jpg/1
+.\dataset\104-enlargedrotated\mit (3).jpg/1
+.\dataset\104-enlargedrotated\mit.jpg/1
+.\dataset\104-enlargedrotated\mith.jpg/1
+.\dataset\104-enlargedrotated\mm (2).jpg/0
+.\dataset\104-enlargedrotated\mm.jpg/0
+.\dataset\104-enlargedrotated\mon.jpg/0
+.\dataset\104-enlargedrotated\Mood (2).jpg/1
+.\dataset\104-enlargedrotated\Mood.jpg/1
+.\dataset\104-enlargedrotated\mp.jpg/1
+.\dataset\104-enlargedrotated\mple (2).jpg/1
+.\dataset\104-enlargedrotated\mple.jpg/1
+.\dataset\104-enlargedrotated\Mr.jpg/1
+.\dataset\104-enlargedrotated\Mr_.jpg/1
+.\dataset\104-enlargedrotated\m_Y.jpg/1
+.\dataset\104-enlargedrotated\N.H..jpg/1
+.\dataset\104-enlargedrotated\n._.jpg/0
+.\dataset\104-enlargedrotated\N._Joh.jpg/1
+.\dataset\104-enlargedrotated\N._S.jpg/1
+.\dataset\104-enlargedrotated\nd,_.jpg/1
+.\dataset\104-enlargedrotated\nd..jpg/1
+.\dataset\104-enlargedrotated\nd.jpg/1
+.\dataset\104-enlargedrotated\ng $1.jpg/1
+.\dataset\104-enlargedrotated\ng (2).jpg/1
+.\dataset\104-enlargedrotated\ng (3).jpg/1
+.\dataset\104-enlargedrotated\ng.jpg/1
+.\dataset\104-enlargedrotated\ng_$1.jpg/1
+.\dataset\104-enlargedrotated\ng_.jpg/1
+.\dataset\104-enlargedrotated\niel (2).jpg/1
+.\dataset\104-enlargedrotated\niel.jpg/1
+.\dataset\104-enlargedrotated\Noble.jpg/1
+.\dataset\104-enlargedrotated\Note.jpg/1
+.\dataset\104-enlargedrotated\No_309.jpg/1
+.\dataset\104-enlargedrotated\ns_N.jpg/1
+.\dataset\104-enlargedrotated\n_$ (2).jpg/1
+.\dataset\104-enlargedrotated\n_$.jpg/1
+.\dataset\104-enlargedrotated\n_la.jpg/1
+.\dataset\104-enlargedrotated\n_ti (2).jpg/1
+.\dataset\104-enlargedrotated\n_ti.jpg/1
+.\dataset\104-enlargedrotated\oble.jpg/1
+.\dataset\104-enlargedrotated\od_p (2).jpg/1
+.\dataset\104-enlargedrotated\od_p.jpg/1
+.\dataset\104-enlargedrotated\of_.jpg/1
+.\dataset\104-enlargedrotated\of_jo.jpg/1
+.\dataset\104-enlargedrotated\of_N..jpg/1
+.\dataset\104-enlargedrotated\of_N.jpg/1
+.\dataset\104-enlargedrotated\of_tem.jpg/1
+.\dataset\104-enlargedrotated\ohnso.jpg/1
+.\dataset\104-enlargedrotated\om.jpg/0
+.\dataset\104-enlargedrotated\on (2).jpg/0
+.\dataset\104-enlargedrotated\on (3).jpg/0
+.\dataset\104-enlargedrotated\on.jpg/0
+.\dataset\104-enlargedrotated\on_ (2).jpg/0
+.\dataset\104-enlargedrotated\on_.jpg/0
+.\dataset\104-enlargedrotated\on_h.jpg/1
+.\dataset\104-enlargedrotated\on_L.jpg/1
+.\dataset\104-enlargedrotated\on_t.jpg/1
+.\dataset\104-enlargedrotated\ood_ (2).jpg/1
+.\dataset\104-enlargedrotated\ood_.jpg/1
+.\dataset\104-enlargedrotated\ork_@.jpg/1
+.\dataset\104-enlargedrotated\or_r.jpg/0
+.\dataset\104-enlargedrotated\ote_$.jpg/1
+.\dataset\104-enlargedrotated\oung_.jpg/1
+.\dataset\104-enlargedrotated\Peter.jpg/1
+.\dataset\104-enlargedrotated\ph_.jpg/1
+.\dataset\104-enlargedrotated\ple.jpg/1
+.\dataset\104-enlargedrotated\ple_ (2).jpg/1
+.\dataset\104-enlargedrotated\ple_ (3).jpg/1
+.\dataset\104-enlargedrotated\ple_.jpg/1
+.\dataset\104-enlargedrotated\Po.jpg/1
+.\dataset\104-enlargedrotated\Por (2).jpg/1
+.\dataset\104-enlargedrotated\Por.jpg/1
+.\dataset\104-enlargedrotated\Pork (2).jpg/1
+.\dataset\104-enlargedrotated\Pork.jpg/1
+.\dataset\104-enlargedrotated\pril.jpg/1
+.\dataset\104-enlargedrotated\pril_2 (2).jpg/1
+.\dataset\104-enlargedrotated\pril_2.jpg/1
+.\dataset\104-enlargedrotated\pr_.jpg/1
+.\dataset\104-enlargedrotated\pr_r.jpg/1
+.\dataset\104-enlargedrotated\pt_.jpg/1
+.\dataset\104-enlargedrotated\pt_o.jpg/1
+.\dataset\104-enlargedrotated\rch_.jpg/1
+.\dataset\104-enlargedrotated\Re (2).jpg/1
+.\dataset\104-enlargedrotated\Re.jpg/1
+.\dataset\104-enlargedrotated\real.jpg/1
+.\dataset\104-enlargedrotated\Rec (2).jpg/1
+.\dataset\104-enlargedrotated\Rec (3).jpg/1
+.\dataset\104-enlargedrotated\Rec (4).jpg/1
+.\dataset\104-enlargedrotated\Rec.jpg/1
+.\dataset\104-enlargedrotated\rece (2).jpg/0
+.\dataset\104-enlargedrotated\Rece.jpg/1
+.\dataset\104-enlargedrotated\recei (2).jpg/0
+.\dataset\104-enlargedrotated\Recei (3).jpg/1
+.\dataset\104-enlargedrotated\Recei (4).jpg/1
+.\dataset\104-enlargedrotated\Recei.jpg/1
+.\dataset\104-enlargedrotated\righa (2).jpg/1
+.\dataset\104-enlargedrotated\righa.jpg/1
+.\dataset\104-enlargedrotated\ril_.jpg/1
+.\dataset\104-enlargedrotated\rk,_ (2).jpg/1
+.\dataset\104-enlargedrotated\rk,_.jpg/1
+.\dataset\104-enlargedrotated\r_$_.jpg/1
+.\dataset\104-enlargedrotated\r_re.jpg/0
+.\dataset\104-enlargedrotated\r_rec.jpg/0
+.\dataset\104-enlargedrotated\seph_.jpg/1
+.\dataset\104-enlargedrotated\sheb.jpg/1
+.\dataset\104-enlargedrotated\Smit.jpg/1
+.\dataset\104-enlargedrotated\so_1s.jpg/1
+.\dataset\104-enlargedrotated\st_9.jpg/1
+.\dataset\104-enlargedrotated\s_No.jpg/1
+.\dataset\104-enlargedrotated\s_pr_.jpg/1
+.\dataset\104-enlargedrotated\s_tith (2).jpg/1
+.\dataset\104-enlargedrotated\s_tith.jpg/1
+.\dataset\104-enlargedrotated\Te (2).jpg/1
+.\dataset\104-enlargedrotated\Te.jpg/1
+.\dataset\104-enlargedrotated\tee.jpg/1
+.\dataset\104-enlargedrotated\tee_.jpg/1
+.\dataset\104-enlargedrotated\Tem (2).jpg/1
+.\dataset\104-enlargedrotated\Tem.jpg/1
+.\dataset\104-enlargedrotated\Temp.jpg/1
+.\dataset\104-enlargedrotated\ter_F.jpg/1
+.\dataset\104-enlargedrotated\te_$.jpg/1
+.\dataset\104-enlargedrotated\thin.jpg/1
+.\dataset\104-enlargedrotated\thing (2).jpg/1
+.\dataset\104-enlargedrotated\thing (3).jpg/1
+.\dataset\104-enlargedrotated\thing (4).jpg/1
+.\dataset\104-enlargedrotated\thing..jpg/1
+.\dataset\104-enlargedrotated\thing.jpg/1
+.\dataset\104-enlargedrotated\thshe.jpg/1
+.\dataset\104-enlargedrotated\th_.jpg/1
+.\dataset\104-enlargedrotated\th_10.jpg/1
+.\dataset\104-enlargedrotated\th_1_.jpg/1
+.\dataset\104-enlargedrotated\tithi (2).jpg/1
+.\dataset\104-enlargedrotated\tithi.jpg/1
+.\dataset\104-enlargedrotated\tithin (2).jpg/1
+.\dataset\104-enlargedrotated\tithin (3).jpg/1
+.\dataset\104-enlargedrotated\tithin.jpg/1
+.\dataset\104-enlargedrotated\tons_.jpg/1
+.\dataset\104-enlargedrotated\ttee.jpg/1
+.\dataset\104-enlargedrotated\ttee_.jpg/1
+.\dataset\104-enlargedrotated\t_9.jpg/1
+.\dataset\104-enlargedrotated\t_of_ (2).jpg/1
+.\dataset\104-enlargedrotated\t_of_.jpg/1
+.\dataset\104-enlargedrotated\ugus.jpg/1
+.\dataset\104-enlargedrotated\ull.jpg/1
+.\dataset\104-enlargedrotated\ullm.jpg/1
+.\dataset\104-enlargedrotated\ust.jpg/1
+.\dataset\104-enlargedrotated\ved.jpg/1
+.\dataset\104-enlargedrotated\veive.jpg/0
+.\dataset\104-enlargedrotated\Wor.jpg/1
+.\dataset\104-enlargedrotated\Work.jpg/1
+.\dataset\104-enlargedrotated\Youn (2).jpg/1
+.\dataset\104-enlargedrotated\Youn.jpg/1
+.\dataset\104-enlargedrotated\yton.jpg/1
+.\dataset\104-enlargedrotated\[ (2).jpg/0
+.\dataset\104-enlargedrotated\[ (3).jpg/0
+.\dataset\104-enlargedrotated\[ (4).jpg/0
+.\dataset\104-enlargedrotated\[ (5).jpg/0
+.\dataset\104-enlargedrotated\[.jpg/0
+.\dataset\104-enlargedrotated\_$.jpg/1
+.\dataset\104-enlargedrotated\_$100.jpg/1
+.\dataset\104-enlargedrotated\_$12..jpg/1
+.\dataset\104-enlargedrotated\_$12.jpg/1
+.\dataset\104-enlargedrotated\_$2.jpg/1
+.\dataset\104-enlargedrotated\_$_10.jpg/1
+.\dataset\104-enlargedrotated\_1 (2).jpg/1
+.\dataset\104-enlargedrotated\_1.jpg/1
+.\dataset\104-enlargedrotated\_10.jpg/1
+.\dataset\104-enlargedrotated\_12.jpg/1
+.\dataset\104-enlargedrotated\_15.jpg/1
+.\dataset\104-enlargedrotated\_150.jpg/1
+.\dataset\104-enlargedrotated\_1_L.jpg/1
+.\dataset\104-enlargedrotated\_1_sha.jpg/1
+.\dataset\104-enlargedrotated\_309.jpg/1
+.\dataset\104-enlargedrotated\_A.jpg/1
+.\dataset\104-enlargedrotated\_Alm.jpg/1
+.\dataset\104-enlargedrotated\_Also_.jpg/1
+.\dataset\104-enlargedrotated\_as_.jpg/0
+.\dataset\104-enlargedrotated\_as_p.jpg/1
+.\dataset\104-enlargedrotated\_Au.jpg/1
+.\dataset\104-enlargedrotated\_Aug.jpg/1
+.\dataset\104-enlargedrotated\_Ba.jpg/1
+.\dataset\104-enlargedrotated\_Be (2).jpg/1
+.\dataset\104-enlargedrotated\_Be.jpg/1
+.\dataset\104-enlargedrotated\_Br.jpg/1
+.\dataset\104-enlargedrotated\_Co.jpg/1
+.\dataset\104-enlargedrotated\_Com (2).jpg/1
+.\dataset\104-enlargedrotated\_Com.jpg/1
+.\dataset\104-enlargedrotated\_Da (2).jpg/1
+.\dataset\104-enlargedrotated\_Da.jpg/1
+.\dataset\104-enlargedrotated\_for $.jpg/1
+.\dataset\104-enlargedrotated\_for.jpg/1
+.\dataset\104-enlargedrotated\_Fu (2).jpg/1
+.\dataset\104-enlargedrotated\_Fu.jpg/1
+.\dataset\104-enlargedrotated\_Ha (2).jpg/1
+.\dataset\104-enlargedrotated\_ha.jpg/1
+.\dataset\104-enlargedrotated\_hi.jpg/1
+.\dataset\104-enlargedrotated\_his (2).jpg/1
+.\dataset\104-enlargedrotated\_his (3).jpg/1
+.\dataset\104-enlargedrotated\_his.jpg/1
+.\dataset\104-enlargedrotated\_his_ (2).jpg/1
+.\dataset\104-enlargedrotated\_his_.jpg/1
+.\dataset\104-enlargedrotated\_Isr.jpg/1
+.\dataset\104-enlargedrotated\_Ja (2).jpg/1
+.\dataset\104-enlargedrotated\_Ja.jpg/1
+.\dataset\104-enlargedrotated\_jose.jpg/1
+.\dataset\104-enlargedrotated\_la.jpg/1
+.\dataset\104-enlargedrotated\_lan (2).jpg/1
+.\dataset\104-enlargedrotated\_lan.jpg/1
+.\dataset\104-enlargedrotated\_le (2).jpg/1
+.\dataset\104-enlargedrotated\_Le.jpg/1
+.\dataset\104-enlargedrotated\_lela.jpg/1
+.\dataset\104-enlargedrotated\_M.jpg/1
+.\dataset\104-enlargedrotated\_Ma.jpg/1
+.\dataset\104-enlargedrotated\_Mo (2).jpg/1
+.\dataset\104-enlargedrotated\_Mo.jpg/1
+.\dataset\104-enlargedrotated\_N.H.jpg/1
+.\dataset\104-enlargedrotated\_N._c.jpg/1
+.\dataset\104-enlargedrotated\_Na.jpg/1
+.\dataset\104-enlargedrotated\_Nob.jpg/1
+.\dataset\104-enlargedrotated\_of.jpg/1
+.\dataset\104-enlargedrotated\_of_ (2).jpg/1
+.\dataset\104-enlargedrotated\_of_ (3).jpg/1
+.\dataset\104-enlargedrotated\_of_ (4).jpg/1
+.\dataset\104-enlargedrotated\_of_ (5).jpg/1
+.\dataset\104-enlargedrotated\_of_ (6).jpg/1
+.\dataset\104-enlargedrotated\_of_ (7).jpg/1
+.\dataset\104-enlargedrotated\_of_.jpg/1
+.\dataset\104-enlargedrotated\_of_D.jpg/1
+.\dataset\104-enlargedrotated\_of_t.jpg/1
+.\dataset\104-enlargedrotated\_Pet.jpg/1
+.\dataset\104-enlargedrotated\_pr_ (2).jpg/1
+.\dataset\104-enlargedrotated\_pr_.jpg/1
+.\dataset\104-enlargedrotated\_Re.jpg/1
+.\dataset\104-enlargedrotated\_rece.jpg/0
+.\dataset\104-enlargedrotated\_shar.jpg/1
+.\dataset\104-enlargedrotated\_tith (2).jpg/1
+.\dataset\104-enlargedrotated\_tith (3).jpg/1
+.\dataset\104-enlargedrotated\_tith (4).jpg/1
+.\dataset\104-enlargedrotated\_tith.jpg/1
+.\dataset\104-enlargedrotated\_Y.jpg/1
+.\dataset\104-enlargedrotated\_You (2).jpg/1
+.\dataset\104-enlargedrotated\_You.jpg/1
+.\dataset\178\,_an.jpg/0
+.\dataset\178\._I_.jpg/1
+.\dataset\178\ade.jpg/1
+.\dataset\178\affec.jpg/1
+.\dataset\178\aged.jpg/1
+.\dataset\178\ain.jpg/0
+.\dataset\178\an.jpg/0
+.\dataset\178\and (2).jpg/1
+.\dataset\178\and.jpg/1
+.\dataset\178\appe.jpg/1
+.\dataset\178\are (2).jpg/0
+.\dataset\178\are.jpg/0
+.\dataset\178\are_.jpg/0
+.\dataset\178\artr.jpg/1
+.\dataset\178\as_t.jpg/1
+.\dataset\178\ath.jpg/1
+.\dataset\178\athe.jpg/1
+.\dataset\178\atio.jpg/1
+.\dataset\178\att.jpg/1
+.\dataset\178\atte.jpg/1
+.\dataset\178\Aug.jpg/1
+.\dataset\178\Augu (2).jpg/1
+.\dataset\178\Augu.jpg/1
+.\dataset\178\ay_2.jpg/1
+.\dataset\178\bedi.jpg/1
+.\dataset\178\beg.jpg/1
+.\dataset\178\beg_ (2).jpg/1
+.\dataset\178\beg_ (3).jpg/1
+.\dataset\178\beg_.jpg/1
+.\dataset\178\bu.jpg/1
+.\dataset\178\cent.jpg/1
+.\dataset\178\chi (2).jpg/1
+.\dataset\178\chi (3).jpg/1
+.\dataset\178\chi.jpg/1
+.\dataset\178\ching.jpg/1
+.\dataset\178\ctfu.jpg/1
+.\dataset\178\ction.jpg/1
+.\dataset\178\day_.jpg/1
+.\dataset\178\de.jpg/1
+.\dataset\178\dea.jpg/1
+.\dataset\178\de_.jpg/1
+.\dataset\178\dien.jpg/1
+.\dataset\178\dra.jpg/1
+.\dataset\178\dren (2).jpg/1
+.\dataset\178\dren (3).jpg/1
+.\dataset\178\dren.jpg/1
+.\dataset\178\d_ (2).jpg/1
+.\dataset\178\d_.jpg/1
+.\dataset\178\d_b (2).jpg/1
+.\dataset\178\d_b.jpg/1
+.\dataset\178\E (2).jpg/1
+.\dataset\178\e,.jpg/0
+.\dataset\178\e,_a.jpg/0
+.\dataset\178\E.jpg/1
+.\dataset\178\eal (2).jpg/1
+.\dataset\178\eal.jpg/1
+.\dataset\178\eart.jpg/1
+.\dataset\178\eath.jpg/1
+.\dataset\178\ectf.jpg/1
+.\dataset\178\edie.jpg/1
+.\dataset\178\ed_.jpg/1
+.\dataset\178\eein.jpg/0
+.\dataset\178\efo_c.jpg/1
+.\dataset\178\efs_c.jpg/1
+.\dataset\178\eg_y (2).jpg/1
+.\dataset\178\eg_y (3).jpg/1
+.\dataset\178\eg_y (4).jpg/1
+.\dataset\178\eg_y.jpg/1
+.\dataset\178\eing.jpg/1
+.\dataset\178\elpl.jpg/1
+.\dataset\178\elple.jpg/1
+.\dataset\178\Em.jpg/1
+.\dataset\178\en.jpg/0
+.\dataset\178\ench.jpg/1
+.\dataset\178\ene.jpg/0
+.\dataset\178\ent.jpg/1
+.\dataset\178\erat.jpg/1
+.\dataset\178\er_ (2).jpg/0
+.\dataset\178\er_.jpg/0
+.\dataset\178\esp.jpg/1
+.\dataset\178\e_.jpg/0
+.\dataset\178\e_h.jpg/1
+.\dataset\178\e_li.jpg/1
+.\dataset\178\e_m.jpg/0
+.\dataset\178\e_r.jpg/0
+.\dataset\178\e_th.jpg/1
+.\dataset\178\Fat.jpg/1
+.\dataset\178\fect.jpg/1
+.\dataset\178\gai.jpg/1
+.\dataset\178\ged.jpg/1
+.\dataset\178\gen.jpg/1
+.\dataset\178\gh_.jpg/1
+.\dataset\178\gust.jpg/1
+.\dataset\178\g_g.jpg/1
+.\dataset\178\g_s.jpg/1
+.\dataset\178\g_yo.jpg/1
+.\dataset\178\h..jpg/1
+.\dataset\178\hea.jpg/1
+.\dataset\178\heir.jpg/1
+.\dataset\178\hel (2).jpg/1
+.\dataset\178\hel.jpg/1
+.\dataset\178\help (2).jpg/1
+.\dataset\178\help.jpg/1
+.\dataset\178\her.jpg/1
+.\dataset\178\he_.jpg/1
+.\dataset\178\he_t.jpg/1
+.\dataset\178\hil (2).jpg/1
+.\dataset\178\hil (3).jpg/1
+.\dataset\178\hil.jpg/1
+.\dataset\178\hild (2).jpg/1
+.\dataset\178\hild.jpg/1
+.\dataset\178\ht_.jpg/1
+.\dataset\178\h_h.jpg/1
+.\dataset\178\ight.jpg/1
+.\dataset\178\ild.jpg/1
+.\dataset\178\ildre.jpg/1
+.\dataset\178\in (2).jpg/0
+.\dataset\178\in.jpg/0
+.\dataset\178\ing (2).jpg/1
+.\dataset\178\ing.jpg/1
+.\dataset\178\ing_.jpg/1
+.\dataset\178\inn.jpg/0
+.\dataset\178\in_s.jpg/0
+.\dataset\178\ion.jpg/0
+.\dataset\178\ions.jpg/0
+.\dataset\178\ir.jpg/0
+.\dataset\178\ison.jpg/0
+.\dataset\178\ith..jpg/1
+.\dataset\178\ith.jpg/1
+.\dataset\178\I_.jpg/1
+.\dataset\178\I_a.jpg/1
+.\dataset\178\I_ap.jpg/1
+.\dataset\178\I_b (2).jpg/1
+.\dataset\178\I_b.jpg/1
+.\dataset\178\ldre (2).jpg/1
+.\dataset\178\ldre.jpg/1
+.\dataset\178\lefo.jpg/1
+.\dataset\178\lefs.jpg/1
+.\dataset\178\lig.jpg/1
+.\dataset\178\ligh.jpg/1
+.\dataset\178\lly.jpg/1
+.\dataset\178\ly_d.jpg/1
+.\dataset\178\ly_y.jpg/1
+.\dataset\178\l_to.jpg/1
+.\dataset\178\m.jpg/0
+.\dataset\178\ma (2).jpg/0
+.\dataset\178\ma (3).jpg/0
+.\dataset\178\ma.jpg/0
+.\dataset\178\mat.jpg/1
+.\dataset\178\me.jpg/0
+.\dataset\178\mit.jpg/1
+.\dataset\178\my (2).jpg/1
+.\dataset\178\my (3).jpg/1
+.\dataset\178\my.jpg/1
+.\dataset\178\my_.jpg/1
+.\dataset\178\n. (2).jpg/0
+.\dataset\178\n..jpg/0
+.\dataset\178\n._I.jpg/1
+.\dataset\178\nchi.jpg/1
+.\dataset\178\nd (2).jpg/1
+.\dataset\178\nd.jpg/1
+.\dataset\178\nd_.jpg/1
+.\dataset\178\ner.jpg/0
+.\dataset\178\ng_ (2).jpg/1
+.\dataset\178\ng_.jpg/1
+.\dataset\178\ng_t.jpg/1
+.\dataset\178\nno.jpg/0
+.\dataset\178\noce.jpg/0
+.\dataset\178\nt_.jpg/1
+.\dataset\178\n_.jpg/0
+.\dataset\178\n_o.jpg/0
+.\dataset\178\obe.jpg/1
+.\dataset\178\ocen.jpg/0
+.\dataset\178\of_a.jpg/1
+.\dataset\178\of_ag.jpg/1
+.\dataset\178\of_t.jpg/1
+.\dataset\178\opar.jpg/1
+.\dataset\178\or.jpg/0
+.\dataset\178\orro.jpg/0
+.\dataset\178\or_to.jpg/1
+.\dataset\178\ou (2).jpg/0
+.\dataset\178\ou.jpg/0
+.\dataset\178\oug.jpg/1
+.\dataset\178\ought.jpg/1
+.\dataset\178\our.jpg/0
+.\dataset\178\our_a.jpg/0
+.\dataset\178\ow.jpg/0
+.\dataset\178\o_ch.jpg/1
+.\dataset\178\o_you.jpg/1
+.\dataset\178\pea.jpg/1
+.\dataset\178\pect.jpg/1
+.\dataset\178\plef.jpg/1
+.\dataset\178\pri.jpg/1
+.\dataset\178\r.jpg/0
+.\dataset\178\rag.jpg/1
+.\dataset\178\rati.jpg/1
+.\dataset\178\Re.jpg/1
+.\dataset\178\ren.jpg/0
+.\dataset\178\ren_.jpg/0
+.\dataset\178\Res.jpg/1
+.\dataset\178\ris.jpg/0
+.\dataset\178\risin.jpg/0
+.\dataset\178\riso.jpg/0
+.\dataset\178\row.jpg/0
+.\dataset\178\rtre.jpg/1
+.\dataset\178\r_aff.jpg/1
+.\dataset\178\s.jpg/0
+.\dataset\178\see.jpg/0
+.\dataset\178\sin.jpg/0
+.\dataset\178\Sm (2).jpg/1
+.\dataset\178\Sm.jpg/1
+.\dataset\178\son.jpg/0
+.\dataset\178\sor.jpg/0
+.\dataset\178\sorr.jpg/0
+.\dataset\178\spar.jpg/1
+.\dataset\178\spare.jpg/1
+.\dataset\178\spe.jpg/1
+.\dataset\178\s_ch.jpg/1
+.\dataset\178\s_th.jpg/1
+.\dataset\178\tful.jpg/1
+.\dataset\178\th. (2).jpg/1
+.\dataset\178\th..jpg/1
+.\dataset\178\the (2).jpg/1
+.\dataset\178\the (3).jpg/1
+.\dataset\178\the (4).jpg/1
+.\dataset\178\the.jpg/1
+.\dataset\178\thei.jpg/1
+.\dataset\178\ther.jpg/1
+.\dataset\178\the_.jpg/1
+.\dataset\178\tho.jpg/1
+.\dataset\178\thou (2).jpg/1
+.\dataset\178\thou.jpg/1
+.\dataset\178\thoug.jpg/1
+.\dataset\178\tion.jpg/1
+.\dataset\178\tions.jpg/1
+.\dataset\178\to_ (2).jpg/1
+.\dataset\178\to_ (3).jpg/1
+.\dataset\178\to_.jpg/1
+.\dataset\178\to_d.jpg/1
+.\dataset\178\to_o.jpg/1
+.\dataset\178\to_p.jpg/1
+.\dataset\178\to_s.jpg/1
+.\dataset\178\to_sp (2).jpg/1
+.\dataset\178\to_sp.jpg/1
+.\dataset\178\to_yo.jpg/1
+.\dataset\178\tren.jpg/1
+.\dataset\178\try_.jpg/1
+.\dataset\178\tter.jpg/1
+.\dataset\178\Tues.jpg/1
+.\dataset\178\t_.jpg/1
+.\dataset\178\t_c.jpg/1
+.\dataset\178\t_m.jpg/1
+.\dataset\178\t_o.jpg/1
+.\dataset\178\uesda.jpg/1
+.\dataset\178\ugh.jpg/1
+.\dataset\178\ught.jpg/1
+.\dataset\178\ully.jpg/1
+.\dataset\178\ur_.jpg/0
+.\dataset\178\ust_.jpg/1
+.\dataset\178\ut.jpg/1
+.\dataset\178\u_t (2).jpg/1
+.\dataset\178\u_t.jpg/1
+.\dataset\178\u_to.jpg/1
+.\dataset\178\yo.jpg/1
+.\dataset\178\you (2).jpg/1
+.\dataset\178\you (3).jpg/1
+.\dataset\178\you (4).jpg/1
+.\dataset\178\you.jpg/1
+.\dataset\178\your.jpg/1
+.\dataset\178\y_.jpg/1
+.\dataset\178\y_in.jpg/1
+.\dataset\178\_a.jpg/0
+.\dataset\178\_affe.jpg/1
+.\dataset\178\_aga.jpg/1
+.\dataset\178\_app.jpg/1
+.\dataset\178\_as_.jpg/0
+.\dataset\178\_beg (2).jpg/1
+.\dataset\178\_beg (3).jpg/1
+.\dataset\178\_beg (4).jpg/1
+.\dataset\178\_beg.jpg/1
+.\dataset\178\_ch.jpg/1
+.\dataset\178\_de.jpg/1
+.\dataset\178\_dr.jpg/1
+.\dataset\178\_E.jpg/1
+.\dataset\178\_ge.jpg/1
+.\dataset\178\_he (2).jpg/1
+.\dataset\178\_he.jpg/1
+.\dataset\178\_he_.jpg/1
+.\dataset\178\_m (2).jpg/0
+.\dataset\178\_m (3).jpg/0
+.\dataset\178\_m.jpg/0
+.\dataset\178\_my.jpg/1
+.\dataset\178\_of.jpg/1
+.\dataset\178\_of_.jpg/1
+.\dataset\178\_op.jpg/1
+.\dataset\178\_or.jpg/0
+.\dataset\178\_pr.jpg/1
+.\dataset\178\_ri.jpg/0
+.\dataset\178\_S.jpg/1
+.\dataset\178\_see.jpg/0
+.\dataset\178\_sp.jpg/1
+.\dataset\178\_spa.jpg/1
+.\dataset\178\_th (2).jpg/1
+.\dataset\178\_th.jpg/1
+.\dataset\178\_the.jpg/1
+.\dataset\178\_to (2).jpg/1
+.\dataset\178\_to (3).jpg/1
+.\dataset\178\_to.jpg/1
+.\dataset\178\_to_ (2).jpg/1
+.\dataset\178\_to_ (3).jpg/1
+.\dataset\178\_to_.jpg/1
+.\dataset\178\_to_s.jpg/1
+.\dataset\178\_yo (2).jpg/1
+.\dataset\178\_yo.jpg/1
+.\dataset\178-enlargedrotated\,_an.jpg/0
+.\dataset\178-enlargedrotated\._I_.jpg/1
+.\dataset\178-enlargedrotated\ade.jpg/1
+.\dataset\178-enlargedrotated\affec.jpg/1
+.\dataset\178-enlargedrotated\aged.jpg/1
+.\dataset\178-enlargedrotated\ain.jpg/0
+.\dataset\178-enlargedrotated\an.jpg/0
+.\dataset\178-enlargedrotated\and (2).jpg/1
+.\dataset\178-enlargedrotated\and.jpg/1
+.\dataset\178-enlargedrotated\appe.jpg/1
+.\dataset\178-enlargedrotated\are (2).jpg/0
+.\dataset\178-enlargedrotated\are.jpg/0
+.\dataset\178-enlargedrotated\are_.jpg/0
+.\dataset\178-enlargedrotated\artr.jpg/1
+.\dataset\178-enlargedrotated\as_t.jpg/1
+.\dataset\178-enlargedrotated\ath.jpg/1
+.\dataset\178-enlargedrotated\athe.jpg/1
+.\dataset\178-enlargedrotated\atio.jpg/1
+.\dataset\178-enlargedrotated\att.jpg/1
+.\dataset\178-enlargedrotated\atte.jpg/1
+.\dataset\178-enlargedrotated\Aug.jpg/1
+.\dataset\178-enlargedrotated\Augu (2).jpg/1
+.\dataset\178-enlargedrotated\Augu.jpg/1
+.\dataset\178-enlargedrotated\ay_2.jpg/1
+.\dataset\178-enlargedrotated\bedi.jpg/1
+.\dataset\178-enlargedrotated\beg.jpg/1
+.\dataset\178-enlargedrotated\beg_ (2).jpg/1
+.\dataset\178-enlargedrotated\beg_ (3).jpg/1
+.\dataset\178-enlargedrotated\beg_.jpg/1
+.\dataset\178-enlargedrotated\bu.jpg/1
+.\dataset\178-enlargedrotated\cent.jpg/1
+.\dataset\178-enlargedrotated\chi (2).jpg/1
+.\dataset\178-enlargedrotated\chi (3).jpg/1
+.\dataset\178-enlargedrotated\chi.jpg/1
+.\dataset\178-enlargedrotated\ching.jpg/1
+.\dataset\178-enlargedrotated\ctfu.jpg/1
+.\dataset\178-enlargedrotated\ction.jpg/1
+.\dataset\178-enlargedrotated\day_.jpg/1
+.\dataset\178-enlargedrotated\de.jpg/1
+.\dataset\178-enlargedrotated\dea.jpg/1
+.\dataset\178-enlargedrotated\de_.jpg/1
+.\dataset\178-enlargedrotated\dien.jpg/1
+.\dataset\178-enlargedrotated\dra.jpg/1
+.\dataset\178-enlargedrotated\dren (2).jpg/1
+.\dataset\178-enlargedrotated\dren (3).jpg/1
+.\dataset\178-enlargedrotated\dren.jpg/1
+.\dataset\178-enlargedrotated\d_ (2).jpg/1
+.\dataset\178-enlargedrotated\d_.jpg/1
+.\dataset\178-enlargedrotated\d_b (2).jpg/1
+.\dataset\178-enlargedrotated\d_b.jpg/1
+.\dataset\178-enlargedrotated\E (2).jpg/1
+.\dataset\178-enlargedrotated\e,.jpg/0
+.\dataset\178-enlargedrotated\e,_a.jpg/0
+.\dataset\178-enlargedrotated\E.jpg/1
+.\dataset\178-enlargedrotated\eal (2).jpg/1
+.\dataset\178-enlargedrotated\eal.jpg/1
+.\dataset\178-enlargedrotated\eart.jpg/1
+.\dataset\178-enlargedrotated\eath.jpg/1
+.\dataset\178-enlargedrotated\ectf.jpg/1
+.\dataset\178-enlargedrotated\edie.jpg/1
+.\dataset\178-enlargedrotated\ed_.jpg/1
+.\dataset\178-enlargedrotated\eein.jpg/0
+.\dataset\178-enlargedrotated\efo_c.jpg/1
+.\dataset\178-enlargedrotated\efs_c.jpg/1
+.\dataset\178-enlargedrotated\eg_y (2).jpg/1
+.\dataset\178-enlargedrotated\eg_y (3).jpg/1
+.\dataset\178-enlargedrotated\eg_y (4).jpg/1
+.\dataset\178-enlargedrotated\eg_y.jpg/1
+.\dataset\178-enlargedrotated\eing.jpg/1
+.\dataset\178-enlargedrotated\elpl.jpg/1
+.\dataset\178-enlargedrotated\elple.jpg/1
+.\dataset\178-enlargedrotated\Em.jpg/1
+.\dataset\178-enlargedrotated\en.jpg/0
+.\dataset\178-enlargedrotated\ench.jpg/1
+.\dataset\178-enlargedrotated\ene.jpg/0
+.\dataset\178-enlargedrotated\ent.jpg/1
+.\dataset\178-enlargedrotated\erat.jpg/1
+.\dataset\178-enlargedrotated\er_ (2).jpg/0
+.\dataset\178-enlargedrotated\er_.jpg/0
+.\dataset\178-enlargedrotated\esp.jpg/1
+.\dataset\178-enlargedrotated\e_.jpg/0
+.\dataset\178-enlargedrotated\e_h.jpg/1
+.\dataset\178-enlargedrotated\e_li.jpg/1
+.\dataset\178-enlargedrotated\e_m.jpg/0
+.\dataset\178-enlargedrotated\e_r.jpg/0
+.\dataset\178-enlargedrotated\e_th.jpg/1
+.\dataset\178-enlargedrotated\Fat.jpg/1
+.\dataset\178-enlargedrotated\fect.jpg/1
+.\dataset\178-enlargedrotated\gai.jpg/1
+.\dataset\178-enlargedrotated\ged.jpg/1
+.\dataset\178-enlargedrotated\gen.jpg/1
+.\dataset\178-enlargedrotated\gh_.jpg/1
+.\dataset\178-enlargedrotated\gust.jpg/1
+.\dataset\178-enlargedrotated\g_g.jpg/1
+.\dataset\178-enlargedrotated\g_s.jpg/1
+.\dataset\178-enlargedrotated\g_yo.jpg/1
+.\dataset\178-enlargedrotated\h..jpg/1
+.\dataset\178-enlargedrotated\hea.jpg/1
+.\dataset\178-enlargedrotated\heir.jpg/1
+.\dataset\178-enlargedrotated\hel (2).jpg/1
+.\dataset\178-enlargedrotated\hel.jpg/1
+.\dataset\178-enlargedrotated\help (2).jpg/1
+.\dataset\178-enlargedrotated\help.jpg/1
+.\dataset\178-enlargedrotated\her.jpg/1
+.\dataset\178-enlargedrotated\he_.jpg/1
+.\dataset\178-enlargedrotated\he_t.jpg/1
+.\dataset\178-enlargedrotated\hil (2).jpg/1
+.\dataset\178-enlargedrotated\hil (3).jpg/1
+.\dataset\178-enlargedrotated\hil.jpg/1
+.\dataset\178-enlargedrotated\hild (2).jpg/1
+.\dataset\178-enlargedrotated\hild.jpg/1
+.\dataset\178-enlargedrotated\ht_.jpg/1
+.\dataset\178-enlargedrotated\h_h.jpg/1
+.\dataset\178-enlargedrotated\ight.jpg/1
+.\dataset\178-enlargedrotated\ild.jpg/1
+.\dataset\178-enlargedrotated\ildre.jpg/1
+.\dataset\178-enlargedrotated\in (2).jpg/0
+.\dataset\178-enlargedrotated\in.jpg/0
+.\dataset\178-enlargedrotated\ing (2).jpg/1
+.\dataset\178-enlargedrotated\ing.jpg/1
+.\dataset\178-enlargedrotated\ing_.jpg/1
+.\dataset\178-enlargedrotated\inn.jpg/0
+.\dataset\178-enlargedrotated\in_s.jpg/0
+.\dataset\178-enlargedrotated\ion.jpg/0
+.\dataset\178-enlargedrotated\ions.jpg/0
+.\dataset\178-enlargedrotated\ir.jpg/0
+.\dataset\178-enlargedrotated\ison.jpg/0
+.\dataset\178-enlargedrotated\ith..jpg/1
+.\dataset\178-enlargedrotated\ith.jpg/1
+.\dataset\178-enlargedrotated\I_.jpg/1
+.\dataset\178-enlargedrotated\I_a.jpg/1
+.\dataset\178-enlargedrotated\I_ap.jpg/1
+.\dataset\178-enlargedrotated\I_b (2).jpg/1
+.\dataset\178-enlargedrotated\I_b.jpg/1
+.\dataset\178-enlargedrotated\ldre (2).jpg/1
+.\dataset\178-enlargedrotated\ldre.jpg/1
+.\dataset\178-enlargedrotated\lefo.jpg/1
+.\dataset\178-enlargedrotated\lefs.jpg/1
+.\dataset\178-enlargedrotated\lig.jpg/1
+.\dataset\178-enlargedrotated\ligh.jpg/1
+.\dataset\178-enlargedrotated\lly.jpg/1
+.\dataset\178-enlargedrotated\ly_d.jpg/1
+.\dataset\178-enlargedrotated\ly_y.jpg/1
+.\dataset\178-enlargedrotated\l_to.jpg/1
+.\dataset\178-enlargedrotated\m.jpg/0
+.\dataset\178-enlargedrotated\ma (2).jpg/0
+.\dataset\178-enlargedrotated\ma (3).jpg/0
+.\dataset\178-enlargedrotated\ma.jpg/0
+.\dataset\178-enlargedrotated\mat.jpg/1
+.\dataset\178-enlargedrotated\me.jpg/0
+.\dataset\178-enlargedrotated\mit.jpg/1
+.\dataset\178-enlargedrotated\my (2).jpg/1
+.\dataset\178-enlargedrotated\my (3).jpg/1
+.\dataset\178-enlargedrotated\my.jpg/1
+.\dataset\178-enlargedrotated\my_.jpg/1
+.\dataset\178-enlargedrotated\n. (2).jpg/0
+.\dataset\178-enlargedrotated\n..jpg/0
+.\dataset\178-enlargedrotated\n._I.jpg/1
+.\dataset\178-enlargedrotated\nchi.jpg/1
+.\dataset\178-enlargedrotated\nd (2).jpg/1
+.\dataset\178-enlargedrotated\nd.jpg/1
+.\dataset\178-enlargedrotated\nd_.jpg/1
+.\dataset\178-enlargedrotated\ner.jpg/0
+.\dataset\178-enlargedrotated\ng_ (2).jpg/1
+.\dataset\178-enlargedrotated\ng_.jpg/1
+.\dataset\178-enlargedrotated\ng_t.jpg/1
+.\dataset\178-enlargedrotated\nno.jpg/0
+.\dataset\178-enlargedrotated\noce.jpg/0
+.\dataset\178-enlargedrotated\nt_.jpg/1
+.\dataset\178-enlargedrotated\n_.jpg/0
+.\dataset\178-enlargedrotated\n_o.jpg/0
+.\dataset\178-enlargedrotated\obe.jpg/1
+.\dataset\178-enlargedrotated\ocen.jpg/0
+.\dataset\178-enlargedrotated\of_a.jpg/1
+.\dataset\178-enlargedrotated\of_ag.jpg/1
+.\dataset\178-enlargedrotated\of_t.jpg/1
+.\dataset\178-enlargedrotated\opar.jpg/1
+.\dataset\178-enlargedrotated\or.jpg/0
+.\dataset\178-enlargedrotated\orro.jpg/0
+.\dataset\178-enlargedrotated\or_to.jpg/1
+.\dataset\178-enlargedrotated\ou (2).jpg/0
+.\dataset\178-enlargedrotated\ou.jpg/0
+.\dataset\178-enlargedrotated\oug.jpg/1
+.\dataset\178-enlargedrotated\ought.jpg/1
+.\dataset\178-enlargedrotated\our.jpg/0
+.\dataset\178-enlargedrotated\our_a.jpg/0
+.\dataset\178-enlargedrotated\ow.jpg/0
+.\dataset\178-enlargedrotated\o_ch.jpg/1
+.\dataset\178-enlargedrotated\o_you.jpg/1
+.\dataset\178-enlargedrotated\pea.jpg/1
+.\dataset\178-enlargedrotated\pect.jpg/1
+.\dataset\178-enlargedrotated\plef.jpg/1
+.\dataset\178-enlargedrotated\pri.jpg/1
+.\dataset\178-enlargedrotated\r.jpg/0
+.\dataset\178-enlargedrotated\rag.jpg/1
+.\dataset\178-enlargedrotated\rati.jpg/1
+.\dataset\178-enlargedrotated\Re.jpg/1
+.\dataset\178-enlargedrotated\ren.jpg/0
+.\dataset\178-enlargedrotated\ren_.jpg/0
+.\dataset\178-enlargedrotated\Res.jpg/1
+.\dataset\178-enlargedrotated\ris.jpg/0
+.\dataset\178-enlargedrotated\risin.jpg/0
+.\dataset\178-enlargedrotated\riso.jpg/0
+.\dataset\178-enlargedrotated\row.jpg/0
+.\dataset\178-enlargedrotated\rtre.jpg/1
+.\dataset\178-enlargedrotated\r_aff.jpg/1
+.\dataset\178-enlargedrotated\s.jpg/0
+.\dataset\178-enlargedrotated\see.jpg/0
+.\dataset\178-enlargedrotated\sin.jpg/0
+.\dataset\178-enlargedrotated\Sm (2).jpg/1
+.\dataset\178-enlargedrotated\Sm.jpg/1
+.\dataset\178-enlargedrotated\son.jpg/0
+.\dataset\178-enlargedrotated\sor.jpg/0
+.\dataset\178-enlargedrotated\sorr.jpg/0
+.\dataset\178-enlargedrotated\spar.jpg/1
+.\dataset\178-enlargedrotated\spare.jpg/1
+.\dataset\178-enlargedrotated\spe.jpg/1
+.\dataset\178-enlargedrotated\s_ch.jpg/1
+.\dataset\178-enlargedrotated\s_th.jpg/1
+.\dataset\178-enlargedrotated\tful.jpg/1
+.\dataset\178-enlargedrotated\th. (2).jpg/1
+.\dataset\178-enlargedrotated\th..jpg/1
+.\dataset\178-enlargedrotated\the (2).jpg/1
+.\dataset\178-enlargedrotated\the (3).jpg/1
+.\dataset\178-enlargedrotated\the (4).jpg/1
+.\dataset\178-enlargedrotated\the.jpg/1
+.\dataset\178-enlargedrotated\thei.jpg/1
+.\dataset\178-enlargedrotated\ther.jpg/1
+.\dataset\178-enlargedrotated\the_.jpg/1
+.\dataset\178-enlargedrotated\tho.jpg/1
+.\dataset\178-enlargedrotated\thou (2).jpg/1
+.\dataset\178-enlargedrotated\thou.jpg/1
+.\dataset\178-enlargedrotated\thoug.jpg/1
+.\dataset\178-enlargedrotated\tion.jpg/1
+.\dataset\178-enlargedrotated\tions.jpg/1
+.\dataset\178-enlargedrotated\to_ (2).jpg/1
+.\dataset\178-enlargedrotated\to_ (3).jpg/1
+.\dataset\178-enlargedrotated\to_.jpg/1
+.\dataset\178-enlargedrotated\to_d.jpg/1
+.\dataset\178-enlargedrotated\to_o.jpg/1
+.\dataset\178-enlargedrotated\to_p.jpg/1
+.\dataset\178-enlargedrotated\to_s.jpg/1
+.\dataset\178-enlargedrotated\to_sp (2).jpg/1
+.\dataset\178-enlargedrotated\to_sp.jpg/1
+.\dataset\178-enlargedrotated\to_yo.jpg/1
+.\dataset\178-enlargedrotated\tren.jpg/1
+.\dataset\178-enlargedrotated\try_.jpg/1
+.\dataset\178-enlargedrotated\tter.jpg/1
+.\dataset\178-enlargedrotated\Tues.jpg/1
+.\dataset\178-enlargedrotated\t_.jpg/1
+.\dataset\178-enlargedrotated\t_c.jpg/1
+.\dataset\178-enlargedrotated\t_m.jpg/1
+.\dataset\178-enlargedrotated\t_o.jpg/1
+.\dataset\178-enlargedrotated\uesda.jpg/1
+.\dataset\178-enlargedrotated\ugh.jpg/1
+.\dataset\178-enlargedrotated\ught.jpg/1
+.\dataset\178-enlargedrotated\ully.jpg/1
+.\dataset\178-enlargedrotated\ur_.jpg/0
+.\dataset\178-enlargedrotated\ust_.jpg/1
+.\dataset\178-enlargedrotated\ut.jpg/1
+.\dataset\178-enlargedrotated\u_t (2).jpg/1
+.\dataset\178-enlargedrotated\u_t.jpg/1
+.\dataset\178-enlargedrotated\u_to.jpg/1
+.\dataset\178-enlargedrotated\yo.jpg/1
+.\dataset\178-enlargedrotated\you (2).jpg/1
+.\dataset\178-enlargedrotated\you (3).jpg/1
+.\dataset\178-enlargedrotated\you (4).jpg/1
+.\dataset\178-enlargedrotated\you.jpg/1
+.\dataset\178-enlargedrotated\your.jpg/1
+.\dataset\178-enlargedrotated\y_.jpg/1
+.\dataset\178-enlargedrotated\y_in.jpg/1
+.\dataset\178-enlargedrotated\_a.jpg/0
+.\dataset\178-enlargedrotated\_affe.jpg/1
+.\dataset\178-enlargedrotated\_aga.jpg/1
+.\dataset\178-enlargedrotated\_app.jpg/1
+.\dataset\178-enlargedrotated\_as_.jpg/0
+.\dataset\178-enlargedrotated\_beg (2).jpg/1
+.\dataset\178-enlargedrotated\_beg (3).jpg/1
+.\dataset\178-enlargedrotated\_beg (4).jpg/1
+.\dataset\178-enlargedrotated\_beg.jpg/1
+.\dataset\178-enlargedrotated\_ch.jpg/1
+.\dataset\178-enlargedrotated\_de.jpg/1
+.\dataset\178-enlargedrotated\_dr.jpg/1
+.\dataset\178-enlargedrotated\_E.jpg/1
+.\dataset\178-enlargedrotated\_ge.jpg/1
+.\dataset\178-enlargedrotated\_he (2).jpg/1
+.\dataset\178-enlargedrotated\_he.jpg/1
+.\dataset\178-enlargedrotated\_he_.jpg/1
+.\dataset\178-enlargedrotated\_m (2).jpg/0
+.\dataset\178-enlargedrotated\_m (3).jpg/0
+.\dataset\178-enlargedrotated\_m.jpg/0
+.\dataset\178-enlargedrotated\_my.jpg/1
+.\dataset\178-enlargedrotated\_of.jpg/1
+.\dataset\178-enlargedrotated\_of_.jpg/1
+.\dataset\178-enlargedrotated\_op.jpg/1
+.\dataset\178-enlargedrotated\_or.jpg/0
+.\dataset\178-enlargedrotated\_pr.jpg/1
+.\dataset\178-enlargedrotated\_ri.jpg/0
+.\dataset\178-enlargedrotated\_S.jpg/1
+.\dataset\178-enlargedrotated\_see.jpg/0
+.\dataset\178-enlargedrotated\_sp.jpg/1
+.\dataset\178-enlargedrotated\_spa.jpg/1
+.\dataset\178-enlargedrotated\_th (2).jpg/1
+.\dataset\178-enlargedrotated\_th.jpg/1
+.\dataset\178-enlargedrotated\_the.jpg/1
+.\dataset\178-enlargedrotated\_to (2).jpg/1
+.\dataset\178-enlargedrotated\_to (3).jpg/1
+.\dataset\178-enlargedrotated\_to.jpg/1
+.\dataset\178-enlargedrotated\_to_ (2).jpg/1
+.\dataset\178-enlargedrotated\_to_ (3).jpg/1
+.\dataset\178-enlargedrotated\_to_.jpg/1
+.\dataset\178-enlargedrotated\_to_s.jpg/1
+.\dataset\178-enlargedrotated\_yo (2).jpg/1
+.\dataset\178-enlargedrotated\_yo.jpg/1
+.\dataset\205\._.jpg/0
+.\dataset\205\._Al.jpg/1
+.\dataset\205\._Ar.jpg/1
+.\dataset\205\._p.jpg/1
+.\dataset\205\._S.jpg/1
+.\dataset\205\._Th.jpg/1
+.\dataset\205\15th (2).jpg/1
+.\dataset\205\15th.jpg/1
+.\dataset\205\2.jpg/1
+.\dataset\205\23.jpg/1
+.\dataset\205\23rd (2).jpg/1
+.\dataset\205\23rd.jpg/1
+.\dataset\205\all.jpg/1
+.\dataset\205\all_.jpg/1
+.\dataset\205\Also.jpg/1
+.\dataset\205\and.jpg/1
+.\dataset\205\ange.jpg/1
+.\dataset\205\aper.jpg/1
+.\dataset\205\Arr.jpg/1
+.\dataset\205\as.jpg/0
+.\dataset\205\as_g.jpg/1
+.\dataset\205\At_.jpg/1
+.\dataset\205\At_h (2).jpg/1
+.\dataset\205\At_h (3).jpg/1
+.\dataset\205\At_h.jpg/1
+.\dataset\205\au.jpg/0
+.\dataset\205\ay..jpg/1
+.\dataset\205\ay_2.jpg/1
+.\dataset\205\a_.jpg/0
+.\dataset\205\a_u.jpg/0
+.\dataset\205\ber_184.jpg/1
+.\dataset\205\bette.jpg/1
+.\dataset\205\boo.jpg/1
+.\dataset\205\bus.jpg/1
+.\dataset\205\buy.jpg/1
+.\dataset\205\buyi.jpg/1
+.\dataset\205\cern.jpg/0
+.\dataset\205\cil_.jpg/1
+.\dataset\205\conce.jpg/0
+.\dataset\205\d_a.jpg/1
+.\dataset\205\d_t.jpg/1
+.\dataset\205\e (2).jpg/0
+.\dataset\205\e.jpg/0
+.\dataset\205\e._A.jpg/1
+.\dataset\205\efs.jpg/1
+.\dataset\205\eing.jpg/1
+.\dataset\205\eir_.jpg/0
+.\dataset\205\Em (2).jpg/1
+.\dataset\205\em.jpg/0
+.\dataset\205\Emm.jpg/1
+.\dataset\205\ent (2).jpg/1
+.\dataset\205\ent.jpg/1
+.\dataset\205\entl.jpg/1
+.\dataset\205\eph.jpg/1
+.\dataset\205\er._.jpg/0
+.\dataset\205\ere.jpg/0
+.\dataset\205\erfe.jpg/1
+.\dataset\205\ernin.jpg/0
+.\dataset\205\er_.jpg/0
+.\dataset\205\etly.jpg/1
+.\dataset\205\etter.jpg/1
+.\dataset\205\e_.jpg/0
+.\dataset\205\e_b.jpg/1
+.\dataset\205\e_re.jpg/0
+.\dataset\205\e_st.jpg/1
+.\dataset\205\fectly.jpg/1
+.\dataset\205\Fr.jpg/1
+.\dataset\205\Fri.jpg/1
+.\dataset\205\Frid (2).jpg/1
+.\dataset\205\Frid.jpg/1
+.\dataset\205\fs_.jpg/1
+.\dataset\205\goi.jpg/1
+.\dataset\205\g_on.jpg/1
+.\dataset\205\g_w.jpg/1
+.\dataset\205\he (2).jpg/1
+.\dataset\205\he.jpg/1
+.\dataset\205\heir.jpg/1
+.\dataset\205\hem.jpg/1
+.\dataset\205\her.jpg/1
+.\dataset\205\he_.jpg/1
+.\dataset\205\he_s.jpg/1
+.\dataset\205\hom (2).jpg/1
+.\dataset\205\hom (3).jpg/1
+.\dataset\205\hom.jpg/1
+.\dataset\205\home.jpg/1
+.\dataset\205\h_co.jpg/1
+.\dataset\205\h_wi.jpg/1
+.\dataset\205\ich.jpg/1
+.\dataset\205\ich_.jpg/1
+.\dataset\205\iday.jpg/1
+.\dataset\205\ident.jpg/1
+.\dataset\205\il_w.jpg/1
+.\dataset\205\in.jpg/0
+.\dataset\205\ing.jpg/1
+.\dataset\205\ing_ (2).jpg/1
+.\dataset\205\ing_.jpg/1
+.\dataset\205\ing_m.jpg/1
+.\dataset\205\ing_p.jpg/1
+.\dataset\205\In_.jpg/1
+.\dataset\205\In_o.jpg/1
+.\dataset\205\is (2).jpg/0
+.\dataset\205\is.jpg/0
+.\dataset\205\ith (2).jpg/1
+.\dataset\205\ith.jpg/1
+.\dataset\205\ith_ (2).jpg/1
+.\dataset\205\ith_.jpg/1
+.\dataset\205\Josep.jpg/1
+.\dataset\205\ks._.jpg/1
+.\dataset\205\ks_.jpg/1
+.\dataset\205\ll_d.jpg/1
+.\dataset\205\ly_p.jpg/1
+.\dataset\205\ma.jpg/0
+.\dataset\205\mber_1.jpg/1
+.\dataset\205\me..jpg/0
+.\dataset\205\mic.jpg/0
+.\dataset\205\mm.jpg/0
+.\dataset\205\move.jpg/0
+.\dataset\205\m_a.jpg/0
+.\dataset\205\n._.jpg/0
+.\dataset\205\ncil.jpg/1
+.\dataset\205\nd_.jpg/1
+.\dataset\205\nefs.jpg/1
+.\dataset\205\ner.jpg/0
+.\dataset\205\ngeing.jpg/1
+.\dataset\205\ng_o.jpg/1
+.\dataset\205\ng_pa.jpg/1
+.\dataset\205\ning.jpg/1
+.\dataset\205\ntly.jpg/1
+.\dataset\205\nt_.jpg/1
+.\dataset\205\oing.jpg/1
+.\dataset\205\oks.jpg/1
+.\dataset\205\ome (2).jpg/0
+.\dataset\205\ome (3).jpg/0
+.\dataset\205\ome (4).jpg/0
+.\dataset\205\ome.jpg/0
+.\dataset\205\on..jpg/0
+.\dataset\205\ooks.jpg/1
+.\dataset\205\ork.jpg/1
+.\dataset\205\over.jpg/0
+.\dataset\205\ovin.jpg/0
+.\dataset\205\p.jpg/1
+.\dataset\205\pape.jpg/1
+.\dataset\205\pe.jpg/1
+.\dataset\205\perf.jpg/1
+.\dataset\205\ph_.jpg/1
+.\dataset\205\pre.jpg/1
+.\dataset\205\pres (2).jpg/1
+.\dataset\205\pres.jpg/1
+.\dataset\205\ptem.jpg/1
+.\dataset\205\rang.jpg/1
+.\dataset\205\re.jpg/0
+.\dataset\205\Rem.jpg/1
+.\dataset\205\rfect.jpg/1
+.\dataset\205\riday (2).jpg/1
+.\dataset\205\riday.jpg/1
+.\dataset\205\rks..jpg/1
+.\dataset\205\rm.jpg/0
+.\dataset\205\rran.jpg/0
+.\dataset\205\r_1842.jpg/1
+.\dataset\205\r_th.jpg/1
+.\dataset\205\r_w.jpg/0
+.\dataset\205\s._.jpg/0
+.\dataset\205\sep.jpg/1
+.\dataset\205\Sept.jpg/1
+.\dataset\205\Septe.jpg/1
+.\dataset\205\sin.jpg/0
+.\dataset\205\sine.jpg/0
+.\dataset\205\So.jpg/1
+.\dataset\205\Som.jpg/1
+.\dataset\205\stove (2).jpg/1
+.\dataset\205\stove.jpg/1
+.\dataset\205\tember.jpg/1
+.\dataset\205\th.In.jpg/1
+.\dataset\205\the (2).jpg/1
+.\dataset\205\The (3).jpg/1
+.\dataset\205\the (4).jpg/1
+.\dataset\205\the (5).jpg/1
+.\dataset\205\the.jpg/1
+.\dataset\205\thei.jpg/1
+.\dataset\205\Thurs.jpg/1
+.\dataset\205\th_.jpg/1
+.\dataset\205\th_R.jpg/1
+.\dataset\205\th_t.jpg/1
+.\dataset\205\tly.jpg/1
+.\dataset\205\tly_.jpg/1
+.\dataset\205\tter..jpg/1
+.\dataset\205\t_Jo.jpg/1
+.\dataset\205\ursday.jpg/1
+.\dataset\205\usi.jpg/0
+.\dataset\205\ver_t.jpg/1
+.\dataset\205\ving.jpg/1
+.\dataset\205\was.jpg/0
+.\dataset\205\we.jpg/0
+.\dataset\205\were.jpg/0
+.\dataset\205\wi.jpg/0
+.\dataset\205\with (2).jpg/1
+.\dataset\205\with (3).jpg/1
+.\dataset\205\with.jpg/1
+.\dataset\205\wo.jpg/0
+.\dataset\205\wor.jpg/0
+.\dataset\205\y..jpg/1
+.\dataset\205\ying.jpg/1
+.\dataset\205\y_15.jpg/1
+.\dataset\205\y_s.jpg/1
+.\dataset\205\_an.jpg/0
+.\dataset\205\_At_.jpg/1
+.\dataset\205\_bet.jpg/1
+.\dataset\205\_bo.jpg/1
+.\dataset\205\_bu.jpg/1
+.\dataset\205\_con.jpg/0
+.\dataset\205\_go.jpg/1
+.\dataset\205\_he.jpg/1
+.\dataset\205\_ho (2).jpg/1
+.\dataset\205\_ho (3).jpg/1
+.\dataset\205\_ho.jpg/1
+.\dataset\205\_Jos.jpg/1
+.\dataset\205\_mo.jpg/0
+.\dataset\205\_pap.jpg/1
+.\dataset\205\_pre.jpg/1
+.\dataset\205\_Re.jpg/1
+.\dataset\205\_th.jpg/1
+.\dataset\205\_w (2).jpg/0
+.\dataset\205\_w.jpg/0
+.\dataset\205\_wit.jpg/1
+.\dataset\205-enlargedrotated\._.jpg/0
+.\dataset\205-enlargedrotated\._Al.jpg/1
+.\dataset\205-enlargedrotated\._Ar.jpg/1
+.\dataset\205-enlargedrotated\._p.jpg/1
+.\dataset\205-enlargedrotated\._S.jpg/1
+.\dataset\205-enlargedrotated\._Th.jpg/1
+.\dataset\205-enlargedrotated\15th (2).jpg/1
+.\dataset\205-enlargedrotated\15th.jpg/1
+.\dataset\205-enlargedrotated\2.jpg/1
+.\dataset\205-enlargedrotated\23.jpg/1
+.\dataset\205-enlargedrotated\23rd (2).jpg/1
+.\dataset\205-enlargedrotated\23rd.jpg/1
+.\dataset\205-enlargedrotated\all.jpg/1
+.\dataset\205-enlargedrotated\all_.jpg/1
+.\dataset\205-enlargedrotated\Also.jpg/1
+.\dataset\205-enlargedrotated\and.jpg/1
+.\dataset\205-enlargedrotated\ange.jpg/1
+.\dataset\205-enlargedrotated\aper.jpg/1
+.\dataset\205-enlargedrotated\Arr.jpg/1
+.\dataset\205-enlargedrotated\as.jpg/0
+.\dataset\205-enlargedrotated\as_g.jpg/1
+.\dataset\205-enlargedrotated\At_.jpg/1
+.\dataset\205-enlargedrotated\At_h (2).jpg/1
+.\dataset\205-enlargedrotated\At_h (3).jpg/1
+.\dataset\205-enlargedrotated\At_h.jpg/1
+.\dataset\205-enlargedrotated\au.jpg/0
+.\dataset\205-enlargedrotated\ay..jpg/1
+.\dataset\205-enlargedrotated\ay_2.jpg/1
+.\dataset\205-enlargedrotated\a_.jpg/0
+.\dataset\205-enlargedrotated\a_u.jpg/0
+.\dataset\205-enlargedrotated\ber_184.jpg/1
+.\dataset\205-enlargedrotated\bette.jpg/1
+.\dataset\205-enlargedrotated\boo.jpg/1
+.\dataset\205-enlargedrotated\bus.jpg/1
+.\dataset\205-enlargedrotated\buy.jpg/1
+.\dataset\205-enlargedrotated\buyi.jpg/1
+.\dataset\205-enlargedrotated\cern.jpg/0
+.\dataset\205-enlargedrotated\cil_.jpg/1
+.\dataset\205-enlargedrotated\conce.jpg/0
+.\dataset\205-enlargedrotated\d_a.jpg/1
+.\dataset\205-enlargedrotated\d_t.jpg/1
+.\dataset\205-enlargedrotated\e (2).jpg/0
+.\dataset\205-enlargedrotated\e.jpg/0
+.\dataset\205-enlargedrotated\e._A.jpg/1
+.\dataset\205-enlargedrotated\efs.jpg/1
+.\dataset\205-enlargedrotated\eing.jpg/1
+.\dataset\205-enlargedrotated\eir_.jpg/0
+.\dataset\205-enlargedrotated\Em (2).jpg/1
+.\dataset\205-enlargedrotated\em.jpg/0
+.\dataset\205-enlargedrotated\Emm.jpg/1
+.\dataset\205-enlargedrotated\ent (2).jpg/1
+.\dataset\205-enlargedrotated\ent.jpg/1
+.\dataset\205-enlargedrotated\entl.jpg/1
+.\dataset\205-enlargedrotated\eph.jpg/1
+.\dataset\205-enlargedrotated\er._.jpg/0
+.\dataset\205-enlargedrotated\ere.jpg/0
+.\dataset\205-enlargedrotated\erfe.jpg/1
+.\dataset\205-enlargedrotated\ernin.jpg/0
+.\dataset\205-enlargedrotated\er_.jpg/0
+.\dataset\205-enlargedrotated\etly.jpg/1
+.\dataset\205-enlargedrotated\etter.jpg/1
+.\dataset\205-enlargedrotated\e_.jpg/0
+.\dataset\205-enlargedrotated\e_b.jpg/1
+.\dataset\205-enlargedrotated\e_re.jpg/0
+.\dataset\205-enlargedrotated\e_st.jpg/1
+.\dataset\205-enlargedrotated\fectly.jpg/1
+.\dataset\205-enlargedrotated\Fr.jpg/1
+.\dataset\205-enlargedrotated\Fri.jpg/1
+.\dataset\205-enlargedrotated\Frid (2).jpg/1
+.\dataset\205-enlargedrotated\Frid.jpg/1
+.\dataset\205-enlargedrotated\fs_.jpg/1
+.\dataset\205-enlargedrotated\goi.jpg/1
+.\dataset\205-enlargedrotated\g_on.jpg/1
+.\dataset\205-enlargedrotated\g_w.jpg/1
+.\dataset\205-enlargedrotated\he (2).jpg/1
+.\dataset\205-enlargedrotated\he.jpg/1
+.\dataset\205-enlargedrotated\heir.jpg/1
+.\dataset\205-enlargedrotated\hem.jpg/1
+.\dataset\205-enlargedrotated\her.jpg/1
+.\dataset\205-enlargedrotated\he_.jpg/1
+.\dataset\205-enlargedrotated\he_s.jpg/1
+.\dataset\205-enlargedrotated\hom (2).jpg/1
+.\dataset\205-enlargedrotated\hom (3).jpg/1
+.\dataset\205-enlargedrotated\hom.jpg/1
+.\dataset\205-enlargedrotated\home.jpg/1
+.\dataset\205-enlargedrotated\h_co.jpg/1
+.\dataset\205-enlargedrotated\h_wi.jpg/1
+.\dataset\205-enlargedrotated\ich.jpg/1
+.\dataset\205-enlargedrotated\ich_.jpg/1
+.\dataset\205-enlargedrotated\iday.jpg/1
+.\dataset\205-enlargedrotated\ident.jpg/1
+.\dataset\205-enlargedrotated\il_w.jpg/1
+.\dataset\205-enlargedrotated\in.jpg/0
+.\dataset\205-enlargedrotated\ing.jpg/1
+.\dataset\205-enlargedrotated\ing_ (2).jpg/1
+.\dataset\205-enlargedrotated\ing_.jpg/1
+.\dataset\205-enlargedrotated\ing_m.jpg/1
+.\dataset\205-enlargedrotated\ing_p.jpg/1
+.\dataset\205-enlargedrotated\In_.jpg/1
+.\dataset\205-enlargedrotated\In_o.jpg/1
+.\dataset\205-enlargedrotated\is (2).jpg/0
+.\dataset\205-enlargedrotated\is.jpg/0
+.\dataset\205-enlargedrotated\ith (2).jpg/1
+.\dataset\205-enlargedrotated\ith.jpg/1
+.\dataset\205-enlargedrotated\ith_ (2).jpg/1
+.\dataset\205-enlargedrotated\ith_.jpg/1
+.\dataset\205-enlargedrotated\Josep.jpg/1
+.\dataset\205-enlargedrotated\ks._.jpg/1
+.\dataset\205-enlargedrotated\ks_.jpg/1
+.\dataset\205-enlargedrotated\ll_d.jpg/1
+.\dataset\205-enlargedrotated\ly_p.jpg/1
+.\dataset\205-enlargedrotated\ma.jpg/0
+.\dataset\205-enlargedrotated\mber_1.jpg/1
+.\dataset\205-enlargedrotated\me..jpg/0
+.\dataset\205-enlargedrotated\mic.jpg/0
+.\dataset\205-enlargedrotated\mm.jpg/0
+.\dataset\205-enlargedrotated\move.jpg/0
+.\dataset\205-enlargedrotated\m_a.jpg/0
+.\dataset\205-enlargedrotated\n._.jpg/0
+.\dataset\205-enlargedrotated\ncil.jpg/1
+.\dataset\205-enlargedrotated\nd_.jpg/1
+.\dataset\205-enlargedrotated\nefs.jpg/1
+.\dataset\205-enlargedrotated\ner.jpg/0
+.\dataset\205-enlargedrotated\ngeing.jpg/1
+.\dataset\205-enlargedrotated\ng_o.jpg/1
+.\dataset\205-enlargedrotated\ng_pa.jpg/1
+.\dataset\205-enlargedrotated\ning.jpg/1
+.\dataset\205-enlargedrotated\ntly.jpg/1
+.\dataset\205-enlargedrotated\nt_.jpg/1
+.\dataset\205-enlargedrotated\oing.jpg/1
+.\dataset\205-enlargedrotated\oks.jpg/1
+.\dataset\205-enlargedrotated\ome (2).jpg/0
+.\dataset\205-enlargedrotated\ome (3).jpg/0
+.\dataset\205-enlargedrotated\ome (4).jpg/0
+.\dataset\205-enlargedrotated\ome.jpg/0
+.\dataset\205-enlargedrotated\on..jpg/0
+.\dataset\205-enlargedrotated\ooks.jpg/1
+.\dataset\205-enlargedrotated\ork.jpg/1
+.\dataset\205-enlargedrotated\over.jpg/0
+.\dataset\205-enlargedrotated\ovin.jpg/0
+.\dataset\205-enlargedrotated\p.jpg/1
+.\dataset\205-enlargedrotated\pape.jpg/1
+.\dataset\205-enlargedrotated\pe.jpg/1
+.\dataset\205-enlargedrotated\perf.jpg/1
+.\dataset\205-enlargedrotated\ph_.jpg/1
+.\dataset\205-enlargedrotated\pre.jpg/1
+.\dataset\205-enlargedrotated\pres (2).jpg/1
+.\dataset\205-enlargedrotated\pres.jpg/1
+.\dataset\205-enlargedrotated\ptem.jpg/1
+.\dataset\205-enlargedrotated\rang.jpg/1
+.\dataset\205-enlargedrotated\re.jpg/0
+.\dataset\205-enlargedrotated\Rem.jpg/1
+.\dataset\205-enlargedrotated\rfect.jpg/1
+.\dataset\205-enlargedrotated\riday (2).jpg/1
+.\dataset\205-enlargedrotated\riday.jpg/1
+.\dataset\205-enlargedrotated\rks..jpg/1
+.\dataset\205-enlargedrotated\rm.jpg/0
+.\dataset\205-enlargedrotated\rran.jpg/0
+.\dataset\205-enlargedrotated\r_1842.jpg/1
+.\dataset\205-enlargedrotated\r_th.jpg/1
+.\dataset\205-enlargedrotated\r_w.jpg/0
+.\dataset\205-enlargedrotated\s._.jpg/0
+.\dataset\205-enlargedrotated\sep.jpg/1
+.\dataset\205-enlargedrotated\Sept.jpg/1
+.\dataset\205-enlargedrotated\Septe.jpg/1
+.\dataset\205-enlargedrotated\sin.jpg/0
+.\dataset\205-enlargedrotated\sine.jpg/0
+.\dataset\205-enlargedrotated\So.jpg/1
+.\dataset\205-enlargedrotated\Som.jpg/1
+.\dataset\205-enlargedrotated\stove (2).jpg/1
+.\dataset\205-enlargedrotated\stove.jpg/1
+.\dataset\205-enlargedrotated\tember.jpg/1
+.\dataset\205-enlargedrotated\th.In.jpg/1
+.\dataset\205-enlargedrotated\the (2).jpg/1
+.\dataset\205-enlargedrotated\The (3).jpg/1
+.\dataset\205-enlargedrotated\the (4).jpg/1
+.\dataset\205-enlargedrotated\the (5).jpg/1
+.\dataset\205-enlargedrotated\the.jpg/1
+.\dataset\205-enlargedrotated\thei.jpg/1
+.\dataset\205-enlargedrotated\Thurs.jpg/1
+.\dataset\205-enlargedrotated\th_.jpg/1
+.\dataset\205-enlargedrotated\th_R.jpg/1
+.\dataset\205-enlargedrotated\th_t.jpg/1
+.\dataset\205-enlargedrotated\tly.jpg/1
+.\dataset\205-enlargedrotated\tly_.jpg/1
+.\dataset\205-enlargedrotated\tter..jpg/1
+.\dataset\205-enlargedrotated\t_Jo.jpg/1
+.\dataset\205-enlargedrotated\ursday.jpg/1
+.\dataset\205-enlargedrotated\usi.jpg/0
+.\dataset\205-enlargedrotated\ver_t.jpg/1
+.\dataset\205-enlargedrotated\ving.jpg/1
+.\dataset\205-enlargedrotated\was.jpg/0
+.\dataset\205-enlargedrotated\we.jpg/0
+.\dataset\205-enlargedrotated\were.jpg/0
+.\dataset\205-enlargedrotated\wi.jpg/0
+.\dataset\205-enlargedrotated\with (2).jpg/1
+.\dataset\205-enlargedrotated\with (3).jpg/1
+.\dataset\205-enlargedrotated\with.jpg/1
+.\dataset\205-enlargedrotated\wo.jpg/0
+.\dataset\205-enlargedrotated\wor.jpg/0
+.\dataset\205-enlargedrotated\y..jpg/1
+.\dataset\205-enlargedrotated\ying.jpg/1
+.\dataset\205-enlargedrotated\y_15.jpg/1
+.\dataset\205-enlargedrotated\y_s.jpg/1
+.\dataset\205-enlargedrotated\_an.jpg/0
+.\dataset\205-enlargedrotated\_At_.jpg/1
+.\dataset\205-enlargedrotated\_bet.jpg/1
+.\dataset\205-enlargedrotated\_bo.jpg/1
+.\dataset\205-enlargedrotated\_bu.jpg/1
+.\dataset\205-enlargedrotated\_con.jpg/0
+.\dataset\205-enlargedrotated\_go.jpg/1
+.\dataset\205-enlargedrotated\_he.jpg/1
+.\dataset\205-enlargedrotated\_ho (2).jpg/1
+.\dataset\205-enlargedrotated\_ho (3).jpg/1
+.\dataset\205-enlargedrotated\_ho.jpg/1
+.\dataset\205-enlargedrotated\_Jos.jpg/1
+.\dataset\205-enlargedrotated\_mo.jpg/0
+.\dataset\205-enlargedrotated\_pap.jpg/1
+.\dataset\205-enlargedrotated\_pre.jpg/1
+.\dataset\205-enlargedrotated\_Re.jpg/1
+.\dataset\205-enlargedrotated\_th.jpg/1
+.\dataset\205-enlargedrotated\_w (2).jpg/0
+.\dataset\205-enlargedrotated\_w.jpg/0
+.\dataset\205-enlargedrotated\_wit.jpg/1
+.\dataset\369\$1..jpg/1
+.\dataset\369\$11.jpg/1
+.\dataset\369\$4_.jpg/1
+.\dataset\369\.69.jpg/1
+.\dataset\369\0.jpg/1
+.\dataset\369\0_cts.jpg/1
+.\dataset\369\1.6.jpg/1
+.\dataset\369\1.jpg/1
+.\dataset\369\11_or.jpg/1
+.\dataset\369\16.jpg/1
+.\dataset\369\1_Co.jpg/1
+.\dataset\369\2.jpg/1
+.\dataset\369\24th.jpg/1
+.\dataset\369\2_cts.jpg/1
+.\dataset\369\35.jpg/1
+.\dataset\369\36_i.jpg/1
+.\dataset\369\4.jpg/1
+.\dataset\369\43 (2).jpg/1
+.\dataset\369\43.jpg/1
+.\dataset\369\4th_R.jpg/1
+.\dataset\369\4_a.jpg/1
+.\dataset\369\5 (2).jpg/1
+.\dataset\369\5 (3).jpg/1
+.\dataset\369\5.jpg/1
+.\dataset\369\50.jpg/1
+.\dataset\369\50_ct.jpg/1
+.\dataset\369\62 (2).jpg/1
+.\dataset\369\62.jpg/1
+.\dataset\369\62_c.jpg/1
+.\dataset\369\6_in.jpg/1
+.\dataset\369\a.jpg/0
+.\dataset\369\abet.jpg/1
+.\dataset\369\add.jpg/1
+.\dataset\369\al.jpg/1
+.\dataset\369\alls_.jpg/1
+.\dataset\369\also (2).jpg/1
+.\dataset\369\also.jpg/1
+.\dataset\369\also_.jpg/1
+.\dataset\369\alue (2).jpg/1
+.\dataset\369\alue (3).jpg/1
+.\dataset\369\alue.jpg/1
+.\dataset\369\am.jpg/0
+.\dataset\369\ank.jpg/1
+.\dataset\369\an_.jpg/0
+.\dataset\369\art.jpg/1
+.\dataset\369\ar_.jpg/0
+.\dataset\369\ay.jpg/1
+.\dataset\369\a_.jpg/0
+.\dataset\369\a_p.jpg/1
+.\dataset\369\a_pie.jpg/1
+.\dataset\369\bal.jpg/1
+.\dataset\369\balls.jpg/1
+.\dataset\369\beth.jpg/1
+.\dataset\369\Bla (2).jpg/1
+.\dataset\369\bla.jpg/1
+.\dataset\369\blan.jpg/1
+.\dataset\369\ceiv.jpg/0
+.\dataset\369\ck_.jpg/1
+.\dataset\369\Co.jpg/1
+.\dataset\369\Cow.jpg/1
+.\dataset\369\ctober.jpg/1
+.\dataset\369\cts.jpg/1
+.\dataset\369\cts_in.jpg/1
+.\dataset\369\ddi.jpg/1
+.\dataset\369\ders.jpg/1
+.\dataset\369\dit.jpg/1
+.\dataset\369\dm.jpg/1
+.\dataset\369\d_o.jpg/1
+.\dataset\369\d_St (2).jpg/1
+.\dataset\369\d_St.jpg/1
+.\dataset\369\ear.jpg/0
+.\dataset\369\ece_o.jpg/0
+.\dataset\369\eive.jpg/0
+.\dataset\369\Eliz.jpg/1
+.\dataset\369\end.jpg/1
+.\dataset\369\eph.jpg/1
+.\dataset\369\erso.jpg/0
+.\dataset\369\er_.jpg/0
+.\dataset\369\er_2.jpg/1
+.\dataset\369\er_ha.jpg/1
+.\dataset\369\er_pe.jpg/1
+.\dataset\369\es_a.jpg/0
+.\dataset\369\eth.jpg/1
+.\dataset\369\e_$11.jpg/1
+.\dataset\369\e_$4.jpg/1
+.\dataset\369\E_of (2).jpg/1
+.\dataset\369\e_of.jpg/1
+.\dataset\369\fo.jpg/1
+.\dataset\369\for.jpg/1
+.\dataset\369\for_.jpg/1
+.\dataset\369\f_.jpg/1
+.\dataset\369\f_E.jpg/1
+.\dataset\369\f_Ki.jpg/1
+.\dataset\369\f_L.jpg/1
+.\dataset\369\g.jpg/1
+.\dataset\369\ger_.jpg/1
+.\dataset\369\hand.jpg/1
+.\dataset\369\Hay.jpg/1
+.\dataset\369\Hen (2).jpg/1
+.\dataset\369\Hen.jpg/1
+.\dataset\369\hing.jpg/1
+.\dataset\369\h_5.jpg/1
+.\dataset\369\h_50.jpg/1
+.\dataset\369\h_Y.jpg/1
+.\dataset\369\id.jpg/1
+.\dataset\369\iece.jpg/0
+.\dataset\369\imb.jpg/1
+.\dataset\369\ing.jpg/1
+.\dataset\369\in_ (2).jpg/0
+.\dataset\369\in_.jpg/0
+.\dataset\369\in_B.jpg/1
+.\dataset\369\ion.jpg/0
+.\dataset\369\itio.jpg/1
+.\dataset\369\Jose.jpg/1
+.\dataset\369\Kim (2).jpg/1
+.\dataset\369\Kim.jpg/1
+.\dataset\369\k_E.jpg/1
+.\dataset\369\lank.jpg/1
+.\dataset\369\liza.jpg/1
+.\dataset\369\Lo.jpg/1
+.\dataset\369\loc.jpg/1
+.\dataset\369\lock.jpg/1
+.\dataset\369\Lot_.jpg/1
+.\dataset\369\lso_1.jpg/1
+.\dataset\369\lue_$.jpg/1
+.\dataset\369\ma.jpg/0
+.\dataset\369\man.jpg/0
+.\dataset\369\mba.jpg/1
+.\dataset\369\N.jpg/1
+.\dataset\369\Na (2).jpg/1
+.\dataset\369\Na.jpg/1
+.\dataset\369\nder.jpg/1
+.\dataset\369\nd_.jpg/1
+.\dataset\369\nd_R.jpg/1
+.\dataset\369\nger.jpg/1
+.\dataset\369\n_b.jpg/1
+.\dataset\369\n_H.jpg/1
+.\dataset\369\n_to.jpg/1
+.\dataset\369\ober_.jpg/1
+.\dataset\369\Oct.jpg/1
+.\dataset\369\Octob.jpg/1
+.\dataset\369\od.jpg/1
+.\dataset\369\of_ (2).jpg/1
+.\dataset\369\of_ (3).jpg/1
+.\dataset\369\of_ (4).jpg/1
+.\dataset\369\of_.jpg/1
+.\dataset\369\old (2).jpg/1
+.\dataset\369\old.jpg/1
+.\dataset\369\old_ (2).jpg/1
+.\dataset\369\old_.jpg/1
+.\dataset\369\on_ti.jpg/1
+.\dataset\369\or_pa.jpg/1
+.\dataset\369\osep.jpg/1
+.\dataset\369\ot_3.jpg/1
+.\dataset\369\oung.jpg/1
+.\dataset\369\ow.jpg/0
+.\dataset\369\o_1_.jpg/1
+.\dataset\369\o_1_t.jpg/1
+.\dataset\369\o_ye.jpg/1
+.\dataset\369\part.jpg/1
+.\dataset\369\per+h.jpg/1
+.\dataset\369\ph_.jpg/1
+.\dataset\369\piec.jpg/1
+.\dataset\369\Re.jpg/1
+.\dataset\369\Rec.jpg/1
+.\dataset\369\Recei.jpg/1
+.\dataset\369\Rod.jpg/1
+.\dataset\369\r_ol.jpg/1
+.\dataset\369\son.jpg/0
+.\dataset\369\so_1.jpg/1
+.\dataset\369\Stee (2).jpg/1
+.\dataset\369\Stee.jpg/1
+.\dataset\369\Steer (2).jpg/1
+.\dataset\369\Steer.jpg/1
+.\dataset\369\s_ad.jpg/1
+.\dataset\369\teer (2).jpg/1
+.\dataset\369\teer.jpg/1
+.\dataset\369\thin.jpg/1
+.\dataset\369\th_.jpg/1
+.\dataset\369\tion.jpg/1
+.\dataset\369\tithi.jpg/1
+.\dataset\369\to_.jpg/1
+.\dataset\369\ts+i.jpg/1
+.\dataset\369\ts_in.jpg/1
+.\dataset\369\t_36.jpg/1
+.\dataset\369\t_of.jpg/1
+.\dataset\369\ue_$.jpg/1
+.\dataset\369\Val (2).jpg/1
+.\dataset\369\val.jpg/1
+.\dataset\369\Valu (2).jpg/1
+.\dataset\369\valu.jpg/1
+.\dataset\369\ved.jpg/1
+.\dataset\369\w_$.jpg/1
+.\dataset\369\w_.jpg/0
+.\dataset\369\w_V.jpg/1
+.\dataset\369\y.jpg/1
+.\dataset\369\yea.jpg/1
+.\dataset\369\You.jpg/1
+.\dataset\369\Youn.jpg/1
+.\dataset\369\zabe.jpg/1
+.\dataset\369\_$1.jpg/1
+.\dataset\369\_24th.jpg/1
+.\dataset\369\_als.jpg/1
+.\dataset\369\_Bl.jpg/1
+.\dataset\369\_Eli.jpg/1
+.\dataset\369\_E_o.jpg/1
+.\dataset\369\_H.jpg/1
+.\dataset\369\_han.jpg/1
+.\dataset\369\_Hay.jpg/1
+.\dataset\369\_of_.jpg/1
+.\dataset\369\_on_.jpg/0
+.\dataset\369\_par.jpg/1
+.\dataset\369\_per.jpg/1
+.\dataset\369\_Ro.jpg/1
+.\dataset\369\_tith.jpg/1
+.\dataset\369\_to_.jpg/1
+.\dataset\369\_va.jpg/0
+.\dataset\369-enlargedrotated\$1..jpg/1
+.\dataset\369-enlargedrotated\$11.jpg/1
+.\dataset\369-enlargedrotated\$4_.jpg/1
+.\dataset\369-enlargedrotated\.69.jpg/1
+.\dataset\369-enlargedrotated\0.jpg/1
+.\dataset\369-enlargedrotated\0_cts.jpg/1
+.\dataset\369-enlargedrotated\1.6.jpg/1
+.\dataset\369-enlargedrotated\1.jpg/1
+.\dataset\369-enlargedrotated\11_or.jpg/1
+.\dataset\369-enlargedrotated\16.jpg/1
+.\dataset\369-enlargedrotated\1_Co.jpg/1
+.\dataset\369-enlargedrotated\2.jpg/1
+.\dataset\369-enlargedrotated\24th.jpg/1
+.\dataset\369-enlargedrotated\2_cts.jpg/1
+.\dataset\369-enlargedrotated\35.jpg/1
+.\dataset\369-enlargedrotated\36_i.jpg/1
+.\dataset\369-enlargedrotated\4.jpg/1
+.\dataset\369-enlargedrotated\43 (2).jpg/1
+.\dataset\369-enlargedrotated\43.jpg/1
+.\dataset\369-enlargedrotated\4th_R.jpg/1
+.\dataset\369-enlargedrotated\4_a.jpg/1
+.\dataset\369-enlargedrotated\5 (2).jpg/1
+.\dataset\369-enlargedrotated\5 (3).jpg/1
+.\dataset\369-enlargedrotated\5.jpg/1
+.\dataset\369-enlargedrotated\50.jpg/1
+.\dataset\369-enlargedrotated\50_ct.jpg/1
+.\dataset\369-enlargedrotated\62 (2).jpg/1
+.\dataset\369-enlargedrotated\62.jpg/1
+.\dataset\369-enlargedrotated\62_c.jpg/1
+.\dataset\369-enlargedrotated\6_in.jpg/1
+.\dataset\369-enlargedrotated\a.jpg/0
+.\dataset\369-enlargedrotated\abet.jpg/1
+.\dataset\369-enlargedrotated\add.jpg/1
+.\dataset\369-enlargedrotated\al.jpg/1
+.\dataset\369-enlargedrotated\alls_.jpg/1
+.\dataset\369-enlargedrotated\also (2).jpg/1
+.\dataset\369-enlargedrotated\also.jpg/1
+.\dataset\369-enlargedrotated\also_.jpg/1
+.\dataset\369-enlargedrotated\alue (2).jpg/1
+.\dataset\369-enlargedrotated\alue (3).jpg/1
+.\dataset\369-enlargedrotated\alue.jpg/1
+.\dataset\369-enlargedrotated\am.jpg/0
+.\dataset\369-enlargedrotated\ank.jpg/1
+.\dataset\369-enlargedrotated\an_.jpg/0
+.\dataset\369-enlargedrotated\art.jpg/1
+.\dataset\369-enlargedrotated\ar_.jpg/0
+.\dataset\369-enlargedrotated\ay.jpg/1
+.\dataset\369-enlargedrotated\a_.jpg/0
+.\dataset\369-enlargedrotated\a_p.jpg/1
+.\dataset\369-enlargedrotated\a_pie.jpg/1
+.\dataset\369-enlargedrotated\bal.jpg/1
+.\dataset\369-enlargedrotated\balls.jpg/1
+.\dataset\369-enlargedrotated\beth.jpg/1
+.\dataset\369-enlargedrotated\Bla (2).jpg/1
+.\dataset\369-enlargedrotated\bla.jpg/1
+.\dataset\369-enlargedrotated\blan.jpg/1
+.\dataset\369-enlargedrotated\ceiv.jpg/0
+.\dataset\369-enlargedrotated\ck_.jpg/1
+.\dataset\369-enlargedrotated\Co.jpg/1
+.\dataset\369-enlargedrotated\Cow.jpg/1
+.\dataset\369-enlargedrotated\ctober.jpg/1
+.\dataset\369-enlargedrotated\cts.jpg/1
+.\dataset\369-enlargedrotated\cts_in.jpg/1
+.\dataset\369-enlargedrotated\ddi.jpg/1
+.\dataset\369-enlargedrotated\ders.jpg/1
+.\dataset\369-enlargedrotated\dit.jpg/1
+.\dataset\369-enlargedrotated\dm.jpg/1
+.\dataset\369-enlargedrotated\d_o.jpg/1
+.\dataset\369-enlargedrotated\d_St (2).jpg/1
+.\dataset\369-enlargedrotated\d_St.jpg/1
+.\dataset\369-enlargedrotated\ear.jpg/0
+.\dataset\369-enlargedrotated\ece_o.jpg/0
+.\dataset\369-enlargedrotated\eive.jpg/0
+.\dataset\369-enlargedrotated\Eliz.jpg/1
+.\dataset\369-enlargedrotated\end.jpg/1
+.\dataset\369-enlargedrotated\eph.jpg/1
+.\dataset\369-enlargedrotated\erso.jpg/0
+.\dataset\369-enlargedrotated\er_.jpg/0
+.\dataset\369-enlargedrotated\er_2.jpg/1
+.\dataset\369-enlargedrotated\er_ha.jpg/1
+.\dataset\369-enlargedrotated\er_pe.jpg/1
+.\dataset\369-enlargedrotated\es_a.jpg/0
+.\dataset\369-enlargedrotated\eth.jpg/1
+.\dataset\369-enlargedrotated\e_$11.jpg/1
+.\dataset\369-enlargedrotated\e_$4.jpg/1
+.\dataset\369-enlargedrotated\E_of (2).jpg/1
+.\dataset\369-enlargedrotated\e_of.jpg/1
+.\dataset\369-enlargedrotated\fo.jpg/1
+.\dataset\369-enlargedrotated\for.jpg/1
+.\dataset\369-enlargedrotated\for_.jpg/1
+.\dataset\369-enlargedrotated\f_.jpg/1
+.\dataset\369-enlargedrotated\f_E.jpg/1
+.\dataset\369-enlargedrotated\f_Ki.jpg/1
+.\dataset\369-enlargedrotated\f_L.jpg/1
+.\dataset\369-enlargedrotated\g.jpg/1
+.\dataset\369-enlargedrotated\ger_.jpg/1
+.\dataset\369-enlargedrotated\hand.jpg/1
+.\dataset\369-enlargedrotated\Hay.jpg/1
+.\dataset\369-enlargedrotated\Hen (2).jpg/1
+.\dataset\369-enlargedrotated\Hen.jpg/1
+.\dataset\369-enlargedrotated\hing.jpg/1
+.\dataset\369-enlargedrotated\h_5.jpg/1
+.\dataset\369-enlargedrotated\h_50.jpg/1
+.\dataset\369-enlargedrotated\h_Y.jpg/1
+.\dataset\369-enlargedrotated\id.jpg/1
+.\dataset\369-enlargedrotated\iece.jpg/0
+.\dataset\369-enlargedrotated\imb.jpg/1
+.\dataset\369-enlargedrotated\ing.jpg/1
+.\dataset\369-enlargedrotated\in_ (2).jpg/0
+.\dataset\369-enlargedrotated\in_.jpg/0
+.\dataset\369-enlargedrotated\in_B.jpg/1
+.\dataset\369-enlargedrotated\ion.jpg/0
+.\dataset\369-enlargedrotated\itio.jpg/1
+.\dataset\369-enlargedrotated\Jose.jpg/1
+.\dataset\369-enlargedrotated\Kim (2).jpg/1
+.\dataset\369-enlargedrotated\Kim.jpg/1
+.\dataset\369-enlargedrotated\k_E.jpg/1
+.\dataset\369-enlargedrotated\lank.jpg/1
+.\dataset\369-enlargedrotated\liza.jpg/1
+.\dataset\369-enlargedrotated\Lo.jpg/1
+.\dataset\369-enlargedrotated\loc.jpg/1
+.\dataset\369-enlargedrotated\lock.jpg/1
+.\dataset\369-enlargedrotated\Lot_.jpg/1
+.\dataset\369-enlargedrotated\lso_1.jpg/1
+.\dataset\369-enlargedrotated\lue_$.jpg/1
+.\dataset\369-enlargedrotated\ma.jpg/0
+.\dataset\369-enlargedrotated\man.jpg/0
+.\dataset\369-enlargedrotated\mba.jpg/1
+.\dataset\369-enlargedrotated\N.jpg/1
+.\dataset\369-enlargedrotated\Na (2).jpg/1
+.\dataset\369-enlargedrotated\Na.jpg/1
+.\dataset\369-enlargedrotated\nder.jpg/1
+.\dataset\369-enlargedrotated\nd_.jpg/1
+.\dataset\369-enlargedrotated\nd_R.jpg/1
+.\dataset\369-enlargedrotated\nger.jpg/1
+.\dataset\369-enlargedrotated\n_b.jpg/1
+.\dataset\369-enlargedrotated\n_H.jpg/1
+.\dataset\369-enlargedrotated\n_to.jpg/1
+.\dataset\369-enlargedrotated\ober_.jpg/1
+.\dataset\369-enlargedrotated\Oct.jpg/1
+.\dataset\369-enlargedrotated\Octob.jpg/1
+.\dataset\369-enlargedrotated\od.jpg/1
+.\dataset\369-enlargedrotated\of_ (2).jpg/1
+.\dataset\369-enlargedrotated\of_ (3).jpg/1
+.\dataset\369-enlargedrotated\of_ (4).jpg/1
+.\dataset\369-enlargedrotated\of_.jpg/1
+.\dataset\369-enlargedrotated\old (2).jpg/1
+.\dataset\369-enlargedrotated\old.jpg/1
+.\dataset\369-enlargedrotated\old_ (2).jpg/1
+.\dataset\369-enlargedrotated\old_.jpg/1
+.\dataset\369-enlargedrotated\on_ti.jpg/1
+.\dataset\369-enlargedrotated\or_pa.jpg/1
+.\dataset\369-enlargedrotated\osep.jpg/1
+.\dataset\369-enlargedrotated\ot_3.jpg/1
+.\dataset\369-enlargedrotated\oung.jpg/1
+.\dataset\369-enlargedrotated\ow.jpg/0
+.\dataset\369-enlargedrotated\o_1_.jpg/1
+.\dataset\369-enlargedrotated\o_1_t.jpg/1
+.\dataset\369-enlargedrotated\o_ye.jpg/1
+.\dataset\369-enlargedrotated\part.jpg/1
+.\dataset\369-enlargedrotated\per+h.jpg/1
+.\dataset\369-enlargedrotated\ph_.jpg/1
+.\dataset\369-enlargedrotated\piec.jpg/1
+.\dataset\369-enlargedrotated\Re.jpg/1
+.\dataset\369-enlargedrotated\Rec.jpg/1
+.\dataset\369-enlargedrotated\Recei.jpg/1
+.\dataset\369-enlargedrotated\Rod.jpg/1
+.\dataset\369-enlargedrotated\r_ol.jpg/1
+.\dataset\369-enlargedrotated\son.jpg/0
+.\dataset\369-enlargedrotated\so_1.jpg/1
+.\dataset\369-enlargedrotated\Stee (2).jpg/1
+.\dataset\369-enlargedrotated\Stee.jpg/1
+.\dataset\369-enlargedrotated\Steer (2).jpg/1
+.\dataset\369-enlargedrotated\Steer.jpg/1
+.\dataset\369-enlargedrotated\s_ad.jpg/1
+.\dataset\369-enlargedrotated\teer (2).jpg/1
+.\dataset\369-enlargedrotated\teer.jpg/1
+.\dataset\369-enlargedrotated\thin.jpg/1
+.\dataset\369-enlargedrotated\th_.jpg/1
+.\dataset\369-enlargedrotated\tion.jpg/1
+.\dataset\369-enlargedrotated\tithi.jpg/1
+.\dataset\369-enlargedrotated\to_.jpg/1
+.\dataset\369-enlargedrotated\ts+i.jpg/1
+.\dataset\369-enlargedrotated\ts_in.jpg/1
+.\dataset\369-enlargedrotated\t_36.jpg/1
+.\dataset\369-enlargedrotated\t_of.jpg/1
+.\dataset\369-enlargedrotated\ue_$.jpg/1
+.\dataset\369-enlargedrotated\Val (2).jpg/1
+.\dataset\369-enlargedrotated\val.jpg/1
+.\dataset\369-enlargedrotated\Valu (2).jpg/1
+.\dataset\369-enlargedrotated\valu.jpg/1
+.\dataset\369-enlargedrotated\ved.jpg/1
+.\dataset\369-enlargedrotated\w_$.jpg/1
+.\dataset\369-enlargedrotated\w_.jpg/0
+.\dataset\369-enlargedrotated\w_V.jpg/1
+.\dataset\369-enlargedrotated\y.jpg/1
+.\dataset\369-enlargedrotated\yea.jpg/1
+.\dataset\369-enlargedrotated\You.jpg/1
+.\dataset\369-enlargedrotated\Youn.jpg/1
+.\dataset\369-enlargedrotated\zabe.jpg/1
+.\dataset\369-enlargedrotated\_$1.jpg/1
+.\dataset\369-enlargedrotated\_24th.jpg/1
+.\dataset\369-enlargedrotated\_als.jpg/1
+.\dataset\369-enlargedrotated\_Bl.jpg/1
+.\dataset\369-enlargedrotated\_Eli.jpg/1
+.\dataset\369-enlargedrotated\_E_o.jpg/1
+.\dataset\369-enlargedrotated\_H.jpg/1
+.\dataset\369-enlargedrotated\_han.jpg/1
+.\dataset\369-enlargedrotated\_Hay.jpg/1
+.\dataset\369-enlargedrotated\_of_.jpg/1
+.\dataset\369-enlargedrotated\_on_.jpg/0
+.\dataset\369-enlargedrotated\_par.jpg/1
+.\dataset\369-enlargedrotated\_per.jpg/1
+.\dataset\369-enlargedrotated\_Ro.jpg/1
+.\dataset\369-enlargedrotated\_tith.jpg/1
+.\dataset\369-enlargedrotated\_to_.jpg/1
+.\dataset\369-enlargedrotated\_va.jpg/0
+.\dataset\477\.P..jpg/1
+.\dataset\477\29th.jpg/1
+.\dataset\477\2_Al.jpg/1
+.\dataset\477\42_A.jpg/1
+.\dataset\477\4th.jpg/1
+.\dataset\477\8th.jpg/1
+.\dataset\477\A..jpg/1
+.\dataset\477\A.P..jpg/1
+.\dataset\477\abor.jpg/1
+.\dataset\477\ain (2).jpg/0
+.\dataset\477\ain.jpg/0
+.\dataset\477\All.jpg/1
+.\dataset\477\Allen.jpg/1
+.\dataset\477\Als.jpg/1
+.\dataset\477\ary.jpg/1
+.\dataset\477\as_p.jpg/1
+.\dataset\477\ated.jpg/1
+.\dataset\477\ay_4.jpg/1
+.\dataset\477\bor_.jpg/1
+.\dataset\477\Ca.jpg/1
+.\dataset\477\Cap (2).jpg/1
+.\dataset\477\Cap.jpg/1
+.\dataset\477\Capt (2).jpg/1
+.\dataset\477\Capt.jpg/1
+.\dataset\477\cate.jpg/1
+.\dataset\477\ceip.jpg/1
+.\dataset\477\ceiv.jpg/0
+.\dataset\477\Cert.jpg/1
+.\dataset\477\ckw.jpg/1
+.\dataset\477\Co.jpg/1
+.\dataset\477\Com.jpg/1
+.\dataset\477\d (2).jpg/1
+.\dataset\477\d.jpg/1
+.\dataset\477\da.jpg/1
+.\dataset\477\date.jpg/1
+.\dataset\477\ece.jpg/0
+.\dataset\477\ecei.jpg/0
+.\dataset\477\ed_J.jpg/1
+.\dataset\477\ee.jpg/0
+.\dataset\477\eip.jpg/1
+.\dataset\477\er_r.jpg/0
+.\dataset\477\es_of.jpg/1
+.\dataset\477\e_Ju.jpg/1
+.\dataset\477\e_of.jpg/1
+.\dataset\477\e_Q.jpg/1
+.\dataset\477\e_S.jpg/1
+.\dataset\477\e_St.jpg/1
+.\dataset\477\fica.jpg/1
+.\dataset\477\for_.jpg/1
+.\dataset\477\full.jpg/1
+.\dataset\477\g)_to.jpg/1
+.\dataset\477\hin.jpg/1
+.\dataset\477\his_.jpg/1
+.\dataset\477\h_R.jpg/1
+.\dataset\477\icate.jpg/1
+.\dataset\477\in_.jpg/0
+.\dataset\477\in_fu.jpg/1
+.\dataset\477\in_of.jpg/1
+.\dataset\477\is_L.jpg/1
+.\dataset\477\ittee.jpg/1
+.\dataset\477\Jun.jpg/1
+.\dataset\477\kwo.jpg/1
+.\dataset\477\Lab.jpg/1
+.\dataset\477\len_@.jpg/1
+.\dataset\477\le_C.jpg/1
+.\dataset\477\llen.jpg/1
+.\dataset\477\ll_.jpg/1
+.\dataset\477\ll_fo.jpg/1
+.\dataset\477\lso_.jpg/1
+.\dataset\477\May (2).jpg/1
+.\dataset\477\May.jpg/1
+.\dataset\477\mit.jpg/1
+.\dataset\477\mitte.jpg/1
+.\dataset\477\mm (2).jpg/0
+.\dataset\477\mm.jpg/0
+.\dataset\477\Mo.jpg/1
+.\dataset\477\Moo.jpg/1
+.\dataset\477\mp.jpg/1
+.\dataset\477\ne_2.jpg/1
+.\dataset\477\ng)_.jpg/1
+.\dataset\477\ock.jpg/1
+.\dataset\477\od.jpg/1
+.\dataset\477\of_ (2).jpg/1
+.\dataset\477\of_.jpg/1
+.\dataset\477\of_Te.jpg/1
+.\dataset\477\of_th.jpg/1
+.\dataset\477\of_the.jpg/1
+.\dataset\477\ood.jpg/1
+.\dataset\477\oore.jpg/0
+.\dataset\477\or_hi.jpg/1
+.\dataset\477\or_t.jpg/1
+.\dataset\477\P._R.jpg/1
+.\dataset\477\per_ (2).jpg/1
+.\dataset\477\per_.jpg/1
+.\dataset\477\ple.jpg/1
+.\dataset\477\ple_.jpg/1
+.\dataset\477\pta (2).jpg/1
+.\dataset\477\pta.jpg/1
+.\dataset\477\pt_o.jpg/1
+.\dataset\477\Qu.jpg/1
+.\dataset\477\Qua.jpg/1
+.\dataset\477\Rec (2).jpg/1
+.\dataset\477\rec.jpg/0
+.\dataset\477\Rece.jpg/1
+.\dataset\477\Roc.jpg/1
+.\dataset\477\rtif.jpg/1
+.\dataset\477\ry_i.jpg/1
+.\dataset\477\r_Ce.jpg/1
+.\dataset\477\so_$.jpg/1
+.\dataset\477\Stov (2).jpg/1
+.\dataset\477\Stov.jpg/1
+.\dataset\477\s_of_.jpg/1
+.\dataset\477\s_per.jpg/1
+.\dataset\477\tai.jpg/1
+.\dataset\477\tain.jpg/1
+.\dataset\477\ted.jpg/1
+.\dataset\477\Tem.jpg/1
+.\dataset\477\tes_.jpg/1
+.\dataset\477\the_ (2).jpg/1
+.\dataset\477\the_.jpg/1
+.\dataset\477\thin.jpg/1
+.\dataset\477\this.jpg/1
+.\dataset\477\th_.jpg/1
+.\dataset\477\th_18.jpg/1
+.\dataset\477\tific.jpg/1
+.\dataset\477\tith.jpg/1
+.\dataset\477\tove (2).jpg/1
+.\dataset\477\tove.jpg/1
+.\dataset\477\to_the.jpg/1
+.\dataset\477\ttee.jpg/1
+.\dataset\477\t_of.jpg/1
+.\dataset\477\uary.jpg/1
+.\dataset\477\une.jpg/0
+.\dataset\477\une_.jpg/0
+.\dataset\477\ve_.jpg/0
+.\dataset\477\woo.jpg/0
+.\dataset\477\_.jpg/0
+.\dataset\477\_184.jpg/1
+.\dataset\477\_28t.jpg/1
+.\dataset\477\_4th.jpg/1
+.\dataset\477\_A (2).jpg/1
+.\dataset\477\_A.jpg/1
+.\dataset\477\_cer.jpg/0
+.\dataset\477\_Co.jpg/1
+.\dataset\477\_for.jpg/1
+.\dataset\477\_fu.jpg/1
+.\dataset\477\_his_.jpg/1
+.\dataset\477\_in.jpg/0
+.\dataset\477\_la.jpg/1
+.\dataset\477\_oc.jpg/0
+.\dataset\477\_of_ (2).jpg/1
+.\dataset\477\_of_ (3).jpg/1
+.\dataset\477\_of_.jpg/1
+.\dataset\477\_per.jpg/1
+.\dataset\477\_re.jpg/0
+.\dataset\477\_Sto (2).jpg/1
+.\dataset\477\_Sto.jpg/1
+.\dataset\477\_Tem.jpg/1
+.\dataset\477\_the (2).jpg/1
+.\dataset\477\_the.jpg/1
+.\dataset\477\_tit.jpg/1
+.\dataset\477\_to_t.jpg/1
+.\dataset\477-enlargedrotated\.P..jpg/1
+.\dataset\477-enlargedrotated\29th.jpg/1
+.\dataset\477-enlargedrotated\2_Al.jpg/1
+.\dataset\477-enlargedrotated\42_A.jpg/1
+.\dataset\477-enlargedrotated\4th.jpg/1
+.\dataset\477-enlargedrotated\8th.jpg/1
+.\dataset\477-enlargedrotated\A..jpg/1
+.\dataset\477-enlargedrotated\A.P..jpg/1
+.\dataset\477-enlargedrotated\abor.jpg/1
+.\dataset\477-enlargedrotated\ain (2).jpg/0
+.\dataset\477-enlargedrotated\ain.jpg/0
+.\dataset\477-enlargedrotated\All.jpg/1
+.\dataset\477-enlargedrotated\Allen.jpg/1
+.\dataset\477-enlargedrotated\Als.jpg/1
+.\dataset\477-enlargedrotated\ary.jpg/1
+.\dataset\477-enlargedrotated\as_p.jpg/1
+.\dataset\477-enlargedrotated\ated.jpg/1
+.\dataset\477-enlargedrotated\ay_4.jpg/1
+.\dataset\477-enlargedrotated\bor_.jpg/1
+.\dataset\477-enlargedrotated\Ca.jpg/1
+.\dataset\477-enlargedrotated\Cap (2).jpg/1
+.\dataset\477-enlargedrotated\Cap.jpg/1
+.\dataset\477-enlargedrotated\Capt (2).jpg/1
+.\dataset\477-enlargedrotated\Capt.jpg/1
+.\dataset\477-enlargedrotated\cate.jpg/1
+.\dataset\477-enlargedrotated\ceip.jpg/1
+.\dataset\477-enlargedrotated\ceiv.jpg/0
+.\dataset\477-enlargedrotated\Cert.jpg/1
+.\dataset\477-enlargedrotated\ckw.jpg/1
+.\dataset\477-enlargedrotated\Co.jpg/1
+.\dataset\477-enlargedrotated\Com.jpg/1
+.\dataset\477-enlargedrotated\d (2).jpg/1
+.\dataset\477-enlargedrotated\d.jpg/1
+.\dataset\477-enlargedrotated\da.jpg/1
+.\dataset\477-enlargedrotated\date.jpg/1
+.\dataset\477-enlargedrotated\ece.jpg/0
+.\dataset\477-enlargedrotated\ecei.jpg/0
+.\dataset\477-enlargedrotated\ed_J.jpg/1
+.\dataset\477-enlargedrotated\ee.jpg/0
+.\dataset\477-enlargedrotated\eip.jpg/1
+.\dataset\477-enlargedrotated\er_r.jpg/0
+.\dataset\477-enlargedrotated\es_of.jpg/1
+.\dataset\477-enlargedrotated\e_Ju.jpg/1
+.\dataset\477-enlargedrotated\e_of.jpg/1
+.\dataset\477-enlargedrotated\e_Q.jpg/1
+.\dataset\477-enlargedrotated\e_S.jpg/1
+.\dataset\477-enlargedrotated\e_St.jpg/1
+.\dataset\477-enlargedrotated\fica.jpg/1
+.\dataset\477-enlargedrotated\for_.jpg/1
+.\dataset\477-enlargedrotated\full.jpg/1
+.\dataset\477-enlargedrotated\g)_to.jpg/1
+.\dataset\477-enlargedrotated\hin.jpg/1
+.\dataset\477-enlargedrotated\his_.jpg/1
+.\dataset\477-enlargedrotated\h_R.jpg/1
+.\dataset\477-enlargedrotated\icate.jpg/1
+.\dataset\477-enlargedrotated\in_.jpg/0
+.\dataset\477-enlargedrotated\in_fu.jpg/1
+.\dataset\477-enlargedrotated\in_of.jpg/1
+.\dataset\477-enlargedrotated\is_L.jpg/1
+.\dataset\477-enlargedrotated\ittee.jpg/1
+.\dataset\477-enlargedrotated\Jun.jpg/1
+.\dataset\477-enlargedrotated\kwo.jpg/1
+.\dataset\477-enlargedrotated\Lab.jpg/1
+.\dataset\477-enlargedrotated\len_@.jpg/1
+.\dataset\477-enlargedrotated\le_C.jpg/1
+.\dataset\477-enlargedrotated\llen.jpg/1
+.\dataset\477-enlargedrotated\ll_.jpg/1
+.\dataset\477-enlargedrotated\ll_fo.jpg/1
+.\dataset\477-enlargedrotated\lso_.jpg/1
+.\dataset\477-enlargedrotated\May (2).jpg/1
+.\dataset\477-enlargedrotated\May.jpg/1
+.\dataset\477-enlargedrotated\mit.jpg/1
+.\dataset\477-enlargedrotated\mitte.jpg/1
+.\dataset\477-enlargedrotated\mm (2).jpg/0
+.\dataset\477-enlargedrotated\mm.jpg/0
+.\dataset\477-enlargedrotated\Mo.jpg/1
+.\dataset\477-enlargedrotated\Moo.jpg/1
+.\dataset\477-enlargedrotated\mp.jpg/1
+.\dataset\477-enlargedrotated\ne_2.jpg/1
+.\dataset\477-enlargedrotated\ng)_.jpg/1
+.\dataset\477-enlargedrotated\ock.jpg/1
+.\dataset\477-enlargedrotated\od.jpg/1
+.\dataset\477-enlargedrotated\of_ (2).jpg/1
+.\dataset\477-enlargedrotated\of_.jpg/1
+.\dataset\477-enlargedrotated\of_Te.jpg/1
+.\dataset\477-enlargedrotated\of_th.jpg/1
+.\dataset\477-enlargedrotated\of_the.jpg/1
+.\dataset\477-enlargedrotated\ood.jpg/1
+.\dataset\477-enlargedrotated\oore.jpg/0
+.\dataset\477-enlargedrotated\or_hi.jpg/1
+.\dataset\477-enlargedrotated\or_t.jpg/1
+.\dataset\477-enlargedrotated\P._R.jpg/1
+.\dataset\477-enlargedrotated\per_ (2).jpg/1
+.\dataset\477-enlargedrotated\per_.jpg/1
+.\dataset\477-enlargedrotated\ple.jpg/1
+.\dataset\477-enlargedrotated\ple_.jpg/1
+.\dataset\477-enlargedrotated\pta (2).jpg/1
+.\dataset\477-enlargedrotated\pta.jpg/1
+.\dataset\477-enlargedrotated\pt_o.jpg/1
+.\dataset\477-enlargedrotated\Qu.jpg/1
+.\dataset\477-enlargedrotated\Qua.jpg/1
+.\dataset\477-enlargedrotated\Rec (2).jpg/1
+.\dataset\477-enlargedrotated\rec.jpg/0
+.\dataset\477-enlargedrotated\Rece.jpg/1
+.\dataset\477-enlargedrotated\Roc.jpg/1
+.\dataset\477-enlargedrotated\rtif.jpg/1
+.\dataset\477-enlargedrotated\ry_i.jpg/1
+.\dataset\477-enlargedrotated\r_Ce.jpg/1
+.\dataset\477-enlargedrotated\so_$.jpg/1
+.\dataset\477-enlargedrotated\Stov (2).jpg/1
+.\dataset\477-enlargedrotated\Stov.jpg/1
+.\dataset\477-enlargedrotated\s_of_.jpg/1
+.\dataset\477-enlargedrotated\s_per.jpg/1
+.\dataset\477-enlargedrotated\tai.jpg/1
+.\dataset\477-enlargedrotated\tain.jpg/1
+.\dataset\477-enlargedrotated\ted.jpg/1
+.\dataset\477-enlargedrotated\Tem.jpg/1
+.\dataset\477-enlargedrotated\tes_.jpg/1
+.\dataset\477-enlargedrotated\the_ (2).jpg/1
+.\dataset\477-enlargedrotated\the_.jpg/1
+.\dataset\477-enlargedrotated\thin.jpg/1
+.\dataset\477-enlargedrotated\this.jpg/1
+.\dataset\477-enlargedrotated\th_.jpg/1
+.\dataset\477-enlargedrotated\th_18.jpg/1
+.\dataset\477-enlargedrotated\tific.jpg/1
+.\dataset\477-enlargedrotated\tith.jpg/1
+.\dataset\477-enlargedrotated\tove (2).jpg/1
+.\dataset\477-enlargedrotated\tove.jpg/1
+.\dataset\477-enlargedrotated\to_the.jpg/1
+.\dataset\477-enlargedrotated\ttee.jpg/1
+.\dataset\477-enlargedrotated\t_of.jpg/1
+.\dataset\477-enlargedrotated\uary.jpg/1
+.\dataset\477-enlargedrotated\une.jpg/0
+.\dataset\477-enlargedrotated\une_.jpg/0
+.\dataset\477-enlargedrotated\ve_.jpg/0
+.\dataset\477-enlargedrotated\woo.jpg/0
+.\dataset\477-enlargedrotated\_.jpg/0
+.\dataset\477-enlargedrotated\_184.jpg/1
+.\dataset\477-enlargedrotated\_28t.jpg/1
+.\dataset\477-enlargedrotated\_4th.jpg/1
+.\dataset\477-enlargedrotated\_A (2).jpg/1
+.\dataset\477-enlargedrotated\_A.jpg/1
+.\dataset\477-enlargedrotated\_cer.jpg/0
+.\dataset\477-enlargedrotated\_Co.jpg/1
+.\dataset\477-enlargedrotated\_for.jpg/1
+.\dataset\477-enlargedrotated\_fu.jpg/1
+.\dataset\477-enlargedrotated\_his_.jpg/1
+.\dataset\477-enlargedrotated\_in.jpg/0
+.\dataset\477-enlargedrotated\_la.jpg/1
+.\dataset\477-enlargedrotated\_oc.jpg/0
+.\dataset\477-enlargedrotated\_of_ (2).jpg/1
+.\dataset\477-enlargedrotated\_of_ (3).jpg/1
+.\dataset\477-enlargedrotated\_of_.jpg/1
+.\dataset\477-enlargedrotated\_per.jpg/1
+.\dataset\477-enlargedrotated\_re.jpg/0
+.\dataset\477-enlargedrotated\_Sto (2).jpg/1
+.\dataset\477-enlargedrotated\_Sto.jpg/1
+.\dataset\477-enlargedrotated\_Tem.jpg/1
+.\dataset\477-enlargedrotated\_the (2).jpg/1
+.\dataset\477-enlargedrotated\_the.jpg/1
+.\dataset\477-enlargedrotated\_tit.jpg/1
+.\dataset\477-enlargedrotated\_to_t.jpg/1
