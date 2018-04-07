@@ -88,6 +88,8 @@ class PreparedData:
             print(l, ": ", label_cardinality[l])
 
         print("Shuffling")
+        print(self.dataset['x_{}'.format(tvt)])
+        print(self.dataset['y_{}'.format(tvt)])
         random_seed = 113
         random.Random(random_seed).shuffle(self.dataset['x_{}'.format(tvt)])
         random.Random(random_seed).shuffle(self.dataset['y_{}'.format(tvt)])
@@ -103,7 +105,7 @@ class PreparedData:
         self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\test', self.channels, tvt='test')
 
     def process_test_only(self):
-        self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\test', self.channels, tvt='test')
+        self.read('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_dataset\\new_observations_for_presentation', self.channels, tvt='test')
 
 
 def read_my_csv(train_file_name, val_file_name, input_shape=(60, 70, 3), delimiter='/', channels=3, one_hot=True):
