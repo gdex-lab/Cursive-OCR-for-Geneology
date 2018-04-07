@@ -12,7 +12,7 @@ def bw_cnn(x_train, y_train, x_val, y_val,
 
     model = Sequential()
 
-    model.add(Conv1D(32, kernel_size=(5),
+    model.add(Conv1D(32, kernel_size=(3),
                  activation='relu',
                      input_shape=input_shape))
     model.add(Conv1D(64, (3), activation='relu'))
