@@ -40,19 +40,19 @@ while test_loss > .7:
         # if the model is performing well, or less than 100 epochs, save the weights, and keep training
         # serialize model to YAML
         model_yaml = model.to_yaml()
-        with open("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v5_cnn.yaml", "w") as yaml_file:
+        with open("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v6_cnn.yaml", "w") as yaml_file:
             yaml_file.write(model_yaml)
         # serialize weights to HDF5
-        model.save_weights("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v5_model{}_{}.h5".format(test_loss, test_accuracy))
+        model.save_weights("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v6_model{}_{}.h5".format(test_loss, test_accuracy))
         print("Saved model to disk")
 
         # load YAML and create model
-        yaml_file = open('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v5_cnn.yaml', 'r')
+        yaml_file = open('C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v6_cnn.yaml', 'r')
         loaded_model_yaml = yaml_file.read()
         yaml_file.close()
         model = model_from_yaml(loaded_model_yaml)
         # load weights into new model
-        model.load_weights("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v5_model{}_{}.h5".format(test_loss, test_accuracy))
+        model.load_weights("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v6_model{}_{}.h5".format(test_loss, test_accuracy))
         print("Loaded model from disk")
         model.compile(loss='categorical_crossentropy',
                       optimizer='Adadelta',
@@ -79,5 +79,5 @@ while test_loss > .7:
 # with open("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\slider_cnn{}_{}.yaml".format(test_loss, test_accuracy), "w") as yaml_file:
 #     yaml_file.write(model_yaml)
 # serialize weights to HDF5
-model.save_weights("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v5_model{}_{}.h5".format(test_loss, test_accuracy))
+model.save_weights("C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\v6_model{}_{}.h5".format(test_loss, test_accuracy))
 print("Saved model to disk")

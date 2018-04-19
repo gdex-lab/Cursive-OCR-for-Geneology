@@ -19,16 +19,7 @@ model.compile(
 loss='categorical_crossentropy',
               optimizer='Adadelta',
               metrics=['accuracy'])
-from keras.utils import plot_model
-# plot_model(model, to_file='C:\\Users\\grant\\Repos\\Cursive-OCR-for-Geneology\\model.png')
 
-# score = model.evaluate(p_data.dataset['x_test'], p_data.dataset['y_test'], verbose=1)
-# test_loss = score[0]
-# test_accuracy = score[1]
-# print('Test accuracy:', test_accuracy)
-# print('Test loss:', test_loss)
-# print(p_data.dataset['x_test'])
-# print(p_data.dataset['y_test'])
 
 pred = model.predict(p_data.dataset['x_test'])
 # print(pred)
@@ -52,6 +43,3 @@ for p in pred:
     print("Actual: {}".format(clean_actuals.get()))
     print("Predicted: {}".format(sorted_preds))
     print("-------------------")
-
-# print(pred)
-# print(p_data.dataset['y_test'])
